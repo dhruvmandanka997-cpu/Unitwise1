@@ -1,0 +1,16 @@
+{
+  "name": "UnitWise",
+  "short_name": "UnitWise",
+  "description": "AI unit and curriculum planning for teachers",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F9FD",
+  "theme_color": "#5B4DFF",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

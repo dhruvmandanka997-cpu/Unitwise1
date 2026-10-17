@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UnitWise — AI Unit & Curriculum Planning for Teachers</title>
+    <meta name="description" content="UnitWise — AI unit and curriculum planning for teachers. Design backward-design multi-week unit plans aligned with national frameworks, authentic learning resources, and differentiated instruction." />
+    <meta property="og:title" content="UnitWise — AI Unit & Curriculum Planning for Teachers" />
+    <meta property="og:description" content="AI unit and curriculum planning for teachers grounded in Backward Design and Bloom's Taxonomy." />
+    <meta property="og:site_name" content="UnitWise" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="UnitWise — AI Unit & Curriculum Planning for Teachers" />
+    <meta name="twitter:description" content="AI unit and curriculum planning for teachers." />
+    <link rel="manifest" href="/manifest.json" />
+    <!-- Google Fonts Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var isDark = saved ? (saved === 'dark') : prefersDark;
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[var(--bg)] text-[var(--text)] antialiased selection:bg-[var(--lavender-soft)] selection:text-[var(--primary)] min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

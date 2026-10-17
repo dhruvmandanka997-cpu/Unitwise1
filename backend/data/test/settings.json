@@ -1,0 +1,10 @@
+{
+  "defaultCurriculum": "US Common Core & Next Generation Science Standards (NGSS)",
+  "defaultGradeLevel": "Grade 9 (High School / Freshman)",
+  "preferredLanguage": "English",
+  "preferredFormat": "session_sequence",
+  "defaultClassDuration": 50,
+  "theme": "light",
+  "aiProvider": "gemini",
+  "apiKeyConfigured": false
+}
