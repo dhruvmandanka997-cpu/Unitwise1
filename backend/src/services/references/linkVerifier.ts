@@ -1,9 +1,11 @@
 import { isValidUrl } from './urlValidator';
+import { ReferenceLinkStatus } from '../../models/plan';
 
 export type VerificationCheckResult = 'verified' | 'unverified' | 'failed';
 
 export interface LinkVerificationResult {
   status: VerificationCheckResult;
+  linkStatus: ReferenceLinkStatus;
   lastCheckedAt: string;
   statusCode?: number;
   errorReason?: string;
@@ -14,7 +16,7 @@ const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 /**
  * Server-side reachability check for external references.
  * Respects SSRF protections, limits redirects, and honestly distinguishes
- * between actual 404/410 dead links and anti-bot/timeout blocks.
+ * between actual reachable links, 404/410/DNS broken links, and anti-bot/timeout blocks.
  */
 export async function verifyLink(url: string, timeoutMs = 4000): Promise<LinkVerificationResult> {
   const timestamp = new Date().toISOString();
@@ -23,6 +25,7 @@ export async function verifyLink(url: string, timeoutMs = 4000): Promise<LinkVer
   if (!isValidUrl(url)) {
     return {
       status: 'failed',
+      linkStatus: 'broken',
       lastCheckedAt: timestamp,
       errorReason: 'URL failed protocol or SSRF security validation',
     };
@@ -60,15 +63,17 @@ export async function verifyLink(url: string, timeoutMs = 4000): Promise<LinkVer
     if (code >= 200 && code < 300) {
       return {
         status: 'verified',
+        linkStatus: 'reachable',
         lastCheckedAt: timestamp,
         statusCode: code,
       };
     }
 
-    // 404 Not Found, 410 Gone: Explicitly dead link
+    // 404 Not Found, 410 Gone: Explicitly dead/broken link
     if (code === 404 || code === 410) {
       return {
         status: 'failed',
+        linkStatus: 'broken',
         lastCheckedAt: timestamp,
         statusCode: code,
         errorReason: `HTTP ${code} resource not found`,
@@ -80,15 +85,17 @@ export async function verifyLink(url: string, timeoutMs = 4000): Promise<LinkVer
     if (code === 403 || code === 429 || code === 503 || code === 500) {
       return {
         status: 'unverified',
+        linkStatus: 'blocked',
         lastCheckedAt: timestamp,
         statusCode: code,
         errorReason: `HTTP ${code} anti-bot or temporary server limit`,
       };
     }
 
-    // Any other status: treat as unverified
+    // Any other status: treat as not_checked / unverified
     return {
       status: 'unverified',
+      linkStatus: 'not_checked',
       lastCheckedAt: timestamp,
       statusCode: code,
     };
@@ -99,14 +106,16 @@ export async function verifyLink(url: string, timeoutMs = 4000): Promise<LinkVer
     if (error.name === 'TimeoutError' || error.message.includes('timeout') || error.message.includes('abort')) {
       return {
         status: 'unverified',
+        linkStatus: 'not_checked',
         lastCheckedAt: timestamp,
-        errorReason: 'Request timed out; marked unverified for manual review',
+        errorReason: 'Request timed out; marked not checked for manual review',
       };
     }
 
     if (error.message.includes('ENOTFOUND') || error.message.includes('getaddrinfo ENOTFOUND')) {
       return {
         status: 'failed',
+        linkStatus: 'broken',
         lastCheckedAt: timestamp,
         errorReason: 'Domain DNS resolution failed',
       };
@@ -114,6 +123,7 @@ export async function verifyLink(url: string, timeoutMs = 4000): Promise<LinkVer
 
     return {
       status: 'unverified',
+      linkStatus: 'not_checked',
       lastCheckedAt: timestamp,
       errorReason: error.message || 'Connection check inconclusive',
     };
@@ -122,12 +132,14 @@ export async function verifyLink(url: string, timeoutMs = 4000): Promise<LinkVer
 
 export async function verifyResourceUrl(url: string, timeoutMs = 4000): Promise<{
   state: 'verified' | 'unverified' | 'failed';
+  linkStatus: ReferenceLinkStatus;
   httpStatus?: number;
   lastCheckedAt: string;
 }> {
   const result = await verifyLink(url, timeoutMs);
   return {
     state: result.status,
+    linkStatus: result.linkStatus,
     httpStatus: result.statusCode,
     lastCheckedAt: result.lastCheckedAt,
   };

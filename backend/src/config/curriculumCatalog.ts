@@ -696,27 +696,117 @@ export function sanitizeFreeText(input: unknown, maxLength: number = 80): string
     .slice(0, maxLength);
 }
 
+import { directoryDb } from '../services/directory/directoryDb';
+
 /**
- * Helper to find a country in the catalog.
+ * Helper to find a country in the catalog or directory database.
  */
 export function findCountry(countryId: string): CountryCatalogEntry | undefined {
-  return CURRICULUM_CATALOG.countries.find((c) => c.id === countryId);
+  if (!countryId) return undefined;
+  const normalizedId = countryId.toLowerCase().trim();
+
+  // 1. Check static catalog
+  const staticMatch = CURRICULUM_CATALOG.countries.find(
+    (c) => c.id.toLowerCase() === normalizedId || c.code.toLowerCase() === normalizedId
+  );
+  if (staticMatch) return staticMatch;
+
+  // 2. Fallback to directory database
+  try {
+    const dbCountry = directoryDb.getCountry(countryId);
+    if (dbCountry) {
+      const dbCurricula = directoryDb.getCurricula({ countryIso2: dbCountry.iso2 });
+      return {
+        id: dbCountry.iso2.toLowerCase(),
+        name: dbCountry.name,
+        code: dbCountry.iso2,
+        flagEmoji: dbCountry.flagEmoji,
+        curricula: dbCurricula.map((c) => ({
+          id: c.id,
+          label: c.name,
+          shortLabel: c.shortName,
+          type: (c.scope === 'state-regional' ? 'state-regional' : c.scope === 'international' ? 'international' : 'national') as CurriculumType,
+          typeBadgeLabel: c.verificationStatus === 'verified' ? 'Verified Board' : 'Curriculum Framework',
+          requiresRegion: !!c.regionCode || c.scope === 'state-regional',
+          gradeScheme: c.gradeScheme,
+          gradeOptions: c.gradeOptions,
+          spelling: c.spelling,
+          measurementSystem: c.measurementSystem,
+          assessmentStyleDescription: c.assessmentStyle,
+          officialDomains: c.officialDomains,
+        })),
+      };
+    }
+  } catch (err) {
+    console.warn('[CurriculumCatalog] Error querying directoryDb for country:', err);
+  }
+
+  return undefined;
 }
 
 /**
- * Helper to find a curriculum in a country.
+ * Helper to find a curriculum in a country across catalog and database.
  */
 export function findCurriculum(countryId: string, curriculumId: string): CurriculumOption | undefined {
+  if (!curriculumId) return undefined;
   const country = findCountry(countryId);
-  return country?.curricula.find((c) => c.id === curriculumId);
+  const match = country?.curricula.find(
+    (c) => c.id.toLowerCase() === curriculumId.toLowerCase() || c.id === curriculumId
+  );
+  if (match) return match;
+
+  // Fallback direct lookup from directoryDb
+  try {
+    const dbCurr = directoryDb.getCurriculum(curriculumId);
+    if (dbCurr) {
+      return {
+        id: dbCurr.id,
+        label: dbCurr.name,
+        shortLabel: dbCurr.shortName,
+        type: (dbCurr.scope === 'state-regional' ? 'state-regional' : dbCurr.scope === 'international' ? 'international' : 'national') as CurriculumType,
+        typeBadgeLabel: dbCurr.verificationStatus === 'verified' ? 'Verified Board' : 'Curriculum Framework',
+        requiresRegion: !!dbCurr.regionCode || dbCurr.scope === 'state-regional',
+        gradeScheme: dbCurr.gradeScheme,
+        gradeOptions: dbCurr.gradeOptions,
+        spelling: dbCurr.spelling,
+        measurementSystem: dbCurr.measurementSystem,
+        assessmentStyleDescription: dbCurr.assessmentStyle,
+        officialDomains: dbCurr.officialDomains,
+      };
+    }
+  } catch (err) {
+    console.warn('[CurriculumCatalog] Error querying directoryDb for curriculum:', err);
+  }
+
+  return undefined;
 }
 
 /**
- * Helper to find a region within a curriculum.
+ * Helper to find a region within a curriculum or ISO database.
  */
 export function findRegion(countryId: string, curriculumId: string, regionId: string): CurriculumRegion | undefined {
+  if (!regionId) return undefined;
   const curriculum = findCurriculum(countryId, curriculumId);
-  return curriculum?.regions?.find((r) => r.id === regionId);
+  const match = curriculum?.regions?.find(
+    (r) => r.id.toLowerCase() === regionId.toLowerCase() || r.code?.toLowerCase() === regionId.toLowerCase()
+  );
+  if (match) return match;
+
+  // Fallback to directoryDb ISO 3166-2 lookup
+  try {
+    const dbRegion = directoryDb.getRegion(regionId);
+    if (dbRegion) {
+      return {
+        id: dbRegion.code.toLowerCase(),
+        name: dbRegion.name,
+        code: dbRegion.code,
+      };
+    }
+  } catch (err) {
+    console.warn('[CurriculumCatalog] Error querying directoryDb for region:', err);
+  }
+
+  return undefined;
 }
 
 /**

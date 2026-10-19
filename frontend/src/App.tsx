@@ -5,9 +5,14 @@ import { PlanWizard } from './components/wizard/PlanWizard';
 import { PlanWorkspace } from './components/workspace/PlanWorkspace';
 import { PlanLibrary } from './components/library/PlanLibrary';
 import { SettingsModal } from './components/settings/SettingsModal';
-import { LessonPlan, GeneratePlanInput } from './types/plan';
+import { CurriculumDirectoryModal } from './components/directory/CurriculumDirectoryModal';
+import { LessonPlan, GeneratePlanInput, PlanStatus } from './types/plan';
 import { TeacherTask, TaskStats } from './types/task';
-import { api, HealthResponse } from './services/api';
+import { api, HealthResponse, ActivePlanSummary } from './services/api';
+import { DeactivateConfirmModal } from './components/dashboard/DeactivateConfirmModal';
+import { SwapActivePlanModal, ActivePlanItem } from './components/workspace/SwapActivePlanModal';
+import { OverLimitResolutionModal } from './components/dashboard/OverLimitResolutionModal';
+import { DeletePlanConfirmModal } from './components/common/DeletePlanConfirmModal';
 
 const DEFAULT_TASK_STATS: TaskStats = {
   total: 0,
@@ -55,6 +60,32 @@ export const App: React.FC = () => {
   const [isSettingsOpen, setIsSettingsOpen] = useState<boolean>(false);
   const [health, setHealth] = useState<HealthResponse | null>(null);
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
+
+  // Active Plans Management State (Max 3 Active Plans Single Source of Truth)
+  const [activeSummary, setActiveSummary] = useState<ActivePlanSummary | null>(null);
+  const [deactivateModalState, setDeactivateModalState] = useState<{
+    isOpen: boolean;
+    planId: string;
+    planTitle: string;
+  }>({ isOpen: false, planId: '', planTitle: '' });
+  const [isDeactivating, setIsDeactivating] = useState<boolean>(false);
+
+  const [swapModalState, setSwapModalState] = useState<{
+    isOpen: boolean;
+    planToActivate: { id: string; title: string; subject: string; gradeLevel: string } | null;
+    activePlans: ActivePlanItem[];
+  }>({ isOpen: false, planToActivate: null, activePlans: [] });
+  const [isSwapping, setIsSwapping] = useState<boolean>(false);
+
+  const [isOverLimitModalOpen, setIsOverLimitModalOpen] = useState<boolean>(false);
+  const [initialLibraryStatusFilter, setInitialLibraryStatusFilter] = useState<string | undefined>(undefined);
+
+  // Delete Plan Confirmation Modal State
+  const [deleteModalState, setDeleteModalState] = useState<{
+    isOpen: boolean;
+    plan: LessonPlan | null;
+    triggerElement?: HTMLElement | null;
+  }>({ isOpen: false, plan: null, triggerElement: null });
 
   // Tasks Tracker State
   const [tasks, setTasks] = useState<TeacherTask[]>([]);
@@ -119,11 +150,21 @@ export const App: React.FC = () => {
     }
   }, []);
 
+  const loadActiveSummary = useCallback(async () => {
+    try {
+      const summary = await api.getActiveSummary();
+      setActiveSummary(summary);
+    } catch (err) {
+      console.error('Failed to load active plans summary:', err);
+    }
+  }, []);
+
   useEffect(() => {
     loadPlans();
     loadTasks();
     loadHealth();
-  }, [loadPlans, loadTasks, loadHealth]);
+    loadActiveSummary();
+  }, [loadPlans, loadTasks, loadHealth, loadActiveSummary]);
 
   const handleOpenWizard = (templateId?: string) => {
     setSelectedTemplateId(templateId);
@@ -155,6 +196,33 @@ export const App: React.FC = () => {
     }
   };
 
+  // Directory Modal state triggered from Global Search or cards
+  const [directoryModalState, setDirectoryModalState] = useState<{
+    isOpen: boolean;
+    curriculumId: string | null;
+  }>({ isOpen: false, curriculumId: null });
+
+  const handleSelectPlanById = (planId: string) => {
+    const targetPlan = plans.find((p) => p.id === planId);
+    if (targetPlan) {
+      handleSelectPlan(targetPlan, 'overview');
+    } else {
+      api.getPlan(planId).then((fetchedPlan) => {
+        handleSelectPlan(fetchedPlan, 'overview');
+      }).catch((err) => {
+        console.error('Could not locate plan for search navigation:', err);
+      });
+    }
+  };
+
+  const handleSelectCurriculum = (curriculumId: string) => {
+    setDirectoryModalState({ isOpen: true, curriculumId });
+  };
+
+  const handleSelectStandard = (curriculumId: string, _standardId: string) => {
+    setDirectoryModalState({ isOpen: true, curriculumId });
+  };
+
   const handleToggleChecklist = async (taskId: string, itemId: string, completed: boolean) => {
     try {
       const updated = await api.toggleTaskChecklist(taskId, itemId, completed);
@@ -180,6 +248,111 @@ export const App: React.FC = () => {
     }
   };
 
+  const handleActivatePlan = async (plan: LessonPlan) => {
+    try {
+      const res = await api.activatePlan(plan.id);
+      setPlans((prev) => prev.map((p) => (p.id === plan.id ? res.plan : p)));
+      if (activePlan?.id === plan.id) {
+        setActivePlan(res.plan);
+      }
+      await loadActiveSummary();
+      setSuccessMessage(`Activated "${plan.title}"! (${res.summary.activeCount}/${res.summary.maxActivePlans} active)`);
+      setTimeout(() => setSuccessMessage(null), 5000);
+      loadTasks();
+    } catch (err: any) {
+      if (err.code === 'ACTIVE_LIMIT_REACHED') {
+        const activeList = err.activePlans || activeSummary?.activePlans || [];
+        setSwapModalState({
+          isOpen: true,
+          planToActivate: {
+            id: plan.id,
+            title: plan.title,
+            subject: plan.subject,
+            gradeLevel: plan.gradeLevel,
+          },
+          activePlans: activeList,
+        });
+      } else {
+        alert(err.message || 'Failed to activate plan.');
+      }
+    }
+  };
+
+  const handleOpenDeactivateModal = (planId: string, planTitle: string) => {
+    setDeactivateModalState({ isOpen: true, planId, planTitle });
+  };
+
+  const handleDeactivateConfirm = async (planId: string) => {
+    try {
+      setIsDeactivating(true);
+      const res = await api.deactivatePlan(planId);
+      setPlans((prev) => prev.map((p) => (p.id === planId ? res.plan : p)));
+      if (activePlan?.id === planId) {
+        setActivePlan(res.plan);
+      }
+      await loadActiveSummary();
+      setDeactivateModalState({ isOpen: false, planId: '', planTitle: '' });
+      setSuccessMessage(`Plan deactivated and saved safely as Inactive.`);
+      setTimeout(() => setSuccessMessage(null), 5000);
+      loadTasks();
+    } catch (err: any) {
+      alert(err.message || 'Failed to deactivate plan.');
+    } finally {
+      setIsDeactivating(false);
+    }
+  };
+
+  const handleSwapConfirm = async (deactivatePlanId: string, activatePlanId: string) => {
+    try {
+      setIsSwapping(true);
+      const res = await api.swapActivePlans(deactivatePlanId, activatePlanId);
+      setPlans((prev) =>
+        prev.map((p) => {
+          if (p.id === deactivatePlanId) return res.deactivatedPlan;
+          if (p.id === activatePlanId) return res.activatedPlan;
+          return p;
+        })
+      );
+      if (activePlan?.id === deactivatePlanId) {
+        setActivePlan(res.deactivatedPlan);
+      } else if (activePlan?.id === activatePlanId) {
+        setActivePlan(res.activatedPlan);
+      }
+      await loadActiveSummary();
+      setSwapModalState({ isOpen: false, planToActivate: null, activePlans: [] });
+      setSuccessMessage(`Swapped active plans: "${res.activatedPlan.title}" is now active.`);
+      setTimeout(() => setSuccessMessage(null), 5000);
+      loadTasks();
+    } catch (err: any) {
+      throw err;
+    } finally {
+      setIsSwapping(false);
+    }
+  };
+
+  const handleResolveOverLimit = async (keepPlanIds: string[], expectedActivePlanIds: string[]) => {
+    const res = await api.resolveOverLimitActivePlans(keepPlanIds, expectedActivePlanIds);
+    setPlans((prev) =>
+      prev.map((p) => {
+        const kept = res.keptPlans.find((kp) => kp.id === p.id);
+        if (kept) return kept;
+        const deactivated = res.deactivatedPlans.find((dp) => dp.id === p.id);
+        if (deactivated) return deactivated;
+        return p;
+      })
+    );
+    if (activePlan) {
+      const refreshed =
+        res.keptPlans.find((kp) => kp.id === activePlan.id) ||
+        res.deactivatedPlans.find((dp) => dp.id === activePlan.id);
+      if (refreshed) setActivePlan(refreshed);
+    }
+    await loadActiveSummary();
+    setSuccessMessage(`Active plans updated: ${res.keptPlans.length} active.`);
+    setTimeout(() => setSuccessMessage(null), 5000);
+    loadTasks();
+  };
+
   const handleGeneratePlan = async (input: GeneratePlanInput) => {
     setIsGenerating(true);
     setGenerationError(null);
@@ -189,8 +362,13 @@ export const App: React.FC = () => {
       setActivePlan(newPlan);
       setInitialWorkspaceTab('overview');
       setCurrentView('workspace');
-      setSuccessMessage(`Successfully generated "${newPlan.title}" (${newPlan.durationWeeks} weeks, ${newPlan.durationWeeks * newPlan.sessionsPerWeek} sessions)!`);
-      setTimeout(() => setSuccessMessage(null), 6000);
+      if (newPlan.savedAsDraftDueToLimit) {
+        setSuccessMessage(`"${newPlan.title}" saved as draft because you have 3 active plans. You can deactivate an existing plan to activate this one.`);
+      } else {
+        setSuccessMessage(`Successfully generated "${newPlan.title}" (${newPlan.durationWeeks} weeks, ${newPlan.durationWeeks * newPlan.sessionsPerWeek} sessions)!`);
+      }
+      setTimeout(() => setSuccessMessage(null), 7000);
+      await loadActiveSummary();
       loadTasks();
     } catch (err: unknown) {
       const error = err as Error;
@@ -206,6 +384,7 @@ export const App: React.FC = () => {
       const saved = await api.updatePlan(updatedPlan.id, updatedPlan);
       setActivePlan(saved);
       setPlans((prev) => prev.map((p) => (p.id === saved.id ? saved : p)));
+      await loadActiveSummary();
       loadTasks();
     } catch (err) {
       console.error('Save failed:', err);
@@ -213,18 +392,52 @@ export const App: React.FC = () => {
     }
   };
 
-  const handleDeletePlan = async (id: string) => {
+  const handleOpenDeleteModal = (planOrId: LessonPlan | string, triggerEl?: HTMLElement) => {
+    let targetPlan: LessonPlan | undefined;
+    if (typeof planOrId === 'string') {
+      targetPlan = plans.find((p) => p.id === planOrId);
+    } else {
+      targetPlan = planOrId;
+    }
+    if (targetPlan) {
+      setDeleteModalState({
+        isOpen: true,
+        plan: targetPlan,
+        triggerElement: triggerEl || null,
+      });
+    }
+  };
+
+  const handleConfirmDeletePlan = async (planToDelete: LessonPlan) => {
     try {
-      await api.deletePlan(id);
-      setPlans((prev) => prev.filter((p) => p.id !== id));
-      if (activePlan?.id === id) {
+      const res = await api.deletePlan(planToDelete.id);
+      const deletedId = res?.id || planToDelete.id;
+
+      // Immediately remove from plans list
+      setPlans((prev) => prev.filter((p) => p.id !== deletedId));
+
+      // If the deleted plan is currently active or open in the workspace, navigate to Saved Plans (library)
+      if (activePlan?.id === deletedId) {
         setActivePlan(null);
-        setCurrentView('dashboard');
+        setCurrentView('library');
       }
-      loadTasks();
-    } catch (err) {
+
+      // Close the confirmation modal
+      setDeleteModalState({ isOpen: false, plan: null, triggerElement: null });
+
+      // Show success toast only after server confirms
+      setSuccessMessage('Lesson plan deleted successfully.');
+      setTimeout(() => setSuccessMessage(null), 5000);
+
+      // Refresh active count, dashboard stats, and tasks
+      await Promise.all([
+        loadActiveSummary(),
+        loadTasks(),
+      ]);
+    } catch (err: unknown) {
       console.error('Delete failed:', err);
-      alert('Failed to delete plan.');
+      // Re-throw so DeletePlanConfirmModal keeps the dialog open and displays inline error + Retry button
+      throw err;
     }
   };
 
@@ -235,6 +448,7 @@ export const App: React.FC = () => {
       setActivePlan(clone);
       setInitialWorkspaceTab('overview');
       setCurrentView('workspace');
+      await loadActiveSummary();
       loadTasks();
     } catch (err) {
       console.error('Duplicate failed:', err);
@@ -249,6 +463,7 @@ export const App: React.FC = () => {
       if (activePlan?.id === id) {
         setActivePlan(updated);
       }
+      await loadActiveSummary();
       loadTasks();
     } catch (err) {
       console.error('Rename failed:', err);
@@ -256,17 +471,41 @@ export const App: React.FC = () => {
     }
   };
 
-  const handleUpdateStatus = async (id: string, status: 'draft' | 'completed' | 'archived') => {
+  const handleUpdateStatus = async (id: string, status: PlanStatus) => {
     try {
-      const updated = await api.updatePlan(id, { status });
-      setPlans((prev) => prev.map((p) => (p.id === id ? updated : p)));
-      if (activePlan?.id === id) {
-        setActivePlan(updated);
+      if (status === 'active') {
+        const plan = plans.find((p) => p.id === id);
+        if (plan) {
+          await handleActivatePlan(plan);
+          return;
+        }
       }
+      const res = await api.updatePlanStatus(id, status);
+      setPlans((prev) => prev.map((p) => (p.id === id ? res.plan : p)));
+      if (activePlan?.id === id) {
+        setActivePlan(res.plan);
+      }
+      await loadActiveSummary();
       loadTasks();
-    } catch (err) {
+    } catch (err: any) {
+      if (err.code === 'ACTIVE_LIMIT_REACHED') {
+        const plan = plans.find((p) => p.id === id);
+        if (plan) {
+          setSwapModalState({
+            isOpen: true,
+            planToActivate: {
+              id: plan.id,
+              title: plan.title,
+              subject: plan.subject,
+              gradeLevel: plan.gradeLevel,
+            },
+            activePlans: err.activePlans || activeSummary?.activePlans || [],
+          });
+          return;
+        }
+      }
       console.error('Status update failed:', err);
-      alert('Failed to update status.');
+      alert(err.message || 'Failed to update status.');
     }
   };
 
@@ -288,6 +527,9 @@ export const App: React.FC = () => {
       planCount={plans.length}
       searchQuery={searchQuery}
       onSearchChange={setSearchQuery}
+      onSelectPlan={handleSelectPlanById}
+      onSelectCurriculum={handleSelectCurriculum}
+      onSelectStandard={handleSelectStandard}
     >
       {currentView === 'dashboard' && (
         <Dashboard
@@ -297,10 +539,13 @@ export const App: React.FC = () => {
           onOpenWizard={handleOpenWizard}
           onRefreshPlans={loadPlans}
           onDuplicatePlan={handleDuplicatePlan}
-          onDeletePlan={handleDeletePlan}
+          onDeletePlan={handleOpenDeleteModal}
           onRenamePlan={handleRenamePlan}
           onUpdateStatus={handleUpdateStatus}
-          onViewLibrary={() => setCurrentView('library')}
+          onViewLibrary={(statusFilter) => {
+            setInitialLibraryStatusFilter(statusFilter);
+            setCurrentView('library');
+          }}
           onOpenSettings={() => setIsSettingsOpen(true)}
           tasks={tasks}
           taskStats={taskStats}
@@ -309,6 +554,9 @@ export const App: React.FC = () => {
           onContinueTaskWorkflow={handleContinueTaskWorkflow}
           onRefreshTasks={loadTasks}
           searchFilter={searchQuery}
+          activeSummary={activeSummary}
+          onDeactivatePlan={handleOpenDeactivateModal}
+          onOpenOverLimitModal={() => setIsOverLimitModalOpen(true)}
         />
       )}
 
@@ -334,6 +582,11 @@ export const App: React.FC = () => {
           onToggleChecklist={handleToggleChecklist}
           onUpdateTask={handleUpdateTask}
           onRefreshTasks={loadTasks}
+          activeSummary={activeSummary}
+          onActivatePlan={handleActivatePlan}
+          onDeactivatePlan={handleOpenDeactivateModal}
+          onUpdateStatus={handleUpdateStatus}
+          onDeletePlan={handleOpenDeleteModal}
         />
       )}
 
@@ -343,11 +596,57 @@ export const App: React.FC = () => {
           onSelectPlan={handleSelectPlan}
           onOpenWizard={() => handleOpenWizard()}
           onDuplicatePlan={handleDuplicatePlan}
-          onDeletePlan={handleDeletePlan}
+          onDeletePlan={handleOpenDeleteModal}
           onRenamePlan={handleRenamePlan}
           onUpdateStatus={handleUpdateStatus}
+          activeSummary={activeSummary}
+          onActivatePlan={handleActivatePlan}
+          onDeactivatePlan={handleOpenDeactivateModal}
+          initialStatusFilter={initialLibraryStatusFilter}
         />
       )}
+
+      {/* Delete Plan Confirmation Modal */}
+      <DeletePlanConfirmModal
+        isOpen={deleteModalState.isOpen}
+        plan={deleteModalState.plan}
+        onConfirm={handleConfirmDeletePlan}
+        onClose={() => setDeleteModalState({ isOpen: false, plan: null, triggerElement: null })}
+        triggerElement={deleteModalState.triggerElement}
+      />
+
+      {/* Deactivate Plan Confirmation Modal */}
+      <DeactivateConfirmModal
+        isOpen={deactivateModalState.isOpen}
+        planId={deactivateModalState.planId}
+        planTitle={deactivateModalState.planTitle}
+        onConfirm={handleDeactivateConfirm}
+        onClose={() => setDeactivateModalState({ isOpen: false, planId: '', planTitle: '' })}
+        isSubmitting={isDeactivating}
+      />
+
+      {/* Swap Active Plan Modal (When At 3/3 Limit) */}
+      <SwapActivePlanModal
+        isOpen={swapModalState.isOpen}
+        planToActivate={swapModalState.planToActivate}
+        activePlans={swapModalState.activePlans}
+        onSwapConfirm={handleSwapConfirm}
+        onClose={() => setSwapModalState({ isOpen: false, planToActivate: null, activePlans: [] })}
+        isSubmitting={isSwapping}
+      />
+
+      {/* Over-Limit Resolution Modal (For Accounts With >3 Active Plans) */}
+      <OverLimitResolutionModal
+        isOpen={isOverLimitModalOpen}
+        activePlans={activeSummary?.activePlans || []}
+        maxActivePlans={activeSummary?.maxActivePlans || 3}
+        onResolve={handleResolveOverLimit}
+        onClose={() => setIsOverLimitModalOpen(false)}
+        onViewInactivePlans={() => {
+          setInitialLibraryStatusFilter('cancelled');
+          setCurrentView('library');
+        }}
+      />
 
       {/* Settings Modal */}
       <SettingsModal
@@ -357,7 +656,16 @@ export const App: React.FC = () => {
           loadHealth();
           loadPlans();
           loadTasks();
+          loadActiveSummary();
         }}
+      />
+
+      {/* Curriculum Directory Modal for Global Search & Exploration */}
+      <CurriculumDirectoryModal
+        isOpen={directoryModalState.isOpen}
+        initialCurriculumId={directoryModalState.curriculumId}
+        onClose={() => setDirectoryModalState({ isOpen: false, curriculumId: null })}
+        onOpenSuggestModal={() => setDirectoryModalState({ isOpen: false, curriculumId: null })}
       />
 
       {/* Floating Success Notification Toast */}

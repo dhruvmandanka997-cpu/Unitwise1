@@ -5,6 +5,7 @@ import { planDb } from './services/storage/db';
 import { taskDb } from './services/storage/taskDb';
 import { getSeedPlans } from './seeds';
 import { apiRoutes } from './routes';
+import { seedDirectoryDatabase } from './services/directory/seedDirectory';
 
 import { BRAND } from './config/brand';
 
@@ -15,6 +16,9 @@ app.use(express.json({ limit: '10mb' }));
 
 // Seed initial database if empty
 planDb.seedIfEmpty(getSeedPlans());
+
+// Seed directory database with ISO standards & verified curricula
+seedDirectoryDatabase();
 
 // Initialize and sync task tracker with all plans
 taskDb.syncWithPlans(planDb.getAll());

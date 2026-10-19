@@ -3,15 +3,42 @@ import { planDb } from '../services/storage/db';
 import { taskDb } from '../services/storage/taskDb';
 import { aiEngine } from '../services/ai';
 import { referenceService } from '../services/references/referenceService';
+import { planStatusService } from '../services/plan/planStatusService';
+import { resolveAuthUser } from './planController';
 
 export const aiController = {
   async generatePlan(req: Request, res: Response) {
     try {
       const plan = await aiEngine.generatePlan(req.body);
+      const userId = resolveAuthUser(req);
+      plan.userId = userId;
       plan.referencesStatus = 'pending';
+
+      const activePlans = planStatusService.getUserActivePlans(userId);
+      let savedAsDraftDueToLimit = false;
+
+      if (req.body.createAsActive || req.body.activateOnCreate) {
+        if (activePlans.length < planStatusService.maxActivePlans) {
+          plan.status = 'active';
+          plan.statusChangedAt = new Date().toISOString();
+        } else {
+          plan.status = 'draft';
+          savedAsDraftDueToLimit = true;
+        }
+      } else {
+        plan.status = 'draft';
+      }
+
       planDb.save(plan);
       taskDb.syncWithPlans(planDb.getAll());
-      res.status(201).json(plan);
+
+      res.status(201).json({
+        ...plan,
+        savedAsDraftDueToLimit,
+        limitNotice: savedAsDraftDueToLimit
+          ? `Saved as draft because you have ${planStatusService.maxActivePlans} active plans.`
+          : undefined,
+      });
 
       // Trigger server-side reference retrieval asynchronously in background
       referenceService.fetchAndAttachReferences(plan.id).catch((refErr) => {
@@ -47,7 +74,10 @@ export const aiController = {
         const sessIdx = targetWeek.sessions.findIndex((s) => s.sessionNumber === Number(sessionNumber));
         if (sessIdx !== -1) {
           targetWeek.sessions[sessIdx] = newSession;
-          planDb.save(plan);
+          if (!planDb.getById(plan.id)) {
+            return res.status(404).json({ error: 'Plan was deleted during generation.' });
+          }
+          planDb.update(plan.id, { weeklyPlans: plan.weeklyPlans });
           taskDb.syncWithPlans(planDb.getAll());
         }
       }
@@ -80,7 +110,10 @@ export const aiController = {
         const sessIdx = targetWeek.sessions.findIndex((s) => s.sessionNumber === Number(sessionNumber));
         if (sessIdx !== -1) {
           targetWeek.sessions[sessIdx] = adaptedSession;
-          planDb.save(plan);
+          if (!planDb.getById(plan.id)) {
+            return res.status(404).json({ error: 'Plan was deleted during adaptation.' });
+          }
+          planDb.update(plan.id, { weeklyPlans: plan.weeklyPlans });
           taskDb.syncWithPlans(planDb.getAll());
         }
       }
@@ -106,7 +139,10 @@ export const aiController = {
       const weekIdx = plan.weeklyPlans.findIndex((w) => w.weekNumber === Number(weekNumber));
       if (weekIdx !== -1) {
         plan.weeklyPlans[weekIdx] = updatedWeek;
-        planDb.save(plan);
+        if (!planDb.getById(plan.id)) {
+          return res.status(404).json({ error: 'Plan was deleted during generation.' });
+        }
+        planDb.update(plan.id, { weeklyPlans: plan.weeklyPlans });
         taskDb.syncWithPlans(planDb.getAll());
       }
 

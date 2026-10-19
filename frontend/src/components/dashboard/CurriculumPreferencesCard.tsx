@@ -23,6 +23,8 @@ import {
 } from '../../config/curriculumCatalog';
 import { CurriculumPreferences } from '../../types/curriculum';
 import { api } from '../../services/api';
+import { SuggestCurriculumModal } from '../directory/SuggestCurriculumModal';
+import { CurriculumDirectoryModal } from '../directory/CurriculumDirectoryModal';
 
 interface CurriculumPreferencesCardProps {
   onPreferencesUpdated?: (prefs: CurriculumPreferences, labels: ResolvedCurriculumLabels) => void;
@@ -53,6 +55,8 @@ export const CurriculumPreferencesCard: React.FC<CurriculumPreferencesCardProps>
   const [otherCountryText, setOtherCountryText] = useState<string>('');
   const [otherCurriculumText, setOtherCurriculumText] = useState<string>('');
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
+  const [isSuggestModalOpen, setIsSuggestModalOpen] = useState<boolean>(false);
+  const [isDirectoryModalOpen, setIsDirectoryModalOpen] = useState<boolean>(false);
 
   // Search Combobox States for Countries
   const [countrySearch, setCountrySearch] = useState<string>('');
@@ -341,6 +345,15 @@ export const CurriculumPreferencesCard: React.FC<CurriculumPreferencesCardProps>
           </div>
 
           <div className="flex items-center gap-2 self-end sm:self-center shrink-0">
+            <button
+              type="button"
+              onClick={() => setIsDirectoryModalOpen(true)}
+              className="neu-btn-secondary inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-semibold text-[var(--text-muted)] hover:text-[var(--text)]"
+              title="Explore curriculum directory coverage"
+            >
+              <Globe className="w-3.5 h-3.5 text-indigo-500" />
+              <span className="hidden sm:inline">Directory</span>
+            </button>
             {saveSuccess && (
               <span className="text-xs font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1 animate-fadeIn">
                 <Check className="w-3.5 h-3.5" />
@@ -360,6 +373,19 @@ export const CurriculumPreferencesCard: React.FC<CurriculumPreferencesCardProps>
             </button>
           </div>
         </div>
+        <SuggestCurriculumModal
+          isOpen={isSuggestModalOpen}
+          onClose={() => setIsSuggestModalOpen(false)}
+          defaultCountryIso2={currentCountry.code || 'IN'}
+        />
+        <CurriculumDirectoryModal
+          isOpen={isDirectoryModalOpen}
+          onClose={() => setIsDirectoryModalOpen(false)}
+          onOpenSuggestModal={() => {
+            setIsDirectoryModalOpen(false);
+            setIsSuggestModalOpen(true);
+          }}
+        />
       </div>
     );
   }
@@ -394,6 +420,15 @@ export const CurriculumPreferencesCard: React.FC<CurriculumPreferencesCardProps>
           </div>
 
           <div className="flex items-center gap-2 shrink-0 self-end sm:self-center">
+            <button
+              type="button"
+              onClick={() => setIsDirectoryModalOpen(true)}
+              className="text-[11px] font-medium text-[var(--text-muted)] hover:text-[var(--text)] px-2 py-1 flex items-center gap-1"
+              title="View global directory & coverage"
+            >
+              <Globe className="w-3.5 h-3.5 text-indigo-500" />
+              <span>Directory</span>
+            </button>
             {showFirstTimeHint && (
               <button
                 onClick={handleDismissHint}
@@ -415,6 +450,19 @@ export const CurriculumPreferencesCard: React.FC<CurriculumPreferencesCardProps>
             </button>
           </div>
         </div>
+        <SuggestCurriculumModal
+          isOpen={isSuggestModalOpen}
+          onClose={() => setIsSuggestModalOpen(false)}
+          defaultCountryIso2={currentCountry.code || 'IN'}
+        />
+        <CurriculumDirectoryModal
+          isOpen={isDirectoryModalOpen}
+          onClose={() => setIsDirectoryModalOpen(false)}
+          onOpenSuggestModal={() => {
+            setIsDirectoryModalOpen(false);
+            setIsSuggestModalOpen(true);
+          }}
+        />
       </div>
     );
   }
@@ -576,17 +624,36 @@ export const CurriculumPreferencesCard: React.FC<CurriculumPreferencesCardProps>
               </select>
             </div>
 
-            {/* Neutral Type Badge */}
-            {currentCurriculum && (
-              <div className="flex items-center gap-1.5 pt-0.5">
-                <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold bg-[var(--lavender-soft)] text-[var(--primary)] border border-[var(--border)]">
-                  {currentCurriculum.typeBadgeLabel}
-                </span>
-                <span className="text-[10px] text-[var(--text-muted)] truncate">
-                  Spelling: {currentCurriculum.spelling} &bull; {currentCurriculum.measurementSystem === 'us_customary' ? 'US Units' : 'Metric'}
-                </span>
+            {/* Neutral Type Badge & Directory Actions */}
+            <div className="flex flex-col gap-1 pt-0.5">
+              {currentCurriculum && (
+                <div className="flex items-center gap-1.5">
+                  <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold bg-[var(--lavender-soft)] text-[var(--primary)] border border-[var(--border)]">
+                    {currentCurriculum.typeBadgeLabel}
+                  </span>
+                  <span className="text-[10px] text-[var(--text-muted)] truncate">
+                    Spelling: {currentCurriculum.spelling} &bull; {currentCurriculum.measurementSystem === 'us_customary' ? 'US Units' : 'Metric'}
+                  </span>
+                </div>
+              )}
+              <div className="flex items-center justify-between text-[11px] pt-0.5">
+                <button
+                  type="button"
+                  onClick={() => setIsSuggestModalOpen(true)}
+                  className="text-[var(--primary)] hover:underline inline-flex items-center gap-1 font-medium"
+                >
+                  <span>Missing your board? Suggest it</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setIsDirectoryModalOpen(true)}
+                  className="text-[var(--text-muted)] hover:text-[var(--text)] inline-flex items-center gap-1"
+                >
+                  <Globe className="w-3 h-3 text-indigo-500" />
+                  <span>Directory & Gaps</span>
+                </button>
               </div>
-            )}
+            </div>
             {fieldErrors.curriculumId && (
               <p className="text-[11px] text-red-500 font-medium">{fieldErrors.curriculumId}</p>
             )}
@@ -785,6 +852,19 @@ export const CurriculumPreferencesCard: React.FC<CurriculumPreferencesCardProps>
           </div>
         </div>
       </form>
+      <SuggestCurriculumModal
+        isOpen={isSuggestModalOpen}
+        onClose={() => setIsSuggestModalOpen(false)}
+        defaultCountryIso2={currentCountry.code || 'IN'}
+      />
+      <CurriculumDirectoryModal
+        isOpen={isDirectoryModalOpen}
+        onClose={() => setIsDirectoryModalOpen(false)}
+        onOpenSuggestModal={() => {
+          setIsDirectoryModalOpen(false);
+          setIsSuggestModalOpen(true);
+        }}
+      />
     </div>
   );
 };

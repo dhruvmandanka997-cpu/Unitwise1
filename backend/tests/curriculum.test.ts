@@ -17,6 +17,7 @@ import { LessonPlanSchema, LessonPlan, GeneratePlanRawInput } from '../src/model
 import { PlanDatabase, planDb } from '../src/services/storage/db';
 import { aiEngine } from '../src/services/ai';
 import { PedagogicalFallbackGenerator } from '../src/services/ai/pedagogicalFallback';
+import { curriculumController } from '../src/controllers/curriculumController';
 
 describe('Curriculum Preferences & Catalog Architecture', () => {
 
@@ -379,6 +380,114 @@ describe('Curriculum Preferences & Catalog Architecture', () => {
         expect(std.verificationStatus).toBe('suggested_unverified');
         expect(std.lessonConnection).toContain('Suggested');
       }
+    });
+  });
+
+  describe('6. Controller & API Endpoint Validation', () => {
+    function mockRes() {
+      const res: any = {
+        statusCode: 200,
+        data: null,
+        status(code: number) {
+          res.statusCode = code;
+          return res;
+        },
+        json(payload: any) {
+          res.data = payload;
+          return res;
+        },
+      };
+      return res;
+    }
+
+    it('getCatalog returns versioned curriculum catalog', () => {
+      const res = mockRes();
+      curriculumController.getCatalog({} as any, res);
+      expect(res.data.catalogVersion).toBe('1.0.0');
+      expect(Array.isArray(res.data.countries)).toBe(true);
+    });
+
+    it('getPreferences returns preferences and resolvedLabels', () => {
+      const res = mockRes();
+      curriculumController.getPreferences({} as any, res);
+      expect(res.data).toBeDefined();
+      expect(res.data).toHaveProperty('preferences');
+      expect(res.data).toHaveProperty('resolvedLabels');
+    });
+
+    it('savePreferences returns 400 for unknown country ID', () => {
+      const res = mockRes();
+      curriculumController.savePreferences(
+        { body: { countryId: 'unknown_country', curriculumId: 'cbse' } } as any,
+        res
+      );
+      expect(res.statusCode).toBe(400);
+      expect(res.data.fields?.countryId).toBeDefined();
+    });
+
+    it('savePreferences returns 400 for missing required region in state board', () => {
+      const res = mockRes();
+      curriculumController.savePreferences(
+        { body: { countryId: 'in', curriculumId: 'in-state-board', regionId: '' } } as any,
+        res
+      );
+      expect(res.statusCode).toBe(400);
+      expect(res.data.fields?.regionId).toContain('Please choose a State / Union Territory');
+    });
+
+    it('savePreferences successfully stores valid preferences', () => {
+      const res = mockRes();
+      curriculumController.savePreferences(
+        { 
+          body: { 
+            countryId: 'in', 
+            curriculumId: 'cbse', 
+            defaultGrade: 'Class 8',
+            updatedAt: new Date().toISOString()
+          } 
+        } as any,
+        res
+      );
+      expect(res.statusCode).toBe(200);
+      expect(res.data.success).toBe(true);
+      expect(res.data.preferences.countryId).toBe('in');
+      expect(res.data.resolvedLabels.summary).toContain('CBSE');
+    });
+
+    it('setPlanCurriculum sets snapshot on existing plan', () => {
+      const plans = planDb.getAll();
+      if (plans.length > 0) {
+        const targetPlan = plans[0];
+        const res = mockRes();
+        curriculumController.setPlanCurriculum(
+          {
+            params: { id: targetPlan.id },
+            body: {
+              countryId: 'in',
+              curriculumId: 'cbse',
+              grade: 'Class 8',
+            }
+          } as any,
+          res
+        );
+        expect(res.statusCode).toBe(200);
+        expect(res.data.success).toBe(true);
+        expect(res.data.plan.curriculumContext.countryId).toBe('in');
+        expect(res.data.plan.curriculumContext.curriculumId).toBe('cbse');
+      }
+    });
+
+    it('setPlanCurriculum returns 404 for non-existent plan ID', () => {
+      const res = mockRes();
+      curriculumController.setPlanCurriculum(
+        {
+          params: { id: 'non_existent_plan_id_99999' },
+          body: { countryId: 'in', curriculumId: 'cbse' }
+        } as any,
+        res
+      );
+      expect(res.statusCode).toBe(404);
+      expect(res.data.error).toContain('not found');
     });
   });
 });

@@ -4,5 +4,11 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'node',
+    fileParallelism: false,
+    server: {
+      deps: {
+        external: ['node:sqlite', /^node:/],
+      },
+    },
   },
 });

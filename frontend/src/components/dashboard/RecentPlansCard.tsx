@@ -7,8 +7,9 @@ import {
   Terminal, 
   GraduationCap, 
   CheckCircle2, 
-  Clock,
-  ArrowRight
+  Clock, 
+  ArrowRight,
+  Trash2
 } from 'lucide-react';
 import { LessonPlan } from '../../types/plan';
 
@@ -17,6 +18,7 @@ interface RecentPlansCardProps {
   onSelectPlan: (plan: LessonPlan) => void;
   onViewLibrary?: () => void;
   onOpenWizard: () => void;
+  onDeletePlan?: (plan: LessonPlan, triggerEl?: HTMLElement) => void;
 }
 
 export const RecentPlansCard: React.FC<RecentPlansCardProps> = ({
@@ -24,6 +26,7 @@ export const RecentPlansCard: React.FC<RecentPlansCardProps> = ({
   onSelectPlan,
   onViewLibrary,
   onOpenWizard,
+  onDeletePlan,
 }) => {
   // Sort by updatedAt descending and take top 4
   const recentPlans = React.useMemo(() => {
@@ -130,33 +133,47 @@ export const RecentPlansCard: React.FC<RecentPlansCardProps> = ({
                 </div>
 
                 {/* Right Status Badge & Open Icon */}
-                <div className="flex items-center gap-2 shrink-0">
-                  <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-semibold border border-[var(--border)] ${
-                    isCompleted
-                      ? 'bg-[var(--lavender-soft)] text-[var(--primary)]'
-                      : 'bg-[var(--surface)] text-[var(--text-muted)]'
-                  }`}>
-                    {isCompleted ? (
-                      <>
-                        <CheckCircle2 className="w-2.5 h-2.5 text-[var(--primary)]" />
-                        <span>Completed</span>
-                      </>
-                    ) : (
-                      <>
-                        <Clock className="w-2.5 h-2.5 text-[var(--text-muted)]" />
-                        <span>Draft</span>
-                      </>
-                    )}
-                  </span>
+                  <div className="flex items-center gap-1.5 shrink-0">
+                    <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-semibold border border-[var(--border)] ${
+                      isCompleted
+                        ? 'bg-[var(--lavender-soft)] text-[var(--primary)]'
+                        : 'bg-[var(--surface)] text-[var(--text-muted)]'
+                    }`}>
+                      {isCompleted ? (
+                        <>
+                          <CheckCircle2 className="w-2.5 h-2.5 text-[var(--primary)]" />
+                          <span>Completed</span>
+                        </>
+                      ) : (
+                        <>
+                          <Clock className="w-2.5 h-2.5 text-[var(--text-muted)]" />
+                          <span>Draft</span>
+                        </>
+                      )}
+                    </span>
 
-                  <div className="p-1 rounded text-[var(--text-muted)] group-hover:text-[var(--primary)] group-hover:translate-x-0.5 transition-all">
-                    <ArrowRight className="w-3.5 h-3.5" />
+                    {onDeletePlan && (
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onDeletePlan(plan, e.currentTarget);
+                        }}
+                        className="p-1 rounded-md text-[var(--text-muted)] hover:text-[var(--danger)] hover:bg-[var(--danger-soft)] transition-colors cursor-pointer"
+                        title={`Delete plan "${plan.title}"`}
+                      >
+                        <Trash2 className="w-3.5 h-3.5" />
+                      </button>
+                    )}
+
+                    <div className="p-1 rounded text-[var(--text-muted)] group-hover:text-[var(--primary)] group-hover:translate-x-0.5 transition-all">
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
       )}
     </div>
   );

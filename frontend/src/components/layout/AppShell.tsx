@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { BrandLogo } from './BrandLogo';
 import { BRAND } from '../../config/brand';
+import { GlobalSearchBar } from './GlobalSearchBar';
 
 interface AppShellProps {
   currentView: 'dashboard' | 'wizard' | 'workspace' | 'library';
@@ -32,6 +33,9 @@ interface AppShellProps {
   children: React.ReactNode;
   searchQuery?: string;
   onSearchChange?: (q: string) => void;
+  onSelectPlan?: (planId: string) => void;
+  onSelectCurriculum?: (curriculumId: string) => void;
+  onSelectStandard?: (curriculumId: string, standardId: string) => void;
 }
 
 export const AppShell: React.FC<AppShellProps> = ({
@@ -46,6 +50,9 @@ export const AppShell: React.FC<AppShellProps> = ({
   children,
   searchQuery = '',
   onSearchChange,
+  onSelectPlan,
+  onSelectCurriculum,
+  onSelectStandard,
 }) => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -309,19 +316,12 @@ export const AppShell: React.FC<AppShellProps> = ({
                 <Menu className="h-5 w-5" />
               </button>
 
-              {/* Connected Search Field */}
-              <div className="relative w-full">
-                <Search className="absolute left-3.5 top-3 h-4 w-4 text-[var(--text-muted)]" />
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => {
-                    if (onSearchChange) onSearchChange(e.target.value);
-                  }}
-                  placeholder="Search lessons, topics, curriculum frameworks..."
-                  className="w-full rounded-2xl border border-[var(--border)] bg-[var(--surface)] pl-10 pr-4 py-2.5 text-xs text-[var(--text)] placeholder-[var(--text-muted)] shadow-[var(--shadow-inset)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:border-[var(--accent)] transition-all"
-                />
-              </div>
+              {/* Global Search Bar with real data, keyboard navigation & per-user scoping */}
+              <GlobalSearchBar
+                onSelectPlan={onSelectPlan}
+                onSelectCurriculum={onSelectCurriculum}
+                onSelectStandard={onSelectStandard}
+              />
             </div>
 
             {/* Right Controls: AI Status, Theme Toggle, Profile Menu */}

@@ -90,7 +90,7 @@ describe('Reference Materials - Trust Tier & Domain Authority', () => {
 });
 
 describe('Reference Materials - Link Verification State Mapping', () => {
-  it('maps reachable 200 responses to verified', async () => {
+  it('maps reachable 200 responses to verified and reachable', async () => {
     // Mock global fetch
     const originalFetch = globalThis.fetch;
     globalThis.fetch = vi.fn().mockResolvedValue({
@@ -102,6 +102,7 @@ describe('Reference Materials - Link Verification State Mapping', () => {
     try {
       const res = await verifyResourceUrl('https://openstax.org/details/books/biology-2e');
       expect(res.state).toBe('verified');
+      expect(res.linkStatus).toBe('reachable');
       expect(res.httpStatus).toBe(200);
       expect(res.lastCheckedAt).toBeDefined();
     } finally {
@@ -109,7 +110,7 @@ describe('Reference Materials - Link Verification State Mapping', () => {
     }
   });
 
-  it('maps 403 and 429 to unverified (honest bot protection tolerance)', async () => {
+  it('maps 403 and 429 to unverified and blocked (honest bot protection tolerance)', async () => {
     const originalFetch = globalThis.fetch;
     globalThis.fetch = vi.fn().mockResolvedValue({
       ok: false,
@@ -120,6 +121,7 @@ describe('Reference Materials - Link Verification State Mapping', () => {
     try {
       const res403 = await verifyResourceUrl('https://ncert.nic.in/protected-page');
       expect(res403.state).toBe('unverified');
+      expect(res403.linkStatus).toBe('blocked');
       expect(res403.httpStatus).toBe(403);
     } finally {
       globalThis.fetch = originalFetch;
@@ -134,13 +136,14 @@ describe('Reference Materials - Link Verification State Mapping', () => {
     try {
       const res429 = await verifyResourceUrl('https://api.example.org/rate-limited');
       expect(res429.state).toBe('unverified');
+      expect(res429.linkStatus).toBe('blocked');
       expect(res429.httpStatus).toBe(429);
     } finally {
       globalThis.fetch = originalFetch;
     }
   });
 
-  it('maps 404 and 410 to failed (dead links hidden from UI)', async () => {
+  it('maps 404 and 410 to failed and broken (dead links flagged honestly)', async () => {
     const originalFetch = globalThis.fetch;
     globalThis.fetch = vi.fn().mockResolvedValue({
       ok: false,
@@ -151,19 +154,21 @@ describe('Reference Materials - Link Verification State Mapping', () => {
     try {
       const res404 = await verifyResourceUrl('https://example.com/non-existent-page');
       expect(res404.state).toBe('failed');
+      expect(res404.linkStatus).toBe('broken');
       expect(res404.httpStatus).toBe(404);
     } finally {
       globalThis.fetch = originalFetch;
     }
   });
 
-  it('handles timeouts and network DNS failures safely as unverified / failed', async () => {
+  it('handles timeouts and network DNS failures safely as not_checked / broken', async () => {
     const originalFetch = globalThis.fetch;
     globalThis.fetch = vi.fn().mockRejectedValue(new Error('getaddrinfo ENOTFOUND fake-educational-domain.invalid'));
 
     try {
       const resDns = await verifyResourceUrl('https://fake-educational-domain.invalid');
       expect(resDns.state).toBe('failed');
+      expect(resDns.linkStatus).toBe('broken');
     } finally {
       globalThis.fetch = originalFetch;
     }
@@ -173,6 +178,7 @@ describe('Reference Materials - Link Verification State Mapping', () => {
     try {
       const resTimeout = await verifyResourceUrl('https://slow-responding-site.edu');
       expect(resTimeout.state).toBe('unverified');
+      expect(resTimeout.linkStatus).toBe('not_checked');
     } finally {
       globalThis.fetch = originalFetch;
     }

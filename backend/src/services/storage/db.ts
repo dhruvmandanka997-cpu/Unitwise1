@@ -97,6 +97,14 @@ export class PlanDatabase {
     );
   }
 
+  public getByUserId(userId: string): LessonPlan[] {
+    const targetUserId = userId || 'teacher_default';
+    return this.getAll().filter((p) => {
+      const planUser = p.userId || 'teacher_default';
+      return planUser === targetUserId;
+    });
+  }
+
   public getById(id: string): LessonPlan | undefined {
     return this.cache.get(id);
   }
@@ -133,6 +141,11 @@ export class PlanDatabase {
     return existed;
   }
 
+  public restore(plan: LessonPlan): void {
+    this.cache.set(plan.id, plan);
+    this.persist();
+  }
+
   public duplicate(id: string): LessonPlan | undefined {
     const original = this.cache.get(id);
     if (!original) return undefined;
@@ -144,6 +157,8 @@ export class PlanDatabase {
     clone.id = newId;
     clone.title = `${original.title} (Copy)`;
     clone.status = 'draft';
+    clone.statusChangedAt = undefined;
+    clone.previousStatus = undefined;
     clone.createdAt = now;
     clone.updatedAt = now;
 

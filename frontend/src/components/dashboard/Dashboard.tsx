@@ -10,7 +10,7 @@ import {
   ArrowRight,
   ChevronRight
 } from 'lucide-react';
-import { LessonPlan } from '../../types/plan';
+import { LessonPlan, PlanStatus } from '../../types/plan';
 import { TeacherTask, TaskStats } from '../../types/task';
 import { QUICK_START_TEMPLATES } from '../../data/templates';
 import { BRAND } from '../../config/brand';
@@ -20,6 +20,8 @@ import { PlanningProgressCard } from './PlanningProgressCard';
 import { UpcomingLessonsCard } from './UpcomingLessonsCard';
 import { QuickActionsCard } from './QuickActionsCard';
 import { RecentPlansCard } from './RecentPlansCard';
+import { ActivePlansCard } from './ActivePlansCard';
+import { ActivePlanSummary } from '../../services/api';
 import { 
   MathCoordinatePlaneVisual, 
   ScienceEcosystemVisual, 
@@ -34,10 +36,10 @@ interface DashboardProps {
   onOpenWizard: (templateId?: string) => void;
   onRefreshPlans: () => void;
   onDuplicatePlan: (id: string) => void;
-  onDeletePlan: (id: string) => void;
+  onDeletePlan: (plan: LessonPlan) => void;
   onRenamePlan: (id: string, newTitle: string) => void;
-  onUpdateStatus?: (id: string, status: 'draft' | 'completed' | 'archived') => void;
-  onViewLibrary?: () => void;
+  onUpdateStatus?: (id: string, status: PlanStatus) => void;
+  onViewLibrary?: (statusFilter?: string) => void;
   onOpenSettings?: () => void;
   tasks: TeacherTask[];
   taskStats: TaskStats;
@@ -46,6 +48,9 @@ interface DashboardProps {
   onContinueTaskWorkflow: (planId: string, tab?: string) => void;
   onRefreshTasks?: () => void;
   searchFilter?: string;
+  activeSummary?: ActivePlanSummary | null;
+  onDeactivatePlan?: (planId: string, planTitle: string) => void;
+  onOpenOverLimitModal?: () => void;
 }
 
 export const Dashboard: React.FC<DashboardProps> = ({
@@ -54,7 +59,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
   onSelectPlan,
   onOpenWizard,
   onDuplicatePlan: _onDuplicatePlan,
-  onDeletePlan: _onDeletePlan,
+  onDeletePlan,
   onRenamePlan: _onRenamePlan,
   onUpdateStatus: _onUpdateStatus,
   onViewLibrary,
@@ -66,6 +71,9 @@ export const Dashboard: React.FC<DashboardProps> = ({
   onContinueTaskWorkflow: _onContinueTaskWorkflow,
   onRefreshTasks: _onRefreshTasks,
   searchFilter: _searchFilter = '',
+  activeSummary = null,
+  onDeactivatePlan,
+  onOpenOverLimitModal,
 }) => {
   const [selectedTaskStatusFilter, setSelectedTaskStatusFilter] = useState<string>('ALL');
 
@@ -311,8 +319,20 @@ export const Dashboard: React.FC<DashboardProps> = ({
         </div>
 
         {/* ================= RIGHT COLUMN ================= */}
-        <div className="lg:col-span-5 xl:col-span-4 space-y-6">
+        <div className="lg:col-span-5 xl:col-span-4 space-y-6 min-w-0">
           
+          {/* Active Lesson Plans Card (Strict 3/3 Limit & Inactive Navigation) */}
+          <ActivePlansCard
+            summary={activeSummary}
+            plans={plans}
+            onSelectPlan={onSelectPlan}
+            onOpenWizard={() => onOpenWizard()}
+            onViewLibrary={onViewLibrary}
+            onDeactivatePlan={onDeactivatePlan || (() => {})}
+            onDeletePlan={onDeletePlan}
+            onOpenOverLimitModal={onOpenOverLimitModal || (() => {})}
+          />
+
           {/* Planning Progress Card with circular completion chart */}
           <PlanningProgressCard
             stats={taskStats}
@@ -346,6 +366,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             onSelectPlan={onSelectPlan}
             onViewLibrary={onViewLibrary}
             onOpenWizard={() => onOpenWizard()}
+            onDeletePlan={onDeletePlan}
           />
         </div>
       </div>

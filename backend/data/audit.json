@@ -1,0 +1,412 @@
+[
+  {
+    "id": "audit_zfe2kk2mvf3slwc",
+    "timestamp": "2026-10-19T10:20:28.764Z",
+    "userId": "teacher_default",
+    "planId": "plan_5gci336mv2dkgz3",
+    "planTitle": "",
+    "fromStatus": "active",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_gjr6n01mvf3ujgj",
+    "timestamp": "2026-10-19T10:21:58.915Z",
+    "userId": "teacher_default",
+    "planId": "plan_vikda6wmv80joa0",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_2xoigommvf42z3o",
+    "timestamp": "2026-10-19T10:28:32.436Z",
+    "userId": "teacher_default",
+    "planId": "plan_qneqaw2mvey7z15",
+    "planTitle": "",
+    "fromStatus": "active",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_gbxxx3omvf4r403",
+    "timestamp": "2026-10-19T10:47:18.531Z",
+    "userId": "teacher_default",
+    "planId": "cell_bio_unit_gr9_001",
+    "planTitle": "",
+    "fromStatus": "active",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_8sdhyu0mvf4tfd4",
+    "timestamp": "2026-10-19T10:49:06.568Z",
+    "userId": "teacher_default",
+    "planId": "plan_1sxmfawmv80cm57",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_o6nxznimvf4tktg",
+    "timestamp": "2026-10-19T10:49:13.636Z",
+    "userId": "teacher_default",
+    "planId": "plan_ddqkiizmv54vuwq",
+    "planTitle": "",
+    "fromStatus": "cancelled",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_cwqw4ewmvf5b5z3",
+    "timestamp": "2026-10-19T11:02:54.207Z",
+    "userId": "teacher_default",
+    "planId": "plan_k51rt2hmv9i74mu",
+    "planTitle": "",
+    "fromStatus": "cancelled",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_nyj4sa1mvf5ekvh",
+    "timestamp": "2026-10-19T11:05:33.485Z",
+    "userId": "teacher_default",
+    "planId": "plan_photosynthesis_g9_001",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_kvhvxttmvf5fb59",
+    "timestamp": "2026-10-19T11:06:07.533Z",
+    "userId": "teacher_default",
+    "planId": "plan_38j6c2wmv54vuw8",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_ve43j0kmvf5fc79",
+    "timestamp": "2026-10-19T11:06:08.901Z",
+    "userId": "teacher_default",
+    "planId": "plan_va97xodmv54vus5",
+    "planTitle": "",
+    "fromStatus": "completed",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_pja2utmmvf5fe8c",
+    "timestamp": "2026-10-19T11:06:11.532Z",
+    "userId": "teacher_default",
+    "planId": "plan_dwk8wn0mv54vuqo",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_g17dwq8mvf5ffky",
+    "timestamp": "2026-10-19T11:06:13.282Z",
+    "userId": "teacher_default",
+    "planId": "plan_gltfltsmv3wgqx4",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_g159vwumvf5fgjx",
+    "timestamp": "2026-10-19T11:06:14.541Z",
+    "userId": "teacher_default",
+    "planId": "plan_6zbzkjjmv3wgqwn",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_q1zo55gmvf5fhzs",
+    "timestamp": "2026-10-19T11:06:16.408Z",
+    "userId": "teacher_default",
+    "planId": "plan_mv6da09mv3wgqsy",
+    "planTitle": "",
+    "fromStatus": "completed",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_6rf8nb2mvf5fk0q",
+    "timestamp": "2026-10-19T11:06:19.034Z",
+    "userId": "teacher_default",
+    "planId": "plan_g9qu3ximv3wbpg1",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_5ctii48mvf5gl00",
+    "timestamp": "2026-10-19T11:07:06.960Z",
+    "userId": "teacher_default",
+    "planId": "plan_a592c2pmv3wgqrg",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_7l3lsddmvf5gor1",
+    "timestamp": "2026-10-19T11:07:11.821Z",
+    "userId": "teacher_default",
+    "planId": "plan_2l00p1amv3wap9j",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_lx9mzhjmvf5gqh7",
+    "timestamp": "2026-10-19T11:07:14.059Z",
+    "userId": "teacher_default",
+    "planId": "plan_yxfwrjimv3wap8z",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_0yd21xcmvf5grqw",
+    "timestamp": "2026-10-19T11:07:15.704Z",
+    "userId": "teacher_default",
+    "planId": "plan_d1pi8kumv3wap4e",
+    "planTitle": "",
+    "fromStatus": "completed",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_aarcdecmvf5gt1u",
+    "timestamp": "2026-10-19T11:07:17.394Z",
+    "userId": "teacher_default",
+    "planId": "plan_l5g65vymv3wap1z",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_f84rlkwmvf5gufu",
+    "timestamp": "2026-10-19T11:07:19.194Z",
+    "userId": "teacher_default",
+    "planId": "plan_9jz6le7mv3w7rtg",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_ulq5qldmvf5gvs7",
+    "timestamp": "2026-10-19T11:07:20.935Z",
+    "userId": "teacher_default",
+    "planId": "plan_qjpuntfmv3w7rt4",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_hr5cmhtmvf5gx5o",
+    "timestamp": "2026-10-19T11:07:22.716Z",
+    "userId": "teacher_default",
+    "planId": "plan_d0x263emv3w7rqo",
+    "planTitle": "",
+    "fromStatus": "completed",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_eh44dnwmvf5gz66",
+    "timestamp": "2026-10-19T11:07:25.326Z",
+    "userId": "teacher_default",
+    "planId": "plan_gv72jg4mv3w7rpx",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_yn1i8vamvf5h0qh",
+    "timestamp": "2026-10-19T11:07:27.352Z",
+    "userId": "teacher_default",
+    "planId": "plan_o99u8pgmv3vujss",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_cwegnvbmvf5h1xs",
+    "timestamp": "2026-10-19T11:07:28.912Z",
+    "userId": "teacher_default",
+    "planId": "plan_048yz0zmv3vujsg",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_9oyt9pfmvf5h37h",
+    "timestamp": "2026-10-19T11:07:30.557Z",
+    "userId": "teacher_default",
+    "planId": "plan_mh396v0mv3vujpp",
+    "planTitle": "",
+    "fromStatus": "completed",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_kbriannmvf5h49d",
+    "timestamp": "2026-10-19T11:07:31.921Z",
+    "userId": "teacher_default",
+    "planId": "plan_2ap0vmrmv3vujo8",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_3t9l239mvf5hanz",
+    "timestamp": "2026-10-19T11:07:40.223Z",
+    "userId": "teacher_default",
+    "planId": "plan_u12niv2mv3vbjwc",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_qvtuf8hmvf5heg9",
+    "timestamp": "2026-10-19T11:07:45.129Z",
+    "userId": "teacher_default",
+    "planId": "plan_mjcr3ocmv3vbjw1",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_fb8hhymmvf5hfrx",
+    "timestamp": "2026-10-19T11:07:46.845Z",
+    "userId": "teacher_default",
+    "planId": "plan_g6x6v27mv3vbjtl",
+    "planTitle": "",
+    "fromStatus": "completed",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_8zemg2gmvf5hgyp",
+    "timestamp": "2026-10-19T11:07:48.385Z",
+    "userId": "teacher_default",
+    "planId": "plan_ey0ro8nmv3vbjs8",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_affk34omvf5hil6",
+    "timestamp": "2026-10-19T11:07:50.490Z",
+    "userId": "teacher_default",
+    "planId": "plan_8iif2d1mv3uooxe",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_9t028f4mvf5hjqm",
+    "timestamp": "2026-10-19T11:07:51.982Z",
+    "userId": "teacher_default",
+    "planId": "plan_qqfq9n1mv3uoox1",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_v0kyiexmvf5l11q",
+    "timestamp": "2026-10-19T11:10:34.382Z",
+    "userId": "teacher_default",
+    "planId": "plan_qvmbmgamv3wbpb2",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_51ld1m2mvf5l35b",
+    "timestamp": "2026-10-19T11:10:37.103Z",
+    "userId": "teacher_default",
+    "planId": "plan_7g1y3unmv3wbpfl",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_fmga65pmvf5l528",
+    "timestamp": "2026-10-19T11:10:39.584Z",
+    "userId": "teacher_default",
+    "planId": "plan_g0au25ymv3uoov7",
+    "planTitle": "",
+    "fromStatus": "completed",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_i2rs2zymvf5l6n0",
+    "timestamp": "2026-10-19T11:10:41.628Z",
+    "userId": "teacher_default",
+    "planId": "plan_binh7wumv3ul938",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_p2y0qhdmvf5l7vs",
+    "timestamp": "2026-10-19T11:10:43.240Z",
+    "userId": "teacher_default",
+    "planId": "plan_87y90yfmv3ul92s",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_62vbqj4mvf5l96t",
+    "timestamp": "2026-10-19T11:10:44.933Z",
+    "userId": "teacher_default",
+    "planId": "plan_7pras7rmv3ul91b",
+    "planTitle": "",
+    "fromStatus": "completed",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  },
+  {
+    "id": "audit_9buf9t9mvf5lalv",
+    "timestamp": "2026-10-19T11:10:46.771Z",
+    "userId": "teacher_default",
+    "planId": "plan_kqwxby5mv3tctv8",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  }
+]

@@ -9,6 +9,7 @@ import {
   StandardAlignment,
   BloomLevel
 } from '../../models/plan';
+import { directoryDb } from '../directory/directoryDb';
 
 export class PedagogicalFallbackGenerator {
   public generate(rawInput: Partial<GeneratePlanInput> & {
@@ -75,6 +76,7 @@ export class PedagogicalFallbackGenerator {
           durationMinutes: input.classDurationMinutes,
           weekTheme: weekTheme.theme,
           standardsFramework: input.standardsFramework || input.curriculumFramework,
+          curriculumId: input.curriculumId || (rawInput as any)?.curriculumContext?.curriculumId,
           enableHomework: input.enableHomework,
         });
 
@@ -234,6 +236,7 @@ export class PedagogicalFallbackGenerator {
     durationMinutes: number;
     weekTheme: string;
     standardsFramework: string;
+    curriculumId?: string;
     enableHomework: boolean;
   }): SessionPlan {
     const {
@@ -247,6 +250,7 @@ export class PedagogicalFallbackGenerator {
       durationMinutes,
       weekTheme,
       standardsFramework,
+      curriculumId,
       enableHomework
     } = params;
 
@@ -271,17 +275,39 @@ export class PedagogicalFallbackGenerator {
       }
     ];
 
-    // Honest standards labeling
-    const standards: StandardAlignment[] = [
-      {
+    // Retrieval-grounded standards alignment:
+    // Check directoryDb for verified official standards matching this curriculum/subject/grade
+    const standards: StandardAlignment[] = [];
+    if (curriculumId) {
+      try {
+        const verifiedStandards = directoryDb.getStandards(curriculumId, subject, gradeLevel);
+        if (verifiedStandards.length > 0) {
+          const matched = verifiedStandards[(sessionNumber - 1) % verifiedStandards.length];
+          standards.push({
+            id: `std_${sessionNumber}_1`,
+            framework: standardsFramework,
+            code: matched.code,
+            description: `${matched.title}: ${matched.description}`,
+            lessonConnection: `Verified official standard (${matched.sourceName || 'Curriculum Authority'}). ${matched.officialUrl ? `Official source: ${matched.officialUrl}` : ''}`.trim(),
+            verificationStatus: 'verified',
+          });
+        }
+      } catch (err) {
+        console.warn('[PedagogicalFallback] Error reading standards from directoryDb:', err);
+      }
+    }
+
+    if (standards.length === 0) {
+      // Honest standards labeling fallback
+      standards.push({
         id: `std_${sessionNumber}_1`,
         framework: standardsFramework,
         code: `${subject.substring(0, 3).toUpperCase()}.${gradeLevel.includes('10') ? '10' : '9'}.${weekNumber}.${dayNumber}`,
         description: `Demonstrate mastery of grade-level competencies relating to ${sessionFocus.subtopic} and evidence-based problem formulation.`,
         lessonConnection: `Suggested pedagogical alignment; please confirm against your official syllabus. Directly addressed through the teacher modeling and student guided practice investigating ${sessionFocus.subtopic}.`,
         verificationStatus: 'suggested_unverified' // Honest labeling: not verified against an official live DB
-      }
-    ];
+      });
+    }
 
     const lessonSequence = [
       {

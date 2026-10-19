@@ -213,6 +213,13 @@ export class TaskDatabase {
     return count;
   }
 
+  public restoreTasks(tasks: TeacherTask[]): void {
+    for (const t of tasks) {
+      this.cache.set(t.id, t);
+    }
+    this.persist();
+  }
+
   /**
    * Synchronizes stored tasks with active plans.
    * - Generates tasks for newly created or imported plans.

@@ -8,6 +8,7 @@ import { verifyLink } from './linkVerifier';
 import { getTrustTier, deriveSourceName } from './trustedDomains';
 import { planDb } from '../storage/db';
 import { config } from '../../config';
+import { directoryDb } from '../directory/directoryDb';
 
 // In-memory cache for search results keyed by normalized query to prevent repeated web calls
 const searchCache = new Map<string, { timestamp: number; results: RawSearchResult[] }>();
@@ -128,16 +129,35 @@ export class ReferenceService {
   public async fetchAndAttachReferences(planId: string): Promise<LessonPlan> {
     const plan = planDb.getById(planId);
     if (!plan) {
-      throw new Error(`Plan ${planId} not found`);
+      console.warn(`[ReferenceService] Plan ${planId} not found or was deleted. Halting reference retrieval as a harmless no-op.`);
+      return { id: planId } as LessonPlan;
     }
 
-    // Set status to pending immediately in database
+    // Set status to pending immediately in database without upserting
     plan.referencesStatus = 'pending';
-    planDb.save(plan);
+    planDb.update(plan.id, { referencesStatus: 'pending' });
 
     try {
       const queryList = this.generateTargetedQueries(plan);
       const rawCandidates: RawSearchResult[] = [];
+
+      // Grounding: Include official verified syllabus documents from directoryDb
+      if (plan.curriculumContext?.curriculumId) {
+        try {
+          const dbDocs = directoryDb.getDocuments(plan.curriculumContext.curriculumId);
+          for (const doc of dbDocs) {
+            rawCandidates.push({
+              title: `${doc.title} (${plan.curriculumContext.labels.curriculum})`,
+              url: doc.officialUrl,
+              snippet: doc.shortExcerpt || `Official curriculum specification published by ${plan.curriculumContext.labels.curriculum}.`,
+              category: 'standards',
+              sourceName: plan.curriculumContext.labels.curriculum,
+            });
+          }
+        } catch (docErr) {
+          console.warn('[ReferenceService] Error fetching directory documents:', docErr);
+        }
+      }
 
       // Execute queries through active providers with cache check
       for (const qObj of queryList) {
@@ -246,8 +266,11 @@ export class ReferenceService {
           description: this.sanitizeDescription(item.cand.snippet || `${item.cand.title} - Educational material for ${plan.subject}.`),
           relatedWeek: item.cand.relatedWeek,
           relatedLesson: item.cand.relatedLesson,
+          linkStatus: check.linkStatus,
           verified: check.status === 'verified' ? 'verified' : 'unverified',
           lastCheckedAt: check.lastCheckedAt,
+          retrievedAt: new Date().toISOString(),
+          origin: 'retrieved',
           trustTier: item.tier,
         });
       }
@@ -255,16 +278,25 @@ export class ReferenceService {
       // Cap at 15 items maximum
       const finalReferences = verifiedReferences.slice(0, 15);
 
-      // Update plan
-      plan.references = finalReferences;
-      plan.referencesStatus = finalReferences.length > 0 ? 'ready' : 'partial';
-      planDb.save(plan);
+      // Check if plan was deleted while asynchronous reference fetching was ongoing
+      if (!planDb.getById(plan.id)) {
+        console.warn(`[ReferenceService] Plan ${plan.id} was deleted during background reference retrieval. Skipping update.`);
+        return plan;
+      }
 
-      return plan;
+      // Update plan references without upserting if deleted
+      const updatedStatus = finalReferences.length > 0 ? 'ready' : 'partial';
+      const updated = planDb.update(plan.id, {
+        references: finalReferences,
+        referencesStatus: updatedStatus,
+      });
+
+      return updated || plan;
     } catch (err) {
       console.error(`Failed to fetch references for plan ${planId}:`, err);
-      plan.referencesStatus = 'failed';
-      planDb.save(plan);
+      if (planDb.getById(planId)) {
+        planDb.update(planId, { referencesStatus: 'failed' });
+      }
       return plan;
     }
   }
@@ -304,8 +336,11 @@ export class ReferenceService {
       description: customInput.description?.trim() || 'Educator-added reference material.',
       relatedWeek: customInput.relatedWeek,
       relatedLesson: customInput.relatedLesson,
+      linkStatus: check.linkStatus,
       verified: check.status === 'verified' ? 'verified' : 'unverified',
       lastCheckedAt: check.lastCheckedAt,
+      retrievedAt: new Date().toISOString(),
+      origin: 'user-added',
       trustTier: getTrustTier(normUrl),
     };
 

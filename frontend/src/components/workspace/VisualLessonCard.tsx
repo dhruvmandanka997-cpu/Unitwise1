@@ -817,59 +817,76 @@ export const VisualLessonCard: React.FC<VisualLessonCardProps> = ({
                     </div>
                   ) : (
                     <div className="space-y-2.5">
-                      {lessonReferences.map((ref) => (
-                        <div
-                          key={ref.id}
-                          className="bg-white p-3 rounded-[12px] border border-[var(--border)] shadow-neu-sm space-y-1.5"
-                        >
-                          <div className="flex items-center justify-between gap-1.5">
-                            <span className="rounded-full bg-[var(--lavender-soft)] px-2 py-0.5 text-[9px] font-bold text-[var(--primary)] border border-[var(--border)] uppercase">
-                              {ref.category}
-                            </span>
-                            <span className={`text-[9px] font-bold px-1.5 py-0.2 rounded-full border ${
-                              ref.verified === 'verified'
-                                ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
-                                : 'bg-slate-100 text-slate-600 border-slate-200'
-                            }`}>
-                              {ref.verified === 'verified' ? '✓ Verified' : 'Unverified'}
-                            </span>
-                          </div>
+                      {lessonReferences.map((ref) => {
+                        const status = ref.linkStatus || (ref.verified === 'verified' ? 'reachable' : 'not_checked');
+                        return (
+                          <div
+                            key={ref.id}
+                            className="bg-[var(--surface)] p-3 rounded-[14px] border border-[var(--border)] shadow-neu-sm space-y-1.5"
+                          >
+                            <div className="flex items-center justify-between gap-1.5">
+                              <span className="rounded-full bg-[var(--lavender-soft)] px-2 py-0.5 text-[9px] font-bold text-[var(--primary)] border border-[var(--border)] uppercase">
+                                {ref.resourceType || ref.category}
+                              </span>
+                              {status === 'reachable' ? (
+                                <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 px-1.5 py-0.2 text-[9px] font-bold">
+                                  <CheckCircle2 className="w-2.5 h-2.5 text-emerald-600 dark:text-emerald-400" />
+                                  <span>Link checked</span>
+                                </span>
+                              ) : status === 'blocked' ? (
+                                <span className="inline-flex items-center gap-1 rounded-full bg-amber-50 dark:bg-amber-950/50 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800 px-1.5 py-0.2 text-[9px] font-semibold">
+                                  <HelpCircle className="w-2.5 h-2.5 text-amber-500" />
+                                  <span>Unverified</span>
+                                </span>
+                              ) : status === 'broken' ? (
+                                <span className="inline-flex items-center gap-1 rounded-full bg-red-50 dark:bg-red-950/50 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-800 px-1.5 py-0.2 text-[9px] font-bold">
+                                  <AlertCircle className="w-2.5 h-2.5 text-red-500" />
+                                  <span>Broken link</span>
+                                </span>
+                              ) : (
+                                <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 px-1.5 py-0.2 text-[9px] font-medium">
+                                  <HelpCircle className="w-2.5 h-2.5 text-slate-400" />
+                                  <span>Not checked</span>
+                                </span>
+                              )}
+                            </div>
 
-                          <div className="flex items-start justify-between gap-2">
-                            <div>
+                            <div className="flex items-start justify-between gap-2">
+                              <div>
+                                <a
+                                  href={ref.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="font-bold text-xs text-[var(--text)] hover:text-[var(--primary)] leading-snug line-clamp-1 block focus:outline-none focus:ring-1 focus:ring-[var(--primary)] rounded"
+                                  aria-label={`Open ${ref.title} on ${ref.sourceName}, opens in a new tab`}
+                                >
+                                  {ref.title}
+                                </a>
+                                <span className="text-[10px] font-medium text-[var(--primary)] block mt-0.5">
+                                  {ref.sourceName} &bull; {ref.resourceType}
+                                </span>
+                              </div>
+
                               <a
                                 href={ref.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="font-bold text-xs text-[var(--text)] hover:text-[var(--primary)] leading-snug line-clamp-1 block"
-                                aria-label={`Open ${ref.title} on ${ref.sourceName} in a new tab`}
+                                className="neu-btn-secondary inline-flex items-center gap-1 px-2.5 py-1 text-[10px] font-bold text-[var(--primary)] hover:bg-[var(--lavender-soft)] transition-colors flex-shrink-0 rounded-lg min-h-[30px]"
+                                aria-label={`Open ${ref.title} on ${ref.sourceName}, opens in a new tab`}
                               >
-                                {ref.title}
+                                <span>Open</span>
+                                <ExternalLink className="w-2.5 h-2.5" aria-hidden="true" />
                               </a>
-                              <span className="text-[10px] font-medium text-[var(--primary)] block mt-0.5">
-                                {ref.sourceName} &bull; {ref.resourceType}
-                              </span>
                             </div>
 
-                            <a
-                              href={ref.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="neu-btn-secondary inline-flex items-center gap-1 px-2 py-1 text-[10px] font-bold text-[var(--primary)] flex-shrink-0"
-                              aria-label={`Open ${ref.title} on ${ref.sourceName} in a new tab`}
-                            >
-                              <span>Open</span>
-                              <ExternalLink className="w-2.5 h-2.5" />
-                            </a>
+                            {ref.description && (
+                              <p className="text-[11px] text-[var(--text-muted)] leading-relaxed line-clamp-2">
+                                {ref.description}
+                              </p>
+                            )}
                           </div>
-
-                          {ref.description && (
-                            <p className="text-[11px] text-[var(--text-muted)] leading-relaxed line-clamp-2">
-                              {ref.description}
-                            </p>
-                          )}
-                        </div>
-                      ))}
+                        );
+                      })}
                     </div>
                   )}
                 </div>

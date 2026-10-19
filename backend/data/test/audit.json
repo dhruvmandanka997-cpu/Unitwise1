@@ -1,0 +1,12 @@
+[
+  {
+    "id": "audit_82wym1cmvf4zdkd",
+    "timestamp": "2026-10-19T10:53:44.173Z",
+    "userId": "teacher_a",
+    "planId": "plan_search_test",
+    "planTitle": "",
+    "fromStatus": "draft",
+    "toStatus": "deleted",
+    "reason": "Teacher confirmed permanent plan deletion"
+  }
+]

@@ -1,10 +1,18 @@
 {
-  "defaultCurriculum": "US Common Core & Next Generation Science Standards (NGSS)",
-  "defaultGradeLevel": "Grade 9 (High School / Freshman)",
+  "defaultCurriculum": "CBSE / ICSE (India)",
+  "defaultGradeLevel": "College / University (Undergraduate)",
   "preferredLanguage": "English",
   "preferredFormat": "session_sequence",
   "defaultClassDuration": 50,
   "theme": "light",
   "aiProvider": "gemini",
-  "apiKeyConfigured": false
+  "apiKeyConfigured": true,
+  "curriculumPreferences": {
+    "countryId": "in",
+    "curriculumId": "in-state-board",
+    "regionId": "gujarat",
+    "defaultGrade": "Class 8",
+    "catalogVersion": "1.0.0",
+    "updatedAt": "2026-10-17T09:40:52.586Z"
+  }
 }

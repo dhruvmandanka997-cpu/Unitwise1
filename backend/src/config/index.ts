@@ -66,5 +66,6 @@ export const config = {
   googleSearchApiKey: process.env.GOOGLE_SEARCH_API_KEY || '',
   googleSearchCx: process.env.GOOGLE_SEARCH_CX || '',
   referenceProvider: process.env.REFERENCE_PROVIDER || 'auto',
+  maxActivePlans: Number(process.env.MAX_ACTIVE_PLANS) || 3,
   dataDir: resolveDataDir(),
 };

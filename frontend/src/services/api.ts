@@ -1,9 +1,55 @@
-import { GeneratePlanInput, LessonPlan, SessionPlan, WeeklyPlan, ReferenceMaterial } from '../types/plan';
+import { GeneratePlanInput, LessonPlan, SessionPlan, WeeklyPlan, ReferenceMaterial, PlanStatus } from '../types/plan';
 import { TeacherTask, TaskStats } from '../types/task';
 import { CurriculumPreferences } from '../types/curriculum';
 import { CurriculumCatalog, ResolvedCurriculumLabels } from '../config/curriculumCatalog';
+import {
+  DirectoryCountry,
+  DirectoryRegion,
+  DirectoryCurriculum,
+  DirectoryCurriculumDetail,
+  DirectoryCoverageReport,
+  DirectorySuggestion,
+  DirectorySuggestionInput,
+} from '../types/directory';
+import { SearchResponse, SearchResultItem } from '../types/search';
 
 const API_BASE = (import.meta.env.VITE_API_BASE_URL as string) || '/api';
+
+export function getAuthUserId(): string {
+  return localStorage.getItem('unitwise_user_id') || 'teacher_default';
+}
+
+export function getAuthHeaders(): Record<string, string> {
+  const userId = getAuthUserId();
+  return {
+    'Accept': 'application/json',
+    'Authorization': `Bearer ${userId}`,
+    'X-User-Id': userId,
+  };
+}
+
+export interface ActivePlanSummary {
+  userId: string;
+  activeCount: number;
+  maxActivePlans: number;
+  isAtLimit: boolean;
+  isOverLimit: boolean;
+  activePlans: Array<{
+    id: string;
+    title: string;
+    subject: string;
+    gradeLevel: string;
+    updatedAt: string;
+    statusChangedAt?: string;
+  }>;
+}
+
+export interface ActiveLimitReachedErrorPayload {
+  error: string;
+  code: 'ACTIVE_LIMIT_REACHED';
+  limit: number;
+  activePlans: Array<{ id: string; title: string; subject: string; gradeLevel: string }>;
+}
 
 export interface HealthResponse {
   status: string;
@@ -97,14 +143,104 @@ export const api = {
     return res.json();
   },
 
+  async getActiveSummary(): Promise<ActivePlanSummary> {
+    const res = await fetch(`${API_BASE}/plans/active-summary`, {
+      headers: getAuthHeaders(),
+    });
+    if (!res.ok) throw new Error('Failed to fetch active plans summary');
+    return res.json();
+  },
+
+  async activatePlan(id: string, reason?: string): Promise<{ success: boolean; plan: LessonPlan; isIdempotent: boolean; summary: ActivePlanSummary }> {
+    const res = await fetch(`${API_BASE}/plans/${id}/activate`, {
+      method: 'POST',
+      headers: { ...getAuthHeaders(), 'Content-Type': 'application/json' },
+      body: JSON.stringify({ reason }),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      const error: any = new Error(err.error || 'Failed to activate plan');
+      error.code = err.code;
+      error.status = res.status;
+      error.limit = err.limit;
+      error.activePlans = err.activePlans;
+      throw error;
+    }
+    return res.json();
+  },
+
+  async deactivatePlan(id: string, reason?: string): Promise<{ success: boolean; plan: LessonPlan; summary: ActivePlanSummary }> {
+    const res = await fetch(`${API_BASE}/plans/${id}/deactivate`, {
+      method: 'POST',
+      headers: { ...getAuthHeaders(), 'Content-Type': 'application/json' },
+      body: JSON.stringify({ reason }),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.error || 'Failed to deactivate plan');
+    }
+    return res.json();
+  },
+
+  async updatePlanStatus(id: string, status: PlanStatus, reason?: string): Promise<{ success: boolean; plan: LessonPlan; summary: ActivePlanSummary }> {
+    const res = await fetch(`${API_BASE}/plans/${id}/status`, {
+      method: 'POST',
+      headers: { ...getAuthHeaders(), 'Content-Type': 'application/json' },
+      body: JSON.stringify({ status, reason }),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      const error: any = new Error(err.error || 'Failed to update plan status');
+      error.code = err.code;
+      error.status = res.status;
+      error.limit = err.limit;
+      error.activePlans = err.activePlans;
+      throw error;
+    }
+    return res.json();
+  },
+
+  async swapActivePlans(deactivatePlanId: string, activatePlanId: string, reason?: string): Promise<{ success: boolean; deactivatedPlan: LessonPlan; activatedPlan: LessonPlan; summary: ActivePlanSummary }> {
+    const res = await fetch(`${API_BASE}/plans/swap`, {
+      method: 'POST',
+      headers: { ...getAuthHeaders(), 'Content-Type': 'application/json' },
+      body: JSON.stringify({ deactivatePlanId, activatePlanId, reason }),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.error || 'Failed to swap active plans');
+    }
+    return res.json();
+  },
+
+  async resolveOverLimitActivePlans(keepPlanIds: string[], expectedActivePlanIds: string[], reason?: string): Promise<{ success: boolean; keptPlans: LessonPlan[]; deactivatedPlans: LessonPlan[]; summary: ActivePlanSummary }> {
+    const res = await fetch(`${API_BASE}/plans/active/resolve`, {
+      method: 'POST',
+      headers: { ...getAuthHeaders(), 'Content-Type': 'application/json' },
+      body: JSON.stringify({ keepPlanIds, expectedActivePlanIds, reason }),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      const error: any = new Error(err.error || 'Failed to resolve active plans limit');
+      error.code = err.code;
+      error.freshActivePlans = err.freshActivePlans;
+      throw error;
+    }
+    return res.json();
+  },
+
   async getPlans(): Promise<LessonPlan[]> {
-    const res = await fetch(`${API_BASE}/plans`);
+    const res = await fetch(`${API_BASE}/plans`, {
+      headers: getAuthHeaders(),
+    });
     if (!res.ok) throw new Error('Failed to fetch plans');
     return res.json();
   },
 
   async getPlan(id: string): Promise<LessonPlan> {
-    const res = await fetch(`${API_BASE}/plans/${id}`);
+    const res = await fetch(`${API_BASE}/plans/${id}`, {
+      headers: getAuthHeaders(),
+    });
     if (!res.ok) throw new Error(`Plan not found: ${id}`);
     return res.json();
   },
@@ -112,7 +248,7 @@ export const api = {
   async createPlan(plan: LessonPlan): Promise<LessonPlan> {
     const res = await fetch(`${API_BASE}/plans`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { ...getAuthHeaders(), 'Content-Type': 'application/json' },
       body: JSON.stringify(plan),
     });
     if (!res.ok) throw new Error('Failed to create plan');
@@ -122,33 +258,46 @@ export const api = {
   async updatePlan(id: string, partial: Partial<LessonPlan>): Promise<LessonPlan> {
     const res = await fetch(`${API_BASE}/plans/${id}`, {
       method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { ...getAuthHeaders(), 'Content-Type': 'application/json' },
       body: JSON.stringify(partial),
     });
-    if (!res.ok) throw new Error('Failed to update plan');
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      const error: any = new Error(err.error || 'Failed to update plan');
+      error.code = err.code;
+      error.status = res.status;
+      error.limit = err.limit;
+      error.activePlans = err.activePlans;
+      throw error;
+    }
     return res.json();
   },
 
-  async deletePlan(id: string): Promise<{ success: boolean; id: string }> {
+  async deletePlan(id: string): Promise<{ success: boolean; id: string; message?: string; freedActiveSlot?: boolean }> {
     const res = await fetch(`${API_BASE}/plans/${id}`, {
       method: 'DELETE',
+      headers: getAuthHeaders(),
     });
-    if (!res.ok) throw new Error('Failed to delete plan');
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.error || 'Failed to delete plan');
+    }
     return res.json();
   },
 
   async duplicatePlan(id: string): Promise<LessonPlan> {
     const res = await fetch(`${API_BASE}/plans/${id}/duplicate`, {
       method: 'POST',
+      headers: getAuthHeaders(),
     });
     if (!res.ok) throw new Error('Failed to duplicate plan');
     return res.json();
   },
 
-  async generatePlan(input: GeneratePlanInput): Promise<LessonPlan> {
+  async generatePlan(input: GeneratePlanInput): Promise<LessonPlan & { savedAsDraftDueToLimit?: boolean; limitNotice?: string }> {
     const res = await fetch(`${API_BASE}/generate`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { ...getAuthHeaders(), 'Content-Type': 'application/json' },
       body: JSON.stringify(input),
     });
     if (!res.ok) {
@@ -327,6 +476,122 @@ export const api = {
       const err = await res.json().catch(() => ({ message: 'Failed to delete reference' }));
       throw new Error(err.message || 'Failed to delete reference');
     }
+    return res.json();
+  },
+
+  // --- Directory Endpoints ---
+
+  async getCountries(search?: string, limit?: number): Promise<{ total: number; countries: DirectoryCountry[] }> {
+    const params = new URLSearchParams();
+    if (search) params.append('search', search);
+    if (limit) params.append('limit', limit.toString());
+    const res = await fetch(`${API_BASE}/directory/countries?${params.toString()}`);
+    if (!res.ok) throw new Error('Failed to fetch countries');
+    return res.json();
+  },
+
+  async getRegions(countryIso2: string): Promise<{ countryIso2: string; total: number; regions: DirectoryRegion[] }> {
+    const res = await fetch(`${API_BASE}/directory/countries/${encodeURIComponent(countryIso2)}/regions`);
+    if (!res.ok) throw new Error('Failed to fetch subdivisions for country');
+    return res.json();
+  },
+
+  async getCurricula(filters?: {
+    country?: string;
+    region?: string;
+    scope?: string;
+    pathway?: string;
+    search?: string;
+    status?: string;
+  }): Promise<{ total: number; curricula: DirectoryCurriculum[] }> {
+    const params = new URLSearchParams();
+    if (filters?.country) params.append('country', filters.country);
+    if (filters?.region) params.append('region', filters.region);
+    if (filters?.scope) params.append('scope', filters.scope);
+    if (filters?.pathway) params.append('pathway', filters.pathway);
+    if (filters?.search) params.append('search', filters.search);
+    if (filters?.status) params.append('status', filters.status);
+    const res = await fetch(`${API_BASE}/directory/curricula?${params.toString()}`);
+    if (!res.ok) throw new Error('Failed to fetch curricula');
+    return res.json();
+  },
+
+  async getCurriculumById(id: string): Promise<DirectoryCurriculumDetail> {
+    const res = await fetch(`${API_BASE}/directory/curricula/${encodeURIComponent(id)}`);
+    if (!res.ok) throw new Error(`Failed to fetch curriculum: ${id}`);
+    return res.json();
+  },
+
+  async submitCurriculumSuggestion(data: DirectorySuggestionInput): Promise<{ success: boolean; message: string; suggestion: DirectorySuggestion }> {
+    const res = await fetch(`${API_BASE}/directory/suggest`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({ error: 'Failed to submit suggestion' }));
+      throw new Error(err.error || 'Failed to submit suggestion');
+    }
+    return res.json();
+  },
+
+  async getCurriculumSuggestions(status?: string): Promise<{ total: number; suggestions: DirectorySuggestion[] }> {
+    const url = status ? `${API_BASE}/directory/suggestions?status=${encodeURIComponent(status)}` : `${API_BASE}/directory/suggestions`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('Failed to fetch curriculum suggestions');
+    return res.json();
+  },
+
+  async reviewCurriculumSuggestion(
+    id: string,
+    decision: 'approved' | 'rejected',
+    reviewNotes?: string
+  ): Promise<{ success: boolean; suggestion: DirectorySuggestion; createdCurriculum?: DirectoryCurriculum }> {
+    const res = await fetch(`${API_BASE}/directory/suggestions/${encodeURIComponent(id)}/review`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ decision, reviewNotes }),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({ error: 'Failed to review suggestion' }));
+      throw new Error(err.error || 'Failed to review suggestion');
+    }
+    return res.json();
+  },
+
+  async getDirectoryCoverage(): Promise<DirectoryCoverageReport> {
+    const res = await fetch(`${API_BASE}/directory/coverage`);
+    if (!res.ok) throw new Error('Failed to fetch directory coverage report');
+    return res.json();
+  },
+
+  async search(
+    query: string,
+    options?: { limit?: number; types?: string[] },
+    signal?: AbortSignal
+  ): Promise<SearchResponse> {
+    const params = new URLSearchParams();
+    params.set('q', query);
+    if (options?.limit) params.set('limit', String(options.limit));
+    if (options?.types && options.types.length > 0) params.set('types', options.types.join(','));
+
+    const userId = localStorage.getItem('unitwise_user_id') || 'teacher_default';
+
+    const res = await fetch(`${API_BASE}/search?${params.toString()}`, {
+      method: 'GET',
+      headers: {
+        'Accept': 'application/json',
+        'Authorization': `Bearer ${userId}`,
+        'X-User-Id': userId,
+      },
+      signal,
+    });
+
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({ error: 'Search failed' }));
+      throw new Error(err.error || `Search failed with status ${res.status}`);
+    }
+
     return res.json();
   },
 };

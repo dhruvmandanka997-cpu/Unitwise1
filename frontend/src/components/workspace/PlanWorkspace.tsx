@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback, useLayoutEffect, useMemo } from 'react';
 import { 
   ArrowLeft, 
+  ArrowRight,
   Save, 
   Download, 
   Sparkles, 
@@ -27,16 +28,22 @@ import {
   Filter,
   X,
   CheckSquare,
-  ExternalLink
+  ExternalLink,
+  Flame,
+  Pause,
+  RotateCcw,
+  Copy,
+  MoreVertical
 } from 'lucide-react';
-import { LessonPlan, SessionPlan, WeeklyPlan, LearningObjective } from '../../types/plan';
+import { LessonPlan, SessionPlan, WeeklyPlan, LearningObjective, PlanStatus } from '../../types/plan';
 import { TeacherTask, TaskStats } from '../../types/task';
-import { api } from '../../services/api';
+import { api, ActivePlanSummary } from '../../services/api';
 import { VisualLessonCard } from './VisualLessonCard';
 import { TaskOverviewPanel } from '../tasks/TaskOverviewPanel';
 import { TaskTrackerView } from '../tasks/TaskTrackerView';
 import { ReferenceMaterialsView } from '../references/ReferenceMaterialsView';
 import { BRAND } from '../../config/brand';
+import { CURRICULUM_CATALOG } from '../../config/curriculumCatalog';
 
 interface AutoExpandingTextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   value: string;
@@ -94,25 +101,45 @@ interface PlanWorkspaceProps {
   onToggleChecklist?: (taskId: string, itemId: string, completed: boolean) => Promise<void>;
   onUpdateTask?: (taskId: string, partial: Partial<TeacherTask>) => Promise<void>;
   onRefreshTasks?: () => void;
+  activeSummary?: ActivePlanSummary | null;
+  onActivatePlan?: (plan: LessonPlan) => Promise<void>;
+  onDeactivatePlan?: (planId: string, planTitle: string) => void;
+  onUpdateStatus?: (planId: string, status: PlanStatus) => Promise<void>;
+  onDeletePlan?: (plan: LessonPlan, triggerEl?: HTMLElement) => void;
 }
 
 export const PlanWorkspace: React.FC<PlanWorkspaceProps> = ({
   plan: initialPlan,
   onBack,
   onSavePlan,
+  onDuplicatePlan,
   initialTab = 'overview',
   tasks = [],
   onToggleChecklist,
   onUpdateTask,
   onRefreshTasks,
+  activeSummary,
+  onActivatePlan,
+  onDeactivatePlan,
+  onUpdateStatus,
+  onDeletePlan,
 }) => {
   const [currentPlan, setCurrentPlan] = useState<LessonPlan>(initialPlan);
   const [activeTab, setActiveTab] = useState<TabType>(initialTab);
   const [selectedTaskStatusFilter, setSelectedTaskStatusFilter] = useState<string>('ALL');
+  const [isMoreMenuOpen, setIsMoreMenuOpen] = useState(false);
+  const [isPlanDeletedState, setIsPlanDeletedState] = useState(false);
+
+  const handleTabChange = (newTab: TabType) => {
+    setActiveTab(newTab);
+    if (window.scrollY > 0) {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+  };
 
   useEffect(() => {
     if (initialTab) {
-      setActiveTab(initialTab);
+      handleTabChange(initialTab);
     }
   }, [initialTab]);
 
@@ -140,6 +167,57 @@ export const PlanWorkspace: React.FC<PlanWorkspaceProps> = ({
   // AI adaptation loading state
   const [aiLoadingSessionNum, setAiLoadingSessionNum] = useState<number | null>(null);
   const [, setAiLoadingWeekNum] = useState<number | null>(null);
+
+  // Curriculum Assignment State for plans without curriculumContext
+  const [isAddingCurriculum, setIsAddingCurriculum] = useState(false);
+  const [assignCountryId, setAssignCountryId] = useState('in');
+  const [assignCurriculumId, setAssignCurriculumId] = useState('cbse');
+  const [assignRegionId, setAssignRegionId] = useState('');
+  const [isAssigning, setIsAssigning] = useState(false);
+  const [assignError, setAssignError] = useState<string | null>(null);
+  const [userPrefs, setUserPrefs] = useState<{ preferences: any; resolvedLabels: any } | null>(null);
+
+  useEffect(() => {
+    api.getCurriculumPreferences().then((res) => {
+      if (res && res.preferences) {
+        setUserPrefs(res);
+        setAssignCountryId(res.preferences.countryId);
+        setAssignCurriculumId(res.preferences.curriculumId);
+        setAssignRegionId(res.preferences.regionId || '');
+      }
+    }).catch(() => {});
+  }, []);
+
+  const handleAssignCurriculum = async (useSavedPrefs = false) => {
+    setIsAssigning(true);
+    setAssignError(null);
+    try {
+      const cId = useSavedPrefs && userPrefs?.preferences ? userPrefs.preferences.countryId : assignCountryId;
+      const currId = useSavedPrefs && userPrefs?.preferences ? userPrefs.preferences.curriculumId : assignCurriculumId;
+      const regId = useSavedPrefs && userPrefs?.preferences ? userPrefs.preferences.regionId : assignRegionId;
+      const otherCountry = useSavedPrefs && userPrefs?.preferences ? userPrefs.preferences.otherCountryText : undefined;
+      const otherCurr = useSavedPrefs && userPrefs?.preferences ? userPrefs.preferences.otherCurriculumText : undefined;
+
+      const res = await api.setPlanCurriculum(currentPlan.id, {
+        countryId: cId,
+        curriculumId: currId,
+        regionId: regId || undefined,
+        grade: currentPlan.gradeLevel,
+        otherCountryText: otherCountry,
+        otherCurriculumText: otherCurr,
+      });
+      if (res && res.plan) {
+        setCurrentPlan(res.plan);
+        await onSavePlan(res.plan);
+        setIsAddingCurriculum(false);
+      }
+    } catch (err: unknown) {
+      const e = err as Error;
+      setAssignError(e.message || 'Failed to update plan curriculum');
+    } finally {
+      setIsAssigning(false);
+    }
+  };
 
   // Standards Alignment Tab State & Aggregation
   const [standardsSearchQuery, setStandardsSearchQuery] = useState('');
@@ -244,12 +322,48 @@ export const PlanWorkspace: React.FC<PlanWorkspaceProps> = ({
       setIsDirty(false);
       setSaveSuccess(true);
       setTimeout(() => setSaveSuccess(false), 2500);
-    } catch (err) {
+    } catch (err: any) {
       console.error('Failed to save plan:', err);
+      if (err?.status === 404 || err?.message?.toLowerCase().includes('not found')) {
+        setIsPlanDeletedState(true);
+        setIsDirty(false);
+        return;
+      }
+      alert(err?.message || 'Failed to save plan.');
     } finally {
       setIsSaving(false);
     }
   };
+
+  // Support Ctrl/Cmd+S to save while on the editor page, preventing the browser save dialog
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') {
+        e.preventDefault();
+        e.stopPropagation();
+        if (!isSaving) {
+          handleSave();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [currentPlan, isSaving]);
+
+  // Warn before leaving with unsaved changes
+  useEffect(() => {
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      if (isDirty) {
+        e.preventDefault();
+        e.returnValue = '';
+        return '';
+      }
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, [isDirty]);
 
   // --- Session Mutations ---
   const handleUpdateSession = (weekNum: number, sessionNum: number, updater: (s: SessionPlan) => SessionPlan) => {
@@ -626,8 +740,8 @@ export const PlanWorkspace: React.FC<PlanWorkspaceProps> = ({
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8 space-y-6">
-      {/* Top Workspace Action Sub-Bar */}
-      <div className="sticky top-16 z-20 -mx-4 -mt-4 mb-4 border-b border-[var(--border)] bg-[var(--bg)]/95 px-4 py-3.5 backdrop-blur-md sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 transition-colors">
+      {/* Top Workspace Action Sub-Bar & Tabs in normal document flow */}
+      <div className="border-b border-[var(--border)] bg-[var(--surface)] -mx-4 -mt-4 mb-6 px-4 py-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 transition-colors">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3 min-w-0">
             <button
@@ -675,26 +789,108 @@ export const PlanWorkspace: React.FC<PlanWorkspaceProps> = ({
                     <span>{currentPlan.curriculumContext.labels.summary}</span>
                   </span>
                 ) : (
-                  <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 dark:bg-slate-800 px-2.5 py-0.5 text-[10px] font-medium text-[var(--text-muted)] border border-[var(--border)]">
-                    No curriculum set
+                  <span className="inline-flex items-center gap-1.5">
+                    <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 dark:bg-slate-800 px-2.5 py-0.5 text-[10px] font-medium text-[var(--text-muted)] border border-[var(--border)]">
+                      No curriculum set
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => setIsAddingCurriculum(true)}
+                      className="text-[10px] font-semibold text-[var(--primary)] hover:underline inline-flex items-center gap-0.5 cursor-pointer"
+                      title="Set curriculum for this plan"
+                    >
+                      + Set curriculum
+                    </button>
                   </span>
                 )}
-                <select
-                  value={currentPlan.status}
-                  onChange={(e) => handleUpdate({ ...currentPlan, status: e.target.value as 'draft' | 'completed' | 'archived' })}
-                  className={`rounded-full px-2.5 py-0.5 text-[10px] font-semibold border transition-colors cursor-pointer ${
-                    currentPlan.status === 'completed'
-                      ? 'bg-[var(--lavender-soft)] text-[var(--primary)] border-[var(--border)]'
-                      : currentPlan.status === 'archived'
-                      ? 'bg-slate-100 text-[var(--text-muted)] border-[var(--border)]'
-                      : 'bg-white text-[var(--text-muted)] border-[var(--border)]'
-                  }`}
-                  title="Plan status"
-                >
-                  <option value="draft">Draft</option>
-                  <option value="completed">Completed</option>
-                  <option value="archived">Archived</option>
-                </select>
+                {/* Plan Status Badge */}
+                {currentPlan.status === 'active' ? (
+                  <span
+                    className="inline-flex items-center gap-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 px-2.5 py-0.5 text-[10px] font-bold"
+                    title="This plan is actively being taught and counts toward the 3-plan limit"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                    <span>Active</span>
+                  </span>
+                ) : currentPlan.status === 'completed' ? (
+                  <span
+                    className="inline-flex items-center gap-1 rounded-full bg-[var(--lavender-soft)] text-[var(--primary)] border border-[var(--border)] px-2.5 py-0.5 text-[10px] font-bold"
+                    title="Completed unit. Preserved in full as curriculum history."
+                  >
+                    <CheckCircle2 className="w-3 h-3 text-[var(--primary)]" />
+                    <span>Completed</span>
+                  </span>
+                ) : currentPlan.status === 'cancelled' || (currentPlan as any).status === 'archived' ? (
+                  <span
+                    className="inline-flex items-center gap-1 rounded-full bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800 px-2.5 py-0.5 text-[10px] font-bold"
+                    title="Inactive plan. Fully reversible at any time."
+                  >
+                    <Pause className="w-3 h-3 text-amber-600 dark:text-amber-400" />
+                    <span>Inactive</span>
+                  </span>
+                ) : (
+                  <span
+                    className="inline-flex items-center gap-1 rounded-full bg-slate-100 dark:bg-slate-800 text-[var(--text-muted)] border border-[var(--border)] px-2.5 py-0.5 text-[10px] font-bold"
+                    title="Draft unit. Not counted toward active limit."
+                  >
+                    <FileText className="w-3 h-3 text-[var(--text-muted)]" />
+                    <span>Draft</span>
+                  </span>
+                )}
+
+                {/* Valid Contextual Status Actions */}
+                {currentPlan.status === 'active' ? (
+                  <div className="inline-flex items-center gap-1.5">
+                    <button
+                      type="button"
+                      onClick={() => onDeactivatePlan?.(currentPlan.id, currentPlan.title)}
+                      className="inline-flex items-center gap-1 px-2 py-0.5 text-[10px] font-semibold text-slate-600 dark:text-slate-400 hover:text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/50 rounded-md border border-[var(--border)] transition-colors cursor-pointer"
+                      title="Deactivate this plan to free up an active slot (never deleted)"
+                    >
+                      <Pause className="w-2.5 h-2.5" />
+                      <span>Deactivate</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => onUpdateStatus?.(currentPlan.id, 'completed')}
+                      className="inline-flex items-center gap-1 px-2 py-0.5 text-[10px] font-semibold text-[var(--primary)] hover:bg-[var(--lavender-soft)] rounded-md border border-[var(--border)] transition-colors cursor-pointer"
+                      title="Mark this unit as completed"
+                    >
+                      <CheckCircle2 className="w-2.5 h-2.5" />
+                      <span>Complete</span>
+                    </button>
+                  </div>
+                ) : currentPlan.status === 'draft' ? (
+                  <button
+                    type="button"
+                    onClick={() => onActivatePlan?.(currentPlan)}
+                    className="inline-flex items-center gap-1 px-2.5 py-0.5 text-[10px] font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-full transition-colors shadow-sm cursor-pointer"
+                    title={activeSummary?.isAtLimit ? "Active limit reached (3/3). Click to swap." : "Activate this lesson plan"}
+                  >
+                    <Flame className="w-3 h-3 text-white" />
+                    <span>Activate Plan</span>
+                  </button>
+                ) : currentPlan.status === 'cancelled' || (currentPlan as any).status === 'archived' ? (
+                  <button
+                    type="button"
+                    onClick={() => onActivatePlan?.(currentPlan)}
+                    className="inline-flex items-center gap-1 px-2.5 py-0.5 text-[10px] font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-full transition-colors shadow-sm cursor-pointer"
+                    title={activeSummary?.isAtLimit ? "Active limit reached (3/3). Click to swap." : "Reactivate this lesson plan"}
+                  >
+                    <Flame className="w-3 h-3 text-white" />
+                    <span>Reactivate</span>
+                  </button>
+                ) : currentPlan.status === 'completed' ? (
+                  <button
+                    type="button"
+                    onClick={() => onActivatePlan?.(currentPlan)}
+                    className="inline-flex items-center gap-1 px-2.5 py-0.5 text-[10px] font-bold text-[var(--primary)] bg-[var(--lavender-soft)] hover:bg-[var(--lavender-soft)]/80 border border-[var(--border)] rounded-full transition-colors cursor-pointer"
+                    title={activeSummary?.isAtLimit ? "Active limit reached (3/3). Click to swap." : "Reopen this completed lesson plan"}
+                  >
+                    <RotateCcw className="w-3 h-3" />
+                    <span>Reopen Plan</span>
+                  </button>
+                ) : null}
                 {currentPlan.isDemo && (
                   <span className="rounded-full bg-[var(--lavender-soft)] px-2 py-0.5 text-[10px] font-semibold text-[var(--primary)] border border-[var(--border)]">
                     Demo Mode
@@ -702,11 +898,11 @@ export const PlanWorkspace: React.FC<PlanWorkspaceProps> = ({
                 )}
                 <button
                   type="button"
-                  onClick={() => setActiveTab('tasks')}
+                  onClick={() => handleTabChange('tasks')}
                   className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-semibold border transition-colors cursor-pointer ${
                     planTaskStats.completionPercentage === 100
                       ? 'bg-[var(--lavender-soft)] text-[var(--primary)] border-[var(--border)]'
-                      : 'bg-white text-[var(--primary)] border-[var(--border)]'
+                      : 'bg-[var(--surface)] text-[var(--primary)] border-[var(--border)]'
                   }`}
                   title="View plan task milestones"
                 >
@@ -759,7 +955,7 @@ export const PlanWorkspace: React.FC<PlanWorkspaceProps> = ({
                 <ChevronDown className="h-3 w-3 text-[var(--text-muted)]" />
               </button>
 
-              <div className="absolute right-0 top-full mt-1 hidden w-48 rounded-[16px] border border-[var(--border)] bg-white py-1.5 shadow-neu-raised group-hover:block z-50 animate-fadeIn">
+              <div className="absolute right-0 top-full mt-1 hidden w-48 rounded-[16px] border border-[var(--border)] bg-[var(--surface)] py-1.5 shadow-neu-raised group-hover:block z-50 animate-fadeIn">
                 <a
                   href={api.getExportDocxUrl(currentPlan.id)}
                   target="_blank"
@@ -807,6 +1003,56 @@ export const PlanWorkspace: React.FC<PlanWorkspaceProps> = ({
               <Share2 className="h-3.5 w-3.5 text-[var(--primary)]" />
               {copySuccess ? 'Copied' : 'Share'}
             </button>
+
+            {/* Overflow "More" menu for secondary & destructive actions */}
+            <div className="relative">
+              <button
+                type="button"
+                onClick={() => setIsMoreMenuOpen((prev) => !prev)}
+                className="neu-btn-secondary inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-[var(--text)] cursor-pointer"
+                title="More actions"
+                aria-label="More plan actions"
+                aria-haspopup="true"
+                aria-expanded={isMoreMenuOpen}
+              >
+                <MoreVertical className="h-3.5 w-3.5 text-[var(--text-muted)]" />
+                <span>More</span>
+                <ChevronDown className="h-3 w-3 text-[var(--text-muted)]" />
+              </button>
+
+              {isMoreMenuOpen && (
+                <div
+                  className="absolute right-0 top-full mt-1.5 w-48 rounded-[16px] border border-[var(--border)] bg-[var(--surface)] py-1.5 shadow-neu-raised z-50 animate-fadeIn"
+                  onMouseLeave={() => setIsMoreMenuOpen(false)}
+                >
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setIsMoreMenuOpen(false);
+                      onDuplicatePlan(currentPlan.id);
+                    }}
+                    className="flex w-full items-center gap-2 px-3.5 py-2 text-xs font-semibold text-[var(--text)] hover:bg-[var(--lavender-soft)] transition-colors cursor-pointer"
+                  >
+                    <Copy className="h-3.5 w-3.5 text-[var(--text-muted)]" />
+                    <span>Duplicate Plan</span>
+                  </button>
+
+                  <div className="my-1 border-t border-[var(--border)]" />
+
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      setIsMoreMenuOpen(false);
+                      onDeletePlan?.(currentPlan, e.currentTarget);
+                    }}
+                    className="flex w-full items-center gap-2 px-3.5 py-2 text-xs font-semibold text-[var(--danger)] hover:bg-[var(--danger-soft)] transition-colors cursor-pointer"
+                  >
+                    <Trash2 className="h-3.5 w-3.5 text-[var(--danger)]" />
+                    <span>Delete Plan</span>
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
@@ -826,7 +1072,7 @@ export const PlanWorkspace: React.FC<PlanWorkspaceProps> = ({
             return (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
+                onClick={() => handleTabChange(tab.id)}
                 className={`inline-flex items-center gap-2 px-3.5 py-2 text-xs rounded-[16px] transition-all whitespace-nowrap ${
                   isActive
                     ? 'neu-nav-active text-[var(--primary)] font-bold'
@@ -840,6 +1086,31 @@ export const PlanWorkspace: React.FC<PlanWorkspaceProps> = ({
           })}
         </div>
       </div>
+
+      {/* Friendly Deleted Plan Notice if deleted from another tab/session */}
+      {isPlanDeletedState && (
+        <div className="rounded-2xl border border-[var(--danger-border)] bg-[var(--danger-soft)] p-5 text-center space-y-3 animate-fadeIn">
+          <div className="w-10 h-10 rounded-full bg-white dark:bg-black/30 mx-auto flex items-center justify-center text-[var(--danger)]">
+            <AlertCircle className="w-5 h-5" />
+          </div>
+          <div>
+            <h3 className="text-sm font-bold text-[var(--danger-text)]">
+              This lesson plan was deleted
+            </h3>
+            <p className="text-xs text-[var(--text-muted)] mt-1 max-w-md mx-auto">
+              This plan is no longer available. Your edits were not saved to avoid recreating a deleted plan.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={() => onBack()}
+            className="neu-btn-primary px-4 py-2 text-xs font-bold text-white inline-flex items-center gap-1.5 cursor-pointer"
+          >
+            <span>Return to Saved Plans</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </button>
+        </div>
+      )}
 
       {/* TAB CONTENT */}
 
@@ -966,7 +1237,7 @@ export const PlanWorkspace: React.FC<PlanWorkspaceProps> = ({
               </div>
 
               <button
-                onClick={() => setActiveTab('resources')}
+                onClick={() => handleTabChange('resources')}
                 className="neu-btn-primary inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-bold text-white self-start sm:self-auto"
               >
                 <span>Explore All References ({currentPlan.references?.length || 0})</span>
@@ -980,7 +1251,7 @@ export const PlanWorkspace: React.FC<PlanWorkspaceProps> = ({
                   No reference materials have been retrieved for this curriculum plan yet.
                 </p>
                 <button
-                  onClick={() => setActiveTab('resources')}
+                  onClick={() => handleTabChange('resources')}
                   className="neu-btn-secondary inline-flex items-center gap-1 px-3 py-1.5 text-xs font-semibold text-[var(--primary)]"
                 >
                   <Sparkles className="w-3.5 h-3.5" />
@@ -1109,7 +1380,7 @@ export const PlanWorkspace: React.FC<PlanWorkspaceProps> = ({
                       <button
                         onClick={() => {
                           setSelectedWeekNum(week.weekNumber);
-                          setActiveTab('daily');
+                          handleTabChange('daily');
                         }}
                         className="neu-btn-primary inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-bold text-white min-h-[34px]"
                         title="View daily lesson sessions for this week"
@@ -2026,13 +2297,131 @@ export const PlanWorkspace: React.FC<PlanWorkspaceProps> = ({
             onUpdateTask={onUpdateTask || (async () => {})}
             onContinueWorkflow={(_planId, targetTab) => {
               if (targetTab && ['overview', 'weekly', 'daily', 'standards', 'assessments', 'resources'].includes(targetTab)) {
-                setActiveTab(targetTab as TabType);
+                handleTabChange(targetTab as TabType);
               }
             }}
             onRefreshTasks={onRefreshTasks}
             showPlanFilter={false}
             initialPlanFilter={currentPlan.id}
           />
+        </div>
+      )}
+
+      {/* Curriculum Assignment Modal */}
+      {isAddingCurriculum && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-4">
+          <div className="neu-card bg-[var(--surface)] border border-[var(--border)] rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4 animate-fadeIn">
+            <div className="flex items-center justify-between border-b border-[var(--border)] pb-3">
+              <div className="flex items-center gap-2">
+                <BookOpen className="w-4 h-4 text-[var(--primary)]" />
+                <h3 className="text-sm font-bold text-[var(--text)]">Assign Curriculum to Plan</h3>
+              </div>
+              <button 
+                onClick={() => setIsAddingCurriculum(false)}
+                className="text-[var(--text-muted)] hover:text-[var(--text)]"
+                aria-label="Close dialog"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            {assignError && (
+              <div className="text-xs text-red-600 bg-red-50 dark:bg-red-950/50 p-2.5 rounded-lg border border-red-200">
+                {assignError}
+              </div>
+            )}
+
+            {userPrefs?.resolvedLabels && (
+              <div className="p-3 rounded-xl bg-[var(--lavender-soft)]/40 border border-[var(--border)] flex items-center justify-between gap-2">
+                <div className="text-xs">
+                  <div className="font-semibold text-[var(--text)]">Use Saved Default:</div>
+                  <div className="text-[var(--primary)] font-bold">{userPrefs.resolvedLabels.summary}</div>
+                </div>
+                <button
+                  type="button"
+                  disabled={isAssigning}
+                  onClick={() => handleAssignCurriculum(true)}
+                  className="neu-btn-primary text-xs px-3 py-1.5 shrink-0"
+                >
+                  Apply Saved
+                </button>
+              </div>
+            )}
+
+            <div className="space-y-3 pt-1">
+              <div className="text-xs font-semibold text-[var(--text-muted)]">Or select specific curriculum:</div>
+              <div className="space-y-1">
+                <label className="text-[11px] font-semibold text-[var(--text)]">Country</label>
+                <select
+                  value={assignCountryId}
+                  onChange={(e) => {
+                    const cId = e.target.value;
+                    setAssignCountryId(cId);
+                    const c = CURRICULUM_CATALOG.countries.find(item => item.id === cId);
+                    if (c && c.curricula[0]) {
+                      setAssignCurriculumId(c.curricula[0].id);
+                      setAssignRegionId('');
+                    }
+                  }}
+                  className="w-full neu-input text-xs px-3 py-2"
+                >
+                  {CURRICULUM_CATALOG.countries.map(c => (
+                    <option key={c.id} value={c.id}>{c.flagEmoji} {c.name}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="space-y-1">
+                <label className="text-[11px] font-semibold text-[var(--text)]">Curriculum / Board</label>
+                <select
+                  value={assignCurriculumId}
+                  onChange={(e) => {
+                    setAssignCurriculumId(e.target.value);
+                    setAssignRegionId('');
+                  }}
+                  className="w-full neu-input text-xs px-3 py-2"
+                >
+                  {(CURRICULUM_CATALOG.countries.find(c => c.id === assignCountryId)?.curricula || []).map(curr => (
+                    <option key={curr.id} value={curr.id}>{curr.label}</option>
+                  ))}
+                </select>
+              </div>
+
+              {CURRICULUM_CATALOG.countries.find(c => c.id === assignCountryId)?.curricula.find(curr => curr.id === assignCurriculumId)?.requiresRegion && (
+                <div className="space-y-1">
+                  <label className="text-[11px] font-semibold text-[var(--text)]">State / Region</label>
+                  <select
+                    value={assignRegionId}
+                    onChange={(e) => setAssignRegionId(e.target.value)}
+                    className="w-full neu-input text-xs px-3 py-2"
+                  >
+                    <option value="">Select Region...</option>
+                    {(CURRICULUM_CATALOG.countries.find(c => c.id === assignCountryId)?.curricula.find(curr => curr.id === assignCurriculumId)?.regions || []).map(reg => (
+                      <option key={reg.id} value={reg.id}>{reg.name}</option>
+                    ))}
+                  </select>
+                </div>
+              )}
+            </div>
+
+            <div className="flex items-center justify-end gap-2 pt-3 border-t border-[var(--border)]">
+              <button
+                type="button"
+                onClick={() => setIsAddingCurriculum(false)}
+                className="neu-btn-secondary text-xs px-3 py-1.5"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                disabled={isAssigning}
+                onClick={() => handleAssignCurriculum(false)}
+                className="neu-btn-primary text-xs px-4 py-1.5 text-white"
+              >
+                {isAssigning ? 'Saving...' : 'Set Curriculum'}
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </div>

@@ -168,18 +168,35 @@ export const ReferenceResourceTypeSchema = z.enum([
   'other',
 ]);
 
+export const ReferenceLinkStatusSchema = z.enum([
+  'reachable',
+  'blocked',
+  'broken',
+  'not_checked',
+]);
+
+export const ReferenceOriginSchema = z.enum([
+  'retrieved',
+  'user-added',
+  'legacy',
+]);
+
 export const ReferenceMaterialSchema = z.object({
   id: z.string(),
   title: z.string().min(1, 'Title is required'),
   sourceName: z.string().min(1, 'Source name is required'),
-  url: z.string().url('Must be a valid URL'),
+  url: z.string().default(''),
   resourceType: ReferenceResourceTypeSchema,
-  category: ReferenceCategorySchema,
+  category: ReferenceCategorySchema.optional().default('teacher-guides'),
   description: z.string().default(''),
   relatedWeek: z.number().int().positive().optional(),
   relatedLesson: z.string().optional(),
-  verified: z.enum(['verified', 'unverified']),
+  relatedStandard: z.string().optional(),
+  linkStatus: ReferenceLinkStatusSchema.optional().default('not_checked'),
+  verified: z.enum(['verified', 'unverified']).optional().default('unverified'),
   lastCheckedAt: z.string().optional(),
+  retrievedAt: z.string().optional(),
+  origin: ReferenceOriginSchema.optional().default('retrieved'),
   trustTier: z.enum(['official', 'reputable', 'general']).optional().default('general'),
 });
 
@@ -206,14 +223,30 @@ export const LessonPlanSchema = z.object({
   referencesStatus: z.enum(['pending', 'ready', 'partial', 'failed']).optional().default('ready'),
   curriculumContext: CurriculumContextSnapshotSchema.optional(),
   teacherNotes: z.string().default(''),
-  status: z.enum(['draft', 'completed', 'archived']).default('draft'),
+  status: z.enum(['active', 'draft', 'completed', 'cancelled', 'archived']).default('draft'),
+  statusChangedAt: z.string().optional(),
+  previousStatus: z.enum(['active', 'draft', 'completed', 'cancelled', 'archived']).optional(),
+  userId: z.string().optional(),
   isDemo: z.boolean().default(false),
   createdAt: z.string(),
   updatedAt: z.string(),
 });
 
+export const PlanStatusSchema = z.enum(['active', 'draft', 'completed', 'cancelled', 'archived']);
+export type PlanStatus = 'active' | 'draft' | 'completed' | 'cancelled';
+
+export function normalizePlanStatus(rawStatus?: string | null): PlanStatus {
+  if (!rawStatus) return 'draft';
+  if (rawStatus === 'active') return 'active';
+  if (rawStatus === 'completed') return 'completed';
+  if (rawStatus === 'cancelled' || rawStatus === 'archived') return 'cancelled';
+  return 'draft';
+}
+
 export type ReferenceCategory = z.infer<typeof ReferenceCategorySchema>;
 export type ReferenceResourceType = z.infer<typeof ReferenceResourceTypeSchema>;
+export type ReferenceLinkStatus = z.infer<typeof ReferenceLinkStatusSchema>;
+export type ReferenceOrigin = z.infer<typeof ReferenceOriginSchema>;
 export type ReferenceMaterial = z.infer<typeof ReferenceMaterialSchema>;
 export type ReferencesStatus = 'pending' | 'ready' | 'partial' | 'failed';
 

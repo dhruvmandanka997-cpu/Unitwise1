@@ -21,6 +21,14 @@
     --border:           #DFE1F0;   /* hairline outlines */
     --on-primary:       #FFFFFF;   /* text on primary buttons */
 
+    /* Destructive Action Tokens (LIGHT) */
+    --danger:           #DC2626;   /* destructive buttons, key danger actions */
+    --danger-hover:     #B91C1C;
+    --danger-soft:      #FEE2E2;   /* danger background/pill */
+    --danger-border:    #FECACA;
+    --danger-text:      #991B1B;
+    --shadow-danger:    6px 6px 16px rgba(220, 38, 38, 0.25), -4px -4px 12px rgba(255, 255, 255, 0.9);
+
     /* Neumorphic Shadows (LIGHT) */
     --shadow-raised:    8px 8px 20px rgba(163, 170, 210, 0.35), -8px -8px 20px #FFFFFF;
     --shadow-raised-sm: 4px 4px 10px rgba(163, 170, 210, 0.30), -4px -4px 10px #FFFFFF;
@@ -63,6 +71,14 @@
     --text-muted:       #A5A9C7;   /* descriptions, placeholders, nav labels */
     --border:           #2E3052;   /* hairline outlines */
     --on-primary:       #FFFFFF;   /* text on primary buttons */
+
+    /* Destructive Action Tokens (DARK) */
+    --danger:           #EF4444;   /* destructive buttons, key danger actions in dark */
+    --danger-hover:     #F87171;
+    --danger-soft:      #450A0A;
+    --danger-border:    #7F1D1D;
+    --danger-text:      #FCA5A5;
+    --shadow-danger:    6px 6px 16px rgba(5, 5, 18, 0.55), 0 0 16px rgba(239, 68, 68, 0.25);
 
     /* Neumorphic Shadows (DARK) */
     --shadow-raised:    8px 8px 20px rgba(5, 5, 18, 0.60), -6px -6px 16px rgba(60, 60, 110, 0.22);
@@ -212,6 +228,37 @@
   .neu-btn-secondary:active {
     box-shadow: var(--shadow-inset);
     transform: translateY(0);
+  }
+
+  /* Neumorphic Danger / Destructive CTA */
+  .neu-btn-danger {
+    background-color: var(--danger);
+    color: #FFFFFF;
+    border: 1px solid transparent;
+    border-radius: var(--radius-button);
+    box-shadow: var(--shadow-danger);
+    font-weight: 600;
+    transition: transform 200ms ease-out, box-shadow 200ms ease-out, background-color 200ms ease-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 44px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .neu-btn-danger:hover:not(:disabled) {
+    background-color: var(--danger-hover);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-hover);
+  }
+  .neu-btn-danger:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: var(--shadow-inset);
+  }
+  .neu-btn-danger:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
   }
 
   /* Neumorphic Inset Input */

@@ -1,7 +1,7 @@
 [
   {
-    "id": "task_plan_vgiiowmmvc6zge5_plan_setup",
-    "planId": "plan_vgiiowmmvc6zge5",
+    "id": "task_plan_8jktmcimvf4zhjx_plan_setup",
+    "planId": "plan_8jktmcimvf4zhjx",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -40,12 +40,12 @@
     "missingExplanation": "All required items verified and completed.",
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
-    "createdAt": "2026-10-17T09:26:28.568Z",
-    "updatedAt": "2026-10-17T09:26:28.697Z"
+    "createdAt": "2026-10-19T10:53:49.347Z",
+    "updatedAt": "2026-10-19T10:53:49.366Z"
   },
   {
-    "id": "task_plan_vgiiowmmvc6zge5_learning_objectives",
-    "planId": "plan_vgiiowmmvc6zge5",
+    "id": "task_plan_8jktmcimvf4zhjx_learning_objectives",
+    "planId": "plan_8jktmcimvf4zhjx",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -84,12 +84,12 @@
     "missingExplanation": "All required items verified and completed.",
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
-    "createdAt": "2026-10-17T09:26:28.568Z",
-    "updatedAt": "2026-10-17T09:26:28.697Z"
+    "createdAt": "2026-10-19T10:53:49.347Z",
+    "updatedAt": "2026-10-19T10:53:49.366Z"
   },
   {
-    "id": "task_plan_vgiiowmmvc6zge5_curriculum_standards",
-    "planId": "plan_vgiiowmmvc6zge5",
+    "id": "task_plan_8jktmcimvf4zhjx_curriculum_standards",
+    "planId": "plan_8jktmcimvf4zhjx",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -128,12 +128,12 @@
     "missingExplanation": "All required items verified and completed.",
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
-    "createdAt": "2026-10-17T09:26:28.568Z",
-    "updatedAt": "2026-10-17T09:26:28.697Z"
+    "createdAt": "2026-10-19T10:53:49.347Z",
+    "updatedAt": "2026-10-19T10:53:49.366Z"
   },
   {
-    "id": "task_plan_vgiiowmmvc6zge5_assessment_rubric",
-    "planId": "plan_vgiiowmmvc6zge5",
+    "id": "task_plan_8jktmcimvf4zhjx_assessment_rubric",
+    "planId": "plan_8jktmcimvf4zhjx",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -172,12 +172,12 @@
     "missingExplanation": "All required items verified and completed.",
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
-    "createdAt": "2026-10-17T09:26:28.568Z",
-    "updatedAt": "2026-10-17T09:26:28.697Z"
+    "createdAt": "2026-10-19T10:53:49.347Z",
+    "updatedAt": "2026-10-19T10:53:49.366Z"
   },
   {
-    "id": "task_plan_vgiiowmmvc6zge5_teaching_materials",
-    "planId": "plan_vgiiowmmvc6zge5",
+    "id": "task_plan_8jktmcimvf4zhjx_teaching_materials",
+    "planId": "plan_8jktmcimvf4zhjx",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -210,12 +210,12 @@
     "missingExplanation": "Missing: Catalog digital links, readings, and lab resources. Status is In Progress: steps have been initiated but require final review. Next action: Open Materials & Resources tab to catalog lab items and ensure daily lessons list their handouts.",
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
-    "createdAt": "2026-10-17T09:26:28.568Z",
-    "updatedAt": "2026-10-17T09:26:28.697Z"
+    "createdAt": "2026-10-19T10:53:49.347Z",
+    "updatedAt": "2026-10-19T10:53:49.366Z"
   },
   {
-    "id": "task_plan_vgiiowmmvc6zge5_differentiation",
-    "planId": "plan_vgiiowmmvc6zge5",
+    "id": "task_plan_8jktmcimvf4zhjx_differentiation",
+    "planId": "plan_8jktmcimvf4zhjx",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -254,12 +254,12 @@
     "missingExplanation": "All required items verified and completed.",
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
-    "createdAt": "2026-10-17T09:26:28.568Z",
-    "updatedAt": "2026-10-17T09:26:28.697Z"
+    "createdAt": "2026-10-19T10:53:49.347Z",
+    "updatedAt": "2026-10-19T10:53:49.366Z"
   },
   {
-    "id": "task_plan_vgiiowmmvc6zge5_lesson_sequences",
-    "planId": "plan_vgiiowmmvc6zge5",
+    "id": "task_plan_8jktmcimvf4zhjx_lesson_sequences",
+    "planId": "plan_8jktmcimvf4zhjx",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -292,12 +292,12 @@
     "missingExplanation": "All required items verified and completed.",
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
-    "createdAt": "2026-10-17T09:26:28.568Z",
-    "updatedAt": "2026-10-17T09:26:28.697Z"
+    "createdAt": "2026-10-19T10:53:49.347Z",
+    "updatedAt": "2026-10-19T10:53:49.366Z"
   },
   {
-    "id": "task_plan_vgiiowmmvc6zge5_finalize_plan",
-    "planId": "plan_vgiiowmmvc6zge5",
+    "id": "task_plan_8jktmcimvf4zhjx_finalize_plan",
+    "planId": "plan_8jktmcimvf4zhjx",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -326,7 +326,7 @@
         "isRequired": true
       }
     ],
-    "prerequisiteTaskId": "task_plan_vgiiowmmvc6zge5_lesson_sequences",
+    "prerequisiteTaskId": "task_plan_8jktmcimvf4zhjx_lesson_sequences",
     "prerequisiteTitle": "Review Weekly Lesson Sequences & Timing",
     "validationIssues": [
       {
@@ -338,12 +338,12 @@
     "missingExplanation": "Missing: Set overall plan status to \"Completed\". Status is In Progress: steps have been initiated but require final review. Next action: Change plan status from Draft to Completed in the workspace top bar.",
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
-    "createdAt": "2026-10-17T09:26:28.568Z",
-    "updatedAt": "2026-10-17T09:26:28.697Z"
+    "createdAt": "2026-10-19T10:53:49.347Z",
+    "updatedAt": "2026-10-19T10:53:49.366Z"
   },
   {
-    "id": "task_plan_vgiiowmmvc6zge5_export_share",
-    "planId": "plan_vgiiowmmvc6zge5",
+    "id": "task_plan_8jktmcimvf4zhjx_export_share",
+    "planId": "plan_8jktmcimvf4zhjx",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -366,7 +366,7 @@
         "isRequired": false
       }
     ],
-    "prerequisiteTaskId": "task_plan_vgiiowmmvc6zge5_finalize_plan",
+    "prerequisiteTaskId": "task_plan_8jktmcimvf4zhjx_finalize_plan",
     "prerequisiteTitle": "Finalize & Approve Curriculum Plan",
     "validationIssues": [
       {
@@ -378,7 +378,7 @@
     "missingExplanation": "Missing: Export official curriculum syllabus (DOCX or PDF). Status is Pending: awaiting prerequisite or work has not yet started. Next action: Use the Export menu in the workspace header to download Word or PDF copies of your curriculum unit.",
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
-    "createdAt": "2026-10-17T09:26:28.568Z",
-    "updatedAt": "2026-10-17T09:26:28.697Z"
+    "createdAt": "2026-10-19T10:53:49.347Z",
+    "updatedAt": "2026-10-19T10:53:49.366Z"
   }
 ]

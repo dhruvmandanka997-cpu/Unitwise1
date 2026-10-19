@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { 
   Search, 
   Calendar, 
@@ -14,20 +14,29 @@ import {
   FolderKanban,
   CheckCircle2,
   Info,
-  BookOpen
+  BookOpen,
+  Flame,
+  Pause,
+  RotateCcw,
+  AlertTriangle,
+  FileText
 } from 'lucide-react';
-import { LessonPlan } from '../../types/plan';
+import { LessonPlan, PlanStatus } from '../../types/plan';
 import { SUBJECT_OPTIONS } from '../../data/templates';
-import { api } from '../../services/api';
+import { api, ActivePlanSummary } from '../../services/api';
 
 interface PlanLibraryProps {
   plans: LessonPlan[];
   onSelectPlan: (plan: LessonPlan) => void;
   onOpenWizard: () => void;
   onDuplicatePlan: (id: string) => void;
-  onDeletePlan: (id: string) => void;
+  onDeletePlan: (plan: LessonPlan, triggerEl?: HTMLElement) => void;
   onRenamePlan: (id: string, newTitle: string) => void;
-  onUpdateStatus?: (id: string, status: 'draft' | 'completed' | 'archived') => void;
+  onUpdateStatus?: (id: string, status: PlanStatus) => void;
+  activeSummary?: ActivePlanSummary | null;
+  onActivatePlan?: (plan: LessonPlan) => Promise<void>;
+  onDeactivatePlan?: (planId: string, planTitle: string) => void;
+  initialStatusFilter?: string;
 }
 
 export const PlanLibrary: React.FC<PlanLibraryProps> = ({
@@ -38,13 +47,16 @@ export const PlanLibrary: React.FC<PlanLibraryProps> = ({
   onDeletePlan,
   onRenamePlan,
   onUpdateStatus,
+  activeSummary,
+  onActivatePlan,
+  onDeactivatePlan,
+  initialStatusFilter,
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedSubject, setSelectedSubject] = useState('ALL');
-  const [selectedStatus, setSelectedStatus] = useState('ALL');
+  const [selectedStatus, setSelectedStatus] = useState(initialStatusFilter || 'ALL');
   const [sortBy, setSortBy] = useState<'updated' | 'title' | 'duration'>('updated');
   const [menuOpenId, setMenuOpenId] = useState<string | null>(null);
-  const [deleteConfirmId, setDeleteConfirmId] = useState<string | null>(null);
   const [renameState, setRenameState] = useState<{ id: string; title: string } | null>(null);
 
   const filteredPlans = useMemo(() => {
@@ -57,7 +69,11 @@ export const PlanLibrary: React.FC<PlanLibraryProps> = ({
           plan.unitOverview.toLowerCase().includes(searchTerm.toLowerCase());
 
         const matchesSubject = selectedSubject === 'ALL' || plan.subject === selectedSubject;
-        const matchesStatus = selectedStatus === 'ALL' || plan.status === selectedStatus;
+        const matchesStatus =
+          selectedStatus === 'ALL' ||
+          (selectedStatus === 'cancelled'
+            ? plan.status === 'cancelled' || (plan as any).status === 'archived'
+            : plan.status === selectedStatus);
 
         return matchesSearch && matchesSubject && matchesStatus;
       })
@@ -72,6 +88,53 @@ export const PlanLibrary: React.FC<PlanLibraryProps> = ({
     if (renameState && renameState.title.trim()) {
       onRenamePlan(renameState.id, renameState.title.trim());
       setRenameState(null);
+    }
+  };
+
+  // Close three-dot menu when clicking outside or pressing Escape
+  useEffect(() => {
+    if (!menuOpenId) return;
+
+    const handleDocumentClick = (e: MouseEvent | TouchEvent) => {
+      const target = e.target as HTMLElement;
+      if (!target.closest('[data-plan-menu]')) {
+        setMenuOpenId(null);
+      }
+    };
+
+    const handleDocumentKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setMenuOpenId(null);
+      }
+    };
+
+    document.addEventListener('mousedown', handleDocumentClick);
+    document.addEventListener('touchstart', handleDocumentClick);
+    document.addEventListener('keydown', handleDocumentKeyDown);
+
+    return () => {
+      document.removeEventListener('mousedown', handleDocumentClick);
+      document.removeEventListener('touchstart', handleDocumentClick);
+      document.removeEventListener('keydown', handleDocumentKeyDown);
+    };
+  }, [menuOpenId]);
+
+  const handleMenuKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    const container = e.currentTarget;
+    const items = Array.from(container.querySelectorAll<HTMLElement>('button, a'));
+    const activeIdx = items.indexOf(document.activeElement as HTMLElement);
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      const nextIdx = activeIdx < items.length - 1 ? activeIdx + 1 : 0;
+      items[nextIdx]?.focus();
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      const prevIdx = activeIdx > 0 ? activeIdx - 1 : items.length - 1;
+      items[prevIdx]?.focus();
+    } else if (e.key === 'Escape') {
+      e.preventDefault();
+      setMenuOpenId(null);
     }
   };
 
@@ -132,9 +195,10 @@ export const PlanLibrary: React.FC<PlanLibraryProps> = ({
           className="neu-input px-3.5 py-2 text-xs text-[var(--text)]"
         >
           <option value="ALL">All Statuses</option>
+          <option value="active">Active Plans</option>
           <option value="draft">Drafts</option>
           <option value="completed">Completed</option>
-          <option value="archived">Archived</option>
+          <option value="cancelled">Inactive</option>
         </select>
 
         <select
@@ -197,7 +261,9 @@ export const PlanLibrary: React.FC<PlanLibraryProps> = ({
                     }
                   }
                 }}
-                className="group relative flex flex-col justify-between neu-card-interactive p-5 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
+                className={`group relative flex flex-col justify-between neu-card-interactive p-5 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] ${
+                  menuOpenId === plan.id ? 'z-30' : 'z-0'
+                }`}
               >
                 <div className="space-y-3">
                   {/* Row 1: Subject & Grade, Status Badge, and 3-dot Menu */}
@@ -213,26 +279,46 @@ export const PlanLibrary: React.FC<PlanLibraryProps> = ({
 
                     <div className="flex items-center gap-1.5 shrink-0" onClick={(e) => e.stopPropagation()}>
                       {/* Status Indicator */}
-                      <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold border border-[var(--border)] ${
-                        plan.status === 'completed'
-                          ? 'bg-[var(--lavender-soft)] text-[var(--primary)]'
-                          : plan.status === 'archived'
-                          ? 'bg-slate-100 text-[var(--text-muted)]'
-                          : 'bg-white text-[var(--text-muted)]'
+                      <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold border ${
+                        plan.status === 'active'
+                          ? 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800 font-bold'
+                          : plan.status === 'completed'
+                          ? 'bg-[var(--lavender-soft)] text-[var(--primary)] border-[var(--border)]'
+                          : plan.status === 'cancelled' || (plan as any).status === 'archived'
+                          ? 'bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border-amber-200 dark:border-amber-800'
+                          : 'bg-white dark:bg-slate-800 text-[var(--text-muted)] border-[var(--border)]'
                       }`}>
+                        {plan.status === 'active' && <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />}
                         {plan.status === 'completed' && <CheckCircle2 className="w-2.5 h-2.5 text-[var(--primary)]" />}
-                        {plan.status === 'completed' ? 'Completed' : plan.status === 'archived' ? 'Archived' : 'Draft'}
+                        {(plan.status === 'cancelled' || (plan as any).status === 'archived') && <Pause className="w-2.5 h-2.5 text-amber-600 dark:text-amber-400" />}
+                        {plan.status === 'draft' && <FileText className="w-2.5 h-2.5 text-[var(--text-muted)]" />}
+                        {plan.status === 'active'
+                          ? 'Active'
+                          : plan.status === 'completed'
+                          ? 'Completed'
+                          : plan.status === 'cancelled' || (plan as any).status === 'archived'
+                          ? 'Inactive'
+                          : 'Draft'}
                       </span>
 
                       {/* Three-dot Secondary Actions Menu */}
-                      <div className="relative">
+                      <div className="relative" data-plan-menu>
                         <button
+                          type="button"
                           onClick={(e) => {
                             e.stopPropagation();
                             setMenuOpenId(menuOpenId === plan.id ? null : plan.id);
                           }}
-                          className="rounded-lg p-1.5 text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--lavender-soft)] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
-                          aria-label="More actions"
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowDown') {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              setMenuOpenId(menuOpenId === plan.id ? null : plan.id);
+                            }
+                          }}
+                          className="rounded-lg p-1.5 text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--lavender-soft)] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--accent)] min-h-[36px] min-w-[36px] flex items-center justify-center cursor-pointer"
+                          aria-label={`More actions for ${plan.title}`}
+                          aria-haspopup="true"
                           aria-expanded={menuOpenId === plan.id}
                         >
                           <MoreVertical className="h-4 w-4" />
@@ -240,8 +326,10 @@ export const PlanLibrary: React.FC<PlanLibraryProps> = ({
 
                         {menuOpenId === plan.id && (
                           <div 
-                            className="absolute right-0 top-7 z-30 w-52 rounded-[16px] border border-[var(--border)] bg-white py-2 shadow-neu-raised"
-                            onMouseLeave={() => setMenuOpenId(null)}
+                            role="menu"
+                            aria-label={`Actions for ${plan.title}`}
+                            onKeyDown={handleMenuKeyDown}
+                            className="absolute right-0 top-full mt-1.5 z-40 w-52 max-h-[85vh] overflow-y-auto rounded-[16px] border border-[var(--border)] bg-[var(--surface)] py-1.5 shadow-neu-raised animate-fadeIn"
                             onClick={(e) => e.stopPropagation()}
                           >
                             <button
@@ -255,17 +343,75 @@ export const PlanLibrary: React.FC<PlanLibraryProps> = ({
                               <Edit3 className="h-3.5 w-3.5 text-[var(--primary)]" />
                               Open & Edit Workspace
                             </button>
-                            {onUpdateStatus && (
+
+                            {/* Canonical Status Actions */}
+                            {plan.status === 'active' && onDeactivatePlan && (
                               <button
                                 onClick={(e) => {
                                   e.stopPropagation();
-                                  onUpdateStatus(plan.id, plan.status === 'completed' ? 'draft' : 'completed');
+                                  onDeactivatePlan(plan.id, plan.title);
+                                  setMenuOpenId(null);
+                                }}
+                                className="flex w-full items-center gap-2 px-3 py-2 text-xs font-semibold text-amber-700 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-950/40 transition-colors"
+                              >
+                                <Pause className="h-3.5 w-3.5 text-amber-600" />
+                                Deactivate Plan
+                              </button>
+                            )}
+
+                            {plan.status === 'active' && onUpdateStatus && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  onUpdateStatus(plan.id, 'completed');
                                   setMenuOpenId(null);
                                 }}
                                 className="flex w-full items-center gap-2 px-3 py-2 text-xs font-semibold text-[var(--text)] hover:bg-[var(--lavender-soft)] transition-colors"
                               >
                                 <CheckCircle2 className="h-3.5 w-3.5 text-[var(--primary)]" />
-                                {plan.status === 'completed' ? 'Mark as Draft' : 'Mark as Completed'}
+                                Mark as Completed
+                              </button>
+                            )}
+
+                            {plan.status === 'draft' && onActivatePlan && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  onActivatePlan(plan);
+                                  setMenuOpenId(null);
+                                }}
+                                className="flex w-full items-center gap-2 px-3 py-2 text-xs font-bold text-emerald-700 dark:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 transition-colors"
+                              >
+                                <Flame className="h-3.5 w-3.5 text-emerald-600" />
+                                Activate Plan
+                              </button>
+                            )}
+
+                            {(plan.status === 'cancelled' || (plan as any).status === 'archived') && onActivatePlan && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  onActivatePlan(plan);
+                                  setMenuOpenId(null);
+                                }}
+                                className="flex w-full items-center gap-2 px-3 py-2 text-xs font-bold text-emerald-700 dark:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 transition-colors"
+                              >
+                                <Flame className="h-3.5 w-3.5 text-emerald-600" />
+                                Reactivate Plan
+                              </button>
+                            )}
+
+                            {plan.status === 'completed' && onActivatePlan && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  onActivatePlan(plan);
+                                  setMenuOpenId(null);
+                                }}
+                                className="flex w-full items-center gap-2 px-3 py-2 text-xs font-semibold text-[var(--primary)] hover:bg-[var(--lavender-soft)] transition-colors"
+                              >
+                                <RotateCcw className="h-3.5 w-3.5 text-[var(--primary)]" />
+                                Reopen Plan
                               </button>
                             )}
                             <button
@@ -337,15 +483,18 @@ export const PlanLibrary: React.FC<PlanLibraryProps> = ({
                             <div className="my-1 border-t border-[var(--border)]" />
 
                             <button
+                              type="button"
+                              role="menuitem"
                               onClick={(e) => {
                                 e.stopPropagation();
-                                setDeleteConfirmId(plan.id);
+                                const btn = e.currentTarget;
+                                onDeletePlan(plan, btn);
                                 setMenuOpenId(null);
                               }}
-                              className="flex w-full items-center gap-2 px-3 py-2 text-xs font-semibold text-rose-600 hover:bg-rose-50 transition-colors"
+                              className="flex w-full items-center gap-2 px-3 py-2 text-xs font-semibold text-[var(--danger)] hover:bg-[var(--danger-soft)] transition-colors cursor-pointer"
                             >
-                              <Trash2 className="h-3.5 w-3.5" />
-                              Delete Plan
+                              <Trash2 className="h-3.5 w-3.5 text-[var(--danger)]" />
+                              <span>Delete Plan</span>
                             </button>
                           </div>
                         )}
@@ -399,34 +548,6 @@ export const PlanLibrary: React.FC<PlanLibraryProps> = ({
         </div>
       )}
 
-      {/* Delete Confirmation Modal */}
-      {deleteConfirmId && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-xs p-4">
-          <div className="w-full max-w-md neu-card p-6 space-y-4">
-            <h3 className="text-base font-bold text-[var(--text)]">Delete Curriculum Plan?</h3>
-            <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-              Are you sure you want to permanently delete this curriculum plan? All generated weekly sequences, daily sessions, and differentiation strategies will be removed.
-            </p>
-            <div className="flex justify-end gap-2.5 pt-2">
-              <button
-                onClick={() => setDeleteConfirmId(null)}
-                className="neu-btn-secondary px-3.5 py-1.5 text-xs font-semibold text-[var(--text-muted)]"
-              >
-                Cancel
-              </button>
-              <button
-                onClick={() => {
-                  onDeletePlan(deleteConfirmId);
-                  setDeleteConfirmId(null);
-                }}
-                className="rounded-[16px] bg-rose-600 px-3.5 py-1.5 text-xs font-bold text-white hover:bg-rose-700 transition-colors shadow-sm"
-              >
-                Delete Plan
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Rename Modal */}
       {renameState && (
