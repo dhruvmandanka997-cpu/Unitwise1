@@ -15,6 +15,7 @@ import { TeacherTask, TaskStats } from '../../types/task';
 import { QUICK_START_TEMPLATES } from '../../data/templates';
 import { BRAND } from '../../config/brand';
 import { AcademicHeroIllustration } from './AcademicHeroIllustration';
+import { CurriculumPreferencesCard } from './CurriculumPreferencesCard';
 import { PlanningProgressCard } from './PlanningProgressCard';
 import { UpcomingLessonsCard } from './UpcomingLessonsCard';
 import { QuickActionsCard } from './QuickActionsCard';
@@ -160,6 +161,11 @@ export const Dashboard: React.FC<DashboardProps> = ({
                 <AcademicHeroIllustration className="max-w-[240px] sm:max-w-[280px]" />
               </div>
             </div>
+          </section>
+
+          {/* Teacher Curriculum Preferences Card */}
+          <section aria-label="Curriculum Preferences">
+            <CurriculumPreferencesCard />
           </section>
 
           {/* Summary Metrics: One horizontal neumorphic card with 4 metrics */}

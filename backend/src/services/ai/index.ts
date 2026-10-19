@@ -1,6 +1,8 @@
 import { IAIProvider } from './provider';
 import { GeminiAIProvider } from './geminiProvider';
 import { GeneratePlanInput, GeneratePlanInputSchema, LessonPlan, SessionPlan, WeeklyPlan } from '../../models/plan';
+import { buildCurriculumSnapshot } from '../../models/curriculum';
+import { planDb } from '../storage/db';
 
 export class AIEngine {
   private provider: IAIProvider;
@@ -26,8 +28,59 @@ export class AIEngine {
 
     const input = validationResult.data;
 
+    // Resolve curriculum context following precedence: Override > Saved Preferences > Fallback
+    let countryId = input.countryId;
+    let curriculumId = input.curriculumId;
+    let regionId = input.regionId;
+    let otherCountryText = input.otherCountryText;
+    let otherCurriculumText = input.otherCurriculumText;
+    let source: 'override' | 'preferences' = 'override';
+
+    const savedPrefs = planDb.getCurriculumPreferences();
+
+    if (!countryId || !curriculumId) {
+      if (savedPrefs) {
+        countryId = savedPrefs.countryId;
+        curriculumId = savedPrefs.curriculumId;
+        regionId = savedPrefs.regionId;
+        otherCountryText = savedPrefs.otherCountryText;
+        otherCurriculumText = savedPrefs.otherCurriculumText;
+        source = 'preferences';
+      }
+    } else {
+      source = input.curriculumSource === 'preferences' ? 'preferences' : 'override';
+    }
+
+    const snapshot = (countryId && curriculumId)
+      ? buildCurriculumSnapshot({
+          countryId,
+          curriculumId,
+          regionId,
+          grade: input.gradeLevel,
+          subject: input.subject,
+          topic: input.title,
+          otherCountryText,
+          otherCurriculumText,
+          source,
+        })
+      : undefined;
+
+    if (snapshot) {
+      input.curriculumFramework = snapshot.labels.summary;
+      input.countryId = countryId;
+      input.curriculumId = curriculumId;
+      input.regionId = regionId;
+      (input as any).curriculumContext = snapshot;
+    }
+
     // 2. Execute plan generation
     let plan = await this.provider.generatePlan(input);
+
+    // Attach immutable curriculum context snapshot to generated plan
+    if (snapshot) {
+      plan.curriculumContext = snapshot;
+      plan.curriculumFramework = snapshot.labels.summary;
+    }
 
     // 3. Guarantee schedule invariant: durationWeeks * sessionsPerWeek === total sessions
     const totalExpectedSessions = input.durationWeeks * input.sessionsPerWeek;
@@ -35,8 +88,10 @@ export class AIEngine {
 
     if (actualSessions !== totalExpectedSessions || plan.weeklyPlans.length !== input.durationWeeks) {
       console.warn(`Schedule mismatch detected (${actualSessions} actual vs ${totalExpectedSessions} expected). Enforcing schedule normalization.`);
-      // Enforce normalization
       plan = this.normalizeSchedule(plan, input);
+      if (snapshot) {
+        plan.curriculumContext = snapshot;
+      }
     }
 
     return plan;

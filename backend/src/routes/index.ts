@@ -4,10 +4,12 @@ import { aiRoutes } from './aiRoutes';
 import { exportRoutes } from './exportRoutes';
 import { settingsRoutes } from './settingsRoutes';
 import { taskRoutes } from './taskRoutes';
+import { curriculumRoutes } from './curriculumRoutes';
 
 export const apiRoutes = Router();
 
 apiRoutes.use(settingsRoutes);
+apiRoutes.use(curriculumRoutes);
 apiRoutes.use(planRoutes);
 apiRoutes.use(taskRoutes);
 apiRoutes.use(aiRoutes);

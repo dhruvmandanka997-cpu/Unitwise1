@@ -48,7 +48,8 @@ export function generatePdfBuffer(plan: LessonPlan): Buffer {
   doc.setFont('helvetica', 'normal');
   doc.text(`Subject: ${plan.subject}   |   Grade: ${plan.gradeLevel}   |   Duration: ${plan.durationWeeks} Weeks (${plan.durationWeeks * plan.sessionsPerWeek} Sessions)   |   Class: ${plan.classDurationMinutes} min`, 14, y);
   y += 6;
-  doc.text(`Curriculum: ${plan.curriculumFramework}`, 14, y);
+  const curriculumDisplay = plan.curriculumContext?.labels?.summary || plan.curriculumFramework;
+  doc.text(`Curriculum: ${curriculumDisplay}`, 14, y);
   y += 6;
   doc.text(`Standards Alignment: ${plan.standardsFramework || 'General Educational Standards'}`, 14, y);
   y += 10;

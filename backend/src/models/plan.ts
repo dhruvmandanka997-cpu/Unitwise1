@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { CurriculumContextSnapshotSchema, CurriculumContextSnapshot } from './curriculum';
 
 export type VerificationStatus = 'verified' | 'teacher_provided' | 'suggested_unverified';
 
@@ -203,6 +204,7 @@ export const LessonPlanSchema = z.object({
   resourceList: z.array(ResourceItemSchema).default([]),
   references: z.array(ReferenceMaterialSchema).optional().default([]),
   referencesStatus: z.enum(['pending', 'ready', 'partial', 'failed']).optional().default('ready'),
+  curriculumContext: CurriculumContextSnapshotSchema.optional(),
   teacherNotes: z.string().default(''),
   status: z.enum(['draft', 'completed', 'archived']).default('draft'),
   isDemo: z.boolean().default(false),
@@ -228,13 +230,14 @@ export type RubricCriterion = z.infer<typeof RubricCriterionSchema>;
 export type FinalAssessment = z.infer<typeof FinalAssessmentSchema>;
 export type ResourceItem = z.infer<typeof ResourceItemSchema>;
 export type LessonPlan = z.infer<typeof LessonPlanSchema>;
+export type { CurriculumContextSnapshot } from './curriculum';
 
 // Input schema for the plan creation wizard
 export const GeneratePlanInputSchema = z.object({
   title: z.string().min(3, 'Plan title or unit topic must be at least 3 characters'),
   subject: z.string().min(1, 'Please select or enter a subject'),
   gradeLevel: z.string().min(1, 'Please select a grade level'),
-  curriculumFramework: z.string().min(1, 'Please specify educational system or curriculum'),
+  curriculumFramework: z.string().optional().default('General Standards'),
   standardsFramework: z.string().optional().default(''),
   durationWeeks: z.number().int().min(1).max(12),
   sessionsPerWeek: z.number().int().min(1).max(7),
@@ -246,6 +249,14 @@ export const GeneratePlanInputSchema = z.object({
   availableResources: z.string().optional().default('Standard classroom whiteboard, projector, student notebooks'),
   preferredTeachingMethods: z.array(z.string()).min(1, 'Select at least one preferred teaching method'),
   assessmentPreferences: z.string().optional().default('Formative checks daily and summative project at end of unit'),
+  
+  // Curriculum Preferences & Per-Plan Overrides
+  countryId: z.string().optional(),
+  curriculumId: z.string().optional(),
+  regionId: z.string().optional(),
+  otherCountryText: z.string().optional(),
+  otherCurriculumText: z.string().optional(),
+  curriculumSource: z.enum(['preferences', 'override', 'manual']).optional().default('preferences'),
   
   // Optional collapsible inputs
   classSize: z.number().int().positive().optional().default(25),

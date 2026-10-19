@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { LessonPlan } from '../../models/plan';
+import { CurriculumPreferences } from '../../models/curriculum';
 import { config } from '../../config';
 
 const DATA_DIR = config.dataDir;
@@ -16,6 +17,7 @@ export interface UserSettings {
   theme: 'light' | 'dark' | 'system';
   aiProvider: 'gemini' | 'openai' | 'anthropic';
   apiKeyConfigured: boolean;
+  curriculumPreferences?: CurriculumPreferences;
 }
 
 const DEFAULT_SETTINGS: UserSettings = {
@@ -167,6 +169,24 @@ export class PlanDatabase {
       console.error('Failed to save settings:', err);
     }
     return this.getSettings();
+  }
+
+  public getCurriculumPreferences(): CurriculumPreferences | null {
+    return this.settings.curriculumPreferences || null;
+  }
+
+  public saveCurriculumPreferences(prefs: CurriculumPreferences): CurriculumPreferences {
+    this.settings = {
+      ...this.settings,
+      curriculumPreferences: prefs,
+    };
+    try {
+      ensureDir(DATA_DIR);
+      fs.writeFileSync(SETTINGS_FILE, JSON.stringify(this.settings, null, 2), 'utf-8');
+    } catch (err) {
+      console.error('Failed to save curriculum preferences:', err);
+    }
+    return prefs;
   }
 
   public seedIfEmpty(seedPlans: LessonPlan[]) {

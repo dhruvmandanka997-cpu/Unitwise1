@@ -18,6 +18,15 @@ import {
   TEACHING_METHOD_OPTIONS, 
   QUICK_START_TEMPLATES 
 } from '../../data/templates';
+import { 
+  CURRICULUM_CATALOG, 
+  findCountry, 
+  findCurriculum, 
+  resolveCurriculumLabels,
+  ResolvedCurriculumLabels 
+} from '../../config/curriculumCatalog';
+import { CurriculumPreferences } from '../../types/curriculum';
+import { api } from '../../services/api';
 import { BRAND } from '../../config/brand';
 
 interface PlanWizardProps {
@@ -66,11 +75,78 @@ export const PlanWizard: React.FC<PlanWizardProps> = ({
     accommodations: 'Visual word wall, graphic organizers, and extended time where appropriate',
     requiredProjects: '',
     enableHomework: true,
+    curriculumSource: 'preferences',
   });
 
   const [formErrors, setFormErrors] = useState<Record<string, string>>({});
   const [showAdvanced, setShowAdvanced] = useState(false);
   const [generationStage, setGenerationStage] = useState(0);
+
+  // Curriculum Preferences & Override States
+  const [savedPreferences, setSavedPreferences] = useState<CurriculumPreferences | null>(null);
+  const [savedLabels, setSavedLabels] = useState<ResolvedCurriculumLabels | null>(null);
+  const [isOverridingCurriculum, setIsOverridingCurriculum] = useState<boolean>(false);
+  const [selectedCountryId, setSelectedCountryId] = useState<string>('in');
+  const [selectedCurriculumId, setSelectedCurriculumId] = useState<string>('cbse');
+  const [selectedRegionId, setSelectedRegionId] = useState<string>('');
+  const [otherCountryText, setOtherCountryText] = useState<string>('');
+  const [otherCurriculumText, setOtherCurriculumText] = useState<string>('');
+
+  // Fetch saved preferences on mount to prefill generator
+  useEffect(() => {
+    api.getCurriculumPreferences().then((res) => {
+      if (res && res.preferences) {
+        setSavedPreferences(res.preferences);
+        setSavedLabels(res.resolvedLabels);
+        setSelectedCountryId(res.preferences.countryId);
+        setSelectedCurriculumId(res.preferences.curriculumId);
+        setSelectedRegionId(res.preferences.regionId || '');
+        setOtherCountryText(res.preferences.otherCountryText || '');
+        setOtherCurriculumText(res.preferences.otherCurriculumText || '');
+
+        // Prepopulate form if no template override is active
+        if (!initialTemplateId) {
+          const summary = res.resolvedLabels?.summary || 'General Standards';
+          setFormData((prev) => ({
+            ...prev,
+            countryId: res.preferences?.countryId,
+            curriculumId: res.preferences?.curriculumId,
+            regionId: res.preferences?.regionId,
+            otherCountryText: res.preferences?.otherCountryText,
+            otherCurriculumText: res.preferences?.otherCurriculumText,
+            curriculumFramework: summary,
+            gradeLevel: res.preferences?.defaultGrade || prev.gradeLevel,
+            curriculumSource: 'preferences',
+          }));
+        }
+      } else {
+        // First time or no preferences: default to open override mode
+        setIsOverridingCurriculum(true);
+      }
+    }).catch((err) => {
+      console.warn('Could not load preferences in wizard:', err);
+      setIsOverridingCurriculum(true);
+    });
+  }, [initialTemplateId]);
+
+  // Catalog item lookup helpers
+  const currentCountry = React.useMemo(() => {
+    return CURRICULUM_CATALOG.countries.find((c) => c.id === selectedCountryId) || CURRICULUM_CATALOG.countries[0];
+  }, [selectedCountryId]);
+
+  const currentCurriculum = React.useMemo(() => {
+    return currentCountry.curricula.find((c) => c.id === selectedCurriculumId) || currentCountry.curricula[0];
+  }, [currentCountry, selectedCurriculumId]);
+
+  const availableRegions = React.useMemo(() => {
+    return currentCurriculum?.regions || [];
+  }, [currentCurriculum]);
+
+  const dynamicGradeOptions = React.useMemo(() => {
+    return currentCurriculum?.gradeOptions && currentCurriculum.gradeOptions.length > 0
+      ? currentCurriculum.gradeOptions
+      : GRADE_OPTIONS;
+  }, [currentCurriculum]);
 
   // Load initial template if specified
   useEffect(() => {
@@ -167,6 +243,20 @@ export const PlanWizard: React.FC<PlanWizardProps> = ({
       }
       if (!formData.subject) errors.subject = 'Please choose a subject';
       if (!formData.gradeLevel) errors.gradeLevel = 'Please choose a grade level';
+
+      if (isOverridingCurriculum || !savedPreferences) {
+        if (!selectedCountryId) errors.countryId = 'Please choose a country';
+        if (!selectedCurriculumId) errors.curriculumId = 'Please choose a curriculum/board';
+        if (currentCurriculum?.requiresRegion && !selectedRegionId) {
+          errors.regionId = `Please choose a ${currentCurriculum.regionLabel || 'region/state'}`;
+        }
+        if (selectedCountryId === 'other' && !otherCountryText.trim()) {
+          errors.otherCountryText = 'Please specify country name';
+        }
+        if ((selectedCurriculumId.endsWith('other') || selectedCurriculumId === 'other-custom') && !otherCurriculumText.trim()) {
+          errors.otherCurriculumText = 'Please specify curriculum framework';
+        }
+      }
     }
 
     if (stepNumber === 2) {
@@ -218,7 +308,30 @@ export const PlanWizard: React.FC<PlanWizardProps> = ({
     if (isGenerating) return;
     onClearError();
 
-    const parsed = GeneratePlanInputSchema.safeParse(formData);
+    const isSaved = Boolean(savedPreferences && !isOverridingCurriculum);
+    const resolvedSummary = isSaved
+      ? (savedLabels?.summary || formData.curriculumFramework)
+      : resolveCurriculumLabels(
+          selectedCountryId,
+          selectedCurriculumId,
+          selectedRegionId,
+          formData.gradeLevel,
+          otherCountryText,
+          otherCurriculumText
+        ).summary;
+
+    const submissionPayload: GeneratePlanInput = {
+      ...formData,
+      countryId: selectedCountryId,
+      curriculumId: selectedCurriculumId,
+      regionId: currentCurriculum?.requiresRegion ? selectedRegionId : undefined,
+      otherCountryText: selectedCountryId === 'other' ? otherCountryText.trim() : undefined,
+      otherCurriculumText: (selectedCurriculumId.endsWith('other') || selectedCurriculumId === 'other-custom') ? otherCurriculumText.trim() : undefined,
+      curriculumFramework: resolvedSummary,
+      curriculumSource: isSaved ? 'preferences' : 'override',
+    };
+
+    const parsed = GeneratePlanInputSchema.safeParse(submissionPayload);
     if (!parsed.success) {
       const errors: Record<string, string> = {};
       let firstErrorStep = 1;
@@ -431,6 +544,181 @@ export const PlanWizard: React.FC<PlanWizardProps> = ({
                   {formErrors.title && <p className="text-[11px] text-red-500 font-medium">{formErrors.title}</p>}
                 </div>
 
+                {/* PREFERENCES PREFILL OR OVERRIDE BANNER */}
+                {savedPreferences && !isOverridingCurriculum ? (
+                  <div className="sm:col-span-2 p-3.5 rounded-xl border border-[var(--border)] bg-[var(--lavender-soft)]/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <div className="neu-icon-box shrink-0" aria-hidden="true">
+                        <Sparkles className="w-4 h-4 text-[var(--accent)]" />
+                      </div>
+                      <div className="min-w-0">
+                        <div className="flex items-center gap-2">
+                          <span className="text-xs font-bold text-[var(--text)]">Using your saved preferences</span>
+                          <span className="inline-flex items-center px-1.5 py-0.2 rounded text-[10px] font-semibold bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800">
+                            Saved Default
+                          </span>
+                        </div>
+                        <p className="text-xs font-semibold text-[var(--primary)] truncate mt-0.5">
+                          {savedLabels?.summary || formData.curriculumFramework}
+                        </p>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => setIsOverridingCurriculum(true)}
+                      className="neu-btn-secondary text-xs font-semibold px-3 py-1.5 self-start sm:self-auto shrink-0"
+                    >
+                      Change for this plan only
+                    </button>
+                  </div>
+                ) : (
+                  <div className="sm:col-span-2 space-y-3.5 p-4 rounded-xl border border-[var(--border)] bg-[var(--surface)]/50">
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-bold text-[var(--text)] flex items-center gap-1.5">
+                        <Sparkles className="w-3.5 h-3.5 text-[var(--accent)]" />
+                        Curriculum Specification
+                        {savedPreferences && (
+                          <span className="text-[10px] text-amber-700 dark:text-amber-400 font-semibold bg-amber-50 dark:bg-amber-950/60 px-2 py-0.5 rounded-full border border-amber-200 dark:border-amber-800">
+                            Override for this plan only
+                          </span>
+                        )}
+                      </span>
+
+                      {savedPreferences && (
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setIsOverridingCurriculum(false);
+                            if (savedPreferences) {
+                              setSelectedCountryId(savedPreferences.countryId);
+                              setSelectedCurriculumId(savedPreferences.curriculumId);
+                              setSelectedRegionId(savedPreferences.regionId || '');
+                              setOtherCountryText(savedPreferences.otherCountryText || '');
+                              setOtherCurriculumText(savedPreferences.otherCurriculumText || '');
+                            }
+                          }}
+                          className="text-[11px] font-semibold text-[var(--primary)] hover:underline"
+                        >
+                          Revert to saved preferences
+                        </button>
+                      )}
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                      {/* Country Select */}
+                      <div className="space-y-1">
+                        <label className="text-[11px] font-semibold text-[var(--text)]">Country</label>
+                        <select
+                          value={selectedCountryId}
+                          onChange={(e) => {
+                            const newCId = e.target.value;
+                            setSelectedCountryId(newCId);
+                            const c = CURRICULUM_CATALOG.countries.find((item) => item.id === newCId);
+                            if (c && c.curricula[0]) {
+                              setSelectedCurriculumId(c.curricula[0].id);
+                              setSelectedRegionId('');
+                              if (c.curricula[0].gradeOptions[0]) {
+                                setFormData((prev) => ({ ...prev, gradeLevel: c.curricula[0].gradeOptions[0] }));
+                              }
+                            }
+                          }}
+                          className="w-full neu-input px-3 py-2 text-xs text-[var(--text)]"
+                        >
+                          {CURRICULUM_CATALOG.countries.map((c) => (
+                            <option key={c.id} value={c.id}>
+                              {c.flagEmoji || '🌐'} {c.name}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+
+                      {/* Curriculum Select */}
+                      <div className="space-y-1">
+                        <label className="text-[11px] font-semibold text-[var(--text)]">Curriculum / Board</label>
+                        <select
+                          value={selectedCurriculumId}
+                          onChange={(e) => {
+                            const newCurrId = e.target.value;
+                            setSelectedCurriculumId(newCurrId);
+                            setSelectedRegionId('');
+                            const curr = currentCountry.curricula.find((item) => item.id === newCurrId);
+                            if (curr && curr.gradeOptions[0]) {
+                              setFormData((prev) => ({ ...prev, gradeLevel: curr.gradeOptions[0] }));
+                            }
+                          }}
+                          className="w-full neu-input px-3 py-2 text-xs text-[var(--text)]"
+                        >
+                          {currentCountry.curricula.map((curr) => (
+                            <option key={curr.id} value={curr.id}>
+                              {curr.label}
+                            </option>
+                          ))}
+                        </select>
+                        {currentCurriculum && (
+                          <span className="inline-block text-[10px] font-semibold text-[var(--primary)] mt-0.5">
+                            [{currentCurriculum.typeBadgeLabel}] &bull; {currentCurriculum.spelling} English
+                          </span>
+                        )}
+                      </div>
+
+                      {/* Region Select (if required) */}
+                      {currentCurriculum?.requiresRegion && (
+                        <div className="space-y-1">
+                          <label className="text-[11px] font-semibold text-[var(--text)]">
+                            {currentCurriculum.regionLabel || 'Region / State'} <span className="text-red-500">*</span>
+                          </label>
+                          <select
+                            value={selectedRegionId}
+                            onChange={(e) => setSelectedRegionId(e.target.value)}
+                            className={`w-full neu-input px-3 py-2 text-xs text-[var(--text)] ${
+                              formErrors.regionId ? '!border-red-500' : ''
+                            }`}
+                          >
+                            <option value="">-- Choose {currentCurriculum.regionLabel || 'Region'} --</option>
+                            {availableRegions.map((reg) => (
+                              <option key={reg.id} value={reg.id}>
+                                {reg.name}
+                              </option>
+                            ))}
+                          </select>
+                          {formErrors.regionId && (
+                            <p className="text-[10px] text-red-500 font-medium">{formErrors.regionId}</p>
+                          )}
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Conditional other inputs */}
+                    {selectedCountryId === 'other' && (
+                      <div className="space-y-1">
+                        <label className="text-[11px] font-semibold text-[var(--text)]">Specify Country</label>
+                        <input
+                          type="text"
+                          maxLength={80}
+                          value={otherCountryText}
+                          onChange={(e) => setOtherCountryText(e.target.value)}
+                          placeholder="e.g. Singapore"
+                          className="w-full neu-input px-3 py-2 text-xs text-[var(--text)]"
+                        />
+                      </div>
+                    )}
+
+                    {(selectedCurriculumId.endsWith('other') || selectedCurriculumId === 'other-custom') && (
+                      <div className="space-y-1">
+                        <label className="text-[11px] font-semibold text-[var(--text)]">Specify Syllabus</label>
+                        <input
+                          type="text"
+                          maxLength={80}
+                          value={otherCurriculumText}
+                          onChange={(e) => setOtherCurriculumText(e.target.value)}
+                          placeholder="e.g. Autonomous Foundation Curriculum"
+                          className="w-full neu-input px-3 py-2 text-xs text-[var(--text)]"
+                        />
+                      </div>
+                    )}
+                  </div>
+                )}
+
                 <div className="space-y-1.5">
                   <label className="text-xs font-semibold text-[var(--text)]">
                     Subject <span className="text-red-500">*</span>
@@ -455,23 +743,8 @@ export const PlanWizard: React.FC<PlanWizardProps> = ({
                     onChange={(e) => setFormData({ ...formData, gradeLevel: e.target.value })}
                     className="w-full neu-input px-3.5 py-2.5 text-xs text-[var(--text)]"
                   >
-                    {GRADE_OPTIONS.map((grd) => (
+                    {dynamicGradeOptions.map((grd) => (
                       <option key={grd} value={grd}>{grd}</option>
-                    ))}
-                  </select>
-                </div>
-
-                <div className="space-y-1.5">
-                  <label className="text-xs font-semibold text-[var(--text)]">
-                    Curriculum Framework <span className="text-red-500">*</span>
-                  </label>
-                  <select
-                    value={formData.curriculumFramework}
-                    onChange={(e) => setFormData({ ...formData, curriculumFramework: e.target.value })}
-                    className="w-full neu-input px-3.5 py-2.5 text-xs text-[var(--text)]"
-                  >
-                    {CURRICULUM_OPTIONS.map((c) => (
-                      <option key={c} value={c}>{c}</option>
                     ))}
                   </select>
                 </div>

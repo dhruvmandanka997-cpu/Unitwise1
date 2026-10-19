@@ -191,3 +191,5 @@ Executes type checks and builds both packages:
 - **No Secret Key Exposure**: All AI provider integrations and secret credentials exist exclusively in server-side code (`backend/`).
 - **Zero Hallucination of Standards**: The system explicitly marks unverified curriculum codes with `'suggested_unverified'` and provides a professional review disclaimer.
 - **Graceful Fault Tolerance**: Generation inputs are preserved upon error, allowing immediate retry without data loss.
+#   U n i t w i s e 1  
+ 

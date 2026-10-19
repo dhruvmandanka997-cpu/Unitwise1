@@ -131,10 +131,10 @@ export function generatePrintHtml(plan: LessonPlan): string {
   </div>
 
   <div class="meta-grid">
-    <div><strong>Curriculum Framework:</strong> ${plan.curriculumFramework}</div>
-    <div><strong>Standards:</strong> ${plan.standardsFramework || 'General Standards Alignment'}</div>
+    <div><strong>Curriculum Framework:</strong> ${escapeHtml(plan.curriculumContext?.labels?.summary || plan.curriculumFramework)}</div>
+    <div><strong>Standards:</strong> ${escapeHtml(plan.standardsFramework || 'General Standards Alignment')}</div>
     <div><strong>Schedule Format:</strong> ${plan.format === 'calendar' ? 'Weekly Calendar Sequence' : 'Linear Teaching Sessions'}</div>
-    <div><strong>Teaching Methods:</strong> ${plan.teachingMethods.join(', ') || 'Mixed Instructional Models'}</div>
+    <div><strong>Teaching Methods:</strong> ${escapeHtml(plan.teachingMethods.join(', ') || 'Mixed Instructional Models')}</div>
   </div>
 
   <h2>1. Unit Overview & Learning Goals</h2>

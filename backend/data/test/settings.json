@@ -6,5 +6,12 @@
   "defaultClassDuration": 50,
   "theme": "light",
   "aiProvider": "gemini",
-  "apiKeyConfigured": false
+  "apiKeyConfigured": false,
+  "curriculumPreferences": {
+    "countryId": "in",
+    "curriculumId": "cbse",
+    "defaultGrade": "Class 8",
+    "catalogVersion": "1.0.0",
+    "updatedAt": "2026-10-17T09:26:28.670Z"
+  }
 }

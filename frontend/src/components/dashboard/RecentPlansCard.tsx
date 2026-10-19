@@ -122,7 +122,7 @@ export const RecentPlansCard: React.FC<RecentPlansCardProps> = ({
                     <div className="flex items-center gap-1.5 text-[10px] text-[var(--text-muted)] mt-0.5">
                       <span className="font-medium text-[var(--primary)]">{plan.subject}</span>
                       <span>&bull;</span>
-                      <span>{plan.gradeLevel}</span>
+                      <span className="truncate max-w-[120px]">{plan.curriculumContext?.labels?.summary || plan.gradeLevel}</span>
                       <span>&bull;</span>
                       <span>{formatDate(plan.updatedAt)}</span>
                     </div>

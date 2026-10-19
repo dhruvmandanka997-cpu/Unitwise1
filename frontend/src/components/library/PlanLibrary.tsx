@@ -13,7 +13,8 @@ import {
   Plus,
   FolderKanban,
   CheckCircle2,
-  Info
+  Info,
+  BookOpen
 } from 'lucide-react';
 import { LessonPlan } from '../../types/plan';
 import { SUBJECT_OPTIONS } from '../../data/templates';
@@ -358,6 +359,18 @@ export const PlanLibrary: React.FC<PlanLibraryProps> = ({
                   >
                     {plan.title}
                   </h3>
+
+                  {/* Curriculum Snapshot Summary */}
+                  {plan.curriculumContext?.labels?.summary ? (
+                    <div className="mt-1 flex items-center gap-1.5 text-[11px] font-semibold text-[var(--primary)] truncate">
+                      <BookOpen className="w-3 h-3 text-[var(--accent)] shrink-0" />
+                      <span className="truncate">{plan.curriculumContext.labels.summary}</span>
+                    </div>
+                  ) : (
+                    <div className="mt-1 flex items-center gap-1.5 text-[11px] font-normal text-[var(--text-muted)] truncate">
+                      <span className="truncate">{plan.curriculumFramework || 'No curriculum set'}</span>
+                    </div>
+                  )}
                 </div>
 
                 {/* Row 3: Footer with Duration, Session Count, and Open Plan Action */}

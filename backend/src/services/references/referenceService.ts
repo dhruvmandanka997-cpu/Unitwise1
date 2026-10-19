@@ -48,14 +48,25 @@ export class ReferenceService {
 
     const baseSubject = plan.subject;
     const baseGrade = plan.gradeLevel;
-    const framework = plan.curriculumFramework || '';
-    const boardKey = framework.toLowerCase().includes('cbse') || framework.toLowerCase().includes('ncert')
-      ? 'CBSE NCERT'
-      : framework.toLowerCase().includes('ngss')
-      ? 'NGSS'
-      : framework.toLowerCase().includes('common core')
-      ? 'Common Core'
-      : '';
+    const ctx = plan.curriculumContext;
+    
+    // Resolve board name from structured curriculum context if present
+    let boardKey = '';
+    if (ctx?.labels?.curriculum) {
+      boardKey = ctx.labels.curriculum;
+      if (ctx.labels.region) {
+        boardKey = `${ctx.labels.curriculum} ${ctx.labels.region}`;
+      }
+    } else {
+      const framework = plan.curriculumFramework || '';
+      boardKey = framework.toLowerCase().includes('cbse') || framework.toLowerCase().includes('ncert')
+        ? 'CBSE NCERT'
+        : framework.toLowerCase().includes('ngss')
+        ? 'NGSS'
+        : framework.toLowerCase().includes('common core')
+        ? 'Common Core'
+        : framework;
+    }
 
     // 1. Curriculum Standards & Syllabus query
     queries.push({

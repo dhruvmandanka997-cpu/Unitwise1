@@ -665,6 +665,20 @@ export const PlanWorkspace: React.FC<PlanWorkspaceProps> = ({
                 <span>{currentPlan.durationWeeks} weeks ({totalSessionsCount} sessions)</span>
                 <span>&bull;</span>
                 <span>{currentPlan.classDurationMinutes} min/class</span>
+                <span>&bull;</span>
+                {currentPlan.curriculumContext?.labels?.summary ? (
+                  <span 
+                    className="inline-flex items-center gap-1 rounded-full bg-[var(--lavender-soft)] px-2.5 py-0.5 text-[10px] font-semibold text-[var(--primary)] border border-[var(--border)]"
+                    title={`Curriculum snapshot (${currentPlan.curriculumContext.source})`}
+                  >
+                    <BookOpen className="w-3 h-3 text-[var(--accent)]" />
+                    <span>{currentPlan.curriculumContext.labels.summary}</span>
+                  </span>
+                ) : (
+                  <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 dark:bg-slate-800 px-2.5 py-0.5 text-[10px] font-medium text-[var(--text-muted)] border border-[var(--border)]">
+                    No curriculum set
+                  </span>
+                )}
                 <select
                   value={currentPlan.status}
                   onChange={(e) => handleUpdate({ ...currentPlan, status: e.target.value as 'draft' | 'completed' | 'archived' })}

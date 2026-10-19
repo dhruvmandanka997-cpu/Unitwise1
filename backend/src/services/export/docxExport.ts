@@ -42,10 +42,11 @@ export async function generateDocx(plan: LessonPlan): Promise<Buffer> {
     spacing: { after: 200 },
   });
 
+  const curriculumDisplay = plan.curriculumContext?.labels?.summary || plan.curriculumFramework;
   const curriculumParagraph = new Paragraph({
     children: [
       new TextRun({ text: 'Curriculum Framework: ', bold: true }),
-      new TextRun({ text: `${plan.curriculumFramework}\n` }),
+      new TextRun({ text: `${curriculumDisplay}\n` }),
       new TextRun({ text: 'Standards Alignment: ', bold: true }),
       new TextRun({ text: `${plan.standardsFramework || 'General Standards'}\n` }),
     ],

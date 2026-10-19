@@ -41,7 +41,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:09:40.531Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_1sxmfawmv80cm57_learning_objectives",
@@ -85,7 +85,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:09:40.531Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_1sxmfawmv80cm57_curriculum_standards",
@@ -129,7 +129,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:09:40.531Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_1sxmfawmv80cm57_assessment_rubric",
@@ -173,7 +173,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:09:40.531Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_1sxmfawmv80cm57_teaching_materials",
@@ -211,7 +211,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:09:40.531Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_1sxmfawmv80cm57_differentiation",
@@ -255,7 +255,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:09:40.531Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_1sxmfawmv80cm57_lesson_sequences",
@@ -293,7 +293,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:09:40.531Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_1sxmfawmv80cm57_finalize_plan",
@@ -339,7 +339,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:09:40.531Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_1sxmfawmv80cm57_export_share",
@@ -379,7 +379,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:09:40.531Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_ddqkiizmv54vuwq_plan_setup",
@@ -423,7 +423,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_ddqkiizmv54vuwq_learning_objectives",
@@ -467,7 +467,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_ddqkiizmv54vuwq_curriculum_standards",
@@ -511,7 +511,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_ddqkiizmv54vuwq_assessment_rubric",
@@ -555,7 +555,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_ddqkiizmv54vuwq_teaching_materials",
@@ -593,7 +593,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_ddqkiizmv54vuwq_differentiation",
@@ -637,7 +637,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_ddqkiizmv54vuwq_lesson_sequences",
@@ -675,7 +675,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_ddqkiizmv54vuwq_finalize_plan",
@@ -721,7 +721,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_ddqkiizmv54vuwq_export_share",
@@ -761,7 +761,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_38j6c2wmv54vuw8_plan_setup",
@@ -805,7 +805,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_38j6c2wmv54vuw8_learning_objectives",
@@ -849,7 +849,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_38j6c2wmv54vuw8_curriculum_standards",
@@ -893,7 +893,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_38j6c2wmv54vuw8_assessment_rubric",
@@ -937,7 +937,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_38j6c2wmv54vuw8_teaching_materials",
@@ -975,7 +975,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_38j6c2wmv54vuw8_differentiation",
@@ -1019,7 +1019,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_38j6c2wmv54vuw8_lesson_sequences",
@@ -1057,7 +1057,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_38j6c2wmv54vuw8_finalize_plan",
@@ -1103,7 +1103,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_38j6c2wmv54vuw8_export_share",
@@ -1143,7 +1143,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_va97xodmv54vus5_plan_setup",
@@ -1187,7 +1187,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_va97xodmv54vus5_learning_objectives",
@@ -1231,7 +1231,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_va97xodmv54vus5_curriculum_standards",
@@ -1275,7 +1275,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_va97xodmv54vus5_assessment_rubric",
@@ -1319,7 +1319,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_va97xodmv54vus5_teaching_materials",
@@ -1357,7 +1357,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_va97xodmv54vus5_differentiation",
@@ -1401,7 +1401,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_va97xodmv54vus5_lesson_sequences",
@@ -1439,7 +1439,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_va97xodmv54vus5_finalize_plan",
@@ -1479,7 +1479,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_va97xodmv54vus5_export_share",
@@ -1513,7 +1513,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.688Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_dwk8wn0mv54vuqo_plan_setup",
@@ -1557,7 +1557,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_dwk8wn0mv54vuqo_learning_objectives",
@@ -1601,7 +1601,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_dwk8wn0mv54vuqo_curriculum_standards",
@@ -1645,7 +1645,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_dwk8wn0mv54vuqo_assessment_rubric",
@@ -1689,7 +1689,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_dwk8wn0mv54vuqo_teaching_materials",
@@ -1727,7 +1727,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_dwk8wn0mv54vuqo_differentiation",
@@ -1771,7 +1771,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_dwk8wn0mv54vuqo_lesson_sequences",
@@ -1809,7 +1809,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_dwk8wn0mv54vuqo_finalize_plan",
@@ -1855,7 +1855,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_dwk8wn0mv54vuqo_export_share",
@@ -1895,7 +1895,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_gltfltsmv3wgqx4_plan_setup",
@@ -1939,7 +1939,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_gltfltsmv3wgqx4_learning_objectives",
@@ -1983,7 +1983,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_gltfltsmv3wgqx4_curriculum_standards",
@@ -2027,7 +2027,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_gltfltsmv3wgqx4_assessment_rubric",
@@ -2071,7 +2071,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_gltfltsmv3wgqx4_teaching_materials",
@@ -2109,7 +2109,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_gltfltsmv3wgqx4_differentiation",
@@ -2153,7 +2153,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_gltfltsmv3wgqx4_lesson_sequences",
@@ -2191,7 +2191,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_gltfltsmv3wgqx4_finalize_plan",
@@ -2237,7 +2237,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_gltfltsmv3wgqx4_export_share",
@@ -2277,7 +2277,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_6zbzkjjmv3wgqwn_plan_setup",
@@ -2321,7 +2321,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_6zbzkjjmv3wgqwn_learning_objectives",
@@ -2365,7 +2365,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_6zbzkjjmv3wgqwn_curriculum_standards",
@@ -2409,7 +2409,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_6zbzkjjmv3wgqwn_assessment_rubric",
@@ -2453,7 +2453,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_6zbzkjjmv3wgqwn_teaching_materials",
@@ -2491,7 +2491,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_6zbzkjjmv3wgqwn_differentiation",
@@ -2535,7 +2535,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_6zbzkjjmv3wgqwn_lesson_sequences",
@@ -2573,7 +2573,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_6zbzkjjmv3wgqwn_finalize_plan",
@@ -2619,7 +2619,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_6zbzkjjmv3wgqwn_export_share",
@@ -2659,7 +2659,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.202Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_mv6da09mv3wgqsy_plan_setup",
@@ -2703,7 +2703,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_mv6da09mv3wgqsy_learning_objectives",
@@ -2747,7 +2747,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_mv6da09mv3wgqsy_curriculum_standards",
@@ -2791,7 +2791,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_mv6da09mv3wgqsy_assessment_rubric",
@@ -2835,7 +2835,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_mv6da09mv3wgqsy_teaching_materials",
@@ -2873,7 +2873,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_mv6da09mv3wgqsy_differentiation",
@@ -2917,7 +2917,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_mv6da09mv3wgqsy_lesson_sequences",
@@ -2955,7 +2955,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_mv6da09mv3wgqsy_finalize_plan",
@@ -2995,7 +2995,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_mv6da09mv3wgqsy_export_share",
@@ -3029,7 +3029,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_a592c2pmv3wgqrg_plan_setup",
@@ -3073,7 +3073,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_a592c2pmv3wgqrg_learning_objectives",
@@ -3117,7 +3117,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_a592c2pmv3wgqrg_curriculum_standards",
@@ -3161,7 +3161,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_a592c2pmv3wgqrg_assessment_rubric",
@@ -3205,7 +3205,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_a592c2pmv3wgqrg_teaching_materials",
@@ -3243,7 +3243,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_a592c2pmv3wgqrg_differentiation",
@@ -3287,7 +3287,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_a592c2pmv3wgqrg_lesson_sequences",
@@ -3325,7 +3325,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_a592c2pmv3wgqrg_finalize_plan",
@@ -3371,7 +3371,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_a592c2pmv3wgqrg_export_share",
@@ -3411,7 +3411,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.689Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_g9qu3ximv3wbpg1_plan_setup",
@@ -3455,7 +3455,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_g9qu3ximv3wbpg1_learning_objectives",
@@ -3499,7 +3499,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_g9qu3ximv3wbpg1_curriculum_standards",
@@ -3543,7 +3543,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_g9qu3ximv3wbpg1_assessment_rubric",
@@ -3587,7 +3587,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_g9qu3ximv3wbpg1_teaching_materials",
@@ -3625,7 +3625,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_g9qu3ximv3wbpg1_differentiation",
@@ -3669,7 +3669,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_g9qu3ximv3wbpg1_lesson_sequences",
@@ -3707,7 +3707,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_g9qu3ximv3wbpg1_finalize_plan",
@@ -3753,7 +3753,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_g9qu3ximv3wbpg1_export_share",
@@ -3793,7 +3793,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_7g1y3unmv3wbpfl_plan_setup",
@@ -3837,7 +3837,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_7g1y3unmv3wbpfl_learning_objectives",
@@ -3881,7 +3881,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_7g1y3unmv3wbpfl_curriculum_standards",
@@ -3925,7 +3925,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_7g1y3unmv3wbpfl_assessment_rubric",
@@ -3969,7 +3969,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_7g1y3unmv3wbpfl_teaching_materials",
@@ -4007,7 +4007,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_7g1y3unmv3wbpfl_differentiation",
@@ -4051,7 +4051,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_7g1y3unmv3wbpfl_lesson_sequences",
@@ -4089,7 +4089,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_7g1y3unmv3wbpfl_finalize_plan",
@@ -4135,7 +4135,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_7g1y3unmv3wbpfl_export_share",
@@ -4175,7 +4175,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_9lvfjt4mv3wbpcj_plan_setup",
@@ -4219,7 +4219,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_9lvfjt4mv3wbpcj_learning_objectives",
@@ -4263,7 +4263,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_9lvfjt4mv3wbpcj_curriculum_standards",
@@ -4307,7 +4307,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_9lvfjt4mv3wbpcj_assessment_rubric",
@@ -4351,7 +4351,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_9lvfjt4mv3wbpcj_teaching_materials",
@@ -4389,7 +4389,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_9lvfjt4mv3wbpcj_differentiation",
@@ -4433,7 +4433,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_9lvfjt4mv3wbpcj_lesson_sequences",
@@ -4471,7 +4471,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_9lvfjt4mv3wbpcj_finalize_plan",
@@ -4511,7 +4511,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_9lvfjt4mv3wbpcj_export_share",
@@ -4545,7 +4545,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_qvmbmgamv3wbpb2_plan_setup",
@@ -4589,7 +4589,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_qvmbmgamv3wbpb2_learning_objectives",
@@ -4633,7 +4633,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_qvmbmgamv3wbpb2_curriculum_standards",
@@ -4677,7 +4677,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_qvmbmgamv3wbpb2_assessment_rubric",
@@ -4721,7 +4721,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_qvmbmgamv3wbpb2_teaching_materials",
@@ -4759,7 +4759,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_qvmbmgamv3wbpb2_differentiation",
@@ -4803,7 +4803,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_qvmbmgamv3wbpb2_lesson_sequences",
@@ -4841,7 +4841,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_qvmbmgamv3wbpb2_finalize_plan",
@@ -4887,7 +4887,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_qvmbmgamv3wbpb2_export_share",
@@ -4927,7 +4927,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_2l00p1amv3wap9j_plan_setup",
@@ -4971,7 +4971,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_2l00p1amv3wap9j_learning_objectives",
@@ -5015,7 +5015,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_2l00p1amv3wap9j_curriculum_standards",
@@ -5059,7 +5059,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_2l00p1amv3wap9j_assessment_rubric",
@@ -5103,7 +5103,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_2l00p1amv3wap9j_teaching_materials",
@@ -5141,7 +5141,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_2l00p1amv3wap9j_differentiation",
@@ -5185,7 +5185,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_2l00p1amv3wap9j_lesson_sequences",
@@ -5223,7 +5223,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_2l00p1amv3wap9j_finalize_plan",
@@ -5269,7 +5269,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_2l00p1amv3wap9j_export_share",
@@ -5309,7 +5309,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_yxfwrjimv3wap8z_plan_setup",
@@ -5353,7 +5353,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_yxfwrjimv3wap8z_learning_objectives",
@@ -5397,7 +5397,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_yxfwrjimv3wap8z_curriculum_standards",
@@ -5441,7 +5441,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_yxfwrjimv3wap8z_assessment_rubric",
@@ -5485,7 +5485,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_yxfwrjimv3wap8z_teaching_materials",
@@ -5523,7 +5523,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_yxfwrjimv3wap8z_differentiation",
@@ -5567,7 +5567,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_yxfwrjimv3wap8z_lesson_sequences",
@@ -5605,7 +5605,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_yxfwrjimv3wap8z_finalize_plan",
@@ -5651,7 +5651,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_yxfwrjimv3wap8z_export_share",
@@ -5691,7 +5691,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_d1pi8kumv3wap4e_plan_setup",
@@ -5735,7 +5735,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_d1pi8kumv3wap4e_learning_objectives",
@@ -5779,7 +5779,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_d1pi8kumv3wap4e_curriculum_standards",
@@ -5823,7 +5823,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_d1pi8kumv3wap4e_assessment_rubric",
@@ -5867,7 +5867,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_d1pi8kumv3wap4e_teaching_materials",
@@ -5905,7 +5905,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_d1pi8kumv3wap4e_differentiation",
@@ -5949,7 +5949,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_d1pi8kumv3wap4e_lesson_sequences",
@@ -5987,7 +5987,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_d1pi8kumv3wap4e_finalize_plan",
@@ -6027,7 +6027,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_d1pi8kumv3wap4e_export_share",
@@ -6061,7 +6061,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.094Z"
   },
   {
     "id": "task_plan_l5g65vymv3wap1z_plan_setup",
@@ -6105,7 +6105,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_l5g65vymv3wap1z_learning_objectives",
@@ -6149,7 +6149,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_l5g65vymv3wap1z_curriculum_standards",
@@ -6193,7 +6193,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_l5g65vymv3wap1z_assessment_rubric",
@@ -6237,7 +6237,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_l5g65vymv3wap1z_teaching_materials",
@@ -6275,7 +6275,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_l5g65vymv3wap1z_differentiation",
@@ -6319,7 +6319,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_l5g65vymv3wap1z_lesson_sequences",
@@ -6357,7 +6357,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_l5g65vymv3wap1z_finalize_plan",
@@ -6403,7 +6403,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_l5g65vymv3wap1z_export_share",
@@ -6443,7 +6443,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_9jz6le7mv3w7rtg_plan_setup",
@@ -6487,7 +6487,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_9jz6le7mv3w7rtg_learning_objectives",
@@ -6531,7 +6531,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_9jz6le7mv3w7rtg_curriculum_standards",
@@ -6575,7 +6575,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_9jz6le7mv3w7rtg_assessment_rubric",
@@ -6619,7 +6619,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_9jz6le7mv3w7rtg_teaching_materials",
@@ -6657,7 +6657,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_9jz6le7mv3w7rtg_differentiation",
@@ -6701,7 +6701,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_9jz6le7mv3w7rtg_lesson_sequences",
@@ -6739,7 +6739,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_9jz6le7mv3w7rtg_finalize_plan",
@@ -6785,7 +6785,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_9jz6le7mv3w7rtg_export_share",
@@ -6825,7 +6825,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.203Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_qjpuntfmv3w7rt4_plan_setup",
@@ -6869,7 +6869,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_qjpuntfmv3w7rt4_learning_objectives",
@@ -6913,7 +6913,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_qjpuntfmv3w7rt4_curriculum_standards",
@@ -6957,7 +6957,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_qjpuntfmv3w7rt4_assessment_rubric",
@@ -7001,7 +7001,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_qjpuntfmv3w7rt4_teaching_materials",
@@ -7039,7 +7039,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_qjpuntfmv3w7rt4_differentiation",
@@ -7083,7 +7083,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_qjpuntfmv3w7rt4_lesson_sequences",
@@ -7121,7 +7121,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_qjpuntfmv3w7rt4_finalize_plan",
@@ -7167,7 +7167,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_qjpuntfmv3w7rt4_export_share",
@@ -7207,7 +7207,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.690Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_d0x263emv3w7rqo_plan_setup",
@@ -7251,7 +7251,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_d0x263emv3w7rqo_learning_objectives",
@@ -7295,7 +7295,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_d0x263emv3w7rqo_curriculum_standards",
@@ -7339,7 +7339,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_d0x263emv3w7rqo_assessment_rubric",
@@ -7383,7 +7383,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_d0x263emv3w7rqo_teaching_materials",
@@ -7421,7 +7421,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_d0x263emv3w7rqo_differentiation",
@@ -7465,7 +7465,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_d0x263emv3w7rqo_lesson_sequences",
@@ -7503,7 +7503,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_d0x263emv3w7rqo_finalize_plan",
@@ -7543,7 +7543,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_d0x263emv3w7rqo_export_share",
@@ -7577,7 +7577,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_gv72jg4mv3w7rpx_plan_setup",
@@ -7621,7 +7621,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_gv72jg4mv3w7rpx_learning_objectives",
@@ -7665,7 +7665,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_gv72jg4mv3w7rpx_curriculum_standards",
@@ -7709,7 +7709,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_gv72jg4mv3w7rpx_assessment_rubric",
@@ -7753,7 +7753,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_gv72jg4mv3w7rpx_teaching_materials",
@@ -7791,7 +7791,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_gv72jg4mv3w7rpx_differentiation",
@@ -7835,7 +7835,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_gv72jg4mv3w7rpx_lesson_sequences",
@@ -7873,7 +7873,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_gv72jg4mv3w7rpx_finalize_plan",
@@ -7919,7 +7919,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_gv72jg4mv3w7rpx_export_share",
@@ -7959,7 +7959,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_o99u8pgmv3vujss_plan_setup",
@@ -8003,7 +8003,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_o99u8pgmv3vujss_learning_objectives",
@@ -8047,7 +8047,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_o99u8pgmv3vujss_curriculum_standards",
@@ -8091,7 +8091,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_o99u8pgmv3vujss_assessment_rubric",
@@ -8135,7 +8135,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_o99u8pgmv3vujss_teaching_materials",
@@ -8173,7 +8173,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_o99u8pgmv3vujss_differentiation",
@@ -8217,7 +8217,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_o99u8pgmv3vujss_lesson_sequences",
@@ -8255,7 +8255,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_o99u8pgmv3vujss_finalize_plan",
@@ -8301,7 +8301,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_o99u8pgmv3vujss_export_share",
@@ -8341,7 +8341,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_048yz0zmv3vujsg_plan_setup",
@@ -8385,7 +8385,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_048yz0zmv3vujsg_learning_objectives",
@@ -8429,7 +8429,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_048yz0zmv3vujsg_curriculum_standards",
@@ -8473,7 +8473,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_048yz0zmv3vujsg_assessment_rubric",
@@ -8517,7 +8517,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_048yz0zmv3vujsg_teaching_materials",
@@ -8555,7 +8555,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_048yz0zmv3vujsg_differentiation",
@@ -8599,7 +8599,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_048yz0zmv3vujsg_lesson_sequences",
@@ -8637,7 +8637,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_048yz0zmv3vujsg_finalize_plan",
@@ -8683,7 +8683,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_048yz0zmv3vujsg_export_share",
@@ -8723,7 +8723,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mh396v0mv3vujpp_plan_setup",
@@ -8767,7 +8767,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mh396v0mv3vujpp_learning_objectives",
@@ -8811,7 +8811,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mh396v0mv3vujpp_curriculum_standards",
@@ -8855,7 +8855,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mh396v0mv3vujpp_assessment_rubric",
@@ -8899,7 +8899,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mh396v0mv3vujpp_teaching_materials",
@@ -8937,7 +8937,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mh396v0mv3vujpp_differentiation",
@@ -8981,7 +8981,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mh396v0mv3vujpp_lesson_sequences",
@@ -9019,7 +9019,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mh396v0mv3vujpp_finalize_plan",
@@ -9059,7 +9059,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mh396v0mv3vujpp_export_share",
@@ -9093,7 +9093,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_2ap0vmrmv3vujo8_plan_setup",
@@ -9137,7 +9137,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_2ap0vmrmv3vujo8_learning_objectives",
@@ -9181,7 +9181,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_2ap0vmrmv3vujo8_curriculum_standards",
@@ -9225,7 +9225,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_2ap0vmrmv3vujo8_assessment_rubric",
@@ -9269,7 +9269,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_2ap0vmrmv3vujo8_teaching_materials",
@@ -9307,7 +9307,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_2ap0vmrmv3vujo8_differentiation",
@@ -9351,7 +9351,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_2ap0vmrmv3vujo8_lesson_sequences",
@@ -9389,7 +9389,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_2ap0vmrmv3vujo8_finalize_plan",
@@ -9435,7 +9435,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_2ap0vmrmv3vujo8_export_share",
@@ -9475,7 +9475,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_u12niv2mv3vbjwc_plan_setup",
@@ -9519,7 +9519,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_u12niv2mv3vbjwc_learning_objectives",
@@ -9563,7 +9563,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_u12niv2mv3vbjwc_curriculum_standards",
@@ -9607,7 +9607,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_u12niv2mv3vbjwc_assessment_rubric",
@@ -9651,7 +9651,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_u12niv2mv3vbjwc_teaching_materials",
@@ -9689,7 +9689,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_u12niv2mv3vbjwc_differentiation",
@@ -9733,7 +9733,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_u12niv2mv3vbjwc_lesson_sequences",
@@ -9771,7 +9771,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_u12niv2mv3vbjwc_finalize_plan",
@@ -9817,7 +9817,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_u12niv2mv3vbjwc_export_share",
@@ -9857,7 +9857,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mjcr3ocmv3vbjw1_plan_setup",
@@ -9901,7 +9901,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mjcr3ocmv3vbjw1_learning_objectives",
@@ -9945,7 +9945,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mjcr3ocmv3vbjw1_curriculum_standards",
@@ -9989,7 +9989,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mjcr3ocmv3vbjw1_assessment_rubric",
@@ -10033,7 +10033,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mjcr3ocmv3vbjw1_teaching_materials",
@@ -10071,7 +10071,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mjcr3ocmv3vbjw1_differentiation",
@@ -10115,7 +10115,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mjcr3ocmv3vbjw1_lesson_sequences",
@@ -10153,7 +10153,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mjcr3ocmv3vbjw1_finalize_plan",
@@ -10199,7 +10199,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_mjcr3ocmv3vbjw1_export_share",
@@ -10239,7 +10239,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_g6x6v27mv3vbjtl_plan_setup",
@@ -10283,7 +10283,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_g6x6v27mv3vbjtl_learning_objectives",
@@ -10327,7 +10327,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_g6x6v27mv3vbjtl_curriculum_standards",
@@ -10371,7 +10371,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_g6x6v27mv3vbjtl_assessment_rubric",
@@ -10415,7 +10415,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_g6x6v27mv3vbjtl_teaching_materials",
@@ -10453,7 +10453,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_g6x6v27mv3vbjtl_differentiation",
@@ -10497,7 +10497,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_g6x6v27mv3vbjtl_lesson_sequences",
@@ -10535,7 +10535,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_g6x6v27mv3vbjtl_finalize_plan",
@@ -10575,7 +10575,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_g6x6v27mv3vbjtl_export_share",
@@ -10609,7 +10609,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.691Z"
+    "updatedAt": "2026-10-17T09:20:07.095Z"
   },
   {
     "id": "task_plan_ey0ro8nmv3vbjs8_plan_setup",
@@ -10653,7 +10653,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_ey0ro8nmv3vbjs8_learning_objectives",
@@ -10697,7 +10697,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_ey0ro8nmv3vbjs8_curriculum_standards",
@@ -10741,7 +10741,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_ey0ro8nmv3vbjs8_assessment_rubric",
@@ -10785,7 +10785,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_ey0ro8nmv3vbjs8_teaching_materials",
@@ -10823,7 +10823,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_ey0ro8nmv3vbjs8_differentiation",
@@ -10867,7 +10867,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_ey0ro8nmv3vbjs8_lesson_sequences",
@@ -10905,7 +10905,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_ey0ro8nmv3vbjs8_finalize_plan",
@@ -10951,7 +10951,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_ey0ro8nmv3vbjs8_export_share",
@@ -10991,7 +10991,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_8iif2d1mv3uooxe_plan_setup",
@@ -11035,7 +11035,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_8iif2d1mv3uooxe_learning_objectives",
@@ -11079,7 +11079,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_8iif2d1mv3uooxe_curriculum_standards",
@@ -11123,7 +11123,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_8iif2d1mv3uooxe_assessment_rubric",
@@ -11167,7 +11167,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_8iif2d1mv3uooxe_teaching_materials",
@@ -11205,7 +11205,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_8iif2d1mv3uooxe_differentiation",
@@ -11249,7 +11249,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_8iif2d1mv3uooxe_lesson_sequences",
@@ -11287,7 +11287,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_8iif2d1mv3uooxe_finalize_plan",
@@ -11333,7 +11333,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_8iif2d1mv3uooxe_export_share",
@@ -11373,7 +11373,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_qqfq9n1mv3uoox1_plan_setup",
@@ -11417,7 +11417,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_qqfq9n1mv3uoox1_learning_objectives",
@@ -11461,7 +11461,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_qqfq9n1mv3uoox1_curriculum_standards",
@@ -11505,7 +11505,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_qqfq9n1mv3uoox1_assessment_rubric",
@@ -11549,7 +11549,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_qqfq9n1mv3uoox1_teaching_materials",
@@ -11587,7 +11587,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_qqfq9n1mv3uoox1_differentiation",
@@ -11631,7 +11631,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_qqfq9n1mv3uoox1_lesson_sequences",
@@ -11669,7 +11669,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_qqfq9n1mv3uoox1_finalize_plan",
@@ -11715,7 +11715,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_qqfq9n1mv3uoox1_export_share",
@@ -11755,7 +11755,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.204Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_g0au25ymv3uoov7_plan_setup",
@@ -11799,7 +11799,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_g0au25ymv3uoov7_learning_objectives",
@@ -11843,7 +11843,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_g0au25ymv3uoov7_curriculum_standards",
@@ -11887,7 +11887,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_g0au25ymv3uoov7_assessment_rubric",
@@ -11931,7 +11931,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_g0au25ymv3uoov7_teaching_materials",
@@ -11969,7 +11969,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_g0au25ymv3uoov7_differentiation",
@@ -12013,7 +12013,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_g0au25ymv3uoov7_lesson_sequences",
@@ -12051,7 +12051,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_g0au25ymv3uoov7_finalize_plan",
@@ -12091,7 +12091,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_g0au25ymv3uoov7_export_share",
@@ -12125,7 +12125,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_binh7wumv3ul938_plan_setup",
@@ -12169,7 +12169,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_binh7wumv3ul938_learning_objectives",
@@ -12213,7 +12213,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_binh7wumv3ul938_curriculum_standards",
@@ -12257,7 +12257,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_binh7wumv3ul938_assessment_rubric",
@@ -12301,7 +12301,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_binh7wumv3ul938_teaching_materials",
@@ -12339,7 +12339,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_binh7wumv3ul938_differentiation",
@@ -12383,7 +12383,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_binh7wumv3ul938_lesson_sequences",
@@ -12421,7 +12421,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_binh7wumv3ul938_finalize_plan",
@@ -12467,7 +12467,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_binh7wumv3ul938_export_share",
@@ -12507,7 +12507,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_87y90yfmv3ul92s_plan_setup",
@@ -12551,7 +12551,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_87y90yfmv3ul92s_learning_objectives",
@@ -12595,7 +12595,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_87y90yfmv3ul92s_curriculum_standards",
@@ -12639,7 +12639,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_87y90yfmv3ul92s_assessment_rubric",
@@ -12683,7 +12683,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_87y90yfmv3ul92s_teaching_materials",
@@ -12721,7 +12721,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_87y90yfmv3ul92s_differentiation",
@@ -12765,7 +12765,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_87y90yfmv3ul92s_lesson_sequences",
@@ -12803,7 +12803,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_87y90yfmv3ul92s_finalize_plan",
@@ -12849,7 +12849,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_87y90yfmv3ul92s_export_share",
@@ -12889,7 +12889,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7pras7rmv3ul91b_plan_setup",
@@ -12933,7 +12933,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7pras7rmv3ul91b_learning_objectives",
@@ -12977,7 +12977,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7pras7rmv3ul91b_curriculum_standards",
@@ -13021,7 +13021,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7pras7rmv3ul91b_assessment_rubric",
@@ -13065,7 +13065,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7pras7rmv3ul91b_teaching_materials",
@@ -13103,7 +13103,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7pras7rmv3ul91b_differentiation",
@@ -13147,7 +13147,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7pras7rmv3ul91b_lesson_sequences",
@@ -13185,7 +13185,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7pras7rmv3ul91b_finalize_plan",
@@ -13225,7 +13225,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7pras7rmv3ul91b_export_share",
@@ -13259,7 +13259,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7h52dovmv3tctvh_plan_setup",
@@ -13303,7 +13303,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7h52dovmv3tctvh_learning_objectives",
@@ -13347,7 +13347,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7h52dovmv3tctvh_curriculum_standards",
@@ -13391,7 +13391,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7h52dovmv3tctvh_assessment_rubric",
@@ -13435,7 +13435,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7h52dovmv3tctvh_teaching_materials",
@@ -13473,7 +13473,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7h52dovmv3tctvh_differentiation",
@@ -13517,7 +13517,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7h52dovmv3tctvh_lesson_sequences",
@@ -13555,7 +13555,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7h52dovmv3tctvh_finalize_plan",
@@ -13601,7 +13601,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7h52dovmv3tctvh_export_share",
@@ -13641,7 +13641,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.692Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_kqwxby5mv3tctv8_plan_setup",
@@ -13685,7 +13685,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_kqwxby5mv3tctv8_learning_objectives",
@@ -13729,7 +13729,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_kqwxby5mv3tctv8_curriculum_standards",
@@ -13773,7 +13773,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_kqwxby5mv3tctv8_assessment_rubric",
@@ -13817,7 +13817,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_kqwxby5mv3tctv8_teaching_materials",
@@ -13855,7 +13855,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_kqwxby5mv3tctv8_differentiation",
@@ -13899,7 +13899,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_kqwxby5mv3tctv8_lesson_sequences",
@@ -13937,7 +13937,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_kqwxby5mv3tctv8_finalize_plan",
@@ -13983,7 +13983,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_kqwxby5mv3tctv8_export_share",
@@ -14023,7 +14023,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7py9t4xmv3tcttp_plan_setup",
@@ -14067,7 +14067,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7py9t4xmv3tcttp_learning_objectives",
@@ -14111,7 +14111,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7py9t4xmv3tcttp_curriculum_standards",
@@ -14155,7 +14155,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7py9t4xmv3tcttp_assessment_rubric",
@@ -14199,7 +14199,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7py9t4xmv3tcttp_teaching_materials",
@@ -14237,7 +14237,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7py9t4xmv3tcttp_differentiation",
@@ -14281,7 +14281,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7py9t4xmv3tcttp_lesson_sequences",
@@ -14319,7 +14319,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7py9t4xmv3tcttp_finalize_plan",
@@ -14359,7 +14359,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_7py9t4xmv3tcttp_export_share",
@@ -14393,7 +14393,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_yambro3mv3syxq1_plan_setup",
@@ -14437,7 +14437,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_yambro3mv3syxq1_learning_objectives",
@@ -14481,7 +14481,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_yambro3mv3syxq1_curriculum_standards",
@@ -14525,7 +14525,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_yambro3mv3syxq1_assessment_rubric",
@@ -14569,7 +14569,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_yambro3mv3syxq1_teaching_materials",
@@ -14607,7 +14607,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_yambro3mv3syxq1_differentiation",
@@ -14651,7 +14651,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_yambro3mv3syxq1_lesson_sequences",
@@ -14689,7 +14689,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_yambro3mv3syxq1_finalize_plan",
@@ -14735,7 +14735,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_yambro3mv3syxq1_export_share",
@@ -14775,7 +14775,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.096Z"
   },
   {
     "id": "task_plan_0bmzk2fmv3syxpw_plan_setup",
@@ -14819,7 +14819,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_0bmzk2fmv3syxpw_learning_objectives",
@@ -14863,7 +14863,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_0bmzk2fmv3syxpw_curriculum_standards",
@@ -14907,7 +14907,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_0bmzk2fmv3syxpw_assessment_rubric",
@@ -14951,7 +14951,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_0bmzk2fmv3syxpw_teaching_materials",
@@ -14989,7 +14989,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_0bmzk2fmv3syxpw_differentiation",
@@ -15033,7 +15033,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_0bmzk2fmv3syxpw_lesson_sequences",
@@ -15071,7 +15071,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_0bmzk2fmv3syxpw_finalize_plan",
@@ -15117,7 +15117,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_0bmzk2fmv3syxpw_export_share",
@@ -15157,7 +15157,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_f77xxqqmv3syxop_plan_setup",
@@ -15201,7 +15201,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_f77xxqqmv3syxop_learning_objectives",
@@ -15245,7 +15245,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_f77xxqqmv3syxop_curriculum_standards",
@@ -15289,7 +15289,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_f77xxqqmv3syxop_assessment_rubric",
@@ -15333,7 +15333,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_f77xxqqmv3syxop_teaching_materials",
@@ -15371,7 +15371,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_f77xxqqmv3syxop_differentiation",
@@ -15415,7 +15415,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_f77xxqqmv3syxop_lesson_sequences",
@@ -15453,7 +15453,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_f77xxqqmv3syxop_finalize_plan",
@@ -15493,7 +15493,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_f77xxqqmv3syxop_export_share",
@@ -15527,7 +15527,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_b6p9jjxmv2etjmx_plan_setup",
@@ -15571,7 +15571,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_b6p9jjxmv2etjmx_learning_objectives",
@@ -15615,7 +15615,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_b6p9jjxmv2etjmx_curriculum_standards",
@@ -15659,7 +15659,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_b6p9jjxmv2etjmx_assessment_rubric",
@@ -15703,7 +15703,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_b6p9jjxmv2etjmx_teaching_materials",
@@ -15741,7 +15741,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_b6p9jjxmv2etjmx_differentiation",
@@ -15785,7 +15785,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_b6p9jjxmv2etjmx_lesson_sequences",
@@ -15823,7 +15823,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_b6p9jjxmv2etjmx_finalize_plan",
@@ -15869,7 +15869,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_b6p9jjxmv2etjmx_export_share",
@@ -15909,7 +15909,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_g0rz4jsmv2dsc68_plan_setup",
@@ -15953,7 +15953,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_g0rz4jsmv2dsc68_learning_objectives",
@@ -15997,7 +15997,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_g0rz4jsmv2dsc68_curriculum_standards",
@@ -16041,7 +16041,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_g0rz4jsmv2dsc68_assessment_rubric",
@@ -16085,7 +16085,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_g0rz4jsmv2dsc68_teaching_materials",
@@ -16123,7 +16123,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_g0rz4jsmv2dsc68_differentiation",
@@ -16167,7 +16167,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_g0rz4jsmv2dsc68_lesson_sequences",
@@ -16205,7 +16205,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_g0rz4jsmv2dsc68_finalize_plan",
@@ -16251,7 +16251,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_g0rz4jsmv2dsc68_export_share",
@@ -16291,7 +16291,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_9kjrlmomv2dsc55_plan_setup",
@@ -16335,7 +16335,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_9kjrlmomv2dsc55_learning_objectives",
@@ -16379,7 +16379,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_9kjrlmomv2dsc55_curriculum_standards",
@@ -16423,7 +16423,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_9kjrlmomv2dsc55_assessment_rubric",
@@ -16467,7 +16467,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_9kjrlmomv2dsc55_teaching_materials",
@@ -16505,7 +16505,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_9kjrlmomv2dsc55_differentiation",
@@ -16549,7 +16549,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_9kjrlmomv2dsc55_lesson_sequences",
@@ -16587,7 +16587,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_9kjrlmomv2dsc55_finalize_plan",
@@ -16627,7 +16627,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_9kjrlmomv2dsc55_export_share",
@@ -16661,7 +16661,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_w8lwk3xmv2dotlq_plan_setup",
@@ -16705,7 +16705,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_w8lwk3xmv2dotlq_learning_objectives",
@@ -16749,7 +16749,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_w8lwk3xmv2dotlq_curriculum_standards",
@@ -16793,7 +16793,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_w8lwk3xmv2dotlq_assessment_rubric",
@@ -16837,7 +16837,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_w8lwk3xmv2dotlq_teaching_materials",
@@ -16875,7 +16875,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_w8lwk3xmv2dotlq_differentiation",
@@ -16919,7 +16919,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_w8lwk3xmv2dotlq_lesson_sequences",
@@ -16957,7 +16957,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_w8lwk3xmv2dotlq_finalize_plan",
@@ -17003,7 +17003,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_w8lwk3xmv2dotlq_export_share",
@@ -17043,7 +17043,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_pxc3oo8mv2dotlk_plan_setup",
@@ -17087,7 +17087,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_pxc3oo8mv2dotlk_learning_objectives",
@@ -17131,7 +17131,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_pxc3oo8mv2dotlk_curriculum_standards",
@@ -17175,7 +17175,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_pxc3oo8mv2dotlk_assessment_rubric",
@@ -17219,7 +17219,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_pxc3oo8mv2dotlk_teaching_materials",
@@ -17257,7 +17257,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_pxc3oo8mv2dotlk_differentiation",
@@ -17301,7 +17301,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_pxc3oo8mv2dotlk_lesson_sequences",
@@ -17339,7 +17339,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_pxc3oo8mv2dotlk_finalize_plan",
@@ -17385,7 +17385,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_pxc3oo8mv2dotlk_export_share",
@@ -17425,7 +17425,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.693Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_32303hsmv2dotkp_plan_setup",
@@ -17469,7 +17469,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_32303hsmv2dotkp_learning_objectives",
@@ -17513,7 +17513,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_32303hsmv2dotkp_curriculum_standards",
@@ -17557,7 +17557,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_32303hsmv2dotkp_assessment_rubric",
@@ -17601,7 +17601,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_32303hsmv2dotkp_teaching_materials",
@@ -17639,7 +17639,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_32303hsmv2dotkp_differentiation",
@@ -17683,7 +17683,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_32303hsmv2dotkp_lesson_sequences",
@@ -17721,7 +17721,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_32303hsmv2dotkp_finalize_plan",
@@ -17761,7 +17761,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_32303hsmv2dotkp_export_share",
@@ -17795,7 +17795,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_xudoswfmv2dkgz6_plan_setup",
@@ -17839,7 +17839,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_xudoswfmv2dkgz6_learning_objectives",
@@ -17883,7 +17883,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_xudoswfmv2dkgz6_curriculum_standards",
@@ -17927,7 +17927,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_xudoswfmv2dkgz6_assessment_rubric",
@@ -17971,7 +17971,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_xudoswfmv2dkgz6_teaching_materials",
@@ -18009,7 +18009,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_xudoswfmv2dkgz6_differentiation",
@@ -18053,7 +18053,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_xudoswfmv2dkgz6_lesson_sequences",
@@ -18091,7 +18091,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_xudoswfmv2dkgz6_finalize_plan",
@@ -18137,7 +18137,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_xudoswfmv2dkgz6_export_share",
@@ -18177,7 +18177,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.205Z",
-    "updatedAt": "2026-10-16T13:25:51.694Z"
+    "updatedAt": "2026-10-17T09:20:07.097Z"
   },
   {
     "id": "task_plan_5gci336mv2dkgz3_plan_setup",
@@ -18221,7 +18221,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.206Z",
-    "updatedAt": "2026-10-16T13:25:51.685Z"
+    "updatedAt": "2026-10-17T09:20:07.092Z"
   },
   {
     "id": "task_plan_5gci336mv2dkgz3_learning_objectives",
@@ -18265,7 +18265,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.206Z",
-    "updatedAt": "2026-10-16T13:25:51.685Z"
+    "updatedAt": "2026-10-17T09:20:07.092Z"
   },
   {
     "id": "task_plan_5gci336mv2dkgz3_curriculum_standards",
@@ -18309,7 +18309,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:14:22.206Z",
-    "updatedAt": "2026-10-16T13:25:51.685Z"
+    "updatedAt": "2026-10-17T09:20:07.092Z"
   },
   {
     "id": "task_plan_5gci336mv2dkgz3_assessment_rubric",
@@ -18353,7 +18353,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:14:22.206Z",
-    "updatedAt": "2026-10-16T13:25:51.685Z"
+    "updatedAt": "2026-10-17T09:20:07.092Z"
   },
   {
     "id": "task_plan_5gci336mv2dkgz3_teaching_materials",
@@ -18391,7 +18391,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:14:22.206Z",
-    "updatedAt": "2026-10-16T13:25:51.685Z"
+    "updatedAt": "2026-10-17T09:20:07.092Z"
   },
   {
     "id": "task_plan_5gci336mv2dkgz3_differentiation",
@@ -18435,7 +18435,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.206Z",
-    "updatedAt": "2026-10-16T13:25:51.685Z"
+    "updatedAt": "2026-10-17T09:20:07.092Z"
   },
   {
     "id": "task_plan_5gci336mv2dkgz3_lesson_sequences",
@@ -18473,7 +18473,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:14:22.206Z",
-    "updatedAt": "2026-10-16T13:25:51.685Z"
+    "updatedAt": "2026-10-17T09:20:07.092Z"
   },
   {
     "id": "task_plan_5gci336mv2dkgz3_finalize_plan",
@@ -18519,7 +18519,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.206Z",
-    "updatedAt": "2026-10-16T13:25:51.685Z"
+    "updatedAt": "2026-10-17T09:20:07.092Z"
   },
   {
     "id": "task_plan_5gci336mv2dkgz3_export_share",
@@ -18559,7 +18559,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:14:22.206Z",
-    "updatedAt": "2026-10-16T13:25:51.685Z"
+    "updatedAt": "2026-10-17T09:20:07.092Z"
   },
   {
     "id": "task_plan_vikda6wmv80joa0_plan_setup",
@@ -18603,7 +18603,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:15:09.889Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_vikda6wmv80joa0_learning_objectives",
@@ -18647,7 +18647,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:15:09.889Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_vikda6wmv80joa0_curriculum_standards",
@@ -18691,7 +18691,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:15:09.889Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_vikda6wmv80joa0_assessment_rubric",
@@ -18735,7 +18735,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:15:09.889Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_vikda6wmv80joa0_teaching_materials",
@@ -18773,7 +18773,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:15:09.889Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_vikda6wmv80joa0_differentiation",
@@ -18817,7 +18817,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:15:09.889Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_vikda6wmv80joa0_lesson_sequences",
@@ -18855,7 +18855,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:15:09.889Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_vikda6wmv80joa0_finalize_plan",
@@ -18901,7 +18901,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:15:09.889Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_vikda6wmv80joa0_export_share",
@@ -18941,7 +18941,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:15:09.889Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_photosynthesis_g9_001_plan_setup",
@@ -18985,7 +18985,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:37:33.757Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_photosynthesis_g9_001_learning_objectives",
@@ -19029,7 +19029,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:37:33.757Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_photosynthesis_g9_001_curriculum_standards",
@@ -19067,7 +19067,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-14T11:37:33.757Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_photosynthesis_g9_001_assessment_rubric",
@@ -19111,7 +19111,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-14T11:37:33.757Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_photosynthesis_g9_001_teaching_materials",
@@ -19149,7 +19149,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-14T11:37:33.757Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_photosynthesis_g9_001_differentiation",
@@ -19193,7 +19193,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:37:33.757Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_photosynthesis_g9_001_lesson_sequences",
@@ -19231,7 +19231,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-14T11:37:33.757Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_photosynthesis_g9_001_finalize_plan",
@@ -19277,7 +19277,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:37:33.757Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_photosynthesis_g9_001_export_share",
@@ -19317,7 +19317,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-14T11:37:33.757Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_cell_bio_unit_gr9_001_plan_setup",
@@ -19361,7 +19361,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-15T11:44:01.872Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_cell_bio_unit_gr9_001_learning_objectives",
@@ -19405,7 +19405,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-15T11:44:01.872Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_cell_bio_unit_gr9_001_curriculum_standards",
@@ -19449,7 +19449,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-15T11:44:01.872Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_cell_bio_unit_gr9_001_assessment_rubric",
@@ -19493,7 +19493,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-15T11:44:01.872Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_cell_bio_unit_gr9_001_teaching_materials",
@@ -19531,7 +19531,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-15T11:44:01.872Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_cell_bio_unit_gr9_001_differentiation",
@@ -19575,7 +19575,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-15T11:44:01.872Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_cell_bio_unit_gr9_001_lesson_sequences",
@@ -19613,7 +19613,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-15T11:44:01.872Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_cell_bio_unit_gr9_001_finalize_plan",
@@ -19659,7 +19659,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-15T11:44:01.872Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_cell_bio_unit_gr9_001_export_share",
@@ -19699,7 +19699,7 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-15T11:44:01.872Z",
-    "updatedAt": "2026-10-16T13:25:51.687Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_k51rt2hmv9i74mu_plan_setup",
@@ -19743,7 +19743,7 @@
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
     "createdAt": "2026-10-15T12:17:03.841Z",
-    "updatedAt": "2026-10-16T13:25:51.686Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_k51rt2hmv9i74mu_learning_objectives",
@@ -19787,7 +19787,7 @@
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
     "createdAt": "2026-10-15T12:17:03.841Z",
-    "updatedAt": "2026-10-16T13:25:51.686Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_k51rt2hmv9i74mu_curriculum_standards",
@@ -19831,7 +19831,7 @@
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
     "createdAt": "2026-10-15T12:17:03.841Z",
-    "updatedAt": "2026-10-16T13:25:51.686Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_k51rt2hmv9i74mu_assessment_rubric",
@@ -19875,7 +19875,7 @@
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
     "createdAt": "2026-10-15T12:17:03.841Z",
-    "updatedAt": "2026-10-16T13:25:51.686Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_k51rt2hmv9i74mu_teaching_materials",
@@ -19913,7 +19913,7 @@
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
     "createdAt": "2026-10-15T12:17:03.841Z",
-    "updatedAt": "2026-10-16T13:25:51.686Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_k51rt2hmv9i74mu_differentiation",
@@ -19957,7 +19957,7 @@
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
     "createdAt": "2026-10-15T12:17:03.841Z",
-    "updatedAt": "2026-10-16T13:25:51.686Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_k51rt2hmv9i74mu_lesson_sequences",
@@ -19995,7 +19995,7 @@
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
     "createdAt": "2026-10-15T12:17:03.841Z",
-    "updatedAt": "2026-10-16T13:25:51.686Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_k51rt2hmv9i74mu_finalize_plan",
@@ -20041,7 +20041,7 @@
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
     "createdAt": "2026-10-15T12:17:03.841Z",
-    "updatedAt": "2026-10-16T13:25:51.686Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   },
   {
     "id": "task_plan_k51rt2hmv9i74mu_export_share",
@@ -20081,6 +20081,6 @@
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
     "createdAt": "2026-10-15T12:17:03.841Z",
-    "updatedAt": "2026-10-16T13:25:51.686Z"
+    "updatedAt": "2026-10-17T09:20:07.093Z"
   }
 ]

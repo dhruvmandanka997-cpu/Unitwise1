@@ -1,8 +1,9 @@
 import { GeneratePlanInput, LessonPlan, SessionPlan, WeeklyPlan, ReferenceMaterial } from '../types/plan';
 import { TeacherTask, TaskStats } from '../types/task';
+import { CurriculumPreferences } from '../types/curriculum';
+import { CurriculumCatalog, ResolvedCurriculumLabels } from '../config/curriculumCatalog';
 
 const API_BASE = (import.meta.env.VITE_API_BASE_URL as string) || '/api';
-
 
 export interface HealthResponse {
   status: string;
@@ -23,7 +24,57 @@ export interface UserSettings {
   apiKeyConfigured: boolean;
 }
 
+export interface CurriculumPreferencesResponse {
+  preferences: CurriculumPreferences | null;
+  resolvedLabels: ResolvedCurriculumLabels | null;
+}
+
+export interface SaveCurriculumPreferencesResponse {
+  success: boolean;
+  preferences: CurriculumPreferences;
+  resolvedLabels: ResolvedCurriculumLabels;
+}
+
 export const api = {
+  async getCurriculumCatalog(): Promise<CurriculumCatalog> {
+    const res = await fetch(`${API_BASE}/curriculum/catalog`);
+    if (!res.ok) throw new Error('Failed to fetch curriculum catalog');
+    return res.json();
+  },
+
+  async getCurriculumPreferences(): Promise<CurriculumPreferencesResponse> {
+    const res = await fetch(`${API_BASE}/curriculum/preferences`);
+    if (!res.ok) throw new Error('Failed to fetch curriculum preferences');
+    return res.json();
+  },
+
+  async saveCurriculumPreferences(prefs: CurriculumPreferences): Promise<SaveCurriculumPreferencesResponse> {
+    const res = await fetch(`${API_BASE}/curriculum/preferences`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(prefs),
+    });
+    if (!res.ok) {
+      const errData = await res.json().catch(() => ({}));
+      const msg = errData?.error || 'Failed to save curriculum preferences';
+      const fields = errData?.fields ? Object.values(errData.fields).join(', ') : '';
+      throw new Error(fields ? `${msg}: ${fields}` : msg);
+    }
+    return res.json();
+  },
+
+  async setPlanCurriculum(
+    planId: string, 
+    data: { countryId: string; curriculumId: string; regionId?: string; grade?: string; otherCountryText?: string; otherCurriculumText?: string }
+  ): Promise<{ success: boolean; plan: LessonPlan }> {
+    const res = await fetch(`${API_BASE}/curriculum/plans/${planId}/snapshot`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    if (!res.ok) throw new Error('Failed to update plan curriculum snapshot');
+    return res.json();
+  },
   async getHealth(): Promise<HealthResponse> {
     const res = await fetch(`${API_BASE}/health`);
     if (!res.ok) throw new Error('Failed to fetch system health');

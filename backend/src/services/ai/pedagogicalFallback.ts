@@ -39,6 +39,7 @@ export class PedagogicalFallbackGenerator {
       requiredProjects: '',
       enableHomework: true,
       ...rawInput,
+      curriculumSource: rawInput.curriculumSource || 'preferences',
     };
     const id = 'plan_' + Math.random().toString(36).substring(2, 9) + Date.now().toString(36);
     const now = new Date().toISOString();
@@ -212,6 +213,7 @@ export class PedagogicalFallbackGenerator {
       resourceList,
       references: [],
       referencesStatus: 'pending',
+      curriculumContext: (rawInput as any).curriculumContext || undefined,
       teacherNotes: input.teacherNotes || 'Review daily formative exit tickets at the conclusion of each session to calibrate pacing and small-group interventions.',
       status: 'draft',
       isDemo: true, // Clearly flags demo / fallback mode
@@ -276,7 +278,7 @@ export class PedagogicalFallbackGenerator {
         framework: standardsFramework,
         code: `${subject.substring(0, 3).toUpperCase()}.${gradeLevel.includes('10') ? '10' : '9'}.${weekNumber}.${dayNumber}`,
         description: `Demonstrate mastery of grade-level competencies relating to ${sessionFocus.subtopic} and evidence-based problem formulation.`,
-        lessonConnection: `Directly addressed through the teacher modeling and student guided practice investigating ${sessionFocus.subtopic}.`,
+        lessonConnection: `Suggested pedagogical alignment; please confirm against your official syllabus. Directly addressed through the teacher modeling and student guided practice investigating ${sessionFocus.subtopic}.`,
         verificationStatus: 'suggested_unverified' // Honest labeling: not verified against an official live DB
       }
     ];
