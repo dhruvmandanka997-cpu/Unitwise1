@@ -192,4 +192,5 @@ Executes type checks and builds both packages:
 - **Zero Hallucination of Standards**: The system explicitly marks unverified curriculum codes with `'suggested_unverified'` and provides a professional review disclaimer.
 - **Graceful Fault Tolerance**: Generation inputs are preserved upon error, allowing immediate retry without data loss.
 #   U n i t w i s e 1  
+ #   U n i t w i s e 1  
  
