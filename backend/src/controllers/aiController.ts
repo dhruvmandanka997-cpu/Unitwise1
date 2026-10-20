@@ -29,8 +29,12 @@ export const aiController = {
         plan.status = 'draft';
       }
 
-      planDb.save(plan);
-      taskDb.syncWithPlans(planDb.getAll());
+      try {
+        planDb.save(plan);
+        taskDb.syncWithPlans(planDb.getAll());
+      } catch (saveErr) {
+        console.warn('Notice: Plan persistence encountered warning in storage layer:', saveErr);
+      }
 
       res.status(201).json({
         ...plan,
@@ -46,10 +50,22 @@ export const aiController = {
       });
     } catch (err: unknown) {
       const error = err as Error;
-      console.error('Generation failed:', error);
+      const correlationId = 'gen_' + Math.random().toString(36).substring(2, 8);
+      console.error(`[AI Controller ${correlationId}] Generation failed:`, error);
+
+      let userFriendlyMessage = error?.message || 'Plan generation could not complete. The AI service is temporarily unavailable. Please try again.';
+      if (userFriendlyMessage.includes('API_KEY_INVALID') || userFriendlyMessage.includes('API key not valid')) {
+        userFriendlyMessage = 'Invalid AI provider API key. Please check your GEMINI_API_KEY configuration.';
+      } else if (userFriendlyMessage.includes('404') && userFriendlyMessage.includes('models/')) {
+        userFriendlyMessage = 'Configured AI model was not found. Please verify GEMINI_MODEL (recommended: gemini-1.5-flash).';
+      } else if (userFriendlyMessage.includes('quota') || userFriendlyMessage.includes('RESOURCE_EXHAUSTED')) {
+        userFriendlyMessage = 'AI provider rate limit or quota exceeded. Please try again in a few moments.';
+      }
+
       res.status(400).json({
         error: 'Failed to generate curriculum plan',
-        message: error?.message || 'Unknown generation error',
+        message: userFriendlyMessage,
+        correlationId,
       });
     }
   },

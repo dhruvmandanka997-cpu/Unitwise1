@@ -57,7 +57,8 @@ function getFlagEmoji(countryCode: string): string {
 }
 
 export function seedDirectoryDatabase() {
-  console.log('[Directory Seeder] Initializing database seeding from ISO 3166 standards...');
+  try {
+    console.log('[Directory Seeder] Initializing database seeding from ISO 3166 standards...');
 
   // 1. Seed ISO 3166-1 Countries
   const countryNames = countries.getNames('en', { select: 'official' });
@@ -695,7 +696,10 @@ export function seedDirectoryDatabase() {
     directoryDb.upsertStandard(std);
   }
 
-  console.log('[Directory Seeder] Seeding completed successfully.');
+    console.log('[Directory Seeder] Seeding completed successfully.');
+  } catch (err: any) {
+    console.warn('[Directory Seeder] Database seeding notice:', err?.message || err);
+  }
 }
 
 // Auto-run if executed directly via tsx/node

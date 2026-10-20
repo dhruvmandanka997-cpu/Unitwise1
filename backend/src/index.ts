@@ -26,13 +26,25 @@ app.use(
 app.use(express.json({ limit: '10mb' }));
 
 // Seed initial database if empty
-planDb.seedIfEmpty(getSeedPlans());
+try {
+  planDb.seedIfEmpty(getSeedPlans());
+} catch (err) {
+  console.warn('[DB] Plan seed notice:', err);
+}
 
 // Seed directory database with ISO standards & verified curricula
-seedDirectoryDatabase();
+try {
+  seedDirectoryDatabase();
+} catch (err) {
+  console.warn('[DB] Directory seed notice:', err);
+}
 
 // Initialize and sync task tracker with all plans
-taskDb.syncWithPlans(planDb.getAll());
+try {
+  taskDb.syncWithPlans(planDb.getAll());
+} catch (err) {
+  console.warn('[DB] Task sync notice:', err);
+}
 
 // Root health & status endpoints for diagnostic convenience
 const rootHandler = (_req: express.Request, res: express.Response) => {

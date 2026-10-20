@@ -12,6 +12,7 @@ import {
   DirectorySuggestionInput,
 } from '../types/directory';
 import { SearchResponse, SearchResultItem } from '../types/search';
+import { extractErrorMessage } from '../utils/errorUtils';
 function resolveApiBase(): string {
   let base = (import.meta.env.VITE_API_BASE_URL as string)?.trim() || '/api';
   while (base.endsWith('/')) {
@@ -311,14 +312,21 @@ export const api = {
       body: JSON.stringify(input),
     });
     if (!res.ok) {
-      let errMessage = 'Plan generation failed';
+      let rawError: any;
       try {
-        const err = await res.json();
-        errMessage = err.message || err.error || errMessage;
+        rawError = await res.json();
       } catch {
-        errMessage = `Server request failed with status ${res.status} (${res.statusText || 'Error'})`;
+        rawError = {
+          message: `Server request failed with status ${res.status} (${res.statusText || 'Error'})`,
+          status: res.status,
+        };
       }
-      throw new Error(errMessage);
+      const extracted = extractErrorMessage(rawError, `Server request failed with status ${res.status}`);
+      const err: any = new Error(extracted.message);
+      err.status = res.status;
+      err.code = extracted.code;
+      err.raw = rawError;
+      throw err;
     }
     return res.json();
   },

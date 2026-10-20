@@ -49,7 +49,7 @@ export class GeminiAIProvider implements IAIProvider {
     try {
       const apiKey = process.env.GEMINI_API_KEY!;
       const genAI = new GoogleGenerativeAI(apiKey);
-      const modelName = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
+      const modelName = process.env.GEMINI_MODEL || 'gemini-1.5-flash';
       const model = genAI.getGenerativeModel({
         model: modelName,
         generationConfig: {
@@ -257,7 +257,7 @@ Output must be a valid JSON object matching the LessonPlan structure:
 `;
 
       async function generateWithRetry(genAIInstance: any, primaryModelName: string, p: string) {
-        const modelsToTry = [primaryModelName, 'gemini-3.5-flash', 'gemini-3.7-flash'].filter((m, i, arr) => arr.indexOf(m) === i);
+        const modelsToTry = [primaryModelName, 'gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-2.0-flash'].filter((m, i, arr) => arr.indexOf(m) === i && Boolean(m));
         let lastError: any;
         for (const currentModel of modelsToTry) {
           try {
@@ -269,9 +269,13 @@ Output must be a valid JSON object matching the LessonPlan structure:
           } catch (err: any) {
             lastError = err;
             const msg = err?.message || String(err);
-            const isTransient = err?.status === 503 || err?.status === 429 || msg.includes('503') || msg.includes('high demand');
+            const isTransient = err?.status === 503 || err?.status === 429 || msg.includes('503') || msg.includes('high demand') || msg.includes('RESOURCE_EXHAUSTED');
             if (isTransient) {
-              console.warn(`[Gemini] Model ${currentModel} returned 503 high demand. Trying alternate supported model...`);
+              console.warn(`[Gemini] Model ${currentModel} returned transient error. Trying alternate supported model...`);
+              continue;
+            }
+            if (err?.status === 404 || msg.includes('not found') || msg.includes('is not supported')) {
+              console.warn(`[Gemini] Model ${currentModel} not available on this API version. Trying alternate model...`);
               continue;
             }
             throw err;
@@ -427,8 +431,9 @@ Output must be a valid JSON object matching the LessonPlan structure:
     try {
       const apiKey = process.env.GEMINI_API_KEY!;
       const genAI = new GoogleGenerativeAI(apiKey);
+      const modelName = process.env.GEMINI_MODEL || 'gemini-1.5-flash';
       const model = genAI.getGenerativeModel({
-        model: process.env.GEMINI_MODEL || 'gemini-3.8-flash',
+        model: modelName,
         generationConfig: { responseMimeType: 'application/json', temperature: 0.5 },
       });
 

@@ -13,6 +13,7 @@ import { DeactivateConfirmModal } from './components/dashboard/DeactivateConfirm
 import { SwapActivePlanModal, ActivePlanItem } from './components/workspace/SwapActivePlanModal';
 import { OverLimitResolutionModal } from './components/dashboard/OverLimitResolutionModal';
 import { DeletePlanConfirmModal } from './components/common/DeletePlanConfirmModal';
+import { normalizeError } from './utils/errorUtils';
 
 const DEFAULT_TASK_STATS: TaskStats = {
   total: 0,
@@ -371,9 +372,8 @@ export const App: React.FC = () => {
       await loadActiveSummary();
       loadTasks();
     } catch (err: unknown) {
-      const error = err as Error;
-      console.error('Generation failed:', error);
-      setGenerationError(error?.message || 'Plan generation failed. Please check your inputs and retry.');
+      const normalized = normalizeError(err, 'Plan generation could not complete. The AI service is temporarily unavailable. Please try again.');
+      setGenerationError(normalized.message);
     } finally {
       setIsGenerating(false);
     }

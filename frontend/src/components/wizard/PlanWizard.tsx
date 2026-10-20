@@ -449,7 +449,7 @@ export const PlanWizard: React.FC<PlanWizardProps> = ({
           <AlertCircle className="h-5 w-5 flex-shrink-0 text-red-600 mt-0.5" />
           <div className="space-y-1">
             <h4 className="text-xs font-bold">Plan Generation Could Not Complete</h4>
-            <p className="text-xs font-normal">{generationError}</p>
+            <p className="text-xs font-normal">{typeof generationError === 'string' && generationError.trim() && generationError !== '[object Object]' ? generationError : 'The AI service is temporarily unavailable. Please try again.'}</p>
             <p className="text-[11px] text-red-700 font-normal">
               Your inputs are preserved. You can adjust fields and click generate again.
             </p>
