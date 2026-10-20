@@ -1,40 +1,26 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "services": {
-    "backend": {
-      "root": "backend",
-      "framework": "express",
-      "entrypoint": "src/index.ts",
-      "functions": {
-        "src/index.ts": {
-          "maxDuration": 60,
-          "memory": 1024
-        }
-      }
-    },
-    "frontend": {
-      "root": "frontend",
-      "framework": "vite"
+  "buildCommand": "npm run frontend:build",
+  "outputDirectory": "frontend/dist",
+  "cleanUrls": true,
+  "functions": {
+    "api/index.ts": {
+      "memory": 1024,
+      "maxDuration": 60
     }
   },
   "rewrites": [
     {
       "source": "/api",
-      "destination": {
-        "service": "backend"
-      }
+      "destination": "/api"
     },
     {
       "source": "/api/(.*)",
-      "destination": {
-        "service": "backend"
-      }
+      "destination": "/api"
     },
     {
       "source": "/(.*)",
-      "destination": {
-        "service": "frontend"
-      }
+      "destination": "/index.html"
     }
   ],
   "headers": [
