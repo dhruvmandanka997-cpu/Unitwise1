@@ -24,3 +24,13 @@ yarn-debug.log*
 yarn-error.log*
 .DS_Store
 Thumbs.db
+
+# Vercel deployment artifacts
+.vercel/
+
+# Database temporary/journal files
+*.db-journal
+*.db-wal
+*.db-shm
+*.tmp.*
+backend/data/test/

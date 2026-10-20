@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: unitwise-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm run backend:start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: AI_PROVIDER
+        value: gemini
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-1.5-pro
+      - key: CORS_ORIGIN
+        value: "*"
+      - key: DATA_DIR
+        value: /var/data
+    disk:
+      name: unitwise-storage
+      mountPath: /var/data
+      sizeGB: 1

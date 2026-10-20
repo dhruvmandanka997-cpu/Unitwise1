@@ -12,8 +12,18 @@ import {
   DirectorySuggestionInput,
 } from '../types/directory';
 import { SearchResponse, SearchResultItem } from '../types/search';
+function resolveApiBase(): string {
+  let base = (import.meta.env.VITE_API_BASE_URL as string)?.trim() || '/api';
+  while (base.endsWith('/')) {
+    base = base.slice(0, -1);
+  }
+  if (base.startsWith('http') && !base.endsWith('/api') && !base.includes('/api/')) {
+    base = `${base}/api`;
+  }
+  return base;
+}
 
-const API_BASE = (import.meta.env.VITE_API_BASE_URL as string) || '/api';
+const API_BASE = resolveApiBase();
 
 export function getAuthUserId(): string {
   return localStorage.getItem('unitwise_user_id') || 'teacher_default';

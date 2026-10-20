@@ -1,6 +1,6 @@
 [
   {
-    "id": "plan_8jktmcimvf4zhjx",
+    "id": "plan_j1hc2bimvgf9von",
     "title": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -27,7 +27,7 @@
     ],
     "weeklyPlans": [
       {
-        "id": "week_plan_8jktmcimvf4zhjx_1",
+        "id": "week_plan_j1hc2bimvgf9von_1",
         "weekNumber": 1,
         "title": "Week 1: Foundations, Key Vocabulary & Diagnostic Exploration",
         "theme": "Foundations of Cellular Respiration and Photosynthesis",
@@ -48,7 +48,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_8jktmcimvf4zhjx_w1_s1",
+            "id": "sess_plan_j1hc2bimvgf9von_w1_s1",
             "sessionNumber": 1,
             "dayNumber": 1,
             "weekNumber": 1,
@@ -187,7 +187,7 @@
             ]
           },
           {
-            "id": "sess_plan_8jktmcimvf4zhjx_w1_s2",
+            "id": "sess_plan_j1hc2bimvgf9von_w1_s2",
             "sessionNumber": 2,
             "dayNumber": 2,
             "weekNumber": 1,
@@ -326,7 +326,7 @@
             ]
           },
           {
-            "id": "sess_plan_8jktmcimvf4zhjx_w1_s3",
+            "id": "sess_plan_j1hc2bimvgf9von_w1_s3",
             "sessionNumber": 3,
             "dayNumber": 3,
             "weekNumber": 1,
@@ -483,7 +483,7 @@
         "teacherNotes": "Review formative exit tickets to differentiate pacing for upcoming sessions."
       },
       {
-        "id": "week_plan_8jktmcimvf4zhjx_2",
+        "id": "week_plan_j1hc2bimvgf9von_2",
         "weekNumber": 2,
         "title": "Week 2: Guided Practice, Structural Rules & Skill Deepening",
         "theme": "Analytical Exploration of Cellular Respiration and Photosynthesis",
@@ -504,7 +504,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_8jktmcimvf4zhjx_w2_s4",
+            "id": "sess_plan_j1hc2bimvgf9von_w2_s4",
             "sessionNumber": 4,
             "dayNumber": 1,
             "weekNumber": 2,
@@ -643,7 +643,7 @@
             ]
           },
           {
-            "id": "sess_plan_8jktmcimvf4zhjx_w2_s5",
+            "id": "sess_plan_j1hc2bimvgf9von_w2_s5",
             "sessionNumber": 5,
             "dayNumber": 2,
             "weekNumber": 2,
@@ -782,7 +782,7 @@
             ]
           },
           {
-            "id": "sess_plan_8jktmcimvf4zhjx_w2_s6",
+            "id": "sess_plan_j1hc2bimvgf9von_w2_s6",
             "sessionNumber": 6,
             "dayNumber": 3,
             "weekNumber": 2,
@@ -1009,11 +1009,11 @@
     "teacherNotes": "Review daily formative exit tickets at the conclusion of each session to calibrate pacing and small-group interventions.",
     "status": "draft",
     "isDemo": true,
-    "createdAt": "2026-10-19T10:53:49.341Z",
-    "updatedAt": "2026-10-19T10:53:49.365Z"
+    "createdAt": "2026-10-20T08:29:36.551Z",
+    "updatedAt": "2026-10-20T08:29:36.580Z"
   },
   {
-    "id": "plan_0fgrl15mvf4zhrw",
+    "id": "plan_r6c6ld8mvgf9vx0",
     "title": "Fractions & Proportions Mastery",
     "subject": "Mathematics",
     "gradeLevel": "Grade 3 (Elementary)",
@@ -1040,7 +1040,7 @@
     ],
     "weeklyPlans": [
       {
-        "id": "week_plan_0fgrl15mvf4zhrw_1",
+        "id": "week_plan_r6c6ld8mvgf9vx0_1",
         "weekNumber": 1,
         "title": "Week 1: Foundations, Key Vocabulary & Diagnostic Exploration",
         "theme": "Foundations of Introductory Fractions & Number Sense",
@@ -1061,7 +1061,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_0fgrl15mvf4zhrw_w1_s1",
+            "id": "sess_plan_r6c6ld8mvgf9vx0_w1_s1",
             "sessionNumber": 1,
             "dayNumber": 1,
             "weekNumber": 1,
@@ -1200,7 +1200,7 @@
             ]
           },
           {
-            "id": "sess_plan_0fgrl15mvf4zhrw_w1_s2",
+            "id": "sess_plan_r6c6ld8mvgf9vx0_w1_s2",
             "sessionNumber": 2,
             "dayNumber": 2,
             "weekNumber": 1,
@@ -1339,7 +1339,7 @@
             ]
           },
           {
-            "id": "sess_plan_0fgrl15mvf4zhrw_w1_s3",
+            "id": "sess_plan_r6c6ld8mvgf9vx0_w1_s3",
             "sessionNumber": 3,
             "dayNumber": 3,
             "weekNumber": 1,
@@ -1478,7 +1478,7 @@
             ]
           },
           {
-            "id": "sess_plan_0fgrl15mvf4zhrw_w1_s4",
+            "id": "sess_plan_r6c6ld8mvgf9vx0_w1_s4",
             "sessionNumber": 4,
             "dayNumber": 4,
             "weekNumber": 1,
@@ -1617,7 +1617,7 @@
             ]
           },
           {
-            "id": "sess_plan_0fgrl15mvf4zhrw_w1_s5",
+            "id": "sess_plan_r6c6ld8mvgf9vx0_w1_s5",
             "sessionNumber": 5,
             "dayNumber": 5,
             "weekNumber": 1,
@@ -1774,7 +1774,7 @@
         "teacherNotes": "Review formative exit tickets to differentiate pacing for upcoming sessions."
       },
       {
-        "id": "week_plan_0fgrl15mvf4zhrw_2",
+        "id": "week_plan_r6c6ld8mvgf9vx0_2",
         "weekNumber": 2,
         "title": "Week 2: Guided Practice, Structural Rules & Skill Deepening",
         "theme": "Analytical Exploration of Introductory Fractions & Number Sense",
@@ -1795,7 +1795,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_0fgrl15mvf4zhrw_w2_s6",
+            "id": "sess_plan_r6c6ld8mvgf9vx0_w2_s6",
             "sessionNumber": 6,
             "dayNumber": 1,
             "weekNumber": 2,
@@ -1934,7 +1934,7 @@
             ]
           },
           {
-            "id": "sess_plan_0fgrl15mvf4zhrw_w2_s7",
+            "id": "sess_plan_r6c6ld8mvgf9vx0_w2_s7",
             "sessionNumber": 7,
             "dayNumber": 2,
             "weekNumber": 2,
@@ -2073,7 +2073,7 @@
             ]
           },
           {
-            "id": "sess_plan_0fgrl15mvf4zhrw_w2_s8",
+            "id": "sess_plan_r6c6ld8mvgf9vx0_w2_s8",
             "sessionNumber": 8,
             "dayNumber": 3,
             "weekNumber": 2,
@@ -2212,7 +2212,7 @@
             ]
           },
           {
-            "id": "sess_plan_0fgrl15mvf4zhrw_w2_s9",
+            "id": "sess_plan_r6c6ld8mvgf9vx0_w2_s9",
             "sessionNumber": 9,
             "dayNumber": 4,
             "weekNumber": 2,
@@ -2351,7 +2351,7 @@
             ]
           },
           {
-            "id": "sess_plan_0fgrl15mvf4zhrw_w2_s10",
+            "id": "sess_plan_r6c6ld8mvgf9vx0_w2_s10",
             "sessionNumber": 10,
             "dayNumber": 5,
             "weekNumber": 2,
@@ -2578,11 +2578,11 @@
     "teacherNotes": "Review daily formative exit tickets at the conclusion of each session to calibrate pacing and small-group interventions.",
     "status": "completed",
     "isDemo": true,
-    "createdAt": "2026-10-19T10:53:49.628Z",
-    "updatedAt": "2026-10-19T10:53:49.633Z"
+    "createdAt": "2026-10-20T08:29:36.852Z",
+    "updatedAt": "2026-10-20T08:29:36.874Z"
   },
   {
-    "id": "plan_d3ohjgtmvf4zhs8",
+    "id": "plan_7g0cb89mvgf9vxv",
     "title": "Shakespearean Drama & Rhetoric",
     "subject": "English Language Arts",
     "gradeLevel": "Grade 10",
@@ -2609,7 +2609,7 @@
     ],
     "weeklyPlans": [
       {
-        "id": "week_plan_d3ohjgtmvf4zhs8_1",
+        "id": "week_plan_7g0cb89mvgf9vxv_1",
         "weekNumber": 1,
         "title": "Week 1: Foundations, Key Vocabulary & Diagnostic Exploration",
         "theme": "Foundations of Shakespearean Drama & Rhetoric",
@@ -2630,7 +2630,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w1_s1",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w1_s1",
             "sessionNumber": 1,
             "dayNumber": 1,
             "weekNumber": 1,
@@ -2769,7 +2769,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w1_s2",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w1_s2",
             "sessionNumber": 2,
             "dayNumber": 2,
             "weekNumber": 1,
@@ -2908,7 +2908,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w1_s3",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w1_s3",
             "sessionNumber": 3,
             "dayNumber": 3,
             "weekNumber": 1,
@@ -3047,7 +3047,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w1_s4",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w1_s4",
             "sessionNumber": 4,
             "dayNumber": 4,
             "weekNumber": 1,
@@ -3204,7 +3204,7 @@
         "teacherNotes": "Review formative exit tickets to differentiate pacing for upcoming sessions."
       },
       {
-        "id": "week_plan_d3ohjgtmvf4zhs8_2",
+        "id": "week_plan_7g0cb89mvgf9vxv_2",
         "weekNumber": 2,
         "title": "Week 2: Guided Practice, Structural Rules & Skill Deepening",
         "theme": "Analytical Exploration of Shakespearean Drama & Rhetoric",
@@ -3225,7 +3225,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w2_s5",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w2_s5",
             "sessionNumber": 5,
             "dayNumber": 1,
             "weekNumber": 2,
@@ -3364,7 +3364,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w2_s6",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w2_s6",
             "sessionNumber": 6,
             "dayNumber": 2,
             "weekNumber": 2,
@@ -3503,7 +3503,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w2_s7",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w2_s7",
             "sessionNumber": 7,
             "dayNumber": 3,
             "weekNumber": 2,
@@ -3642,7 +3642,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w2_s8",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w2_s8",
             "sessionNumber": 8,
             "dayNumber": 4,
             "weekNumber": 2,
@@ -3799,7 +3799,7 @@
         "teacherNotes": "Review formative exit tickets to differentiate pacing for upcoming sessions."
       },
       {
-        "id": "week_plan_d3ohjgtmvf4zhs8_3",
+        "id": "week_plan_7g0cb89mvgf9vxv_3",
         "weekNumber": 3,
         "title": "Week 3: Collaborative Inquiry, Complex Modeling & Error Analysis",
         "theme": "In-Depth Problem Solving in Shakespearean Drama & Rhetoric",
@@ -3820,7 +3820,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w3_s9",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w3_s9",
             "sessionNumber": 9,
             "dayNumber": 1,
             "weekNumber": 3,
@@ -3959,7 +3959,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w3_s10",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w3_s10",
             "sessionNumber": 10,
             "dayNumber": 2,
             "weekNumber": 3,
@@ -4098,7 +4098,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w3_s11",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w3_s11",
             "sessionNumber": 11,
             "dayNumber": 3,
             "weekNumber": 3,
@@ -4237,7 +4237,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w3_s12",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w3_s12",
             "sessionNumber": 12,
             "dayNumber": 4,
             "weekNumber": 3,
@@ -4464,11 +4464,11 @@
     "teacherNotes": "Review daily formative exit tickets at the conclusion of each session to calibrate pacing and small-group interventions.",
     "status": "draft",
     "isDemo": true,
-    "createdAt": "2026-10-19T10:53:49.640Z",
-    "updatedAt": "2026-10-19T10:53:49.640Z"
+    "createdAt": "2026-10-20T08:29:36.883Z",
+    "updatedAt": "2026-10-20T08:29:36.883Z"
   },
   {
-    "id": "plan_r50dud5mvf4zhs9",
+    "id": "plan_76osh4jmvgf9vxx",
     "title": "Shakespearean Drama & Rhetoric (Copy)",
     "subject": "English Language Arts",
     "gradeLevel": "Grade 10",
@@ -4495,7 +4495,7 @@
     ],
     "weeklyPlans": [
       {
-        "id": "week_plan_d3ohjgtmvf4zhs8_1",
+        "id": "week_plan_7g0cb89mvgf9vxv_1",
         "weekNumber": 1,
         "title": "Week 1: Foundations, Key Vocabulary & Diagnostic Exploration",
         "theme": "Foundations of Shakespearean Drama & Rhetoric",
@@ -4516,7 +4516,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w1_s1",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w1_s1",
             "sessionNumber": 1,
             "dayNumber": 1,
             "weekNumber": 1,
@@ -4655,7 +4655,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w1_s2",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w1_s2",
             "sessionNumber": 2,
             "dayNumber": 2,
             "weekNumber": 1,
@@ -4794,7 +4794,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w1_s3",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w1_s3",
             "sessionNumber": 3,
             "dayNumber": 3,
             "weekNumber": 1,
@@ -4933,7 +4933,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w1_s4",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w1_s4",
             "sessionNumber": 4,
             "dayNumber": 4,
             "weekNumber": 1,
@@ -5090,7 +5090,7 @@
         "teacherNotes": "Review formative exit tickets to differentiate pacing for upcoming sessions."
       },
       {
-        "id": "week_plan_d3ohjgtmvf4zhs8_2",
+        "id": "week_plan_7g0cb89mvgf9vxv_2",
         "weekNumber": 2,
         "title": "Week 2: Guided Practice, Structural Rules & Skill Deepening",
         "theme": "Analytical Exploration of Shakespearean Drama & Rhetoric",
@@ -5111,7 +5111,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w2_s5",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w2_s5",
             "sessionNumber": 5,
             "dayNumber": 1,
             "weekNumber": 2,
@@ -5250,7 +5250,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w2_s6",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w2_s6",
             "sessionNumber": 6,
             "dayNumber": 2,
             "weekNumber": 2,
@@ -5389,7 +5389,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w2_s7",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w2_s7",
             "sessionNumber": 7,
             "dayNumber": 3,
             "weekNumber": 2,
@@ -5528,7 +5528,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w2_s8",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w2_s8",
             "sessionNumber": 8,
             "dayNumber": 4,
             "weekNumber": 2,
@@ -5685,7 +5685,7 @@
         "teacherNotes": "Review formative exit tickets to differentiate pacing for upcoming sessions."
       },
       {
-        "id": "week_plan_d3ohjgtmvf4zhs8_3",
+        "id": "week_plan_7g0cb89mvgf9vxv_3",
         "weekNumber": 3,
         "title": "Week 3: Collaborative Inquiry, Complex Modeling & Error Analysis",
         "theme": "In-Depth Problem Solving in Shakespearean Drama & Rhetoric",
@@ -5706,7 +5706,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w3_s9",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w3_s9",
             "sessionNumber": 9,
             "dayNumber": 1,
             "weekNumber": 3,
@@ -5845,7 +5845,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w3_s10",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w3_s10",
             "sessionNumber": 10,
             "dayNumber": 2,
             "weekNumber": 3,
@@ -5984,7 +5984,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w3_s11",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w3_s11",
             "sessionNumber": 11,
             "dayNumber": 3,
             "weekNumber": 3,
@@ -6123,7 +6123,7 @@
             ]
           },
           {
-            "id": "sess_plan_d3ohjgtmvf4zhs8_w3_s12",
+            "id": "sess_plan_7g0cb89mvgf9vxv_w3_s12",
             "sessionNumber": 12,
             "dayNumber": 4,
             "weekNumber": 3,
@@ -6350,7 +6350,7 @@
     "teacherNotes": "Review daily formative exit tickets at the conclusion of each session to calibrate pacing and small-group interventions.",
     "status": "draft",
     "isDemo": true,
-    "createdAt": "2026-10-19T10:53:49.641Z",
-    "updatedAt": "2026-10-19T10:53:49.641Z"
+    "createdAt": "2026-10-20T08:29:36.885Z",
+    "updatedAt": "2026-10-20T08:29:36.885Z"
   }
 ]

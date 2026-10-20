@@ -28,6 +28,34 @@ function resolveDataDir(): string {
   }
 
   const backendDir = path.resolve(__dirname, '../../');
+
+  // In serverless environments (Vercel / AWS Lambda), the deployment filesystem is read-only.
+  // /tmp is the only writable directory. Copy seed databases & JSON files into /tmp if not present.
+  if (process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME) {
+    const tmpDir = path.resolve('/tmp/unitwise-data');
+    if (!fs.existsSync(tmpDir)) {
+      try {
+        fs.mkdirSync(tmpDir, { recursive: true });
+      } catch {}
+    }
+    const seedDataDir = path.resolve(backendDir, 'data');
+    if (fs.existsSync(seedDataDir)) {
+      try {
+        const files = fs.readdirSync(seedDataDir);
+        for (const file of files) {
+          const src = path.join(seedDataDir, file);
+          const dst = path.join(tmpDir, file);
+          if (fs.statSync(src).isFile() && !fs.existsSync(dst)) {
+            try {
+              fs.copyFileSync(src, dst);
+            } catch {}
+          }
+        }
+      } catch {}
+    }
+    return tmpDir;
+  }
+
   const rootDir = path.resolve(__dirname, '../../../');
   const candidates: string[] = [];
 
@@ -58,9 +86,10 @@ function resolveDataDir(): string {
 export const config = {
   port: Number(process.env.PORT) || 3001,
   nodeEnv: process.env.NODE_ENV || 'development',
+  corsOrigin: process.env.CORS_ORIGIN || '*',
   aiProvider: process.env.AI_PROVIDER || 'gemini',
   geminiApiKey: process.env.GEMINI_API_KEY || '',
-  geminiModel: process.env.GEMINI_MODEL || 'gemini-3.8-flash',
+  geminiModel: process.env.GEMINI_MODEL || 'gemini-1.5-pro',
   tavilyApiKey: process.env.TAVILY_API_KEY || '',
   braveSearchApiKey: process.env.BRAVE_SEARCH_API_KEY || '',
   googleSearchApiKey: process.env.GOOGLE_SEARCH_API_KEY || '',
