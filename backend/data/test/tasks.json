@@ -1,7 +1,7 @@
 [
   {
-    "id": "task_plan_j1hc2bimvgf9von_plan_setup",
-    "planId": "plan_j1hc2bimvgf9von",
+    "id": "task_plan_kdo53almvi51902_plan_setup",
+    "planId": "plan_kdo53almvi51902",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -40,12 +40,12 @@
     "missingExplanation": "All required items verified and completed.",
     "nextActionLabel": "Open Overview Tab",
     "nextActionTab": "overview",
-    "createdAt": "2026-10-20T08:29:36.557Z",
-    "updatedAt": "2026-10-20T08:29:36.581Z"
+    "createdAt": "2026-10-21T13:18:30.105Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
   },
   {
-    "id": "task_plan_j1hc2bimvgf9von_learning_objectives",
-    "planId": "plan_j1hc2bimvgf9von",
+    "id": "task_plan_kdo53almvi51902_learning_objectives",
+    "planId": "plan_kdo53almvi51902",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -84,12 +84,12 @@
     "missingExplanation": "All required items verified and completed.",
     "nextActionLabel": "Review Objectives",
     "nextActionTab": "overview",
-    "createdAt": "2026-10-20T08:29:36.557Z",
-    "updatedAt": "2026-10-20T08:29:36.581Z"
+    "createdAt": "2026-10-21T13:18:30.105Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
   },
   {
-    "id": "task_plan_j1hc2bimvgf9von_curriculum_standards",
-    "planId": "plan_j1hc2bimvgf9von",
+    "id": "task_plan_kdo53almvi51902_curriculum_standards",
+    "planId": "plan_kdo53almvi51902",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -128,12 +128,12 @@
     "missingExplanation": "All required items verified and completed.",
     "nextActionLabel": "Open Standards Alignment",
     "nextActionTab": "standards",
-    "createdAt": "2026-10-20T08:29:36.557Z",
-    "updatedAt": "2026-10-20T08:29:36.581Z"
+    "createdAt": "2026-10-21T13:18:30.105Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
   },
   {
-    "id": "task_plan_j1hc2bimvgf9von_assessment_rubric",
-    "planId": "plan_j1hc2bimvgf9von",
+    "id": "task_plan_kdo53almvi51902_assessment_rubric",
+    "planId": "plan_kdo53almvi51902",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -172,12 +172,12 @@
     "missingExplanation": "All required items verified and completed.",
     "nextActionLabel": "Open Assessments & Rubric",
     "nextActionTab": "assessments",
-    "createdAt": "2026-10-20T08:29:36.557Z",
-    "updatedAt": "2026-10-20T08:29:36.581Z"
+    "createdAt": "2026-10-21T13:18:30.105Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
   },
   {
-    "id": "task_plan_j1hc2bimvgf9von_teaching_materials",
-    "planId": "plan_j1hc2bimvgf9von",
+    "id": "task_plan_kdo53almvi51902_teaching_materials",
+    "planId": "plan_kdo53almvi51902",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -210,12 +210,12 @@
     "missingExplanation": "Missing: Catalog digital links, readings, and lab resources. Status is In Progress: steps have been initiated but require final review. Next action: Open Materials & Resources tab to catalog lab items and ensure daily lessons list their handouts.",
     "nextActionLabel": "Open Resources Tab",
     "nextActionTab": "resources",
-    "createdAt": "2026-10-20T08:29:36.557Z",
-    "updatedAt": "2026-10-20T08:29:36.581Z"
+    "createdAt": "2026-10-21T13:18:30.105Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
   },
   {
-    "id": "task_plan_j1hc2bimvgf9von_differentiation",
-    "planId": "plan_j1hc2bimvgf9von",
+    "id": "task_plan_kdo53almvi51902_differentiation",
+    "planId": "plan_kdo53almvi51902",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -254,12 +254,12 @@
     "missingExplanation": "All required items verified and completed.",
     "nextActionLabel": "Review Differentiation",
     "nextActionTab": "daily",
-    "createdAt": "2026-10-20T08:29:36.557Z",
-    "updatedAt": "2026-10-20T08:29:36.581Z"
+    "createdAt": "2026-10-21T13:18:30.105Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
   },
   {
-    "id": "task_plan_j1hc2bimvgf9von_lesson_sequences",
-    "planId": "plan_j1hc2bimvgf9von",
+    "id": "task_plan_kdo53almvi51902_lesson_sequences",
+    "planId": "plan_kdo53almvi51902",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -292,12 +292,12 @@
     "missingExplanation": "All required items verified and completed.",
     "nextActionLabel": "Review Daily Lessons",
     "nextActionTab": "daily",
-    "createdAt": "2026-10-20T08:29:36.557Z",
-    "updatedAt": "2026-10-20T08:29:36.581Z"
+    "createdAt": "2026-10-21T13:18:30.105Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
   },
   {
-    "id": "task_plan_j1hc2bimvgf9von_finalize_plan",
-    "planId": "plan_j1hc2bimvgf9von",
+    "id": "task_plan_kdo53almvi51902_finalize_plan",
+    "planId": "plan_kdo53almvi51902",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -326,7 +326,7 @@
         "isRequired": true
       }
     ],
-    "prerequisiteTaskId": "task_plan_j1hc2bimvgf9von_lesson_sequences",
+    "prerequisiteTaskId": "task_plan_kdo53almvi51902_lesson_sequences",
     "prerequisiteTitle": "Review Weekly Lesson Sequences & Timing",
     "validationIssues": [
       {
@@ -338,12 +338,12 @@
     "missingExplanation": "Missing: Set overall plan status to \"Completed\". Status is In Progress: steps have been initiated but require final review. Next action: Change plan status from Draft to Completed in the workspace top bar.",
     "nextActionLabel": "Finalize in Overview",
     "nextActionTab": "overview",
-    "createdAt": "2026-10-20T08:29:36.557Z",
-    "updatedAt": "2026-10-20T08:29:36.581Z"
+    "createdAt": "2026-10-21T13:18:30.105Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
   },
   {
-    "id": "task_plan_j1hc2bimvgf9von_export_share",
-    "planId": "plan_j1hc2bimvgf9von",
+    "id": "task_plan_kdo53almvi51902_export_share",
+    "planId": "plan_kdo53almvi51902",
     "planTitle": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -366,7 +366,7 @@
         "isRequired": false
       }
     ],
-    "prerequisiteTaskId": "task_plan_j1hc2bimvgf9von_finalize_plan",
+    "prerequisiteTaskId": "task_plan_kdo53almvi51902_finalize_plan",
     "prerequisiteTitle": "Finalize & Approve Curriculum Plan",
     "validationIssues": [
       {
@@ -378,7 +378,1905 @@
     "missingExplanation": "Missing: Export official curriculum syllabus (DOCX or PDF). Status is Pending: awaiting prerequisite or work has not yet started. Next action: Use the Export menu in the workspace header to download Word or PDF copies of your curriculum unit.",
     "nextActionLabel": "Open Export Menu",
     "nextActionTab": "overview",
-    "createdAt": "2026-10-20T08:29:36.557Z",
-    "updatedAt": "2026-10-20T08:29:36.581Z"
+    "createdAt": "2026-10-21T13:18:30.105Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_pd8x5kqmvi5199q_plan_setup",
+    "planId": "plan_pd8x5kqmvi5199q",
+    "planTitle": "Shakespearean Drama & Rhetoric (Copy)",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "plan_setup",
+    "title": "Define Unit Overview & Curriculum Scope",
+    "description": "Establish foundational unit goals, grade level, and enduring understandings grounded in Backward Design.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_title",
+        "label": "Define descriptive curriculum unit title",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_overview",
+        "label": "Draft unit overview and enduring understandings (Backward Design Stage 1)",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_grade",
+        "label": "Set target grade level and class duration",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_prereqs",
+        "label": "Identify prerequisite student knowledge and prior skills",
+        "completed": true,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Overview Tab",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_pd8x5kqmvi5199q_learning_objectives",
+    "planId": "plan_pd8x5kqmvi5199q",
+    "planTitle": "Shakespearean Drama & Rhetoric (Copy)",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "learning_objectives",
+    "title": "Review Learning Objectives & Bloom Depth",
+    "description": "Audit unit and session objectives to ensure measurable outcomes and cognitive rigor.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_unit_obj",
+        "label": "Articulate 2+ overarching unit learning goals",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_sess_obj",
+        "label": "Verify each daily session has measurable objectives",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_bloom",
+        "label": "Ensure cognitive depth across Bloom’s Taxonomy spectrum",
+        "completed": true,
+        "isRequired": false
+      },
+      {
+        "id": "item_success_criteria",
+        "label": "Include observable student success criteria (\"I can...\")",
+        "completed": true,
+        "isRequired": true
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Review Objectives",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_pd8x5kqmvi5199q_curriculum_standards",
+    "planId": "plan_pd8x5kqmvi5199q",
+    "planTitle": "Shakespearean Drama & Rhetoric (Copy)",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "curriculum_standards",
+    "title": "Verify Curriculum Standards Alignment",
+    "description": "Audit framework standards codes, pedagogical alignment rationales, and verification badges.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_standards_attached",
+        "label": "Attach curriculum standards to unit sessions",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_standards_connection",
+        "label": "Verify pedagogical alignment rationale for each standard",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_standards_reviewed",
+        "label": "Confirm standards verification status (Verified / Teacher Provided)",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [
+      {
+        "field": "verificationStatus",
+        "message": "Some standards remain flagged as unverified AI suggestions",
+        "severity": "warning"
+      }
+    ],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Standards Alignment",
+    "nextActionTab": "standards",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_pd8x5kqmvi5199q_assessment_rubric",
+    "planId": "plan_pd8x5kqmvi5199q",
+    "planTitle": "Shakespearean Drama & Rhetoric (Copy)",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "assessment_rubric",
+    "title": "Complete Assessment Rubrics & Checkpoints",
+    "description": "Design formative checkpoints and configure weighted multi-criteria grading rubrics.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_formative_checks",
+        "label": "Configure daily formative checks and exit questions",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_weekly_checks",
+        "label": "Establish weekly progress checkpoints across all weeks",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_summative_rubric",
+        "label": "Build multi-tiered summative assessment rubric",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_weights_100",
+        "label": "Verify rubric weighting balances exactly to 100%",
+        "completed": true,
+        "isRequired": true
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Assessments & Rubric",
+    "nextActionTab": "assessments",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_pd8x5kqmvi5199q_teaching_materials",
+    "planId": "plan_pd8x5kqmvi5199q",
+    "planTitle": "Shakespearean Drama & Rhetoric (Copy)",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "teaching_materials",
+    "title": "Prepare Teaching Materials & Resources",
+    "description": "Collate classroom supplies, digital tools, worksheets, and lab setups required across unit lessons.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_curriculum_resources",
+        "label": "Catalog digital links, readings, and lab resources",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_daily_materials",
+        "label": "Specify physical and digital equipment for all daily sessions",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_printables",
+        "label": "Prepare student handouts, graphic organizers, or slide decks",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Resources Tab",
+    "nextActionTab": "resources",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_pd8x5kqmvi5199q_differentiation",
+    "planId": "plan_pd8x5kqmvi5199q",
+    "planTitle": "Shakespearean Drama & Rhetoric (Copy)",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "differentiation",
+    "title": "Add Differentiation & Accessibility Strategies",
+    "description": "Ensure equitable instruction by tailoring support for striving learners, advanced students, and multilingual learners.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_scaffolds_support",
+        "label": "Provide structured scaffolds for intervention & striving learners",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_enrichment_adv",
+        "label": "Create extension tasks and deeper inquiry for advanced learners",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_ell_accommodations",
+        "label": "Include linguistic scaffolds & bilingual vocabulary for ELLs",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_modalities",
+        "label": "Incorporate multimodal representations (visual, auditory, kinesthetic)",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Review Differentiation",
+    "nextActionTab": "daily",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_pd8x5kqmvi5199q_lesson_sequences",
+    "planId": "plan_pd8x5kqmvi5199q",
+    "planTitle": "Shakespearean Drama & Rhetoric (Copy)",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "lesson_sequences",
+    "title": "Review Weekly Lesson Sequences & Timing",
+    "description": "Audit instructional pacing, time allocations, and lesson phase transitions across the unit.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_weekly_scope",
+        "label": "Verify thematic scope and pacing across all curriculum weeks",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_instructional_phases",
+        "label": "Ensure all sessions contain clear opening, instruction, practice, and closure",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_phase_timing",
+        "label": "Balance instructional phase timings to total 55 minutes",
+        "completed": true,
+        "isRequired": true
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Review Daily Lessons",
+    "nextActionTab": "daily",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_pd8x5kqmvi5199q_finalize_plan",
+    "planId": "plan_pd8x5kqmvi5199q",
+    "planTitle": "Shakespearean Drama & Rhetoric (Copy)",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "finalize_plan",
+    "title": "Finalize & Approve Curriculum Plan",
+    "description": "Perform a comprehensive pre-flight check and certify the unit plan as ready for classroom execution.",
+    "status": "in_progress",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_audit_integrity",
+        "label": "Review full curriculum sequence for pedagogical consistency",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_resolve_warnings",
+        "label": "Resolve all outstanding validation errors across tabs",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_mark_completed",
+        "label": "Set overall plan status to \"Completed\"",
+        "completed": false,
+        "isRequired": true
+      }
+    ],
+    "prerequisiteTaskId": "task_plan_pd8x5kqmvi5199q_lesson_sequences",
+    "prerequisiteTitle": "Review Weekly Lesson Sequences & Timing",
+    "validationIssues": [
+      {
+        "field": "status",
+        "message": "Plan status is currently in Draft; mark Completed when ready",
+        "severity": "warning"
+      }
+    ],
+    "missingExplanation": "Missing: Set overall plan status to \"Completed\". Status is In Progress: steps have been initiated but require final review. Next action: Change plan status from Draft to Completed in the workspace top bar.",
+    "nextActionLabel": "Finalize in Overview",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_pd8x5kqmvi5199q_export_share",
+    "planId": "plan_pd8x5kqmvi5199q",
+    "planTitle": "Shakespearean Drama & Rhetoric (Copy)",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "export_share",
+    "title": "Export Documents & Share with Department",
+    "description": "Download classroom-ready Word DOCX / PDF formats and share curriculum data with administrators or co-teachers.",
+    "status": "pending",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_export_docs",
+        "label": "Export official curriculum syllabus (DOCX or PDF)",
+        "completed": false,
+        "isRequired": true
+      },
+      {
+        "id": "item_share_colleagues",
+        "label": "Share curriculum summary or CSV tracker with grade-level team",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "prerequisiteTaskId": "task_plan_pd8x5kqmvi5199q_finalize_plan",
+    "prerequisiteTitle": "Finalize & Approve Curriculum Plan",
+    "validationIssues": [
+      {
+        "field": "prerequisite",
+        "message": "Finalize the plan before publishing official export documents",
+        "severity": "warning"
+      }
+    ],
+    "missingExplanation": "Missing: Export official curriculum syllabus (DOCX or PDF). Status is Pending: awaiting prerequisite or work has not yet started. Next action: Use the Export menu in the workspace header to download Word or PDF copies of your curriculum unit.",
+    "nextActionLabel": "Open Export Menu",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_yuhpb4rmvi5199o_plan_setup",
+    "planId": "plan_yuhpb4rmvi5199o",
+    "planTitle": "Shakespearean Drama & Rhetoric",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "plan_setup",
+    "title": "Define Unit Overview & Curriculum Scope",
+    "description": "Establish foundational unit goals, grade level, and enduring understandings grounded in Backward Design.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_title",
+        "label": "Define descriptive curriculum unit title",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_overview",
+        "label": "Draft unit overview and enduring understandings (Backward Design Stage 1)",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_grade",
+        "label": "Set target grade level and class duration",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_prereqs",
+        "label": "Identify prerequisite student knowledge and prior skills",
+        "completed": true,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Overview Tab",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_yuhpb4rmvi5199o_learning_objectives",
+    "planId": "plan_yuhpb4rmvi5199o",
+    "planTitle": "Shakespearean Drama & Rhetoric",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "learning_objectives",
+    "title": "Review Learning Objectives & Bloom Depth",
+    "description": "Audit unit and session objectives to ensure measurable outcomes and cognitive rigor.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_unit_obj",
+        "label": "Articulate 2+ overarching unit learning goals",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_sess_obj",
+        "label": "Verify each daily session has measurable objectives",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_bloom",
+        "label": "Ensure cognitive depth across Bloom’s Taxonomy spectrum",
+        "completed": true,
+        "isRequired": false
+      },
+      {
+        "id": "item_success_criteria",
+        "label": "Include observable student success criteria (\"I can...\")",
+        "completed": true,
+        "isRequired": true
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Review Objectives",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_yuhpb4rmvi5199o_curriculum_standards",
+    "planId": "plan_yuhpb4rmvi5199o",
+    "planTitle": "Shakespearean Drama & Rhetoric",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "curriculum_standards",
+    "title": "Verify Curriculum Standards Alignment",
+    "description": "Audit framework standards codes, pedagogical alignment rationales, and verification badges.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_standards_attached",
+        "label": "Attach curriculum standards to unit sessions",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_standards_connection",
+        "label": "Verify pedagogical alignment rationale for each standard",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_standards_reviewed",
+        "label": "Confirm standards verification status (Verified / Teacher Provided)",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [
+      {
+        "field": "verificationStatus",
+        "message": "Some standards remain flagged as unverified AI suggestions",
+        "severity": "warning"
+      }
+    ],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Standards Alignment",
+    "nextActionTab": "standards",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_yuhpb4rmvi5199o_assessment_rubric",
+    "planId": "plan_yuhpb4rmvi5199o",
+    "planTitle": "Shakespearean Drama & Rhetoric",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "assessment_rubric",
+    "title": "Complete Assessment Rubrics & Checkpoints",
+    "description": "Design formative checkpoints and configure weighted multi-criteria grading rubrics.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_formative_checks",
+        "label": "Configure daily formative checks and exit questions",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_weekly_checks",
+        "label": "Establish weekly progress checkpoints across all weeks",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_summative_rubric",
+        "label": "Build multi-tiered summative assessment rubric",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_weights_100",
+        "label": "Verify rubric weighting balances exactly to 100%",
+        "completed": true,
+        "isRequired": true
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Assessments & Rubric",
+    "nextActionTab": "assessments",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_yuhpb4rmvi5199o_teaching_materials",
+    "planId": "plan_yuhpb4rmvi5199o",
+    "planTitle": "Shakespearean Drama & Rhetoric",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "teaching_materials",
+    "title": "Prepare Teaching Materials & Resources",
+    "description": "Collate classroom supplies, digital tools, worksheets, and lab setups required across unit lessons.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_curriculum_resources",
+        "label": "Catalog digital links, readings, and lab resources",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_daily_materials",
+        "label": "Specify physical and digital equipment for all daily sessions",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_printables",
+        "label": "Prepare student handouts, graphic organizers, or slide decks",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Resources Tab",
+    "nextActionTab": "resources",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_yuhpb4rmvi5199o_differentiation",
+    "planId": "plan_yuhpb4rmvi5199o",
+    "planTitle": "Shakespearean Drama & Rhetoric",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "differentiation",
+    "title": "Add Differentiation & Accessibility Strategies",
+    "description": "Ensure equitable instruction by tailoring support for striving learners, advanced students, and multilingual learners.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_scaffolds_support",
+        "label": "Provide structured scaffolds for intervention & striving learners",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_enrichment_adv",
+        "label": "Create extension tasks and deeper inquiry for advanced learners",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_ell_accommodations",
+        "label": "Include linguistic scaffolds & bilingual vocabulary for ELLs",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_modalities",
+        "label": "Incorporate multimodal representations (visual, auditory, kinesthetic)",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Review Differentiation",
+    "nextActionTab": "daily",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_yuhpb4rmvi5199o_lesson_sequences",
+    "planId": "plan_yuhpb4rmvi5199o",
+    "planTitle": "Shakespearean Drama & Rhetoric",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "lesson_sequences",
+    "title": "Review Weekly Lesson Sequences & Timing",
+    "description": "Audit instructional pacing, time allocations, and lesson phase transitions across the unit.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_weekly_scope",
+        "label": "Verify thematic scope and pacing across all curriculum weeks",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_instructional_phases",
+        "label": "Ensure all sessions contain clear opening, instruction, practice, and closure",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_phase_timing",
+        "label": "Balance instructional phase timings to total 55 minutes",
+        "completed": true,
+        "isRequired": true
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Review Daily Lessons",
+    "nextActionTab": "daily",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_yuhpb4rmvi5199o_finalize_plan",
+    "planId": "plan_yuhpb4rmvi5199o",
+    "planTitle": "Shakespearean Drama & Rhetoric",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "finalize_plan",
+    "title": "Finalize & Approve Curriculum Plan",
+    "description": "Perform a comprehensive pre-flight check and certify the unit plan as ready for classroom execution.",
+    "status": "in_progress",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_audit_integrity",
+        "label": "Review full curriculum sequence for pedagogical consistency",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_resolve_warnings",
+        "label": "Resolve all outstanding validation errors across tabs",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_mark_completed",
+        "label": "Set overall plan status to \"Completed\"",
+        "completed": false,
+        "isRequired": true
+      }
+    ],
+    "prerequisiteTaskId": "task_plan_yuhpb4rmvi5199o_lesson_sequences",
+    "prerequisiteTitle": "Review Weekly Lesson Sequences & Timing",
+    "validationIssues": [
+      {
+        "field": "status",
+        "message": "Plan status is currently in Draft; mark Completed when ready",
+        "severity": "warning"
+      }
+    ],
+    "missingExplanation": "Missing: Set overall plan status to \"Completed\". Status is In Progress: steps have been initiated but require final review. Next action: Change plan status from Draft to Completed in the workspace top bar.",
+    "nextActionLabel": "Finalize in Overview",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_yuhpb4rmvi5199o_export_share",
+    "planId": "plan_yuhpb4rmvi5199o",
+    "planTitle": "Shakespearean Drama & Rhetoric",
+    "subject": "English Language Arts",
+    "gradeLevel": "Grade 10",
+    "type": "export_share",
+    "title": "Export Documents & Share with Department",
+    "description": "Download classroom-ready Word DOCX / PDF formats and share curriculum data with administrators or co-teachers.",
+    "status": "pending",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_export_docs",
+        "label": "Export official curriculum syllabus (DOCX or PDF)",
+        "completed": false,
+        "isRequired": true
+      },
+      {
+        "id": "item_share_colleagues",
+        "label": "Share curriculum summary or CSV tracker with grade-level team",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "prerequisiteTaskId": "task_plan_yuhpb4rmvi5199o_finalize_plan",
+    "prerequisiteTitle": "Finalize & Approve Curriculum Plan",
+    "validationIssues": [
+      {
+        "field": "prerequisite",
+        "message": "Finalize the plan before publishing official export documents",
+        "severity": "warning"
+      }
+    ],
+    "missingExplanation": "Missing: Export official curriculum syllabus (DOCX or PDF). Status is Pending: awaiting prerequisite or work has not yet started. Next action: Use the Export menu in the workspace header to download Word or PDF copies of your curriculum unit.",
+    "nextActionLabel": "Open Export Menu",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.158Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_ymczwoumvi5199d_plan_setup",
+    "planId": "plan_ymczwoumvi5199d",
+    "planTitle": "Fractions & Proportions Mastery",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 3 (Elementary)",
+    "type": "plan_setup",
+    "title": "Define Unit Overview & Curriculum Scope",
+    "description": "Establish foundational unit goals, grade level, and enduring understandings grounded in Backward Design.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_title",
+        "label": "Define descriptive curriculum unit title",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_overview",
+        "label": "Draft unit overview and enduring understandings (Backward Design Stage 1)",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_grade",
+        "label": "Set target grade level and class duration",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_prereqs",
+        "label": "Identify prerequisite student knowledge and prior skills",
+        "completed": true,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Overview Tab",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.159Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_ymczwoumvi5199d_learning_objectives",
+    "planId": "plan_ymczwoumvi5199d",
+    "planTitle": "Fractions & Proportions Mastery",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 3 (Elementary)",
+    "type": "learning_objectives",
+    "title": "Review Learning Objectives & Bloom Depth",
+    "description": "Audit unit and session objectives to ensure measurable outcomes and cognitive rigor.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_unit_obj",
+        "label": "Articulate 2+ overarching unit learning goals",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_sess_obj",
+        "label": "Verify each daily session has measurable objectives",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_bloom",
+        "label": "Ensure cognitive depth across Bloom’s Taxonomy spectrum",
+        "completed": true,
+        "isRequired": false
+      },
+      {
+        "id": "item_success_criteria",
+        "label": "Include observable student success criteria (\"I can...\")",
+        "completed": true,
+        "isRequired": true
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Review Objectives",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.159Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_ymczwoumvi5199d_curriculum_standards",
+    "planId": "plan_ymczwoumvi5199d",
+    "planTitle": "Fractions & Proportions Mastery",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 3 (Elementary)",
+    "type": "curriculum_standards",
+    "title": "Verify Curriculum Standards Alignment",
+    "description": "Audit framework standards codes, pedagogical alignment rationales, and verification badges.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_standards_attached",
+        "label": "Attach curriculum standards to unit sessions",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_standards_connection",
+        "label": "Verify pedagogical alignment rationale for each standard",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_standards_reviewed",
+        "label": "Confirm standards verification status (Verified / Teacher Provided)",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [
+      {
+        "field": "verificationStatus",
+        "message": "Some standards remain flagged as unverified AI suggestions",
+        "severity": "warning"
+      }
+    ],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Standards Alignment",
+    "nextActionTab": "standards",
+    "createdAt": "2026-10-21T13:18:32.159Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_ymczwoumvi5199d_assessment_rubric",
+    "planId": "plan_ymczwoumvi5199d",
+    "planTitle": "Fractions & Proportions Mastery",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 3 (Elementary)",
+    "type": "assessment_rubric",
+    "title": "Complete Assessment Rubrics & Checkpoints",
+    "description": "Design formative checkpoints and configure weighted multi-criteria grading rubrics.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_formative_checks",
+        "label": "Configure daily formative checks and exit questions",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_weekly_checks",
+        "label": "Establish weekly progress checkpoints across all weeks",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_summative_rubric",
+        "label": "Build multi-tiered summative assessment rubric",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_weights_100",
+        "label": "Verify rubric weighting balances exactly to 100%",
+        "completed": true,
+        "isRequired": true
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Assessments & Rubric",
+    "nextActionTab": "assessments",
+    "createdAt": "2026-10-21T13:18:32.159Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_ymczwoumvi5199d_teaching_materials",
+    "planId": "plan_ymczwoumvi5199d",
+    "planTitle": "Fractions & Proportions Mastery",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 3 (Elementary)",
+    "type": "teaching_materials",
+    "title": "Prepare Teaching Materials & Resources",
+    "description": "Collate classroom supplies, digital tools, worksheets, and lab setups required across unit lessons.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_curriculum_resources",
+        "label": "Catalog digital links, readings, and lab resources",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_daily_materials",
+        "label": "Specify physical and digital equipment for all daily sessions",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_printables",
+        "label": "Prepare student handouts, graphic organizers, or slide decks",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Resources Tab",
+    "nextActionTab": "resources",
+    "createdAt": "2026-10-21T13:18:32.159Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_ymczwoumvi5199d_differentiation",
+    "planId": "plan_ymczwoumvi5199d",
+    "planTitle": "Fractions & Proportions Mastery",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 3 (Elementary)",
+    "type": "differentiation",
+    "title": "Add Differentiation & Accessibility Strategies",
+    "description": "Ensure equitable instruction by tailoring support for striving learners, advanced students, and multilingual learners.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_scaffolds_support",
+        "label": "Provide structured scaffolds for intervention & striving learners",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_enrichment_adv",
+        "label": "Create extension tasks and deeper inquiry for advanced learners",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_ell_accommodations",
+        "label": "Include linguistic scaffolds & bilingual vocabulary for ELLs",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_modalities",
+        "label": "Incorporate multimodal representations (visual, auditory, kinesthetic)",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Review Differentiation",
+    "nextActionTab": "daily",
+    "createdAt": "2026-10-21T13:18:32.159Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_ymczwoumvi5199d_lesson_sequences",
+    "planId": "plan_ymczwoumvi5199d",
+    "planTitle": "Fractions & Proportions Mastery",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 3 (Elementary)",
+    "type": "lesson_sequences",
+    "title": "Review Weekly Lesson Sequences & Timing",
+    "description": "Audit instructional pacing, time allocations, and lesson phase transitions across the unit.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_weekly_scope",
+        "label": "Verify thematic scope and pacing across all curriculum weeks",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_instructional_phases",
+        "label": "Ensure all sessions contain clear opening, instruction, practice, and closure",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_phase_timing",
+        "label": "Balance instructional phase timings to total 40 minutes",
+        "completed": true,
+        "isRequired": true
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Review Daily Lessons",
+    "nextActionTab": "daily",
+    "createdAt": "2026-10-21T13:18:32.159Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_ymczwoumvi5199d_finalize_plan",
+    "planId": "plan_ymczwoumvi5199d",
+    "planTitle": "Fractions & Proportions Mastery",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 3 (Elementary)",
+    "type": "finalize_plan",
+    "title": "Finalize & Approve Curriculum Plan",
+    "description": "Perform a comprehensive pre-flight check and certify the unit plan as ready for classroom execution.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_audit_integrity",
+        "label": "Review full curriculum sequence for pedagogical consistency",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_resolve_warnings",
+        "label": "Resolve all outstanding validation errors across tabs",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_mark_completed",
+        "label": "Set overall plan status to \"Completed\"",
+        "completed": true,
+        "isRequired": true
+      }
+    ],
+    "prerequisiteTaskId": "task_plan_ymczwoumvi5199d_lesson_sequences",
+    "prerequisiteTitle": "Review Weekly Lesson Sequences & Timing",
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Finalize in Overview",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.159Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_ymczwoumvi5199d_export_share",
+    "planId": "plan_ymczwoumvi5199d",
+    "planTitle": "Fractions & Proportions Mastery",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 3 (Elementary)",
+    "type": "export_share",
+    "title": "Export Documents & Share with Department",
+    "description": "Download classroom-ready Word DOCX / PDF formats and share curriculum data with administrators or co-teachers.",
+    "status": "pending",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_export_docs",
+        "label": "Export official curriculum syllabus (DOCX or PDF)",
+        "completed": false,
+        "isRequired": true
+      },
+      {
+        "id": "item_share_colleagues",
+        "label": "Share curriculum summary or CSV tracker with grade-level team",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "prerequisiteTaskId": "task_plan_ymczwoumvi5199d_finalize_plan",
+    "prerequisiteTitle": "Finalize & Approve Curriculum Plan",
+    "validationIssues": [],
+    "missingExplanation": "Missing: Export official curriculum syllabus (DOCX or PDF). Status is Pending: awaiting prerequisite or work has not yet started. Next action: Use the Export menu in the workspace header to download Word or PDF copies of your curriculum unit.",
+    "nextActionLabel": "Open Export Menu",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.159Z",
+    "updatedAt": "2026-10-21T13:18:32.247Z"
+  },
+  {
+    "id": "task_plan_h6ine2qmvi51ams_plan_setup",
+    "planId": "plan_h6ine2qmvi51ams",
+    "planTitle": "Photosynthesis & Cellular Energy Transfer",
+    "subject": "Biology",
+    "gradeLevel": "Grade 9",
+    "type": "plan_setup",
+    "title": "Define Unit Overview & Curriculum Scope",
+    "description": "Establish foundational unit goals, grade level, and enduring understandings grounded in Backward Design.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_title",
+        "label": "Define descriptive curriculum unit title",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_overview",
+        "label": "Draft unit overview and enduring understandings (Backward Design Stage 1)",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_grade",
+        "label": "Set target grade level and class duration",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_prereqs",
+        "label": "Identify prerequisite student knowledge and prior skills",
+        "completed": true,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Overview Tab",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.215Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_h6ine2qmvi51ams_learning_objectives",
+    "planId": "plan_h6ine2qmvi51ams",
+    "planTitle": "Photosynthesis & Cellular Energy Transfer",
+    "subject": "Biology",
+    "gradeLevel": "Grade 9",
+    "type": "learning_objectives",
+    "title": "Review Learning Objectives & Bloom Depth",
+    "description": "Audit unit and session objectives to ensure measurable outcomes and cognitive rigor.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_unit_obj",
+        "label": "Articulate 2+ overarching unit learning goals",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_sess_obj",
+        "label": "Verify each daily session has measurable objectives",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_bloom",
+        "label": "Ensure cognitive depth across Bloom’s Taxonomy spectrum",
+        "completed": true,
+        "isRequired": false
+      },
+      {
+        "id": "item_success_criteria",
+        "label": "Include observable student success criteria (\"I can...\")",
+        "completed": true,
+        "isRequired": true
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Review Objectives",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.215Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_h6ine2qmvi51ams_curriculum_standards",
+    "planId": "plan_h6ine2qmvi51ams",
+    "planTitle": "Photosynthesis & Cellular Energy Transfer",
+    "subject": "Biology",
+    "gradeLevel": "Grade 9",
+    "type": "curriculum_standards",
+    "title": "Verify Curriculum Standards Alignment",
+    "description": "Audit framework standards codes, pedagogical alignment rationales, and verification badges.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_standards_attached",
+        "label": "Attach curriculum standards to unit sessions",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_standards_connection",
+        "label": "Verify pedagogical alignment rationale for each standard",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_standards_reviewed",
+        "label": "Confirm standards verification status (Verified / Teacher Provided)",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [
+      {
+        "field": "verificationStatus",
+        "message": "Some standards remain flagged as unverified AI suggestions",
+        "severity": "warning"
+      }
+    ],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Standards Alignment",
+    "nextActionTab": "standards",
+    "createdAt": "2026-10-21T13:18:32.215Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_h6ine2qmvi51ams_assessment_rubric",
+    "planId": "plan_h6ine2qmvi51ams",
+    "planTitle": "Photosynthesis & Cellular Energy Transfer",
+    "subject": "Biology",
+    "gradeLevel": "Grade 9",
+    "type": "assessment_rubric",
+    "title": "Complete Assessment Rubrics & Checkpoints",
+    "description": "Design formative checkpoints and configure weighted multi-criteria grading rubrics.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_formative_checks",
+        "label": "Configure daily formative checks and exit questions",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_weekly_checks",
+        "label": "Establish weekly progress checkpoints across all weeks",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_summative_rubric",
+        "label": "Build multi-tiered summative assessment rubric",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_weights_100",
+        "label": "Verify rubric weighting balances exactly to 100%",
+        "completed": true,
+        "isRequired": true
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Assessments & Rubric",
+    "nextActionTab": "assessments",
+    "createdAt": "2026-10-21T13:18:32.215Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_h6ine2qmvi51ams_teaching_materials",
+    "planId": "plan_h6ine2qmvi51ams",
+    "planTitle": "Photosynthesis & Cellular Energy Transfer",
+    "subject": "Biology",
+    "gradeLevel": "Grade 9",
+    "type": "teaching_materials",
+    "title": "Prepare Teaching Materials & Resources",
+    "description": "Collate classroom supplies, digital tools, worksheets, and lab setups required across unit lessons.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_curriculum_resources",
+        "label": "Catalog digital links, readings, and lab resources",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_daily_materials",
+        "label": "Specify physical and digital equipment for all daily sessions",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_printables",
+        "label": "Prepare student handouts, graphic organizers, or slide decks",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Resources Tab",
+    "nextActionTab": "resources",
+    "createdAt": "2026-10-21T13:18:32.215Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_h6ine2qmvi51ams_differentiation",
+    "planId": "plan_h6ine2qmvi51ams",
+    "planTitle": "Photosynthesis & Cellular Energy Transfer",
+    "subject": "Biology",
+    "gradeLevel": "Grade 9",
+    "type": "differentiation",
+    "title": "Add Differentiation & Accessibility Strategies",
+    "description": "Ensure equitable instruction by tailoring support for striving learners, advanced students, and multilingual learners.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_scaffolds_support",
+        "label": "Provide structured scaffolds for intervention & striving learners",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_enrichment_adv",
+        "label": "Create extension tasks and deeper inquiry for advanced learners",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_ell_accommodations",
+        "label": "Include linguistic scaffolds & bilingual vocabulary for ELLs",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_modalities",
+        "label": "Incorporate multimodal representations (visual, auditory, kinesthetic)",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Review Differentiation",
+    "nextActionTab": "daily",
+    "createdAt": "2026-10-21T13:18:32.215Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_h6ine2qmvi51ams_lesson_sequences",
+    "planId": "plan_h6ine2qmvi51ams",
+    "planTitle": "Photosynthesis & Cellular Energy Transfer",
+    "subject": "Biology",
+    "gradeLevel": "Grade 9",
+    "type": "lesson_sequences",
+    "title": "Review Weekly Lesson Sequences & Timing",
+    "description": "Audit instructional pacing, time allocations, and lesson phase transitions across the unit.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_weekly_scope",
+        "label": "Verify thematic scope and pacing across all curriculum weeks",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_instructional_phases",
+        "label": "Ensure all sessions contain clear opening, instruction, practice, and closure",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_phase_timing",
+        "label": "Balance instructional phase timings to total 50 minutes",
+        "completed": true,
+        "isRequired": true
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Review Daily Lessons",
+    "nextActionTab": "daily",
+    "createdAt": "2026-10-21T13:18:32.215Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_h6ine2qmvi51ams_finalize_plan",
+    "planId": "plan_h6ine2qmvi51ams",
+    "planTitle": "Photosynthesis & Cellular Energy Transfer",
+    "subject": "Biology",
+    "gradeLevel": "Grade 9",
+    "type": "finalize_plan",
+    "title": "Finalize & Approve Curriculum Plan",
+    "description": "Perform a comprehensive pre-flight check and certify the unit plan as ready for classroom execution.",
+    "status": "in_progress",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_audit_integrity",
+        "label": "Review full curriculum sequence for pedagogical consistency",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_resolve_warnings",
+        "label": "Resolve all outstanding validation errors across tabs",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_mark_completed",
+        "label": "Set overall plan status to \"Completed\"",
+        "completed": false,
+        "isRequired": true
+      }
+    ],
+    "prerequisiteTaskId": "task_plan_h6ine2qmvi51ams_lesson_sequences",
+    "prerequisiteTitle": "Review Weekly Lesson Sequences & Timing",
+    "validationIssues": [
+      {
+        "field": "status",
+        "message": "Plan status is currently in Draft; mark Completed when ready",
+        "severity": "warning"
+      }
+    ],
+    "missingExplanation": "Missing: Set overall plan status to \"Completed\". Status is In Progress: steps have been initiated but require final review. Next action: Change plan status from Draft to Completed in the workspace top bar.",
+    "nextActionLabel": "Finalize in Overview",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.215Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_h6ine2qmvi51ams_export_share",
+    "planId": "plan_h6ine2qmvi51ams",
+    "planTitle": "Photosynthesis & Cellular Energy Transfer",
+    "subject": "Biology",
+    "gradeLevel": "Grade 9",
+    "type": "export_share",
+    "title": "Export Documents & Share with Department",
+    "description": "Download classroom-ready Word DOCX / PDF formats and share curriculum data with administrators or co-teachers.",
+    "status": "pending",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_export_docs",
+        "label": "Export official curriculum syllabus (DOCX or PDF)",
+        "completed": false,
+        "isRequired": true
+      },
+      {
+        "id": "item_share_colleagues",
+        "label": "Share curriculum summary or CSV tracker with grade-level team",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "prerequisiteTaskId": "task_plan_h6ine2qmvi51ams_finalize_plan",
+    "prerequisiteTitle": "Finalize & Approve Curriculum Plan",
+    "validationIssues": [
+      {
+        "field": "prerequisite",
+        "message": "Finalize the plan before publishing official export documents",
+        "severity": "warning"
+      }
+    ],
+    "missingExplanation": "Missing: Export official curriculum syllabus (DOCX or PDF). Status is Pending: awaiting prerequisite or work has not yet started. Next action: Use the Export menu in the workspace header to download Word or PDF copies of your curriculum unit.",
+    "nextActionLabel": "Open Export Menu",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.215Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_sjwrnl0mvi51ann_plan_setup",
+    "planId": "plan_sjwrnl0mvi51ann",
+    "planTitle": "Algebraic Expressions & Linear Equations",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 8",
+    "type": "plan_setup",
+    "title": "Define Unit Overview & Curriculum Scope",
+    "description": "Establish foundational unit goals, grade level, and enduring understandings grounded in Backward Design.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_title",
+        "label": "Define descriptive curriculum unit title",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_overview",
+        "label": "Draft unit overview and enduring understandings (Backward Design Stage 1)",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_grade",
+        "label": "Set target grade level and class duration",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_prereqs",
+        "label": "Identify prerequisite student knowledge and prior skills",
+        "completed": true,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Overview Tab",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.246Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_sjwrnl0mvi51ann_learning_objectives",
+    "planId": "plan_sjwrnl0mvi51ann",
+    "planTitle": "Algebraic Expressions & Linear Equations",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 8",
+    "type": "learning_objectives",
+    "title": "Review Learning Objectives & Bloom Depth",
+    "description": "Audit unit and session objectives to ensure measurable outcomes and cognitive rigor.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_unit_obj",
+        "label": "Articulate 2+ overarching unit learning goals",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_sess_obj",
+        "label": "Verify each daily session has measurable objectives",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_bloom",
+        "label": "Ensure cognitive depth across Bloom’s Taxonomy spectrum",
+        "completed": true,
+        "isRequired": false
+      },
+      {
+        "id": "item_success_criteria",
+        "label": "Include observable student success criteria (\"I can...\")",
+        "completed": true,
+        "isRequired": true
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Review Objectives",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.246Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_sjwrnl0mvi51ann_curriculum_standards",
+    "planId": "plan_sjwrnl0mvi51ann",
+    "planTitle": "Algebraic Expressions & Linear Equations",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 8",
+    "type": "curriculum_standards",
+    "title": "Verify Curriculum Standards Alignment",
+    "description": "Audit framework standards codes, pedagogical alignment rationales, and verification badges.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_standards_attached",
+        "label": "Attach curriculum standards to unit sessions",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_standards_connection",
+        "label": "Verify pedagogical alignment rationale for each standard",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_standards_reviewed",
+        "label": "Confirm standards verification status (Verified / Teacher Provided)",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [
+      {
+        "field": "verificationStatus",
+        "message": "Some standards remain flagged as unverified AI suggestions",
+        "severity": "warning"
+      }
+    ],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Standards Alignment",
+    "nextActionTab": "standards",
+    "createdAt": "2026-10-21T13:18:32.246Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_sjwrnl0mvi51ann_assessment_rubric",
+    "planId": "plan_sjwrnl0mvi51ann",
+    "planTitle": "Algebraic Expressions & Linear Equations",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 8",
+    "type": "assessment_rubric",
+    "title": "Complete Assessment Rubrics & Checkpoints",
+    "description": "Design formative checkpoints and configure weighted multi-criteria grading rubrics.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_formative_checks",
+        "label": "Configure daily formative checks and exit questions",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_weekly_checks",
+        "label": "Establish weekly progress checkpoints across all weeks",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_summative_rubric",
+        "label": "Build multi-tiered summative assessment rubric",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_weights_100",
+        "label": "Verify rubric weighting balances exactly to 100%",
+        "completed": true,
+        "isRequired": true
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Assessments & Rubric",
+    "nextActionTab": "assessments",
+    "createdAt": "2026-10-21T13:18:32.246Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_sjwrnl0mvi51ann_teaching_materials",
+    "planId": "plan_sjwrnl0mvi51ann",
+    "planTitle": "Algebraic Expressions & Linear Equations",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 8",
+    "type": "teaching_materials",
+    "title": "Prepare Teaching Materials & Resources",
+    "description": "Collate classroom supplies, digital tools, worksheets, and lab setups required across unit lessons.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_curriculum_resources",
+        "label": "Catalog digital links, readings, and lab resources",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_daily_materials",
+        "label": "Specify physical and digital equipment for all daily sessions",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_printables",
+        "label": "Prepare student handouts, graphic organizers, or slide decks",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Open Resources Tab",
+    "nextActionTab": "resources",
+    "createdAt": "2026-10-21T13:18:32.246Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_sjwrnl0mvi51ann_differentiation",
+    "planId": "plan_sjwrnl0mvi51ann",
+    "planTitle": "Algebraic Expressions & Linear Equations",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 8",
+    "type": "differentiation",
+    "title": "Add Differentiation & Accessibility Strategies",
+    "description": "Ensure equitable instruction by tailoring support for striving learners, advanced students, and multilingual learners.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_scaffolds_support",
+        "label": "Provide structured scaffolds for intervention & striving learners",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_enrichment_adv",
+        "label": "Create extension tasks and deeper inquiry for advanced learners",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_ell_accommodations",
+        "label": "Include linguistic scaffolds & bilingual vocabulary for ELLs",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_modalities",
+        "label": "Incorporate multimodal representations (visual, auditory, kinesthetic)",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Review Differentiation",
+    "nextActionTab": "daily",
+    "createdAt": "2026-10-21T13:18:32.246Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_sjwrnl0mvi51ann_lesson_sequences",
+    "planId": "plan_sjwrnl0mvi51ann",
+    "planTitle": "Algebraic Expressions & Linear Equations",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 8",
+    "type": "lesson_sequences",
+    "title": "Review Weekly Lesson Sequences & Timing",
+    "description": "Audit instructional pacing, time allocations, and lesson phase transitions across the unit.",
+    "status": "completed",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_weekly_scope",
+        "label": "Verify thematic scope and pacing across all curriculum weeks",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_instructional_phases",
+        "label": "Ensure all sessions contain clear opening, instruction, practice, and closure",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_phase_timing",
+        "label": "Balance instructional phase timings to total 45 minutes",
+        "completed": true,
+        "isRequired": true
+      }
+    ],
+    "validationIssues": [],
+    "missingExplanation": "All required items verified and completed.",
+    "nextActionLabel": "Review Daily Lessons",
+    "nextActionTab": "daily",
+    "createdAt": "2026-10-21T13:18:32.246Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_sjwrnl0mvi51ann_finalize_plan",
+    "planId": "plan_sjwrnl0mvi51ann",
+    "planTitle": "Algebraic Expressions & Linear Equations",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 8",
+    "type": "finalize_plan",
+    "title": "Finalize & Approve Curriculum Plan",
+    "description": "Perform a comprehensive pre-flight check and certify the unit plan as ready for classroom execution.",
+    "status": "in_progress",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_audit_integrity",
+        "label": "Review full curriculum sequence for pedagogical consistency",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_resolve_warnings",
+        "label": "Resolve all outstanding validation errors across tabs",
+        "completed": true,
+        "isRequired": true
+      },
+      {
+        "id": "item_mark_completed",
+        "label": "Set overall plan status to \"Completed\"",
+        "completed": false,
+        "isRequired": true
+      }
+    ],
+    "prerequisiteTaskId": "task_plan_sjwrnl0mvi51ann_lesson_sequences",
+    "prerequisiteTitle": "Review Weekly Lesson Sequences & Timing",
+    "validationIssues": [
+      {
+        "field": "status",
+        "message": "Plan status is currently in Draft; mark Completed when ready",
+        "severity": "warning"
+      }
+    ],
+    "missingExplanation": "Missing: Set overall plan status to \"Completed\". Status is In Progress: steps have been initiated but require final review. Next action: Change plan status from Draft to Completed in the workspace top bar.",
+    "nextActionLabel": "Finalize in Overview",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.246Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
+  },
+  {
+    "id": "task_plan_sjwrnl0mvi51ann_export_share",
+    "planId": "plan_sjwrnl0mvi51ann",
+    "planTitle": "Algebraic Expressions & Linear Equations",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 8",
+    "type": "export_share",
+    "title": "Export Documents & Share with Department",
+    "description": "Download classroom-ready Word DOCX / PDF formats and share curriculum data with administrators or co-teachers.",
+    "status": "pending",
+    "manualOverride": false,
+    "checklist": [
+      {
+        "id": "item_export_docs",
+        "label": "Export official curriculum syllabus (DOCX or PDF)",
+        "completed": false,
+        "isRequired": true
+      },
+      {
+        "id": "item_share_colleagues",
+        "label": "Share curriculum summary or CSV tracker with grade-level team",
+        "completed": false,
+        "isRequired": false
+      }
+    ],
+    "prerequisiteTaskId": "task_plan_sjwrnl0mvi51ann_finalize_plan",
+    "prerequisiteTitle": "Finalize & Approve Curriculum Plan",
+    "validationIssues": [
+      {
+        "field": "prerequisite",
+        "message": "Finalize the plan before publishing official export documents",
+        "severity": "warning"
+      }
+    ],
+    "missingExplanation": "Missing: Export official curriculum syllabus (DOCX or PDF). Status is Pending: awaiting prerequisite or work has not yet started. Next action: Use the Export menu in the workspace header to download Word or PDF copies of your curriculum unit.",
+    "nextActionLabel": "Open Export Menu",
+    "nextActionTab": "overview",
+    "createdAt": "2026-10-21T13:18:32.246Z",
+    "updatedAt": "2026-10-21T13:18:32.246Z"
   }
 ]

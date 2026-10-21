@@ -13,6 +13,8 @@ import { DeactivateConfirmModal } from './components/dashboard/DeactivateConfirm
 import { SwapActivePlanModal, ActivePlanItem } from './components/workspace/SwapActivePlanModal';
 import { OverLimitResolutionModal } from './components/dashboard/OverLimitResolutionModal';
 import { DeletePlanConfirmModal } from './components/common/DeletePlanConfirmModal';
+import { ProfileView } from './components/profile/ProfileView';
+import { UserProfile } from './types/profile';
 import { normalizeError } from './utils/errorUtils';
 
 const DEFAULT_TASK_STATS: TaskStats = {
@@ -25,17 +27,18 @@ const DEFAULT_TASK_STATS: TaskStats = {
 };
 
 export const App: React.FC = () => {
-  const getInitialView = (): 'dashboard' | 'wizard' | 'workspace' | 'library' => {
+  const getInitialView = (): 'dashboard' | 'wizard' | 'workspace' | 'library' | 'profile' => {
     const path = window.location.pathname.toLowerCase();
+    if (path.includes('profile')) return 'profile';
     if (path.includes('wizard') || path.includes('generate')) return 'wizard';
     if (path.includes('library') || path.includes('plans')) return 'library';
     if (path.includes('workspace')) return 'workspace';
     return 'dashboard';
   };
 
-  const [currentView, setCurrentViewState] = useState<'dashboard' | 'wizard' | 'workspace' | 'library'>(getInitialView);
+  const [currentView, setCurrentViewState] = useState<'dashboard' | 'wizard' | 'workspace' | 'library' | 'profile'>(getInitialView);
 
-  const setCurrentView = useCallback((view: 'dashboard' | 'wizard' | 'workspace' | 'library') => {
+  const setCurrentView = useCallback((view: 'dashboard' | 'wizard' | 'workspace' | 'library' | 'profile') => {
     setCurrentViewState(view);
     window.scrollTo({ top: 0, behavior: 'instant' });
     const targetPath = view === 'dashboard' ? '/' : `/${view === 'wizard' ? 'generate' : view}`;
@@ -96,6 +99,16 @@ export const App: React.FC = () => {
   // Global Search State across Dashboard and Library
   const [searchQuery, setSearchQuery] = useState<string>('');
 
+  // Authoritative Shared Educator Profile State with Local Storage Fast-Cache
+  const [userProfile, setUserProfile] = useState<UserProfile | null>(() => {
+    try {
+      const cached = localStorage.getItem('unitwise_cached_profile');
+      return cached ? JSON.parse(cached) : null;
+    } catch {
+      return null;
+    }
+  });
+
   // Dark mode state with persistence
   const [isDark, setIsDark] = useState<boolean>(() => {
     const saved = localStorage.getItem('theme');
@@ -116,6 +129,20 @@ export const App: React.FC = () => {
       localStorage.setItem('theme', 'light');
     }
   }, [isDark]);
+
+  // Initial load of educator profile for top-right navbar avatar and global synchronization
+  useEffect(() => {
+    api.getProfile().then((data) => {
+      if (data.exists && data.profile) {
+        setUserProfile(data.profile);
+        try {
+          localStorage.setItem('unitwise_cached_profile', JSON.stringify(data.profile));
+        } catch {}
+      }
+    }).catch((err) => {
+      console.warn('Initial profile load notice:', err);
+    });
+  }, []);
 
   const loadPlans = useCallback(async () => {
     try {
@@ -160,12 +187,27 @@ export const App: React.FC = () => {
     }
   }, []);
 
+  const loadProfile = useCallback(async () => {
+    try {
+      const data = await api.getProfile();
+      if (data.exists && data.profile) {
+        setUserProfile(data.profile);
+        try {
+          localStorage.setItem('unitwise_cached_profile', JSON.stringify(data.profile));
+        } catch {}
+      }
+    } catch (err) {
+      console.error('Failed to load profile in App:', err);
+    }
+  }, []);
+
   useEffect(() => {
     loadPlans();
     loadTasks();
     loadHealth();
     loadActiveSummary();
-  }, [loadPlans, loadTasks, loadHealth, loadActiveSummary]);
+    loadProfile();
+  }, [loadPlans, loadTasks, loadHealth, loadActiveSummary, loadProfile]);
 
   const handleOpenWizard = (templateId?: string) => {
     setSelectedTemplateId(templateId);
@@ -513,6 +555,7 @@ export const App: React.FC = () => {
     <AppShell
       currentView={currentView}
       activePlanTitle={activePlan?.title}
+      userProfile={userProfile}
       onNavigate={(view) => {
         setSelectedTemplateId(undefined);
         if (view === 'workspace' && !activePlan && plans.length > 0) {
@@ -603,6 +646,18 @@ export const App: React.FC = () => {
           onActivatePlan={handleActivatePlan}
           onDeactivatePlan={handleOpenDeactivateModal}
           initialStatusFilter={initialLibraryStatusFilter}
+        />
+      )}
+
+      {currentView === 'profile' && (
+        <ProfileView
+          onNavigateHome={() => setCurrentView('dashboard')}
+          onProfileUpdated={(updated) => {
+            setUserProfile(updated);
+            try {
+              localStorage.setItem('unitwise_cached_profile', JSON.stringify(updated));
+            } catch {}
+          }}
         />
       )}
 

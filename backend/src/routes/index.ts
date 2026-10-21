@@ -7,9 +7,13 @@ import { taskRoutes } from './taskRoutes';
 import { curriculumRoutes } from './curriculumRoutes';
 import { directoryRoutes } from './directoryRoutes';
 import { searchRoutes } from './searchRoutes';
+import { profileRoutes } from './profileRoutes';
+import { authRoutes } from './authRoutes';
 
 export const apiRoutes = Router();
 
+apiRoutes.use(authRoutes);
+apiRoutes.use(profileRoutes);
 apiRoutes.use(settingsRoutes);
 apiRoutes.use(curriculumRoutes);
 apiRoutes.use(directoryRoutes);

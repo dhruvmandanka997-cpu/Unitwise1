@@ -1,3 +1,5 @@
+import fs from 'fs';
+import path from 'path';
 import express from 'express';
 import cors from 'cors';
 import { config } from './config';
@@ -8,8 +10,20 @@ import { apiRoutes } from './routes';
 import { seedDirectoryDatabase } from './services/directory/seedDirectory';
 
 import { BRAND } from './config/brand';
+import { runMigrations } from './db/migrate';
+import { authService } from './services/auth/authService';
 
 const app = express();
+
+// Ensure local uploads directory exists
+const uploadsDir = path.join(config.dataDir, 'uploads');
+if (!fs.existsSync(uploadsDir)) {
+  fs.mkdirSync(uploadsDir, { recursive: true });
+}
+
+// Serve uploaded profile photos & assets statically
+app.use('/uploads', express.static(uploadsDir));
+app.use('/api/uploads', express.static(uploadsDir));
 
 const allowedOrigins = config.corsOrigin === '*' 
   ? true 
@@ -24,6 +38,14 @@ app.use(
   })
 );
 app.use(express.json({ limit: '10mb' }));
+
+// Run SQLite migrations for users and profiles
+try {
+  runMigrations();
+  authService.ensureDefaultUser();
+} catch (err) {
+  console.warn('[DB] Auth & Profile SQLite migration notice:', err);
+}
 
 // Seed initial database if empty
 try {

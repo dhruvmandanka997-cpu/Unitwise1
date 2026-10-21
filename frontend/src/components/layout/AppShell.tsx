@@ -20,11 +20,13 @@ import {
 import { BrandLogo } from './BrandLogo';
 import { BRAND } from '../../config/brand';
 import { GlobalSearchBar } from './GlobalSearchBar';
+import { UserProfile, getInitials } from '../../types/profile';
 
 interface AppShellProps {
-  currentView: 'dashboard' | 'wizard' | 'workspace' | 'library';
+  currentView: 'dashboard' | 'wizard' | 'workspace' | 'library' | 'profile';
   activePlanTitle?: string;
-  onNavigate: (view: 'dashboard' | 'wizard' | 'workspace' | 'library') => void;
+  userProfile?: UserProfile | null;
+  onNavigate: (view: 'dashboard' | 'wizard' | 'workspace' | 'library' | 'profile') => void;
   onOpenSettings: () => void;
   isDark: boolean;
   onToggleTheme: () => void;
@@ -41,6 +43,7 @@ interface AppShellProps {
 export const AppShell: React.FC<AppShellProps> = ({
   currentView,
   activePlanTitle,
+  userProfile,
   onNavigate,
   onOpenSettings,
   isDark,
@@ -109,8 +112,8 @@ export const AppShell: React.FC<AppShellProps> = ({
       label: 'Profile',
       icon: User,
       badge: null,
-      isActive: false,
-      onClick: () => onOpenSettings(),
+      isActive: currentView === 'profile',
+      onClick: () => onNavigate('profile'),
     },
   ];
 
@@ -366,35 +369,56 @@ export const AppShell: React.FC<AppShellProps> = ({
                   className="flex items-center gap-2.5 p-1.5 rounded-2xl bg-[var(--surface)] border border-[var(--border)] shadow-[var(--shadow-raised-sm)] hover:shadow-[var(--shadow-hover)] transition-all focus:outline-none focus-visible:outline-2 focus-visible:outline-[var(--accent)] focus-visible:outline-offset-2"
                   aria-label="Educator profile menu"
                 >
-                  <div className="h-8 w-8 rounded-full bg-[var(--primary)] text-[var(--on-primary)] flex items-center justify-center font-bold text-xs shadow-[var(--shadow-primary)]">
-                    EV
+                  <div className="h-8 w-8 rounded-full bg-[var(--primary)] text-[var(--on-primary)] flex items-center justify-center font-bold text-xs shadow-[var(--shadow-primary)] flex-shrink-0 tracking-wider overflow-hidden">
+                    {userProfile?.photoUrl ? (
+                      <img
+                        src={userProfile.photoUrl}
+                        alt={userProfile.educatorName || 'Profile photo'}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      getInitials(userProfile?.educatorName)
+                    )}
                   </div>
-                  <div className="hidden sm:block text-left pr-1.5">
-                    <div className="text-xs font-bold text-[var(--text)]">
-                      Dr. E. Vance
+                  <div className="hidden sm:block text-left pr-1.5 min-w-0">
+                    <div className="text-xs font-bold text-[var(--text)] truncate max-w-[140px]" title={userProfile?.educatorName || 'Educator'}>
+                      {userProfile?.educatorName || 'Educator'}
                     </div>
-                    <div className="text-[10px] text-[var(--text-muted)] -mt-0.5 font-medium">
-                      Educator
+                    <div className="text-[10px] text-[var(--text-muted)] -mt-0.5 font-medium truncate max-w-[140px]">
+                      {userProfile?.degree === 'Other' && userProfile.degreeOther ? userProfile.degreeOther : (userProfile?.degree || 'Educator')}
                     </div>
                   </div>
                 </button>
 
                 {/* Profile Menu Dropdown */}
                 {profileDropdownOpen && (
-                  <div className="absolute right-0 top-14 z-40 w-60 rounded-[24px] border border-[var(--border)] bg-[var(--surface)] p-2 shadow-[var(--shadow-raised)] animate-fadeIn">
-                    <div className="px-4 py-3 border-b border-[var(--border)]">
-                      <p className="text-xs font-bold text-[var(--text)]">
-                        Dr. Elena Vance
-                      </p>
-                      <p className="text-[11px] text-[var(--text-muted)] font-medium">
-                        STEM & Instructional Design
-                      </p>
+                  <div className="absolute right-0 top-14 z-40 w-64 rounded-[24px] border border-[var(--border)] bg-[var(--surface)] p-2 shadow-[var(--shadow-raised)] animate-fadeIn">
+                    <div className="px-3.5 py-3 border-b border-[var(--border)] flex items-center gap-3">
+                      <div className="h-10 w-10 rounded-full bg-[var(--lavender-soft)] text-[var(--primary)] flex items-center justify-center font-bold text-xs shadow-[var(--shadow-raised-sm)] flex-shrink-0 overflow-hidden border border-[var(--border)]">
+                        {userProfile?.photoUrl ? (
+                          <img
+                            src={userProfile.photoUrl}
+                            alt={userProfile.educatorName || 'Profile photo'}
+                            className="h-full w-full object-cover"
+                          />
+                        ) : (
+                          getInitials(userProfile?.educatorName)
+                        )}
+                      </div>
+                      <div className="min-w-0 flex-1">
+                        <p className="text-xs font-bold text-[var(--text)] truncate">
+                          {userProfile?.educatorName || 'Educator'}
+                        </p>
+                        <p className="text-[11px] text-[var(--text-muted)] font-medium truncate">
+                          {userProfile?.email || (userProfile?.degree ? `Degree: ${userProfile.degree === 'Other' && userProfile.degreeOther ? userProfile.degreeOther : userProfile.degree}` : 'Educator Account')}
+                        </p>
+                      </div>
                     </div>
 
                     <div className="py-1.5 space-y-1">
                       <button
                         onClick={() => {
-                          onOpenSettings();
+                          onNavigate('profile');
                           setProfileDropdownOpen(false);
                         }}
                         className="flex w-full items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold text-[var(--text)] hover:bg-[var(--lavender-soft)] hover:text-[var(--primary)] focus-visible:outline-2 focus-visible:outline-[var(--accent)] transition-colors"

@@ -13,6 +13,7 @@ import {
 } from '../types/directory';
 import { SearchResponse, SearchResultItem } from '../types/search';
 import { extractErrorMessage } from '../utils/errorUtils';
+import { UserProfile, ProfileInput, ProfileApiResponse } from '../types/profile';
 function resolveApiBase(): string {
   let base = (import.meta.env.VITE_API_BASE_URL as string)?.trim() || '/api';
   while (base.endsWith('/')) {
@@ -31,10 +32,11 @@ export function getAuthUserId(): string {
 }
 
 export function getAuthHeaders(): Record<string, string> {
+  const token = localStorage.getItem('unitwise_token');
   const userId = getAuthUserId();
   return {
     'Accept': 'application/json',
-    'Authorization': `Bearer ${userId}`,
+    'Authorization': `Bearer ${token || userId}`,
     'X-User-Id': userId,
   };
 }
@@ -608,6 +610,77 @@ export const api = {
     if (!res.ok) {
       const err = await res.json().catch(() => ({ error: 'Search failed' }));
       throw new Error(err.error || `Search failed with status ${res.status}`);
+    }
+
+    return res.json();
+  },
+
+  async getProfile(): Promise<ProfileApiResponse> {
+    const res = await fetch(`${API_BASE}/profile`, {
+      method: 'GET',
+      headers: getAuthHeaders(),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({ error: 'Failed to retrieve profile' }));
+      throw new Error(err.error || `Profile request failed with status ${res.status}`);
+    }
+    return res.json();
+  },
+
+  async saveProfile(data: ProfileInput): Promise<{ success: boolean; profile: UserProfile }> {
+    const res = await fetch(`${API_BASE}/profile`, {
+      method: 'PUT',
+      headers: {
+        ...getAuthHeaders(),
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({ error: 'Failed to save profile' }));
+      const errorObj: any = new Error(err.error || 'Failed to save profile');
+      errorObj.details = err.details;
+      errorObj.code = err.code;
+      throw errorObj;
+    }
+    const result = await res.json();
+    if (result.token) {
+      localStorage.setItem('unitwise_token', result.token);
+    }
+    return result;
+  },
+
+  async uploadProfilePhoto(photoData: string): Promise<{ success: boolean; photoUrl: string; profile: UserProfile }> {
+    const res = await fetch(`${API_BASE}/profile/photo`, {
+      method: 'POST',
+      headers: {
+        ...getAuthHeaders(),
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ photoData }),
+    });
+
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({ error: 'Failed to upload profile photo' }));
+      const errorObj: any = new Error(err.error || 'Failed to upload profile photo');
+      errorObj.code = err.code;
+      throw errorObj;
+    }
+
+    return res.json();
+  },
+
+  async deleteProfilePhoto(): Promise<{ success: boolean; profile: UserProfile }> {
+    const res = await fetch(`${API_BASE}/profile/photo`, {
+      method: 'DELETE',
+      headers: getAuthHeaders(),
+    });
+
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({ error: 'Failed to delete profile photo' }));
+      const errorObj: any = new Error(err.error || 'Failed to delete profile photo');
+      errorObj.code = err.code;
+      throw errorObj;
     }
 
     return res.json();

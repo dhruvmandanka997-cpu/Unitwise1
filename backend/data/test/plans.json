@@ -1,6 +1,6 @@
 [
   {
-    "id": "plan_j1hc2bimvgf9von",
+    "id": "plan_kdo53almvi51902",
     "title": "Cellular Respiration and Photosynthesis",
     "subject": "Biology",
     "gradeLevel": "Grade 10",
@@ -27,7 +27,7 @@
     ],
     "weeklyPlans": [
       {
-        "id": "week_plan_j1hc2bimvgf9von_1",
+        "id": "week_plan_kdo53almvi51902_1",
         "weekNumber": 1,
         "title": "Week 1: Foundations, Key Vocabulary & Diagnostic Exploration",
         "theme": "Foundations of Cellular Respiration and Photosynthesis",
@@ -48,7 +48,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_j1hc2bimvgf9von_w1_s1",
+            "id": "sess_plan_kdo53almvi51902_w1_s1",
             "sessionNumber": 1,
             "dayNumber": 1,
             "weekNumber": 1,
@@ -187,7 +187,7 @@
             ]
           },
           {
-            "id": "sess_plan_j1hc2bimvgf9von_w1_s2",
+            "id": "sess_plan_kdo53almvi51902_w1_s2",
             "sessionNumber": 2,
             "dayNumber": 2,
             "weekNumber": 1,
@@ -326,7 +326,7 @@
             ]
           },
           {
-            "id": "sess_plan_j1hc2bimvgf9von_w1_s3",
+            "id": "sess_plan_kdo53almvi51902_w1_s3",
             "sessionNumber": 3,
             "dayNumber": 3,
             "weekNumber": 1,
@@ -483,7 +483,7 @@
         "teacherNotes": "Review formative exit tickets to differentiate pacing for upcoming sessions."
       },
       {
-        "id": "week_plan_j1hc2bimvgf9von_2",
+        "id": "week_plan_kdo53almvi51902_2",
         "weekNumber": 2,
         "title": "Week 2: Guided Practice, Structural Rules & Skill Deepening",
         "theme": "Analytical Exploration of Cellular Respiration and Photosynthesis",
@@ -504,7 +504,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_j1hc2bimvgf9von_w2_s4",
+            "id": "sess_plan_kdo53almvi51902_w2_s4",
             "sessionNumber": 4,
             "dayNumber": 1,
             "weekNumber": 2,
@@ -643,7 +643,7 @@
             ]
           },
           {
-            "id": "sess_plan_j1hc2bimvgf9von_w2_s5",
+            "id": "sess_plan_kdo53almvi51902_w2_s5",
             "sessionNumber": 5,
             "dayNumber": 2,
             "weekNumber": 2,
@@ -782,7 +782,7 @@
             ]
           },
           {
-            "id": "sess_plan_j1hc2bimvgf9von_w2_s6",
+            "id": "sess_plan_kdo53almvi51902_w2_s6",
             "sessionNumber": 6,
             "dayNumber": 3,
             "weekNumber": 2,
@@ -1009,11 +1009,11 @@
     "teacherNotes": "Review daily formative exit tickets at the conclusion of each session to calibrate pacing and small-group interventions.",
     "status": "draft",
     "isDemo": true,
-    "createdAt": "2026-10-20T08:29:36.551Z",
-    "updatedAt": "2026-10-20T08:29:36.580Z"
+    "createdAt": "2026-10-21T13:18:30.098Z",
+    "updatedAt": "2026-10-21T13:18:30.142Z"
   },
   {
-    "id": "plan_r6c6ld8mvgf9vx0",
+    "id": "plan_ymczwoumvi5199d",
     "title": "Fractions & Proportions Mastery",
     "subject": "Mathematics",
     "gradeLevel": "Grade 3 (Elementary)",
@@ -1040,7 +1040,7 @@
     ],
     "weeklyPlans": [
       {
-        "id": "week_plan_r6c6ld8mvgf9vx0_1",
+        "id": "week_plan_ymczwoumvi5199d_1",
         "weekNumber": 1,
         "title": "Week 1: Foundations, Key Vocabulary & Diagnostic Exploration",
         "theme": "Foundations of Introductory Fractions & Number Sense",
@@ -1061,7 +1061,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_r6c6ld8mvgf9vx0_w1_s1",
+            "id": "sess_plan_ymczwoumvi5199d_w1_s1",
             "sessionNumber": 1,
             "dayNumber": 1,
             "weekNumber": 1,
@@ -1200,7 +1200,7 @@
             ]
           },
           {
-            "id": "sess_plan_r6c6ld8mvgf9vx0_w1_s2",
+            "id": "sess_plan_ymczwoumvi5199d_w1_s2",
             "sessionNumber": 2,
             "dayNumber": 2,
             "weekNumber": 1,
@@ -1339,7 +1339,7 @@
             ]
           },
           {
-            "id": "sess_plan_r6c6ld8mvgf9vx0_w1_s3",
+            "id": "sess_plan_ymczwoumvi5199d_w1_s3",
             "sessionNumber": 3,
             "dayNumber": 3,
             "weekNumber": 1,
@@ -1478,7 +1478,7 @@
             ]
           },
           {
-            "id": "sess_plan_r6c6ld8mvgf9vx0_w1_s4",
+            "id": "sess_plan_ymczwoumvi5199d_w1_s4",
             "sessionNumber": 4,
             "dayNumber": 4,
             "weekNumber": 1,
@@ -1617,7 +1617,7 @@
             ]
           },
           {
-            "id": "sess_plan_r6c6ld8mvgf9vx0_w1_s5",
+            "id": "sess_plan_ymczwoumvi5199d_w1_s5",
             "sessionNumber": 5,
             "dayNumber": 5,
             "weekNumber": 1,
@@ -1774,7 +1774,7 @@
         "teacherNotes": "Review formative exit tickets to differentiate pacing for upcoming sessions."
       },
       {
-        "id": "week_plan_r6c6ld8mvgf9vx0_2",
+        "id": "week_plan_ymczwoumvi5199d_2",
         "weekNumber": 2,
         "title": "Week 2: Guided Practice, Structural Rules & Skill Deepening",
         "theme": "Analytical Exploration of Introductory Fractions & Number Sense",
@@ -1795,7 +1795,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_r6c6ld8mvgf9vx0_w2_s6",
+            "id": "sess_plan_ymczwoumvi5199d_w2_s6",
             "sessionNumber": 6,
             "dayNumber": 1,
             "weekNumber": 2,
@@ -1934,7 +1934,7 @@
             ]
           },
           {
-            "id": "sess_plan_r6c6ld8mvgf9vx0_w2_s7",
+            "id": "sess_plan_ymczwoumvi5199d_w2_s7",
             "sessionNumber": 7,
             "dayNumber": 2,
             "weekNumber": 2,
@@ -2073,7 +2073,7 @@
             ]
           },
           {
-            "id": "sess_plan_r6c6ld8mvgf9vx0_w2_s8",
+            "id": "sess_plan_ymczwoumvi5199d_w2_s8",
             "sessionNumber": 8,
             "dayNumber": 3,
             "weekNumber": 2,
@@ -2212,7 +2212,7 @@
             ]
           },
           {
-            "id": "sess_plan_r6c6ld8mvgf9vx0_w2_s9",
+            "id": "sess_plan_ymczwoumvi5199d_w2_s9",
             "sessionNumber": 9,
             "dayNumber": 4,
             "weekNumber": 2,
@@ -2351,7 +2351,7 @@
             ]
           },
           {
-            "id": "sess_plan_r6c6ld8mvgf9vx0_w2_s10",
+            "id": "sess_plan_ymczwoumvi5199d_w2_s10",
             "sessionNumber": 10,
             "dayNumber": 5,
             "weekNumber": 2,
@@ -2578,11 +2578,11 @@
     "teacherNotes": "Review daily formative exit tickets at the conclusion of each session to calibrate pacing and small-group interventions.",
     "status": "completed",
     "isDemo": true,
-    "createdAt": "2026-10-20T08:29:36.852Z",
-    "updatedAt": "2026-10-20T08:29:36.874Z"
+    "createdAt": "2026-10-21T13:18:30.433Z",
+    "updatedAt": "2026-10-21T13:18:30.438Z"
   },
   {
-    "id": "plan_7g0cb89mvgf9vxv",
+    "id": "plan_yuhpb4rmvi5199o",
     "title": "Shakespearean Drama & Rhetoric",
     "subject": "English Language Arts",
     "gradeLevel": "Grade 10",
@@ -2609,7 +2609,7 @@
     ],
     "weeklyPlans": [
       {
-        "id": "week_plan_7g0cb89mvgf9vxv_1",
+        "id": "week_plan_yuhpb4rmvi5199o_1",
         "weekNumber": 1,
         "title": "Week 1: Foundations, Key Vocabulary & Diagnostic Exploration",
         "theme": "Foundations of Shakespearean Drama & Rhetoric",
@@ -2630,7 +2630,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w1_s1",
+            "id": "sess_plan_yuhpb4rmvi5199o_w1_s1",
             "sessionNumber": 1,
             "dayNumber": 1,
             "weekNumber": 1,
@@ -2769,7 +2769,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w1_s2",
+            "id": "sess_plan_yuhpb4rmvi5199o_w1_s2",
             "sessionNumber": 2,
             "dayNumber": 2,
             "weekNumber": 1,
@@ -2908,7 +2908,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w1_s3",
+            "id": "sess_plan_yuhpb4rmvi5199o_w1_s3",
             "sessionNumber": 3,
             "dayNumber": 3,
             "weekNumber": 1,
@@ -3047,7 +3047,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w1_s4",
+            "id": "sess_plan_yuhpb4rmvi5199o_w1_s4",
             "sessionNumber": 4,
             "dayNumber": 4,
             "weekNumber": 1,
@@ -3204,7 +3204,7 @@
         "teacherNotes": "Review formative exit tickets to differentiate pacing for upcoming sessions."
       },
       {
-        "id": "week_plan_7g0cb89mvgf9vxv_2",
+        "id": "week_plan_yuhpb4rmvi5199o_2",
         "weekNumber": 2,
         "title": "Week 2: Guided Practice, Structural Rules & Skill Deepening",
         "theme": "Analytical Exploration of Shakespearean Drama & Rhetoric",
@@ -3225,7 +3225,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w2_s5",
+            "id": "sess_plan_yuhpb4rmvi5199o_w2_s5",
             "sessionNumber": 5,
             "dayNumber": 1,
             "weekNumber": 2,
@@ -3364,7 +3364,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w2_s6",
+            "id": "sess_plan_yuhpb4rmvi5199o_w2_s6",
             "sessionNumber": 6,
             "dayNumber": 2,
             "weekNumber": 2,
@@ -3503,7 +3503,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w2_s7",
+            "id": "sess_plan_yuhpb4rmvi5199o_w2_s7",
             "sessionNumber": 7,
             "dayNumber": 3,
             "weekNumber": 2,
@@ -3642,7 +3642,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w2_s8",
+            "id": "sess_plan_yuhpb4rmvi5199o_w2_s8",
             "sessionNumber": 8,
             "dayNumber": 4,
             "weekNumber": 2,
@@ -3799,7 +3799,7 @@
         "teacherNotes": "Review formative exit tickets to differentiate pacing for upcoming sessions."
       },
       {
-        "id": "week_plan_7g0cb89mvgf9vxv_3",
+        "id": "week_plan_yuhpb4rmvi5199o_3",
         "weekNumber": 3,
         "title": "Week 3: Collaborative Inquiry, Complex Modeling & Error Analysis",
         "theme": "In-Depth Problem Solving in Shakespearean Drama & Rhetoric",
@@ -3820,7 +3820,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w3_s9",
+            "id": "sess_plan_yuhpb4rmvi5199o_w3_s9",
             "sessionNumber": 9,
             "dayNumber": 1,
             "weekNumber": 3,
@@ -3959,7 +3959,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w3_s10",
+            "id": "sess_plan_yuhpb4rmvi5199o_w3_s10",
             "sessionNumber": 10,
             "dayNumber": 2,
             "weekNumber": 3,
@@ -4098,7 +4098,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w3_s11",
+            "id": "sess_plan_yuhpb4rmvi5199o_w3_s11",
             "sessionNumber": 11,
             "dayNumber": 3,
             "weekNumber": 3,
@@ -4237,7 +4237,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w3_s12",
+            "id": "sess_plan_yuhpb4rmvi5199o_w3_s12",
             "sessionNumber": 12,
             "dayNumber": 4,
             "weekNumber": 3,
@@ -4464,11 +4464,11 @@
     "teacherNotes": "Review daily formative exit tickets at the conclusion of each session to calibrate pacing and small-group interventions.",
     "status": "draft",
     "isDemo": true,
-    "createdAt": "2026-10-20T08:29:36.883Z",
-    "updatedAt": "2026-10-20T08:29:36.883Z"
+    "createdAt": "2026-10-21T13:18:30.444Z",
+    "updatedAt": "2026-10-21T13:18:30.444Z"
   },
   {
-    "id": "plan_76osh4jmvgf9vxx",
+    "id": "plan_pd8x5kqmvi5199q",
     "title": "Shakespearean Drama & Rhetoric (Copy)",
     "subject": "English Language Arts",
     "gradeLevel": "Grade 10",
@@ -4495,7 +4495,7 @@
     ],
     "weeklyPlans": [
       {
-        "id": "week_plan_7g0cb89mvgf9vxv_1",
+        "id": "week_plan_yuhpb4rmvi5199o_1",
         "weekNumber": 1,
         "title": "Week 1: Foundations, Key Vocabulary & Diagnostic Exploration",
         "theme": "Foundations of Shakespearean Drama & Rhetoric",
@@ -4516,7 +4516,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w1_s1",
+            "id": "sess_plan_yuhpb4rmvi5199o_w1_s1",
             "sessionNumber": 1,
             "dayNumber": 1,
             "weekNumber": 1,
@@ -4655,7 +4655,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w1_s2",
+            "id": "sess_plan_yuhpb4rmvi5199o_w1_s2",
             "sessionNumber": 2,
             "dayNumber": 2,
             "weekNumber": 1,
@@ -4794,7 +4794,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w1_s3",
+            "id": "sess_plan_yuhpb4rmvi5199o_w1_s3",
             "sessionNumber": 3,
             "dayNumber": 3,
             "weekNumber": 1,
@@ -4933,7 +4933,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w1_s4",
+            "id": "sess_plan_yuhpb4rmvi5199o_w1_s4",
             "sessionNumber": 4,
             "dayNumber": 4,
             "weekNumber": 1,
@@ -5090,7 +5090,7 @@
         "teacherNotes": "Review formative exit tickets to differentiate pacing for upcoming sessions."
       },
       {
-        "id": "week_plan_7g0cb89mvgf9vxv_2",
+        "id": "week_plan_yuhpb4rmvi5199o_2",
         "weekNumber": 2,
         "title": "Week 2: Guided Practice, Structural Rules & Skill Deepening",
         "theme": "Analytical Exploration of Shakespearean Drama & Rhetoric",
@@ -5111,7 +5111,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w2_s5",
+            "id": "sess_plan_yuhpb4rmvi5199o_w2_s5",
             "sessionNumber": 5,
             "dayNumber": 1,
             "weekNumber": 2,
@@ -5250,7 +5250,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w2_s6",
+            "id": "sess_plan_yuhpb4rmvi5199o_w2_s6",
             "sessionNumber": 6,
             "dayNumber": 2,
             "weekNumber": 2,
@@ -5389,7 +5389,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w2_s7",
+            "id": "sess_plan_yuhpb4rmvi5199o_w2_s7",
             "sessionNumber": 7,
             "dayNumber": 3,
             "weekNumber": 2,
@@ -5528,7 +5528,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w2_s8",
+            "id": "sess_plan_yuhpb4rmvi5199o_w2_s8",
             "sessionNumber": 8,
             "dayNumber": 4,
             "weekNumber": 2,
@@ -5685,7 +5685,7 @@
         "teacherNotes": "Review formative exit tickets to differentiate pacing for upcoming sessions."
       },
       {
-        "id": "week_plan_7g0cb89mvgf9vxv_3",
+        "id": "week_plan_yuhpb4rmvi5199o_3",
         "weekNumber": 3,
         "title": "Week 3: Collaborative Inquiry, Complex Modeling & Error Analysis",
         "theme": "In-Depth Problem Solving in Shakespearean Drama & Rhetoric",
@@ -5706,7 +5706,7 @@
         ],
         "sessions": [
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w3_s9",
+            "id": "sess_plan_yuhpb4rmvi5199o_w3_s9",
             "sessionNumber": 9,
             "dayNumber": 1,
             "weekNumber": 3,
@@ -5845,7 +5845,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w3_s10",
+            "id": "sess_plan_yuhpb4rmvi5199o_w3_s10",
             "sessionNumber": 10,
             "dayNumber": 2,
             "weekNumber": 3,
@@ -5984,7 +5984,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w3_s11",
+            "id": "sess_plan_yuhpb4rmvi5199o_w3_s11",
             "sessionNumber": 11,
             "dayNumber": 3,
             "weekNumber": 3,
@@ -6123,7 +6123,7 @@
             ]
           },
           {
-            "id": "sess_plan_7g0cb89mvgf9vxv_w3_s12",
+            "id": "sess_plan_yuhpb4rmvi5199o_w3_s12",
             "sessionNumber": 12,
             "dayNumber": 4,
             "weekNumber": 3,
@@ -6350,7 +6350,1016 @@
     "teacherNotes": "Review daily formative exit tickets at the conclusion of each session to calibrate pacing and small-group interventions.",
     "status": "draft",
     "isDemo": true,
-    "createdAt": "2026-10-20T08:29:36.885Z",
-    "updatedAt": "2026-10-20T08:29:36.885Z"
+    "createdAt": "2026-10-21T13:18:30.446Z",
+    "updatedAt": "2026-10-21T13:18:30.446Z"
+  },
+  {
+    "id": "plan_h6ine2qmvi51ams",
+    "title": "Photosynthesis & Cellular Energy Transfer",
+    "subject": "Biology",
+    "gradeLevel": "Grade 9",
+    "curriculumFramework": "India · CBSE (Central Board of Secondary Education) · Grade 9",
+    "standardsFramework": "General Educational Standards Framework",
+    "durationWeeks": 1,
+    "sessionsPerWeek": 3,
+    "classDurationMinutes": 50,
+    "format": "session_sequence",
+    "unitOverview": "This comprehensive multi-week instructional plan for Photosynthesis & Cellular Energy Transfer employs Backward Design (Understanding by Design) to build durable conceptual understanding, procedural fluency, and real-world transfer for Grade 9 students. Across 1 weeks (3 sessions), learners progress systematically from foundational principles and vocabulary through guided modeling, collaborative problem-solving, and culminate in an authentic performance task.",
+    "unitObjectives": [
+      "Explain the fundamental concepts, underlying principles, and key mechanisms of Photosynthesis & Cellular Energy Transfer with academic precision.",
+      "Analyze and evaluate authentic scenarios by applying systematic methodologies and critical reasoning.",
+      "Collaborate effectively with peers to solve non-routine, multi-step challenges and present evidence-based conclusions.",
+      "Demonstrate independent mastery on the culminating unit performance task according to multi-tier rubric criteria."
+    ],
+    "prerequisiteKnowledge": [
+      "Basic prior grade-level subject foundations",
+      "Introductory collaborative work norms and reflective practice"
+    ],
+    "studentNeeds": "Mixed-ability classroom with varied learning styles",
+    "teachingMethods": [
+      "Hands-on Labs",
+      "Guided Problem Solving"
+    ],
+    "weeklyPlans": [
+      {
+        "id": "week_plan_h6ine2qmvi51ams_1",
+        "weekNumber": 1,
+        "title": "Week 1: Foundations, Key Vocabulary & Diagnostic Exploration",
+        "theme": "Foundations of Photosynthesis & Cellular Energy Transfer",
+        "learningGoals": [
+          "Master fundamental mechanisms and core principles underlying Foundations of Photosynthesis & Cellular Energy Transfer.",
+          "Apply structured analytical thinking to resolve guided and authentic challenges.",
+          "Synthesize key takeaways to prepare for cumulative progression in subsequent modules."
+        ],
+        "vocabulary": [
+          "Hypothesis",
+          "Variable",
+          "Framework",
+          "Representation",
+          "Foundation"
+        ],
+        "prerequisites": [
+          "Foundational grade-level prerequisite concepts"
+        ],
+        "sessions": [
+          {
+            "id": "sess_plan_h6ine2qmvi51ams_w1_s1",
+            "sessionNumber": 1,
+            "dayNumber": 1,
+            "weekNumber": 1,
+            "title": "Lesson 1: Core Concept Introduction & Structural Analysis",
+            "topic": "Conceptual Framework & Properties of Photosynthesis & Cellular Energy Transfer",
+            "durationMinutes": 50,
+            "objectives": [
+              {
+                "id": "obj_1_1",
+                "description": "Identify and analyze the essential principles of Conceptual Framework & Properties of Photosynthesis & Cellular Energy Transfer and explain their functional relationship.",
+                "bloomLevel": "Understanding",
+                "successCriterion": "I can accurately describe Conceptual Framework & Properties of Photosynthesis & Cellular Energy Transfer and articulate its significance in solving contextual challenges."
+              },
+              {
+                "id": "obj_1_2",
+                "description": "Demonstrate procedural accuracy when applying Conceptual Framework & Properties of Photosynthesis & Cellular Energy Transfer strategies during collaborative and independent practice.",
+                "bloomLevel": "Applying",
+                "successCriterion": "I can complete targeted practice exercises with at least 80% accuracy without teacher scaffolding."
+              }
+            ],
+            "successCriteria": [
+              "I can explain the significance of Conceptual Framework & Properties of Photosynthesis & Cellular Energy Transfer.",
+              "I can accurately execute the primary procedure with confidence.",
+              "I can self-check my work against the lesson criteria."
+            ],
+            "standards": [
+              {
+                "id": "std_1_1",
+                "framework": "India · CBSE (Central Board of Secondary Education) · Grade 9",
+                "code": "BIO.9.1.1",
+                "description": "Demonstrate mastery of grade-level competencies relating to Conceptual Framework & Properties of Photosynthesis & Cellular Energy Transfer and evidence-based problem formulation.",
+                "lessonConnection": "Suggested pedagogical alignment; please confirm against your official syllabus. Directly addressed through the teacher modeling and student guided practice investigating Conceptual Framework & Properties of Photosynthesis & Cellular Energy Transfer.",
+                "verificationStatus": "suggested_unverified"
+              }
+            ],
+            "lessonSequence": [
+              {
+                "phase": "opening",
+                "title": "Retrieval Warm-Up & Framing Hook",
+                "durationMinutes": 7,
+                "description": "Activate prior knowledge through a 3-question retrieval warm-up connected to yesterday's concepts and introduce the driving essential question.",
+                "teacherAction": "Project the retrieval prompt; circulate with a clipboard to note student baseline responses; establish lesson success criteria on the board.",
+                "studentAction": "Independently record responses in their warm-up journals; participate in a brief 60-second turn-and-talk with their elbow partner.",
+                "materials": [
+                  "Display screen/projector",
+                  "Student warm-up journals",
+                  "Timer"
+                ]
+              },
+              {
+                "phase": "direct_instruction",
+                "title": "Explicit Instruction & Step-by-Step Modeling (\"I Do\")",
+                "durationMinutes": 15,
+                "description": "Introduce Conceptual Framework & Properties of Photosynthesis & Cellular Energy Transfer through dual-coding (visual organizer + concise explanation), explicitly thinking aloud common misconceptions and decision-making logic.",
+                "teacherAction": "Deliver focused instruction using clear visual anchors; demonstrate worked examples while annotating key decision points and vocabulary.",
+                "studentAction": "Complete guided fill-in notes; highlight critical rule checkpoints; ask clarifying questions during designated pause intervals.",
+                "materials": [
+                  "Interactive whiteboard / slides",
+                  "Guided notes handout"
+                ]
+              },
+              {
+                "phase": "guided_practice",
+                "title": "Scaffolded Guided Practice (\"We Do\")",
+                "durationMinutes": 12,
+                "description": "Guide the whole class through tiered practice problems, gradually fading prompts as student accuracy and confidence increase.",
+                "teacherAction": "Pose structured practice tasks; call on cold-called pairs for rationale; utilize quick choral or whiteboard checks to gauge whole-class readiness.",
+                "studentAction": "Work through scaffolded tasks on individual dry-erase whiteboards; show answers on cue; justify reasoning to the class.",
+                "materials": [
+                  "Individual mini-whiteboards & dry-erase markers",
+                  "Tiered practice slides"
+                ]
+              },
+              {
+                "phase": "collaborative_independent",
+                "title": "Collaborative Application & Independent Mastery (\"You Do\")",
+                "durationMinutes": 9,
+                "description": "Students work in structured pairs or independently on differentiated task cards applying Conceptual Framework & Properties of Photosynthesis & Cellular Energy Transfer to authentic contextual problems.",
+                "teacherAction": "Conduct targeted small-group pull-out instruction with students needing reinforcement; facilitate extension tasks for advanced students.",
+                "studentAction": "Engage with assigned tiered problem cards; verify work with partner using rubric criteria; record individual solutions in notebooks.",
+                "materials": [
+                  "Differentiated task cards (Tiers 1-3)",
+                  "Student workbooks"
+                ]
+              },
+              {
+                "phase": "formative_assessment",
+                "title": "Formative Check for Understanding",
+                "durationMinutes": 4,
+                "description": "Conduct a focused assessment measuring mastery of today's core objective to inform tomorrow's pacing.",
+                "teacherAction": "Distribute or display the formative check; observe without intervening; collect student artifacts for quick sorting into proficiency piles.",
+                "studentAction": "Independently complete the formative prompt demonstrating their mastery of Conceptual Framework & Properties of Photosynthesis & Cellular Energy Transfer.",
+                "materials": [
+                  "Formative exit ticket slips / digital response form"
+                ]
+              },
+              {
+                "phase": "closure",
+                "title": "Synthesis, Metacognitive Reflection & Exit Wrap-Up",
+                "durationMinutes": 3,
+                "description": "Revisit the day's essential question and success criteria; students summarize the core concept in one sentence before dismissal.",
+                "teacherAction": "Summarize the day's key learning; preview tomorrow's investigation; collect exit materials at the door.",
+                "studentAction": "Self-assess against today's success criteria (Fist-to-Five or scale); submit exit ticket at the classroom door.",
+                "materials": [
+                  "Exit ticket collection bin"
+                ]
+              }
+            ],
+            "formativeAssessment": {
+              "type": "Targeted Exit Slip & Error Analysis",
+              "measures": "Student ability to correctly apply Conceptual Framework & Properties of Photosynthesis & Cellular Energy Transfer principles and identify common analytical pitfalls.",
+              "promptOrQuestion": "Explain how Conceptual Framework & Properties of Photosynthesis & Cellular Energy Transfer operates in your own words, and solve the provided sample problem showing all intermediate steps.",
+              "evidenceOfLearning": "Student produces an accurate step-by-step solution accompanied by a 1-2 sentence justification using domain-specific vocabulary.",
+              "interpretationGuide": "Full credit: Correct method and vocabulary. Partial credit: Correct logic but arithmetic or minor procedural slip. Needs review: Misinterprets core rule or leaves justification blank.",
+              "nextInstructionalStep": "Students with misconceptions will receive a targeted 7-minute guided warm-up mini-lesson at the start of next session."
+            },
+            "differentiation": {
+              "support": "Provide step-by-step graphic organizer, pre-filled vocabulary bank, and worked-example reference card for continuous student guidance.",
+              "onLevel": "Standard guided notes, collaborative peer dialogue protocol, and mixed difficulty task cards with solution checking.",
+              "advanced": "Challenge problem set featuring non-routine edge cases, requiring students to generalize formulas or design an alternative solution path.",
+              "ell": "Visual glossaries with dual-language definitions, sentence frames for verbal participation, and illustrated concept maps.",
+              "modalitiesOrAccommodations": "Provide multimodal representations (color-coded diagrams, tactile manipulatives where applicable), frequent comprehension checks, and flexible pacing."
+            },
+            "homework": {
+              "enabled": true,
+              "task": "Complete 4 reflection and practice problems applying Conceptual Framework & Properties of Photosynthesis & Cellular Energy Transfer in authentic scenarios.",
+              "estimatedMinutes": 15,
+              "optionalChallenge": "Find or describe an everyday real-world example where Conceptual Framework & Properties of Photosynthesis & Cellular Energy Transfer is utilized.",
+              "realWorldConnection": "Connects to industry, environmental, or scientific applications of Photosynthesis & Cellular Energy Transfer."
+            },
+            "materials": [
+              "Curriculum workbook / guided notes",
+              "Interactive projection slides",
+              "Student whiteboards & markers",
+              "Formative exit tickets"
+            ]
+          },
+          {
+            "id": "sess_plan_h6ine2qmvi51ams_w1_s2",
+            "sessionNumber": 2,
+            "dayNumber": 2,
+            "weekNumber": 1,
+            "title": "Lesson 2: Procedural Modeling & Guided Representation",
+            "topic": "Step-by-Step Mechanisms & Representations in Photosynthesis & Cellular Energy Transfer",
+            "durationMinutes": 50,
+            "objectives": [
+              {
+                "id": "obj_2_1",
+                "description": "Apply and demonstrate the essential principles of Step-by-Step Mechanisms & Representations in Photosynthesis & Cellular Energy Transfer and explain their functional relationship.",
+                "bloomLevel": "Applying",
+                "successCriterion": "I can accurately describe Step-by-Step Mechanisms & Representations in Photosynthesis & Cellular Energy Transfer and articulate its significance in solving contextual challenges."
+              },
+              {
+                "id": "obj_2_2",
+                "description": "Demonstrate procedural accuracy when applying Step-by-Step Mechanisms & Representations in Photosynthesis & Cellular Energy Transfer strategies during collaborative and independent practice.",
+                "bloomLevel": "Applying",
+                "successCriterion": "I can complete targeted practice exercises with at least 80% accuracy without teacher scaffolding."
+              }
+            ],
+            "successCriteria": [
+              "I can explain the significance of Step-by-Step Mechanisms & Representations in Photosynthesis & Cellular Energy Transfer.",
+              "I can accurately execute the primary procedure with confidence.",
+              "I can self-check my work against the lesson criteria."
+            ],
+            "standards": [
+              {
+                "id": "std_2_1",
+                "framework": "India · CBSE (Central Board of Secondary Education) · Grade 9",
+                "code": "BIO.9.1.2",
+                "description": "Demonstrate mastery of grade-level competencies relating to Step-by-Step Mechanisms & Representations in Photosynthesis & Cellular Energy Transfer and evidence-based problem formulation.",
+                "lessonConnection": "Suggested pedagogical alignment; please confirm against your official syllabus. Directly addressed through the teacher modeling and student guided practice investigating Step-by-Step Mechanisms & Representations in Photosynthesis & Cellular Energy Transfer.",
+                "verificationStatus": "suggested_unverified"
+              }
+            ],
+            "lessonSequence": [
+              {
+                "phase": "opening",
+                "title": "Retrieval Warm-Up & Framing Hook",
+                "durationMinutes": 7,
+                "description": "Activate prior knowledge through a 3-question retrieval warm-up connected to yesterday's concepts and introduce the driving essential question.",
+                "teacherAction": "Project the retrieval prompt; circulate with a clipboard to note student baseline responses; establish lesson success criteria on the board.",
+                "studentAction": "Independently record responses in their warm-up journals; participate in a brief 60-second turn-and-talk with their elbow partner.",
+                "materials": [
+                  "Display screen/projector",
+                  "Student warm-up journals",
+                  "Timer"
+                ]
+              },
+              {
+                "phase": "direct_instruction",
+                "title": "Explicit Instruction & Step-by-Step Modeling (\"I Do\")",
+                "durationMinutes": 15,
+                "description": "Introduce Step-by-Step Mechanisms & Representations in Photosynthesis & Cellular Energy Transfer through dual-coding (visual organizer + concise explanation), explicitly thinking aloud common misconceptions and decision-making logic.",
+                "teacherAction": "Deliver focused instruction using clear visual anchors; demonstrate worked examples while annotating key decision points and vocabulary.",
+                "studentAction": "Complete guided fill-in notes; highlight critical rule checkpoints; ask clarifying questions during designated pause intervals.",
+                "materials": [
+                  "Interactive whiteboard / slides",
+                  "Guided notes handout"
+                ]
+              },
+              {
+                "phase": "guided_practice",
+                "title": "Scaffolded Guided Practice (\"We Do\")",
+                "durationMinutes": 12,
+                "description": "Guide the whole class through tiered practice problems, gradually fading prompts as student accuracy and confidence increase.",
+                "teacherAction": "Pose structured practice tasks; call on cold-called pairs for rationale; utilize quick choral or whiteboard checks to gauge whole-class readiness.",
+                "studentAction": "Work through scaffolded tasks on individual dry-erase whiteboards; show answers on cue; justify reasoning to the class.",
+                "materials": [
+                  "Individual mini-whiteboards & dry-erase markers",
+                  "Tiered practice slides"
+                ]
+              },
+              {
+                "phase": "collaborative_independent",
+                "title": "Collaborative Application & Independent Mastery (\"You Do\")",
+                "durationMinutes": 9,
+                "description": "Students work in structured pairs or independently on differentiated task cards applying Step-by-Step Mechanisms & Representations in Photosynthesis & Cellular Energy Transfer to authentic contextual problems.",
+                "teacherAction": "Conduct targeted small-group pull-out instruction with students needing reinforcement; facilitate extension tasks for advanced students.",
+                "studentAction": "Engage with assigned tiered problem cards; verify work with partner using rubric criteria; record individual solutions in notebooks.",
+                "materials": [
+                  "Differentiated task cards (Tiers 1-3)",
+                  "Student workbooks"
+                ]
+              },
+              {
+                "phase": "formative_assessment",
+                "title": "Formative Check for Understanding",
+                "durationMinutes": 4,
+                "description": "Conduct a focused assessment measuring mastery of today's core objective to inform tomorrow's pacing.",
+                "teacherAction": "Distribute or display the formative check; observe without intervening; collect student artifacts for quick sorting into proficiency piles.",
+                "studentAction": "Independently complete the formative prompt demonstrating their mastery of Step-by-Step Mechanisms & Representations in Photosynthesis & Cellular Energy Transfer.",
+                "materials": [
+                  "Formative exit ticket slips / digital response form"
+                ]
+              },
+              {
+                "phase": "closure",
+                "title": "Synthesis, Metacognitive Reflection & Exit Wrap-Up",
+                "durationMinutes": 3,
+                "description": "Revisit the day's essential question and success criteria; students summarize the core concept in one sentence before dismissal.",
+                "teacherAction": "Summarize the day's key learning; preview tomorrow's investigation; collect exit materials at the door.",
+                "studentAction": "Self-assess against today's success criteria (Fist-to-Five or scale); submit exit ticket at the classroom door.",
+                "materials": [
+                  "Exit ticket collection bin"
+                ]
+              }
+            ],
+            "formativeAssessment": {
+              "type": "Targeted Exit Slip & Error Analysis",
+              "measures": "Student ability to correctly apply Step-by-Step Mechanisms & Representations in Photosynthesis & Cellular Energy Transfer principles and identify common analytical pitfalls.",
+              "promptOrQuestion": "Explain how Step-by-Step Mechanisms & Representations in Photosynthesis & Cellular Energy Transfer operates in your own words, and solve the provided sample problem showing all intermediate steps.",
+              "evidenceOfLearning": "Student produces an accurate step-by-step solution accompanied by a 1-2 sentence justification using domain-specific vocabulary.",
+              "interpretationGuide": "Full credit: Correct method and vocabulary. Partial credit: Correct logic but arithmetic or minor procedural slip. Needs review: Misinterprets core rule or leaves justification blank.",
+              "nextInstructionalStep": "Students with misconceptions will receive a targeted 7-minute guided warm-up mini-lesson at the start of next session."
+            },
+            "differentiation": {
+              "support": "Provide step-by-step graphic organizer, pre-filled vocabulary bank, and worked-example reference card for continuous student guidance.",
+              "onLevel": "Standard guided notes, collaborative peer dialogue protocol, and mixed difficulty task cards with solution checking.",
+              "advanced": "Challenge problem set featuring non-routine edge cases, requiring students to generalize formulas or design an alternative solution path.",
+              "ell": "Visual glossaries with dual-language definitions, sentence frames for verbal participation, and illustrated concept maps.",
+              "modalitiesOrAccommodations": "Provide multimodal representations (color-coded diagrams, tactile manipulatives where applicable), frequent comprehension checks, and flexible pacing."
+            },
+            "homework": {
+              "enabled": true,
+              "task": "Complete 4 reflection and practice problems applying Step-by-Step Mechanisms & Representations in Photosynthesis & Cellular Energy Transfer in authentic scenarios.",
+              "estimatedMinutes": 15,
+              "optionalChallenge": "Find or describe an everyday real-world example where Step-by-Step Mechanisms & Representations in Photosynthesis & Cellular Energy Transfer is utilized.",
+              "realWorldConnection": "Connects to industry, environmental, or scientific applications of Photosynthesis & Cellular Energy Transfer."
+            },
+            "materials": [
+              "Curriculum workbook / guided notes",
+              "Interactive projection slides",
+              "Student whiteboards & markers",
+              "Formative exit tickets"
+            ]
+          },
+          {
+            "id": "sess_plan_h6ine2qmvi51ams_w1_s3",
+            "sessionNumber": 3,
+            "dayNumber": 3,
+            "weekNumber": 1,
+            "title": "Lesson 3: Collaborative Problem-Solving & Case Investigation",
+            "topic": "Multi-Step Scenarios & Problem Scaffolding",
+            "durationMinutes": 50,
+            "objectives": [
+              {
+                "id": "obj_3_1",
+                "description": "Calculate and solve the essential principles of Multi-Step Scenarios & Problem Scaffolding and explain their functional relationship.",
+                "bloomLevel": "Applying",
+                "successCriterion": "I can accurately describe Multi-Step Scenarios & Problem Scaffolding and articulate its significance in solving contextual challenges."
+              },
+              {
+                "id": "obj_3_2",
+                "description": "Demonstrate procedural accuracy when applying Multi-Step Scenarios & Problem Scaffolding strategies during collaborative and independent practice.",
+                "bloomLevel": "Applying",
+                "successCriterion": "I can complete targeted practice exercises with at least 80% accuracy without teacher scaffolding."
+              }
+            ],
+            "successCriteria": [
+              "I can explain the significance of Multi-Step Scenarios & Problem Scaffolding.",
+              "I can accurately execute the primary procedure with confidence.",
+              "I can self-check my work against the lesson criteria."
+            ],
+            "standards": [
+              {
+                "id": "std_3_1",
+                "framework": "India · CBSE (Central Board of Secondary Education) · Grade 9",
+                "code": "BIO.9.1.3",
+                "description": "Demonstrate mastery of grade-level competencies relating to Multi-Step Scenarios & Problem Scaffolding and evidence-based problem formulation.",
+                "lessonConnection": "Suggested pedagogical alignment; please confirm against your official syllabus. Directly addressed through the teacher modeling and student guided practice investigating Multi-Step Scenarios & Problem Scaffolding.",
+                "verificationStatus": "suggested_unverified"
+              }
+            ],
+            "lessonSequence": [
+              {
+                "phase": "opening",
+                "title": "Retrieval Warm-Up & Framing Hook",
+                "durationMinutes": 7,
+                "description": "Activate prior knowledge through a 3-question retrieval warm-up connected to yesterday's concepts and introduce the driving essential question.",
+                "teacherAction": "Project the retrieval prompt; circulate with a clipboard to note student baseline responses; establish lesson success criteria on the board.",
+                "studentAction": "Independently record responses in their warm-up journals; participate in a brief 60-second turn-and-talk with their elbow partner.",
+                "materials": [
+                  "Display screen/projector",
+                  "Student warm-up journals",
+                  "Timer"
+                ]
+              },
+              {
+                "phase": "direct_instruction",
+                "title": "Explicit Instruction & Step-by-Step Modeling (\"I Do\")",
+                "durationMinutes": 15,
+                "description": "Introduce Multi-Step Scenarios & Problem Scaffolding through dual-coding (visual organizer + concise explanation), explicitly thinking aloud common misconceptions and decision-making logic.",
+                "teacherAction": "Deliver focused instruction using clear visual anchors; demonstrate worked examples while annotating key decision points and vocabulary.",
+                "studentAction": "Complete guided fill-in notes; highlight critical rule checkpoints; ask clarifying questions during designated pause intervals.",
+                "materials": [
+                  "Interactive whiteboard / slides",
+                  "Guided notes handout"
+                ]
+              },
+              {
+                "phase": "guided_practice",
+                "title": "Scaffolded Guided Practice (\"We Do\")",
+                "durationMinutes": 12,
+                "description": "Guide the whole class through tiered practice problems, gradually fading prompts as student accuracy and confidence increase.",
+                "teacherAction": "Pose structured practice tasks; call on cold-called pairs for rationale; utilize quick choral or whiteboard checks to gauge whole-class readiness.",
+                "studentAction": "Work through scaffolded tasks on individual dry-erase whiteboards; show answers on cue; justify reasoning to the class.",
+                "materials": [
+                  "Individual mini-whiteboards & dry-erase markers",
+                  "Tiered practice slides"
+                ]
+              },
+              {
+                "phase": "collaborative_independent",
+                "title": "Collaborative Application & Independent Mastery (\"You Do\")",
+                "durationMinutes": 9,
+                "description": "Students work in structured pairs or independently on differentiated task cards applying Multi-Step Scenarios & Problem Scaffolding to authentic contextual problems.",
+                "teacherAction": "Conduct targeted small-group pull-out instruction with students needing reinforcement; facilitate extension tasks for advanced students.",
+                "studentAction": "Engage with assigned tiered problem cards; verify work with partner using rubric criteria; record individual solutions in notebooks.",
+                "materials": [
+                  "Differentiated task cards (Tiers 1-3)",
+                  "Student workbooks"
+                ]
+              },
+              {
+                "phase": "formative_assessment",
+                "title": "Formative Check for Understanding",
+                "durationMinutes": 4,
+                "description": "Conduct a focused assessment measuring mastery of today's core objective to inform tomorrow's pacing.",
+                "teacherAction": "Distribute or display the formative check; observe without intervening; collect student artifacts for quick sorting into proficiency piles.",
+                "studentAction": "Independently complete the formative prompt demonstrating their mastery of Multi-Step Scenarios & Problem Scaffolding.",
+                "materials": [
+                  "Formative exit ticket slips / digital response form"
+                ]
+              },
+              {
+                "phase": "closure",
+                "title": "Synthesis, Metacognitive Reflection & Exit Wrap-Up",
+                "durationMinutes": 3,
+                "description": "Revisit the day's essential question and success criteria; students summarize the core concept in one sentence before dismissal.",
+                "teacherAction": "Summarize the day's key learning; preview tomorrow's investigation; collect exit materials at the door.",
+                "studentAction": "Self-assess against today's success criteria (Fist-to-Five or scale); submit exit ticket at the classroom door.",
+                "materials": [
+                  "Exit ticket collection bin"
+                ]
+              }
+            ],
+            "formativeAssessment": {
+              "type": "Targeted Exit Slip & Error Analysis",
+              "measures": "Student ability to correctly apply Multi-Step Scenarios & Problem Scaffolding principles and identify common analytical pitfalls.",
+              "promptOrQuestion": "Explain how Multi-Step Scenarios & Problem Scaffolding operates in your own words, and solve the provided sample problem showing all intermediate steps.",
+              "evidenceOfLearning": "Student produces an accurate step-by-step solution accompanied by a 1-2 sentence justification using domain-specific vocabulary.",
+              "interpretationGuide": "Full credit: Correct method and vocabulary. Partial credit: Correct logic but arithmetic or minor procedural slip. Needs review: Misinterprets core rule or leaves justification blank.",
+              "nextInstructionalStep": "Students with misconceptions will receive a targeted 7-minute guided warm-up mini-lesson at the start of next session."
+            },
+            "differentiation": {
+              "support": "Provide step-by-step graphic organizer, pre-filled vocabulary bank, and worked-example reference card for continuous student guidance.",
+              "onLevel": "Standard guided notes, collaborative peer dialogue protocol, and mixed difficulty task cards with solution checking.",
+              "advanced": "Challenge problem set featuring non-routine edge cases, requiring students to generalize formulas or design an alternative solution path.",
+              "ell": "Visual glossaries with dual-language definitions, sentence frames for verbal participation, and illustrated concept maps.",
+              "modalitiesOrAccommodations": "Provide multimodal representations (color-coded diagrams, tactile manipulatives where applicable), frequent comprehension checks, and flexible pacing."
+            },
+            "homework": {
+              "enabled": true,
+              "task": "Complete 4 reflection and practice problems applying Multi-Step Scenarios & Problem Scaffolding in authentic scenarios.",
+              "estimatedMinutes": 15,
+              "optionalChallenge": "Find or describe an everyday real-world example where Multi-Step Scenarios & Problem Scaffolding is utilized.",
+              "realWorldConnection": "Connects to industry, environmental, or scientific applications of Photosynthesis & Cellular Energy Transfer."
+            },
+            "materials": [
+              "Curriculum workbook / guided notes",
+              "Interactive projection slides",
+              "Student whiteboards & markers",
+              "Formative exit tickets"
+            ]
+          }
+        ],
+        "weeklyAssessment": {
+          "type": "Cumulative Unit Performance Task",
+          "description": "Summative checkpoint for Week 1 measuring student comprehension of Foundations of Photosynthesis & Cellular Energy Transfer through performance criteria.",
+          "checkpointCriteria": [
+            "Accurately explains core terminology: Hypothesis, Variable, Framework",
+            "Demonstrates independent proficiency on weekly target competencies",
+            "Applies reasoning in novel problem or analysis scenarios with minimal prompting"
+          ]
+        },
+        "weeklyResources": [
+          "Week 1 Guided Student Activity Workbook & Reference Slips",
+          "Interactive Slide Deck with Embedded Check-for-Understanding Prompts",
+          "Targeted Practice Problem Sets (Tiered Levels 1-3)"
+        ],
+        "reflectionPrompt": "Which instructional strategies best supported student mastery of Foundations of Photosynthesis & Cellular Energy Transfer this week, and which concepts require retrieval warm-ups next week?",
+        "teacherNotes": "Review formative exit tickets to differentiate pacing for upcoming sessions."
+      }
+    ],
+    "finalAssessment": {
+      "title": "Photosynthesis & Cellular Energy Transfer - Culminating Capstone & Evaluation",
+      "type": "Culminating Project",
+      "description": "A comprehensive performance-based assessment where students demonstrate mastery of Photosynthesis & Cellular Energy Transfer by synthesizing unit concepts, solving complex multi-step tasks, and defending their findings.",
+      "rubric": [
+        {
+          "criterion": "Conceptual Understanding & Accuracy",
+          "weightPercentage": 35,
+          "exemplary": "Demonstrates thorough, flawless mastery of all unit concepts; integrates nuanced terminology effortlessly without misconceptions.",
+          "proficient": "Demonstrates solid understanding with accurate application of major concepts; minor incidental errors that do not impair core logic.",
+          "developing": "Demonstrates partial grasp of core concepts; relies heavily on scaffolding or exhibits notable conceptual gaps.",
+          "beginning": "Demonstrates minimal comprehension; struggles to apply foundational terminology or concepts accurately."
+        },
+        {
+          "criterion": "Problem Solving & Methodological Rigor",
+          "weightPercentage": 30,
+          "exemplary": "Selects optimal problem-solving strategies independently; justifies each step with clear mathematical/scientific/analytical evidence.",
+          "proficient": "Selects valid strategies; solves standard and multi-step problems with sound logic and clear step-by-step reasoning.",
+          "developing": "Solves routine problems with guidance; struggles when encountering unfamiliar or non-routine scenarios.",
+          "beginning": "Struggles to formulate an initial strategy; reasoning is disjointed or largely incomplete."
+        },
+        {
+          "criterion": "Communication, Representation & Defense",
+          "weightPercentage": 20,
+          "exemplary": "Articulates conclusions with exceptional clarity using multi-modal representations (diagrams, equations, structured prose).",
+          "proficient": "Clearly communicates findings and explanations using appropriate subject-specific formats and conventions.",
+          "developing": "Communication is somewhat disorganized or lacks sufficient explanatory detail.",
+          "beginning": "Conclusions are poorly structured, unclear, or unsupported by evidence."
+        },
+        {
+          "criterion": "Metacognition & Reflective Transfer",
+          "weightPercentage": 15,
+          "exemplary": "Exhibits insightful self-assessment; evaluates alternate approaches and articulates real-world implications vividly.",
+          "proficient": "Reflects on strengths and growth areas; connects findings to broader curriculum context.",
+          "developing": "Surface-level reflection with limited depth on personal problem-solving trajectory.",
+          "beginning": "Little to no evidence of metacognitive reflection or transfer to new domains."
+        }
+      ]
+    },
+    "resourceList": [
+      {
+        "category": "Digital",
+        "title": "Interactive Conceptual Simulation & Modeling Tool",
+        "description": "Interactive digital sandbox enabling students to manipulate variables, observe immediate feedback, and test hypotheses.",
+        "sourceOrUrl": "Recommended Open Educational Resource (OER)"
+      },
+      {
+        "category": "Printable",
+        "title": "Tiered Scaffolded Student Guided Journal & Graphic Organizers",
+        "description": "Printable lesson organizers featuring Cornell-style note-taking sections, worked examples, and retrieval check-ins.",
+        "sourceOrUrl": "Curriculum Resource Repository"
+      },
+      {
+        "category": "Lab/Hands-on",
+        "title": "Collaborative Investigation Station Kit",
+        "description": "Physical manipulatives, chart paper, markers, and mini-whiteboards for small-group active engagement.",
+        "sourceOrUrl": "Classroom Materials Depot"
+      },
+      {
+        "category": "Reading",
+        "title": "Authentic Case Studies & Primary Source Excerpts",
+        "description": "Curated high-interest articles and excerpted texts aligned with lexile levels for the target grade.",
+        "sourceOrUrl": "Supplementary Literacy Anthology"
+      }
+    ],
+    "references": [],
+    "referencesStatus": "pending",
+    "curriculumContext": {
+      "countryId": "in",
+      "curriculumId": "cbse",
+      "grade": "Grade 9",
+      "subject": "Biology",
+      "topic": "Photosynthesis & Cellular Energy Transfer",
+      "labels": {
+        "country": "India",
+        "curriculum": "CBSE (Central Board of Secondary Education)",
+        "grade": "Grade 9",
+        "summary": "India · CBSE (Central Board of Secondary Education) · Grade 9"
+      },
+      "source": "preferences",
+      "catalogVersion": "1.0.0"
+    },
+    "teacherNotes": "Review daily formative exit tickets at the conclusion of each session to calibrate pacing and small-group interventions.",
+    "status": "draft",
+    "isDemo": true,
+    "createdAt": "2026-10-21T13:18:32.212Z",
+    "updatedAt": "2026-10-21T13:18:32.219Z",
+    "userId": "teacher_test_runner"
+  },
+  {
+    "id": "plan_sjwrnl0mvi51ann",
+    "title": "Algebraic Expressions & Linear Equations",
+    "subject": "Mathematics",
+    "gradeLevel": "Grade 8",
+    "curriculumFramework": "India · CBSE (Central Board of Secondary Education) · Grade 8",
+    "standardsFramework": "General Educational Standards Framework",
+    "durationWeeks": 1,
+    "sessionsPerWeek": 2,
+    "classDurationMinutes": 45,
+    "format": "session_sequence",
+    "unitOverview": "This comprehensive multi-week instructional plan for Algebraic Expressions & Linear Equations employs Backward Design (Understanding by Design) to build durable conceptual understanding, procedural fluency, and real-world transfer for Grade 8 students. Across 1 weeks (2 sessions), learners progress systematically from foundational principles and vocabulary through guided modeling, collaborative problem-solving, and culminate in an authentic performance task.",
+    "unitObjectives": [
+      "Explain the fundamental concepts, underlying principles, and key mechanisms of Algebraic Expressions & Linear Equations with academic precision.",
+      "Analyze and evaluate authentic scenarios by applying systematic methodologies and critical reasoning.",
+      "Collaborate effectively with peers to solve non-routine, multi-step challenges and present evidence-based conclusions.",
+      "Demonstrate independent mastery on the culminating unit performance task according to multi-tier rubric criteria."
+    ],
+    "prerequisiteKnowledge": [
+      "Basic prior grade-level subject foundations",
+      "Introductory collaborative work norms and reflective practice"
+    ],
+    "studentNeeds": "Mixed-ability classroom with varied learning styles",
+    "teachingMethods": [
+      "Direct Modeling",
+      "Collaborative Problem Sets"
+    ],
+    "weeklyPlans": [
+      {
+        "id": "week_plan_sjwrnl0mvi51ann_1",
+        "weekNumber": 1,
+        "title": "Week 1: Foundations, Key Vocabulary & Diagnostic Exploration",
+        "theme": "Foundations of Algebraic Expressions & Linear Equations",
+        "learningGoals": [
+          "Master fundamental mechanisms and core principles underlying Foundations of Algebraic Expressions & Linear Equations.",
+          "Apply structured analytical thinking to resolve guided and authentic challenges.",
+          "Synthesize key takeaways to prepare for cumulative progression in subsequent modules."
+        ],
+        "vocabulary": [
+          "Hypothesis",
+          "Variable",
+          "Framework",
+          "Representation",
+          "Foundation"
+        ],
+        "prerequisites": [
+          "Foundational grade-level prerequisite concepts"
+        ],
+        "sessions": [
+          {
+            "id": "sess_plan_sjwrnl0mvi51ann_w1_s1",
+            "sessionNumber": 1,
+            "dayNumber": 1,
+            "weekNumber": 1,
+            "title": "Lesson 1: Core Concept Introduction & Structural Analysis",
+            "topic": "Conceptual Framework & Properties of Algebraic Expressions & Linear Equations",
+            "durationMinutes": 45,
+            "objectives": [
+              {
+                "id": "obj_1_1",
+                "description": "Identify and analyze the essential principles of Conceptual Framework & Properties of Algebraic Expressions & Linear Equations and explain their functional relationship.",
+                "bloomLevel": "Understanding",
+                "successCriterion": "I can accurately describe Conceptual Framework & Properties of Algebraic Expressions & Linear Equations and articulate its significance in solving contextual challenges."
+              },
+              {
+                "id": "obj_1_2",
+                "description": "Demonstrate procedural accuracy when applying Conceptual Framework & Properties of Algebraic Expressions & Linear Equations strategies during collaborative and independent practice.",
+                "bloomLevel": "Applying",
+                "successCriterion": "I can complete targeted practice exercises with at least 80% accuracy without teacher scaffolding."
+              }
+            ],
+            "successCriteria": [
+              "I can explain the significance of Conceptual Framework & Properties of Algebraic Expressions & Linear Equations.",
+              "I can accurately execute the primary procedure with confidence.",
+              "I can self-check my work against the lesson criteria."
+            ],
+            "standards": [
+              {
+                "id": "std_1_1",
+                "framework": "India · CBSE (Central Board of Secondary Education) · Grade 8",
+                "code": "MAT.9.1.1",
+                "description": "Demonstrate mastery of grade-level competencies relating to Conceptual Framework & Properties of Algebraic Expressions & Linear Equations and evidence-based problem formulation.",
+                "lessonConnection": "Suggested pedagogical alignment; please confirm against your official syllabus. Directly addressed through the teacher modeling and student guided practice investigating Conceptual Framework & Properties of Algebraic Expressions & Linear Equations.",
+                "verificationStatus": "suggested_unverified"
+              }
+            ],
+            "lessonSequence": [
+              {
+                "phase": "opening",
+                "title": "Retrieval Warm-Up & Framing Hook",
+                "durationMinutes": 6,
+                "description": "Activate prior knowledge through a 3-question retrieval warm-up connected to yesterday's concepts and introduce the driving essential question.",
+                "teacherAction": "Project the retrieval prompt; circulate with a clipboard to note student baseline responses; establish lesson success criteria on the board.",
+                "studentAction": "Independently record responses in their warm-up journals; participate in a brief 60-second turn-and-talk with their elbow partner.",
+                "materials": [
+                  "Display screen/projector",
+                  "Student warm-up journals",
+                  "Timer"
+                ]
+              },
+              {
+                "phase": "direct_instruction",
+                "title": "Explicit Instruction & Step-by-Step Modeling (\"I Do\")",
+                "durationMinutes": 14,
+                "description": "Introduce Conceptual Framework & Properties of Algebraic Expressions & Linear Equations through dual-coding (visual organizer + concise explanation), explicitly thinking aloud common misconceptions and decision-making logic.",
+                "teacherAction": "Deliver focused instruction using clear visual anchors; demonstrate worked examples while annotating key decision points and vocabulary.",
+                "studentAction": "Complete guided fill-in notes; highlight critical rule checkpoints; ask clarifying questions during designated pause intervals.",
+                "materials": [
+                  "Interactive whiteboard / slides",
+                  "Guided notes handout"
+                ]
+              },
+              {
+                "phase": "guided_practice",
+                "title": "Scaffolded Guided Practice (\"We Do\")",
+                "durationMinutes": 11,
+                "description": "Guide the whole class through tiered practice problems, gradually fading prompts as student accuracy and confidence increase.",
+                "teacherAction": "Pose structured practice tasks; call on cold-called pairs for rationale; utilize quick choral or whiteboard checks to gauge whole-class readiness.",
+                "studentAction": "Work through scaffolded tasks on individual dry-erase whiteboards; show answers on cue; justify reasoning to the class.",
+                "materials": [
+                  "Individual mini-whiteboards & dry-erase markers",
+                  "Tiered practice slides"
+                ]
+              },
+              {
+                "phase": "collaborative_independent",
+                "title": "Collaborative Application & Independent Mastery (\"You Do\")",
+                "durationMinutes": 7,
+                "description": "Students work in structured pairs or independently on differentiated task cards applying Conceptual Framework & Properties of Algebraic Expressions & Linear Equations to authentic contextual problems.",
+                "teacherAction": "Conduct targeted small-group pull-out instruction with students needing reinforcement; facilitate extension tasks for advanced students.",
+                "studentAction": "Engage with assigned tiered problem cards; verify work with partner using rubric criteria; record individual solutions in notebooks.",
+                "materials": [
+                  "Differentiated task cards (Tiers 1-3)",
+                  "Student workbooks"
+                ]
+              },
+              {
+                "phase": "formative_assessment",
+                "title": "Formative Check for Understanding",
+                "durationMinutes": 4,
+                "description": "Conduct a focused assessment measuring mastery of today's core objective to inform tomorrow's pacing.",
+                "teacherAction": "Distribute or display the formative check; observe without intervening; collect student artifacts for quick sorting into proficiency piles.",
+                "studentAction": "Independently complete the formative prompt demonstrating their mastery of Conceptual Framework & Properties of Algebraic Expressions & Linear Equations.",
+                "materials": [
+                  "Formative exit ticket slips / digital response form"
+                ]
+              },
+              {
+                "phase": "closure",
+                "title": "Synthesis, Metacognitive Reflection & Exit Wrap-Up",
+                "durationMinutes": 3,
+                "description": "Revisit the day's essential question and success criteria; students summarize the core concept in one sentence before dismissal.",
+                "teacherAction": "Summarize the day's key learning; preview tomorrow's investigation; collect exit materials at the door.",
+                "studentAction": "Self-assess against today's success criteria (Fist-to-Five or scale); submit exit ticket at the classroom door.",
+                "materials": [
+                  "Exit ticket collection bin"
+                ]
+              }
+            ],
+            "formativeAssessment": {
+              "type": "Targeted Exit Slip & Error Analysis",
+              "measures": "Student ability to correctly apply Conceptual Framework & Properties of Algebraic Expressions & Linear Equations principles and identify common analytical pitfalls.",
+              "promptOrQuestion": "Explain how Conceptual Framework & Properties of Algebraic Expressions & Linear Equations operates in your own words, and solve the provided sample problem showing all intermediate steps.",
+              "evidenceOfLearning": "Student produces an accurate step-by-step solution accompanied by a 1-2 sentence justification using domain-specific vocabulary.",
+              "interpretationGuide": "Full credit: Correct method and vocabulary. Partial credit: Correct logic but arithmetic or minor procedural slip. Needs review: Misinterprets core rule or leaves justification blank.",
+              "nextInstructionalStep": "Students with misconceptions will receive a targeted 7-minute guided warm-up mini-lesson at the start of next session."
+            },
+            "differentiation": {
+              "support": "Provide step-by-step graphic organizer, pre-filled vocabulary bank, and worked-example reference card for continuous student guidance.",
+              "onLevel": "Standard guided notes, collaborative peer dialogue protocol, and mixed difficulty task cards with solution checking.",
+              "advanced": "Challenge problem set featuring non-routine edge cases, requiring students to generalize formulas or design an alternative solution path.",
+              "ell": "Visual glossaries with dual-language definitions, sentence frames for verbal participation, and illustrated concept maps.",
+              "modalitiesOrAccommodations": "Provide multimodal representations (color-coded diagrams, tactile manipulatives where applicable), frequent comprehension checks, and flexible pacing."
+            },
+            "homework": {
+              "enabled": true,
+              "task": "Complete 4 reflection and practice problems applying Conceptual Framework & Properties of Algebraic Expressions & Linear Equations in authentic scenarios.",
+              "estimatedMinutes": 14,
+              "optionalChallenge": "Find or describe an everyday real-world example where Conceptual Framework & Properties of Algebraic Expressions & Linear Equations is utilized.",
+              "realWorldConnection": "Connects to industry, environmental, or scientific applications of Algebraic Expressions & Linear Equations."
+            },
+            "materials": [
+              "Curriculum workbook / guided notes",
+              "Interactive projection slides",
+              "Student whiteboards & markers",
+              "Formative exit tickets"
+            ]
+          },
+          {
+            "id": "sess_plan_sjwrnl0mvi51ann_w1_s2",
+            "sessionNumber": 2,
+            "dayNumber": 2,
+            "weekNumber": 1,
+            "title": "Lesson 2: Procedural Modeling & Guided Representation",
+            "topic": "Step-by-Step Mechanisms & Representations in Algebraic Expressions & Linear Equations",
+            "durationMinutes": 45,
+            "objectives": [
+              {
+                "id": "obj_2_1",
+                "description": "Apply and demonstrate the essential principles of Step-by-Step Mechanisms & Representations in Algebraic Expressions & Linear Equations and explain their functional relationship.",
+                "bloomLevel": "Applying",
+                "successCriterion": "I can accurately describe Step-by-Step Mechanisms & Representations in Algebraic Expressions & Linear Equations and articulate its significance in solving contextual challenges."
+              },
+              {
+                "id": "obj_2_2",
+                "description": "Demonstrate procedural accuracy when applying Step-by-Step Mechanisms & Representations in Algebraic Expressions & Linear Equations strategies during collaborative and independent practice.",
+                "bloomLevel": "Applying",
+                "successCriterion": "I can complete targeted practice exercises with at least 80% accuracy without teacher scaffolding."
+              }
+            ],
+            "successCriteria": [
+              "I can explain the significance of Step-by-Step Mechanisms & Representations in Algebraic Expressions & Linear Equations.",
+              "I can accurately execute the primary procedure with confidence.",
+              "I can self-check my work against the lesson criteria."
+            ],
+            "standards": [
+              {
+                "id": "std_2_1",
+                "framework": "India · CBSE (Central Board of Secondary Education) · Grade 8",
+                "code": "MAT.9.1.2",
+                "description": "Demonstrate mastery of grade-level competencies relating to Step-by-Step Mechanisms & Representations in Algebraic Expressions & Linear Equations and evidence-based problem formulation.",
+                "lessonConnection": "Suggested pedagogical alignment; please confirm against your official syllabus. Directly addressed through the teacher modeling and student guided practice investigating Step-by-Step Mechanisms & Representations in Algebraic Expressions & Linear Equations.",
+                "verificationStatus": "suggested_unverified"
+              }
+            ],
+            "lessonSequence": [
+              {
+                "phase": "opening",
+                "title": "Retrieval Warm-Up & Framing Hook",
+                "durationMinutes": 6,
+                "description": "Activate prior knowledge through a 3-question retrieval warm-up connected to yesterday's concepts and introduce the driving essential question.",
+                "teacherAction": "Project the retrieval prompt; circulate with a clipboard to note student baseline responses; establish lesson success criteria on the board.",
+                "studentAction": "Independently record responses in their warm-up journals; participate in a brief 60-second turn-and-talk with their elbow partner.",
+                "materials": [
+                  "Display screen/projector",
+                  "Student warm-up journals",
+                  "Timer"
+                ]
+              },
+              {
+                "phase": "direct_instruction",
+                "title": "Explicit Instruction & Step-by-Step Modeling (\"I Do\")",
+                "durationMinutes": 14,
+                "description": "Introduce Step-by-Step Mechanisms & Representations in Algebraic Expressions & Linear Equations through dual-coding (visual organizer + concise explanation), explicitly thinking aloud common misconceptions and decision-making logic.",
+                "teacherAction": "Deliver focused instruction using clear visual anchors; demonstrate worked examples while annotating key decision points and vocabulary.",
+                "studentAction": "Complete guided fill-in notes; highlight critical rule checkpoints; ask clarifying questions during designated pause intervals.",
+                "materials": [
+                  "Interactive whiteboard / slides",
+                  "Guided notes handout"
+                ]
+              },
+              {
+                "phase": "guided_practice",
+                "title": "Scaffolded Guided Practice (\"We Do\")",
+                "durationMinutes": 11,
+                "description": "Guide the whole class through tiered practice problems, gradually fading prompts as student accuracy and confidence increase.",
+                "teacherAction": "Pose structured practice tasks; call on cold-called pairs for rationale; utilize quick choral or whiteboard checks to gauge whole-class readiness.",
+                "studentAction": "Work through scaffolded tasks on individual dry-erase whiteboards; show answers on cue; justify reasoning to the class.",
+                "materials": [
+                  "Individual mini-whiteboards & dry-erase markers",
+                  "Tiered practice slides"
+                ]
+              },
+              {
+                "phase": "collaborative_independent",
+                "title": "Collaborative Application & Independent Mastery (\"You Do\")",
+                "durationMinutes": 7,
+                "description": "Students work in structured pairs or independently on differentiated task cards applying Step-by-Step Mechanisms & Representations in Algebraic Expressions & Linear Equations to authentic contextual problems.",
+                "teacherAction": "Conduct targeted small-group pull-out instruction with students needing reinforcement; facilitate extension tasks for advanced students.",
+                "studentAction": "Engage with assigned tiered problem cards; verify work with partner using rubric criteria; record individual solutions in notebooks.",
+                "materials": [
+                  "Differentiated task cards (Tiers 1-3)",
+                  "Student workbooks"
+                ]
+              },
+              {
+                "phase": "formative_assessment",
+                "title": "Formative Check for Understanding",
+                "durationMinutes": 4,
+                "description": "Conduct a focused assessment measuring mastery of today's core objective to inform tomorrow's pacing.",
+                "teacherAction": "Distribute or display the formative check; observe without intervening; collect student artifacts for quick sorting into proficiency piles.",
+                "studentAction": "Independently complete the formative prompt demonstrating their mastery of Step-by-Step Mechanisms & Representations in Algebraic Expressions & Linear Equations.",
+                "materials": [
+                  "Formative exit ticket slips / digital response form"
+                ]
+              },
+              {
+                "phase": "closure",
+                "title": "Synthesis, Metacognitive Reflection & Exit Wrap-Up",
+                "durationMinutes": 3,
+                "description": "Revisit the day's essential question and success criteria; students summarize the core concept in one sentence before dismissal.",
+                "teacherAction": "Summarize the day's key learning; preview tomorrow's investigation; collect exit materials at the door.",
+                "studentAction": "Self-assess against today's success criteria (Fist-to-Five or scale); submit exit ticket at the classroom door.",
+                "materials": [
+                  "Exit ticket collection bin"
+                ]
+              }
+            ],
+            "formativeAssessment": {
+              "type": "Targeted Exit Slip & Error Analysis",
+              "measures": "Student ability to correctly apply Step-by-Step Mechanisms & Representations in Algebraic Expressions & Linear Equations principles and identify common analytical pitfalls.",
+              "promptOrQuestion": "Explain how Step-by-Step Mechanisms & Representations in Algebraic Expressions & Linear Equations operates in your own words, and solve the provided sample problem showing all intermediate steps.",
+              "evidenceOfLearning": "Student produces an accurate step-by-step solution accompanied by a 1-2 sentence justification using domain-specific vocabulary.",
+              "interpretationGuide": "Full credit: Correct method and vocabulary. Partial credit: Correct logic but arithmetic or minor procedural slip. Needs review: Misinterprets core rule or leaves justification blank.",
+              "nextInstructionalStep": "Students with misconceptions will receive a targeted 7-minute guided warm-up mini-lesson at the start of next session."
+            },
+            "differentiation": {
+              "support": "Provide step-by-step graphic organizer, pre-filled vocabulary bank, and worked-example reference card for continuous student guidance.",
+              "onLevel": "Standard guided notes, collaborative peer dialogue protocol, and mixed difficulty task cards with solution checking.",
+              "advanced": "Challenge problem set featuring non-routine edge cases, requiring students to generalize formulas or design an alternative solution path.",
+              "ell": "Visual glossaries with dual-language definitions, sentence frames for verbal participation, and illustrated concept maps.",
+              "modalitiesOrAccommodations": "Provide multimodal representations (color-coded diagrams, tactile manipulatives where applicable), frequent comprehension checks, and flexible pacing."
+            },
+            "homework": {
+              "enabled": true,
+              "task": "Complete 4 reflection and practice problems applying Step-by-Step Mechanisms & Representations in Algebraic Expressions & Linear Equations in authentic scenarios.",
+              "estimatedMinutes": 14,
+              "optionalChallenge": "Find or describe an everyday real-world example where Step-by-Step Mechanisms & Representations in Algebraic Expressions & Linear Equations is utilized.",
+              "realWorldConnection": "Connects to industry, environmental, or scientific applications of Algebraic Expressions & Linear Equations."
+            },
+            "materials": [
+              "Curriculum workbook / guided notes",
+              "Interactive projection slides",
+              "Student whiteboards & markers",
+              "Formative exit tickets"
+            ]
+          }
+        ],
+        "weeklyAssessment": {
+          "type": "Cumulative Unit Performance Task",
+          "description": "Summative checkpoint for Week 1 measuring student comprehension of Foundations of Algebraic Expressions & Linear Equations through performance criteria.",
+          "checkpointCriteria": [
+            "Accurately explains core terminology: Hypothesis, Variable, Framework",
+            "Demonstrates independent proficiency on weekly target competencies",
+            "Applies reasoning in novel problem or analysis scenarios with minimal prompting"
+          ]
+        },
+        "weeklyResources": [
+          "Week 1 Guided Student Activity Workbook & Reference Slips",
+          "Interactive Slide Deck with Embedded Check-for-Understanding Prompts",
+          "Targeted Practice Problem Sets (Tiered Levels 1-3)"
+        ],
+        "reflectionPrompt": "Which instructional strategies best supported student mastery of Foundations of Algebraic Expressions & Linear Equations this week, and which concepts require retrieval warm-ups next week?",
+        "teacherNotes": "Review formative exit tickets to differentiate pacing for upcoming sessions."
+      }
+    ],
+    "finalAssessment": {
+      "title": "Algebraic Expressions & Linear Equations - Culminating Capstone & Evaluation",
+      "type": "Culminating Project",
+      "description": "A comprehensive performance-based assessment where students demonstrate mastery of Algebraic Expressions & Linear Equations by synthesizing unit concepts, solving complex multi-step tasks, and defending their findings.",
+      "rubric": [
+        {
+          "criterion": "Conceptual Understanding & Accuracy",
+          "weightPercentage": 35,
+          "exemplary": "Demonstrates thorough, flawless mastery of all unit concepts; integrates nuanced terminology effortlessly without misconceptions.",
+          "proficient": "Demonstrates solid understanding with accurate application of major concepts; minor incidental errors that do not impair core logic.",
+          "developing": "Demonstrates partial grasp of core concepts; relies heavily on scaffolding or exhibits notable conceptual gaps.",
+          "beginning": "Demonstrates minimal comprehension; struggles to apply foundational terminology or concepts accurately."
+        },
+        {
+          "criterion": "Problem Solving & Methodological Rigor",
+          "weightPercentage": 30,
+          "exemplary": "Selects optimal problem-solving strategies independently; justifies each step with clear mathematical/scientific/analytical evidence.",
+          "proficient": "Selects valid strategies; solves standard and multi-step problems with sound logic and clear step-by-step reasoning.",
+          "developing": "Solves routine problems with guidance; struggles when encountering unfamiliar or non-routine scenarios.",
+          "beginning": "Struggles to formulate an initial strategy; reasoning is disjointed or largely incomplete."
+        },
+        {
+          "criterion": "Communication, Representation & Defense",
+          "weightPercentage": 20,
+          "exemplary": "Articulates conclusions with exceptional clarity using multi-modal representations (diagrams, equations, structured prose).",
+          "proficient": "Clearly communicates findings and explanations using appropriate subject-specific formats and conventions.",
+          "developing": "Communication is somewhat disorganized or lacks sufficient explanatory detail.",
+          "beginning": "Conclusions are poorly structured, unclear, or unsupported by evidence."
+        },
+        {
+          "criterion": "Metacognition & Reflective Transfer",
+          "weightPercentage": 15,
+          "exemplary": "Exhibits insightful self-assessment; evaluates alternate approaches and articulates real-world implications vividly.",
+          "proficient": "Reflects on strengths and growth areas; connects findings to broader curriculum context.",
+          "developing": "Surface-level reflection with limited depth on personal problem-solving trajectory.",
+          "beginning": "Little to no evidence of metacognitive reflection or transfer to new domains."
+        }
+      ]
+    },
+    "resourceList": [
+      {
+        "category": "Digital",
+        "title": "Interactive Conceptual Simulation & Modeling Tool",
+        "description": "Interactive digital sandbox enabling students to manipulate variables, observe immediate feedback, and test hypotheses.",
+        "sourceOrUrl": "Recommended Open Educational Resource (OER)"
+      },
+      {
+        "category": "Printable",
+        "title": "Tiered Scaffolded Student Guided Journal & Graphic Organizers",
+        "description": "Printable lesson organizers featuring Cornell-style note-taking sections, worked examples, and retrieval check-ins.",
+        "sourceOrUrl": "Curriculum Resource Repository"
+      },
+      {
+        "category": "Lab/Hands-on",
+        "title": "Collaborative Investigation Station Kit",
+        "description": "Physical manipulatives, chart paper, markers, and mini-whiteboards for small-group active engagement.",
+        "sourceOrUrl": "Classroom Materials Depot"
+      },
+      {
+        "category": "Reading",
+        "title": "Authentic Case Studies & Primary Source Excerpts",
+        "description": "Curated high-interest articles and excerpted texts aligned with lexile levels for the target grade.",
+        "sourceOrUrl": "Supplementary Literacy Anthology"
+      }
+    ],
+    "references": [],
+    "referencesStatus": "pending",
+    "curriculumContext": {
+      "countryId": "in",
+      "curriculumId": "cbse",
+      "grade": "Grade 8",
+      "subject": "Mathematics",
+      "topic": "Algebraic Expressions & Linear Equations",
+      "labels": {
+        "country": "India",
+        "curriculum": "CBSE (Central Board of Secondary Education)",
+        "grade": "Grade 8",
+        "summary": "India · CBSE (Central Board of Secondary Education) · Grade 8"
+      },
+      "source": "preferences",
+      "catalogVersion": "1.0.0"
+    },
+    "teacherNotes": "Review daily formative exit tickets at the conclusion of each session to calibrate pacing and small-group interventions.",
+    "status": "draft",
+    "isDemo": true,
+    "createdAt": "2026-10-21T13:18:32.243Z",
+    "updatedAt": "2026-10-21T13:18:32.249Z",
+    "userId": "teacher_test_runner"
   }
 ]
